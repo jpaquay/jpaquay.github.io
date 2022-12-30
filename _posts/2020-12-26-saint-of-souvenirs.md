@@ -1,4 +1,12 @@
 ---
+layout: post
+title: Saint Of Souvenirs
+subtitle: Marion Brown, Poem
+cover-img: assets/img/westport.jpg
+thumbnail-img: assets/img/westport.jpg
+share-img: assets/img/westport.jpg
+comments: false
+readtime: true
 ---
 
 ### Saint Of Souvenirs

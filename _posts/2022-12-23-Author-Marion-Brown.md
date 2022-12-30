@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Author’s Statement - Marion Brown
+title: Author’s Statement
 subtitle: Marion Brown, Poem
 cover-img: assets/img/newyorker.jpg
 thumbnail-img: assets/img/Marion-Brown.jpeg
@@ -11,6 +11,9 @@ readtime: true
 ---
 
 # Marion Brown
+
+
+
 
 ## Author’s Statement on Beauty
 

@@ -1,4 +1,12 @@
 ---
+ayout: post
+title: Brooklyn
+subtitle: Marion Brown, Poem
+cover-img: assets/img/newyorker.jpg
+thumbnail-img: assets/img/newyorker.jpg
+share-img: assets/img/newyorker.jpg
+comments: false
+readtime: true
 ---
 
 ### Brooklyn March

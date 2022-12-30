@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: The fork keeps coming back 
 subtitle: Marion Brown, Poem
 cover-img: assets/img/westport.jpg
