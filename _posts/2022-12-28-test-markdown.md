@@ -37,7 +37,7 @@ It is the quickest way to configure the menu as you can simply refer to any Hugo
 
 How about a nice seanery ?
 
-![Drag logo](https://media.licdn.com/dms/image/C4D16AQHxCltYOOb2IA/profile-displaybackgroundimage-shrink_350_1400/0/1536654589750?e=1677715200&v=beta&t=V5lccx7BxlaBGJlYRY_u_BdpoxZPz3WFnvXtPRHSnWY)
+![Drag logo](/assets/img/japan.jpg)
 
 It can also be a centered logo!
 
@@ -70,9 +70,6 @@ var foo = function(x) {
 foo(3)
 {% endhighlight %}
 
-![Yellow Duck](/assets/img/avatar2.jpg 'Netdev')
-
-![Yellow Duck](/assets/img/avatar.jpg 'avatar')
 
 ## Boxes
 You can add notification, warning and error boxes like this:
@@ -91,3 +88,6 @@ You can add notification, warning and error boxes like this:
 
 {: .box-error}
 **Error:**  error box !
+
+
+![Yellow Duck](/assets/img/avatar2.jpg 'Netdev')

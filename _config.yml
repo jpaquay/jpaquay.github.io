@@ -51,9 +51,9 @@ round-avatar: true
 social-network-links:
   email: "jpaquay+hugo@gmail.com"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: paquay
+  facebook: NetDev1030
   github: jpaquay
-  twitter: jpaquay
+  twitter: jeromepaquay
 #  patreon: DeanAttali
   youtube: c/JeromePaquay
 #  medium: yourname
