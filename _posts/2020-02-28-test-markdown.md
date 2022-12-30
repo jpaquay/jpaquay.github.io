@@ -1,19 +1,15 @@
 ---
 layout: post
-title: Sample blog post
-subtitle: Each post also has a subtitle
-gh-repo: jpaquay/jpaquay.github.io
+title: Open carefully. I'm mostly `harmless`
+subtitle: The steps above are the bare minimum configuration
+gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [test]
 comments: true
 ---
 
 
-Open carefully. I'm mostly `harmless`
 
-The steps above are the bare minimum configuration.
-
----
 
 Both menus are completely optional and can be commented out if not required. Use the template provided in the [file](/post/about) as a guide.
 
@@ -25,8 +21,7 @@ Both menus are completely optional and can be commented out if not required. Use
 
 The `pageRef` parameter allows you to easily reference Hugo content pages and taxonomies. It is the quickest way to configure the menu as you can simply refer to any Hugo content item and it will automatically build the correct link. To link to external URLs, the `url` parameter can be used.
 
-
-
+---
 
 **Here is some bold text**
 
@@ -83,14 +78,14 @@ You can add notification, warning and error boxes like this:
 ### Notification
 
 {: .box-note}
-**Note:** This is a notification box.
+**Note:** This is 
 
 ### Warning
 
 {: .box-warning}
-**Warning:** This is a warning box.
+**Warning:**  not an
 
 ### Error
 
 {: .box-error}
-**Error:** This is an error box.
+**Error:**  error box !
