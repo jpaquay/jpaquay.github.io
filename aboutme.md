@@ -34,6 +34,12 @@ I'm a Cloud Architect with Google's [Cloud](http://cloud.google.com) team.
 
 I build trusted relationships with people by listening to their needs and meet them where they are in their digital transformation.
 
+```javascript
+const startup = 
+    {build: "whats_next"
+}
+```
+
 We discuss their future with Google Cloud Platform together, ensuring that tough engineering problems are solved, and elevate them to their next step in digitalization.
 
 ## External Sites

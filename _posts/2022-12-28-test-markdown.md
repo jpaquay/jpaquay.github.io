@@ -46,10 +46,10 @@ It can also be a centered logo!
 Here's a code chunk:
 
 ~~~
-var foo = function(x) {
-  return(x + 5);
+var innovate = function(x) {
+  return(10x);
 }
-foo(3)
+innovate("whats_next")
 ~~~
 
 And here is the same code with syntax highlighting:
