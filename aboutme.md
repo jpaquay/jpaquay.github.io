@@ -3,8 +3,8 @@ layout: page
 title: About me
 subtitle: Why you'd want to go on a date with me
 cover-img: /assets/img/author.jpg
-thumbnail-img: /assets/img/hello_world.jpeg
-share-img: /assets/img/hello_world.jpeg
+thumbnail-img: /assets/img/hello_world.jpg
+share-img: /assets/img/hello_world.jpg
 tags: [about, story]
 readtime: true
 ---

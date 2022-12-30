@@ -1,12 +1,10 @@
 ---
-layout: page
+layout: post
 title: And why is the World
 subtitle: Marion Brown, Poem
-cover-img: /assets/img/sand.png
+cover-img: /assets/img/sand.jpg
 thumbnail-img: /assets/img/sand.jpg
-share-img: /assets/img/sand.png
 tags: [poems, story]
-comments: true
 readtime: true
 ---
 

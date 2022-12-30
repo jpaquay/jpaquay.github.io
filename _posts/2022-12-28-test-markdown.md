@@ -2,7 +2,7 @@
 layout: post
 title: Open carefully. I'm mostly `harmless`
 subtitle: The steps above are the bare minimum configuration
-cover-img: /assets/img/logo.png
+cover-img: /assets/img/amsterdam.jpg
 thumbnail-img: /assets/img/logo.jpg
 share-img: /assets/img/logo.png
 gh-repo: jpaquay/jpaquay.github.io/
@@ -70,7 +70,9 @@ var foo = function(x) {
 foo(3)
 {% endhighlight %}
 
-![Yellow Duck](assets/img/path.jpg 'Netdev')
+![Yellow Duck](assets/img/avatar2.jpg 'Netdev')
+
+![Yellow Duck](/assets/img/avatar.jpg 'avatar')
 
 ## Boxes
 You can add notification, warning and error boxes like this:
