@@ -9,28 +9,6 @@ tags: [books, test]
 ---
 
 
-This is an example author bio, and although there's a stock photo of a dog here, this article was actually created by a human. :dog:
-
-## Stuff I work on
-
-I'm a Cloud Architect and Customer engineer for Google's [Cloud](http://cloud.google.com) Public Sector team.
-
-#### I'm based in Brussels,Belgium
-
-I aim to build trusted relationships with customers by listening to what they need and meet them where they are.
-
-We also discuss their future with Google Cloud Platform together, ensuring that tough engineering problems are solved, and elevate them to their next step in digitalization.
-
-## External Sites
-
-* [Twitter](https://twitter.com/jpaquay)
-* [GitHub](http://github.com/jpaquay)
-
-![Yellow Duck](/logo.png 'Netdev')
-
-* [Personal Blog](http://blog.netdev.be/) Not really updated
-* [LinkedIn](https://www.linkedin.com/in/jeromepaquay/)
-* [Facebook](https://www.facebook.com/paquay)
 
 
 
