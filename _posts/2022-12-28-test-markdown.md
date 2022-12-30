@@ -12,7 +12,6 @@ comments: true
 ---
 
 
-
 {: .box-note}
 Both menus are completely optional and can be commented out if not required. Use the template provided in the [file](/post/about) as a guide.
 
@@ -20,8 +19,9 @@ Both menus are completely optional and can be commented out if not required. Use
 
 ### Last advice 
 
-The `pageRef` parameter allows you to easily reference Hugo content pages and taxonomies. It is the quickest way to configure the menu as you can simply refer to any Hugo content item and it will automatically build the correct link. To link to external URLs, the `url` parameter can be used.
-
+{: .box-warning}
+The `pageRef` parameter allows you to easily reference Hugo
+It is the quickest way to configure the menu as you can simply refer to any Hugo.
 ---
 
 **Here's a useless table:**
@@ -38,7 +38,7 @@ How about a nice seanery ?
 
 ![Drag logo](https://media.licdn.com/dms/image/C4D16AQHxCltYOOb2IA/profile-displaybackgroundimage-shrink_350_1400/0/1536654589750?e=1677715200&v=beta&t=V5lccx7BxlaBGJlYRY_u_BdpoxZPz3WFnvXtPRHSnWY)
 
-It can also be centered!
+It can also be a centered logo!
 
 ![Crepe](/assets/img/logo.png){: .mx-auto.d-block :}
 
