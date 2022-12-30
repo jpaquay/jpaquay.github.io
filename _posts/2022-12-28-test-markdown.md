@@ -70,7 +70,7 @@ var foo = function(x) {
 foo(3)
 {% endhighlight %}
 
-![Yellow Duck](assets/img/avatar2.jpg 'Netdev')
+![Yellow Duck](/assets/img/avatar2.jpg 'Netdev')
 
 ![Yellow Duck](/assets/img/avatar.jpg 'avatar')
 
