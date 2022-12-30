@@ -39,7 +39,7 @@ const startup =
     {build: "whats_next"
 }
 ```
-I'm a Cloud Architect with Google's [Cloud](http://cloud.google.com) team. I meet innovatio nteam and together we discuss their future with Google Cloud Platform, ensuring that tough engineering problems are solved, and elevate to the next step in digitalization.
+I'm a Cloud Architect with Google's [Cloud](http://cloud.google.com) team. I meet innovative teams and together we discuss their future with Google Cloud Platform, ensuring that tough engineering problems are solved, and we elevate to the next step in digitalization.
 
 ## External Sites
 
