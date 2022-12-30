@@ -2,13 +2,31 @@
 layout: post
 title: Sample blog post
 subtitle: Each post also has a subtitle
-gh-repo: daattali/beautiful-jekyll
+gh-repo: jpaquay/jpaquay.github.io
 gh-badge: [star, fork, follow]
 tags: [test]
 comments: true
 ---
 
-This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](https://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
+
+Open carefully. I'm mostly `harmless`
+
+The steps above are the bare minimum configuration.
+
+---
+
+Both menus are completely optional and can be commented out if not required. Use the template provided in the [file](/post/about) as a guide.
+
+## Detailed configuration
+
+ If you now run `hugo server` you will be presented with a blank Congo.
+
+### Last advice 
+
+The `pageRef` parameter allows you to easily reference Hugo content pages and taxonomies. It is the quickest way to configure the menu as you can simply refer to any Hugo content item and it will automatically build the correct link. To link to external URLs, the `url` parameter can be used.
+
+
+
 
 **Here is some bold text**
 
@@ -26,11 +44,11 @@ Here's a useless table:
 
 How about a yummy crepe?
 
-![Crepe](https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg)
+!![Drag logo](https://media.licdn.com/dms/image/C4D16AQHxCltYOOb2IA/profile-displaybackgroundimage-shrink_350_1400/0/1536654589750?e=1677715200&v=beta&t=V5lccx7BxlaBGJlYRY_u_BdpoxZPz3WFnvXtPRHSnWY)
 
 It can also be centered!
 
-![Crepe](https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg){: .mx-auto.d-block :}
+![Crepe](https://media.licdn.com/dms/image/C4D16AQHxCltYOOb2IA/profile-displaybackgroundimage-shrink_350_1400/0/1536654589750?e=1677715200&v=beta&t=V5lccx7BxlaBGJlYRY_u_BdpoxZPz3WFnvXtPRHSnWY){: .mx-auto.d-block :}
 
 Here's a code chunk:
 

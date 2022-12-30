@@ -3,10 +3,36 @@ layout: post
 title: Flake it till you make it
 subtitle: Excerpt from Soulshaping by Jeff Brown
 cover-img: /assets/img/author.jpg
-thumbnail-img: /assets/img/thumb.png
+thumbnail-img: /assets/img/logo.jpg
 share-img: /assets/img/path.jpg
 tags: [books, test]
 ---
+
+
+This is an example author bio, and although there's a stock photo of a dog here, this article was actually created by a human. :dog:
+
+## Stuff I work on
+
+I'm a Cloud Architect and Customer engineer for Google's [Cloud](http://cloud.google.com) Public Sector team.
+
+#### I'm based in Brussels,Belgium
+
+I aim to build trusted relationships with customers by listening to what they need and meet them where they are.
+
+We also discuss their future with Google Cloud Platform together, ensuring that tough engineering problems are solved, and elevate them to their next step in digitalization.
+
+## External Sites
+
+* [Twitter](https://twitter.com/jpaquay)
+* [GitHub](http://github.com/jpaquay)
+
+![Yellow Duck](/logo.png 'Netdev')
+
+* [Personal Blog](http://blog.netdev.be/) Not really updated
+* [LinkedIn](https://www.linkedin.com/in/jeromepaquay/)
+* [Facebook](https://www.facebook.com/paquay)
+
+
 
 Under what circumstances should we step off a path? When is it essential that we finish what we start? If I bought a bag of peanuts and had an allergic reaction, no one would fault me if I threw it out. If I ended a relationship with a woman who hit me, no one would say that I had a commitment problem. But if I walk away from a seemingly secure route because my soul has other ideas, I am a flake?
 
