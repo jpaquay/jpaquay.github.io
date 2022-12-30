@@ -1,10 +1,10 @@
 ---
-layout: post
+layout: page
 title: Flake it till you make it
 subtitle: Excerpt from Soulshaping by Jeff Brown
-cover-img: https://scontent-bru2-1.xx.fbcdn.net/v/t31.18172-8/1243364_10151659858172204_1638991760_o.jpg?_nc_cat=102&ccb=1-7&_nc_sid=19026a&_nc_ohc=CxVjC_zJhkcAX9MsjPW&_nc_ht=scontent-bru2-1.xx&oh=00_AfCDtLWSlxBtuvzgMJmL-m75JLLUq6mW6iPWXgBerQtE4Q&oe=63D6D7A3
-thumbnail-img: /assets/img/hello_world.jpeg
-share-img: /assets/img/hello_world.jpeg
+cover-img: /assets/img/bretagne.jpg
+thumbnail-img: /assets/img/bretagne.jpeg
+share-img: /assets/img/bretagne.jpeg
 tags: [books, story]
 readtime: true
 ---

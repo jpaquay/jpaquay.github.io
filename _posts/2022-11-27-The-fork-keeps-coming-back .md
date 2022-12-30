@@ -6,7 +6,7 @@ cover-img: assets/img/westport.jpg
 thumbnail-img: assets/img/westport.jpg
 share-img: assets/img/westport.jpg
 tags: [poems, story]
-comments: true
+comments: false
 readtime: true
 ---
 
