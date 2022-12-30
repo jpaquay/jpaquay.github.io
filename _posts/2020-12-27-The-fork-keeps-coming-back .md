@@ -3,7 +3,7 @@ layout: post
 title: The fork keeps coming back 
 subtitle: Marion Brown, Poem
 cover-img: assets/img/westport.jpg
-thumbnail-img: assets/img/westport.jpg
+thumbnail-img: assets/img/amsterdam.jpg
 share-img: assets/img/westport.jpg
 tags: [poems, story]
 comments: false
