@@ -7,7 +7,7 @@ thumbnail-img: /assets/img/logo.jpg
 share-img: /assets/img/logo.png
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
-tags: [test]
+tags: [random, story]
 comments: true
 ---
 
@@ -40,7 +40,7 @@ How about a nice seanery ?
 
 It can also be centered!
 
-![Crepe](https://media.licdn.com/dms/image/C4D16AQHxCltYOOb2IA/profile-displaybackgroundimage-shrink_350_1400/0/1536654589750?e=1677715200&v=beta&t=V5lccx7BxlaBGJlYRY_u_BdpoxZPz3WFnvXtPRHSnWY){: .mx-auto.d-block :}
+![Crepe](/assets/img/logo.png){: .mx-auto.d-block :}
 
 Here's a code chunk:
 

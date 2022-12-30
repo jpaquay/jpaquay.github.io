@@ -2,6 +2,10 @@
 layout: page
 title: About me
 subtitle: Why you'd want to go on a date with me
+cover-img: /assets/img/author.jpg
+thumbnail-img: /assets/img/hello_world.jpeg
+share-img: /assets/img/hello_world.jpeg
+tags: [about, story]
 ---
 
 {: .box-note}
@@ -32,8 +36,10 @@ We discuss their future with Google Cloud Platform together, ensuring that tough
 * [Twitter](https://twitter.com/jpaquay)
 * [GitHub](http://github.com/jpaquay)
 
-![Yellow Duck](assets/img/logo.jpg 'Netdev')
+![Yellow Duck](/assets/img/hello_world.jpeg 'Netdev')
 
 * [Personal Blog](http://blog.netdev.be/) Not really updated
 * [LinkedIn](https://www.linkedin.com/in/jeromepaquay/)
 * [Facebook](https://www.facebook.com/paquay)
+
+![Yellow Duck](/assets/img/logo.jpg 'Netdev')

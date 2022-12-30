@@ -2,14 +2,14 @@
 layout: post
 title: Flake it till you make it
 subtitle: Excerpt from Soulshaping by Jeff Brown
-cover-img: /assets/img/author.jpg
-thumbnail-img: /assets/img/logo.jpg
+cover-img: https://scontent-bru2-1.xx.fbcdn.net/v/t31.18172-8/1243364_10151659858172204_1638991760_o.jpg?_nc_cat=102&ccb=1-7&_nc_sid=19026a&_nc_ohc=CxVjC_zJhkcAX9MsjPW&_nc_ht=scontent-bru2-1.xx&oh=00_AfCDtLWSlxBtuvzgMJmL-m75JLLUq6mW6iPWXgBerQtE4Q&oe=63D6D7A3
+thumbnail-img: /assets/img/hello_world.jpeg
 share-img: /assets/img/hello_world.jpeg
-tags: [books, test]
+tags: [books, story]
 ---
 
 
-![Yellow Duck](/assets/img/hello_world.jpeg 'Netdev')
+
 
 
 Under what circumstances should we step off a path? When is it essential that we finish what we start? If I bought a bag of peanuts and had an allergic reaction, no one would fault me if I threw it out. If I ended a relationship with a woman who hit me, no one would say that I had a commitment problem. But if I walk away from a seemingly secure route because my soul has other ideas, I am a flake?
