@@ -6,6 +6,7 @@ cover-img: https://scontent-bru2-1.xx.fbcdn.net/v/t31.18172-8/1243364_1015165985
 thumbnail-img: /assets/img/hello_world.jpeg
 share-img: /assets/img/hello_world.jpeg
 tags: [books, story]
+readtime: true
 ---
 
 

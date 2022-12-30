@@ -6,11 +6,16 @@ cover-img: /assets/img/author.jpg
 thumbnail-img: /assets/img/hello_world.jpeg
 share-img: /assets/img/hello_world.jpeg
 tags: [about, story]
+readtime: true
 ---
 
 {: .box-note}
 My name is Jerome. I have the following qualities:
 
+- I meet
+- I bike 
+- I learn
+- I climb
 - I rock a great beard
 - I'm extremely loyal to my family
 
@@ -19,9 +24,9 @@ My name is Jerome. I have the following qualities:
 To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
 
 
-### I'm based in [Brussels, Belgium](https://goo.gl/maps/Xhy4aBu1WYrbBHe97)
+### I'm born and raised in [Brussels, Belgium](https://goo.gl/maps/Xhy4aBu1WYrbBHe97)
 
-This is an example author bio, and although there's a stock photo of a dog here, this article was actually created by a human. :dog:
+This is an example author bio, and although there's a stock photo of a dog here, this article was actually created by a human. 
 
 ### Stuff I work on
 
@@ -33,13 +38,9 @@ We discuss their future with Google Cloud Platform together, ensuring that tough
 
 ## External Sites
 
-* [Twitter](https://twitter.com/jpaquay)
-* [GitHub](http://github.com/jpaquay)
 
-![Yellow Duck](/assets/img/hello_world.jpeg 'Netdev')
+* [api.Netdev](http://fb.netdev.be/) Not really updated
+* [Netdev](http://netdev3.web.app/) Not really updated
 
-* [Personal Blog](http://blog.netdev.be/) Not really updated
-* [LinkedIn](https://www.linkedin.com/in/jeromepaquay/)
-* [Facebook](https://www.facebook.com/paquay)
 
 ![Yellow Duck](/assets/img/logo.jpg 'Netdev')
