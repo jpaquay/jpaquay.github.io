@@ -70,7 +70,7 @@ var foo = function(x) {
 foo(3)
 {% endhighlight %}
 
-![Yellow Duck](img/logo.png 'Netdev')
+![Yellow Duck](assets/img/path.jpg 'Netdev')
 
 ## Boxes
 You can add notification, warning and error boxes like this:

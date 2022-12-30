@@ -28,9 +28,9 @@ To be honest, I'm having some trouble remembering right now, so why don't you ju
 
 This is an example author bio, and although there's a stock photo of a dog here, this article was actually created by a human. 
 
-### Stuff I work on
+![Yellow Duck](/assets/img/logo.jpg 'Logo')
 
-I'm a Cloud Architect with Google's [Cloud](http://cloud.google.com) team.
+### Stuff I work on
 
 I build trusted relationships with people by listening to their needs and meet them where they are in their digital transformation.
 
@@ -39,14 +39,12 @@ const startup =
     {build: "whats_next"
 }
 ```
-
-We discuss their future with Google Cloud Platform together, ensuring that tough engineering problems are solved, and elevate them to their next step in digitalization.
+I'm a Cloud Architect with Google's [Cloud](http://cloud.google.com) team. I meet innovatio nteam and together we discuss their future with Google Cloud Platform, ensuring that tough engineering problems are solved, and elevate to the next step in digitalization.
 
 ## External Sites
-
 
 * [api.Netdev](http://fb.netdev.be/) Not really updated
 * [Netdev](http://netdev3.web.app/) Not really updated
 
 
-![Yellow Duck](/assets/img/logo.jpg 'Netdev')
+![Yellow Duck](/assets/img/avatar.jpg 'avatar')
