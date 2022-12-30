@@ -2,6 +2,9 @@
 layout: post
 title: Open carefully. I'm mostly `harmless`
 subtitle: The steps above are the bare minimum configuration
+cover-img: /assets/img/logo.png
+thumbnail-img: /assets/img/logo.jpg
+share-img: /assets/img/logo.png
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [test]
@@ -65,6 +68,8 @@ var foo = function(x) {
 }
 foo(3)
 {% endhighlight %}
+
+![Yellow Duck](img/logo.png 'Netdev')
 
 ## Boxes
 You can add notification, warning and error boxes like this:
