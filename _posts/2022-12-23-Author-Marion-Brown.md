@@ -1,0 +1,23 @@
+---
+layout: post
+title: Author’s Statement - Marion Brown
+subtitle: Marion Brown, Poem
+cover-img: /assets/img/path.png
+thumbnail-img: /assets/img/Marion-Brown.jpeg
+share-img: /assets/img/path.png
+tags: [poems, story]
+comments: true
+readtime: true
+---
+
+
+## Author’s Statement on Beauty
+
+What a coincidence to be asked to say something about beauty a couple of days after being warned by my colleagues to strike the word from a poem, the very friends who suggested I submit work to Peacock Journal! Following their lead, I won’t attempt to define. Where verse is concerned, music is key. What a poet hears, the vernacular of the street or any other, is crafted with echoing sounds, stresses, pauses, strange words and familiar, which create an opportunity for expectation satisfied and surprise—the delight of language.
+
+ 
+
+![Marion Brown](assets/img/Marion-Brown.jpeg 'Marion Brown')
+
+
+A resident of Yonkers, NY, Marion Brown earned a Ph.D. in English and Comparative Literature from Columbia University. Her chapbooks Tasted and The Morning After Summer were published by Finishing Line Press. Her poems and reviews have appeared in Barrow Street, Stone Canoe, Kestrel, Poetry International and the Women’s Review of Books. “In the Dock, Fagin Reflects” won First Prize in the Portico Library Poetry Competition. She serves on the Advisory Committee of Slapering Hol Press and the National Council of Graywolf Press.
