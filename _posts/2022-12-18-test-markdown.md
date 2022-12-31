@@ -88,7 +88,3 @@ You can add notification, warning and error boxes like this:
 {: .box-error}
 **Error:**  error box !
 
-
-![Drag logo](/assets/img/author.jpg)
-![Drag logo](/assets/img/avatar2.jpg)
-![Drag logo](/assets/img/avatar.jpg)

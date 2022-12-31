@@ -33,4 +33,4 @@ Open carefully. This is 2023 rant !
 
 #  mostly `harmless`
 
-![Yellow Duck](/assets/img/fire.jpg 'Netdev')
+![Yellow Duck](/assets/img/avatar.jpg 'Netdev')
