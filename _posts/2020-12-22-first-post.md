@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Open first, carefully
 subtitle: "All the front matter variables available in Congo."
 slug: "go"
@@ -33,4 +33,4 @@ Open carefully. This is 2023 rant !
 
 #  mostly `harmless`
 
-![Yellow Duck](/assets/img/avatar.jpg 'Netdev')
+![Yellow Duck](/assets/img/fire.jpg 'Netdev')
