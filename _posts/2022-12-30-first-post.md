@@ -3,9 +3,9 @@ layout: page
 title: Open first, carefully
 subtitle: "All the front matter variables available in Congo."
 slug: "go"
-cover-img: /assets/img/sail.jpg
-thumbnail-img: /assets/img/sail.jpg
-share-img: /assets/img/sail.jpg
+cover-img: /assets/img/japan.jpg
+thumbnail-img: /assets/img/japan.jpg
+share-img: /assets/img/japan.jpg
 tags: [create, random, story]
 readtime: true
 ---
