@@ -41,10 +41,13 @@ const startup =
 ```
 I'm a Cloud Architect with Google's [Cloud](http://cloud.google.com) team. I meet innovative teams and together we discuss their future with Google Cloud Platform, ensuring that tough engineering problems are solved, and we elevate to the next step in digitalization.
 
-## External Sites
+## External Sites (Not updated)
+* [api](http://fb.netdev.be/)
+* [captcha](http://web3.netdev.be/) 
+* [gcs](https://netdev.be)
+* [github.io](https://gh.netdev.be)
+* [github.md](https://v3.netdev.be)
 
-* [api.Netdev](http://fb.netdev.be/) Not updated
-* [captcha.Netdev](http://web3.netdev.be/) Not updated
 
 
 ![Yellow Duck](/assets/img/avatar.jpg 'avatar')
