@@ -21,14 +21,12 @@ The steps above are the bare minimum configuration.
 
 Both menus are completely optional and can be commented out if not required. Use the template provided in the [file](/post/about) as a guide.
 
-## Basic configuration
+## step 1
 talk
-## Detailed configuration
+## step 2 
 be kind
 
-
-### Last advice 
-
+## Last advice 
 Open carefully. This is 2023 rant !
 
 #  mostly `harmless`

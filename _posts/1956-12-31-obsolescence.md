@@ -4,7 +4,7 @@ title: l’obsolescence de l’homme
 subtitle: Günther Anders - 1956
 cover-img: /assets/img/sun.jpg
 thumbnail-img: /assets/img/sun.jpg
-tags: [books, random, story]
+tags: [books, health, story]
 readtime: true
 ---
 
