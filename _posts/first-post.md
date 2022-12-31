@@ -1,6 +1,6 @@
 ---
+layout: page
 title: "Open first, carefully"
-date: 2022-12-30
 draft: false
 description: "All the front matter variables available in Congo."
 slug: "go"
