@@ -1,6 +1,6 @@
 ---
 layout: post
-title: mostly harmless(tm)
+title: mostly harmless
 subtitle: The steps above are the bare minimum configuration
 cover-img: /assets/img/amsterdam.jpg
 thumbnail-img: /assets/img/logo.jpg
@@ -11,6 +11,7 @@ tags: [random, story]
 readtime: true
 ---
 
+mostly hamrless :tm:
 
 {: .box-note}
 Both menus are completely optional and can be commented out if not required. Use the template provided in the [file](/post/about) as a guide.
