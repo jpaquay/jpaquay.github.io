@@ -45,7 +45,7 @@ I'm a Cloud Architect with Google's [Cloud](https://cloud.google.com) team. I me
 * [api](https://fb.netdev.be/)
 * [captcha](https://web3.netdev.be/) 
 * [gcs](https://netdev.be)
-* [github.io](https://gh.netdev.be)
+* [github.io](https://blog.netdev.be)
 * [github.md](https://v3.netdev.be)
 
 
