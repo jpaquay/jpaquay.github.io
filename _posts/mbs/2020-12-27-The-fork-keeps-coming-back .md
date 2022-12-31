@@ -57,3 +57,4 @@ up in Brussels where he tries to copy it from me.
 Not a willing misfit, flirting or employing a fork,
 I watched myself for years. The impulse returns
 as chopsticks hit my palm. Now it's all up to me.
+
