@@ -20,12 +20,13 @@ author: Jerome
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
+  Author's home: "aboutme"
   Resources:
     - Be Healthier: "https://health.google/"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://netdev.be"
+    - Go Hugo: "https://gohugo.io"
 
+  
 ################
 # --- Logo --- #
 ################

@@ -12,6 +12,7 @@ tags: ["create", "all"]
 
 Open carefully. I'm mostly `harmless`
 
+{: .box-note}
 The steps above are the bare minimum configuration.
 
 ---
