@@ -25,7 +25,6 @@ Both menus are completely optional and can be commented out if not required. Use
 talk
 ## step 2 
 be kind
-
 ## Last advice 
 Open carefully. This is 2023 rant !
 

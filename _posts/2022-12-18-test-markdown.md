@@ -11,8 +11,6 @@ tags: [random, story]
 readtime: true
 ---
 
-mostly hamrless :tm:
-
 {: .box-note}
 Both menus are completely optional and can be commented out if not required. Use the template provided in the [file](/post/about) as a guide.
 
