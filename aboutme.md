@@ -44,7 +44,7 @@ I'm a Cloud Architect with Google's [Cloud](http://cloud.google.com) team. I mee
 ## External Sites
 
 * [api.Netdev](http://fb.netdev.be/) Not updated
-* [captcha.Netdev](http://netdev3.web.app/) Not updated
+* [captcha.Netdev](http://web3.netdev.be/) Not updated
 
 
 ![Yellow Duck](/assets/img/avatar.jpg 'avatar')
