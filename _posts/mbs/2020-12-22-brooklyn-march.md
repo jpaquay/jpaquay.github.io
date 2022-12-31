@@ -5,7 +5,7 @@ subtitle: Marion Brown, Poem
 cover-img: assets/img/newyorker.jpg
 thumbnail-img: assets/img/newyorker.jpg
 share-img: assets/img/newyorker.jpg
-tags: [poems, story]
+tags: [poems, mbs]
 readtime: true
 ---
 

@@ -4,7 +4,7 @@ title: And why is the World
 subtitle: Marion Brown, Poem
 cover-img: /assets/img/sand.jpg
 thumbnail-img: /assets/img/sand.jpg
-tags: [poems, story]
+tags: [poems, mbs]
 readtime: true
 ---
 
