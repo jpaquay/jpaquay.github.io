@@ -2,9 +2,8 @@
 layout: post
 title: l’obsolescence de l’homme 
 subtitle: Günther Anders - 1956
-cover-img: /assets/img/amsterdam.jpg
-thumbnail-img: /assets/img/amsterdam.jpg
-share-img: /assets/img/amsterdam.jpg
+cover-img: /assets/img/sun.jpg
+thumbnail-img: /assets/img/sun.jpg
 tags: [books, random, story, ]
 readtime: true
 ---

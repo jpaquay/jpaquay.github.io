@@ -32,5 +32,5 @@ Open carefully. This is 2023 rant !
 
 #  mostly `harmless`
 
-![Drag logo](/author.jpg)
+![Drag logo](/assets/img/author.jpg)
 

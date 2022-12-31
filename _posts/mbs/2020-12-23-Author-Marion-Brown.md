@@ -2,9 +2,9 @@
 layout: post
 title: Author’s Statement
 subtitle: Marion Brown, Poem
-cover-img: assets/img/newyorker.jpg
+cover-img: assets/img/flowers.jpg
 thumbnail-img: assets/img/Marion-Brown.jpg
-share-img: assets/img/newyorker.jpg
+share-img: assets/img/flowers.jpg
 tags: [books, mbs]
 comments: true
 readtime: true
