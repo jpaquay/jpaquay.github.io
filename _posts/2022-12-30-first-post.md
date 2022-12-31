@@ -11,9 +11,8 @@ readtime: true
 ---
 
 
-## Basic configuration
-
 Open carefully. I'm mostly `harmless`
+ If you now run `hugo server` you will be presented with a blank Congo.
 
 {: .box-note}
 The steps above are the bare minimum configuration.
@@ -22,9 +21,11 @@ The steps above are the bare minimum configuration.
 
 Both menus are completely optional and can be commented out if not required. Use the template provided in the [file](/post/about) as a guide.
 
+## Basic configuration
+talk
 ## Detailed configuration
+be kind
 
- If you now run `hugo server` you will be presented with a blank Congo.
 
 ### Last advice 
 
