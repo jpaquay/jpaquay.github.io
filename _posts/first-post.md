@@ -25,7 +25,9 @@ Both menus are completely optional and can be commented out if not required. Use
 
 ### Last advice 
 
+Open carefully. This is 2023 rant !
 
+#  mostly `harmless`
 
 ![Drag logo](/author.jpg)
 
