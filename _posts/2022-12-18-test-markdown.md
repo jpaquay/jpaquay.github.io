@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Open carefully. I'm mostly `harmless`
+title: mostly harmless(tm)
 subtitle: The steps above are the bare minimum configuration
 cover-img: /assets/img/amsterdam.jpg
 thumbnail-img: /assets/img/logo.jpg
