@@ -24,3 +24,6 @@ Toute doctrine remettant en cause le système doit d’abord être désignée co
 
 {: .box-note}
 Günther Anders    -   « l’obsolescence de l’homme » 1956
+
+
+![Year long](/assets/img/1an.jpg)
