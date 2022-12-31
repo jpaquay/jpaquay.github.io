@@ -36,11 +36,11 @@ It is the quickest way to configure the menu as you can simply refer to any Hugo
 
 How about a nice seanery ?
 
-![Drag logo](/assets/img/japan.jpg)
+![Drag logo](/assets/img/einstein.jpg)
 
 It can also be a centered logo!
 
-![Crepe](/assets/img/logo.png){: .mx-auto.d-block :}
+![Crepe](/assets/img/einstein.jpg){: .mx-auto.d-block :}
 
 Here's a code chunk:
 
@@ -89,4 +89,4 @@ You can add notification, warning and error boxes like this:
 **Error:**  error box !
 
 
-![Yellow Duck](/assets/img/avatar2.jpg 'Netdev')
+![Drag logo](/assets/img/author.jpg)
