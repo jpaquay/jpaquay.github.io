@@ -4,7 +4,7 @@ title: "Open first, carefully"
 draft: false
 description: "All the front matter variables available in Congo."
 slug: "go"
-tags: ["create", "all"]
+tags: [create, random, story]
 ---
 
 
