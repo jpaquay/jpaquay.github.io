@@ -10,7 +10,7 @@ readtime: true
 ---
 
 {: .box-note}
-My name is Jerome. I have the following qualities:
+My name is Jerome. I have the following attributes:
 
 - I bike
 - I meet 
