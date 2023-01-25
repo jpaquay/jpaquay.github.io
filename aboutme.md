@@ -12,12 +12,16 @@ readtime: true
 {: .box-note}
 My name is Jerome. I have the following qualities:
 
-- I meet
-- I bike 
+- I bike
+- I meet 
 - I learn
 - I climb
+- I laugh 
+- I code 
 - I rock a great beard
+- I'm a handsome genius 
 - I'm extremely loyal to my family
+
 
 #### What else do you need?
 
