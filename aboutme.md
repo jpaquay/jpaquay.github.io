@@ -45,13 +45,20 @@ const startup =
 ```
 I'm a Cloud Architect with Google's [Cloud](https://cloud.google.com) team. I meet innovative teams and together we discuss their future with Google Cloud Platform, ensuring that tough engineering problems are solved, and we elevate to the next step in digitalization.
 
-## External Sites (Not updated)
+#### About me
+
+I’m a passionate technologist with a recognized  customer centric attitude and almost twenty years of working experience in IT.  I always strive to provide the best solutions to my customers taking into account their needs and expectations with plenty successful deals concluded over that period.  In my role, I’ve been  designing and developing architectures for on-premise and cloud based systems to  solve large global organizations business requirements.  I have a natural leadership that expresses best when organizing cross functional teams around concrete projects. 
+
+![Yellow Duck](/assets/img/logo.png 'Logo')
+
+## other places
 * [api](https://fb.netdev.be/)
 * [captcha](https://web3.netdev.be/) 
 * [gcs](https://netdev.be)
 * [github.io](https://blog.netdev.be)
 * [github.md](https://v3.netdev.be)
 
-
+### Hobbies 
+Cyclist, Occasional snowboarder, Basketball for almost 20 years, Field hockey in Gentlemen league since 2017
 
 ![Yellow Duck](/assets/img/avatar.jpg 'avatar')
