@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-title: Netdev
+title: /net/dev
 
 # Your name to show in the footer
 author: Jerome
@@ -99,7 +99,7 @@ share-links-active:
 url-pretty: "Netdev.be"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
-excerpt_length: 50
+excerpt_length: 58
 
 # Whether or not to show an excerpt for every blog post in the feed page
 feed_show_excerpt: true
