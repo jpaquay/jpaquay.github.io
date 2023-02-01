@@ -6,6 +6,8 @@ slug: "go"
 cover-img: /assets/img/japan.jpg
 thumbnail-img: /assets/img/japan.jpg
 share-img: /assets/img/japan.jpg
+gh-repo: jpaquay/jpaquay.github.io/
+gh-badge: [star, fork, follow]
 tags: [create, random, story]
 readtime: true
 ---
