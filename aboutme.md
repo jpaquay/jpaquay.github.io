@@ -20,7 +20,6 @@ My name is Jerome. I have the following attributes:
 - I code 
 - I rock a great beard
 - I'm a handsome genius &#8482;
-- I'm extremely loyal to my family
 - I succeed the Completely Automated Public Turing test to tell Computers and Humans Apart
 
 
@@ -48,7 +47,7 @@ I'm a Cloud Architect with Google's [Cloud](https://cloud.google.com) team. I me
 
 ![Yellow Duck](/assets/img/logo.png 'Logo')
 
-## philisophy
+## philosophy
 
 I’m a passionate technologist with a recognized  customer centric attitude and almost twenty years of working experience in IT.  I always strive to provide the best solutions to my customers taking into account their needs and expectations with plenty successful deals concluded over that period.  In my role, I’ve been  designing and developing architectures for on-premise and cloud based systems to  solve large global organizations business requirements.  I have a natural leadership that expresses best when organizing cross functional teams around concrete projects. 
 
