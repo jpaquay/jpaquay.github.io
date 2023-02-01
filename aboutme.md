@@ -67,10 +67,10 @@ Cyclist, Occasional snowboarder, Basketball for almost 20 years, Field hockey in
 ### Work Experience
 
 #### Customer Engineer @ Google; September  2018 - Present
-* Cloud  Architect for Belgian Federal and Regional Governments, EU institutions and NATO 
+* Cloud  Architect for public sector
 
 #### Systems Engineer @ Cisco; June  2006 - August 2018
-* Solutions Architect for EU institutions and NATO
+* Solutions Architect for EU institutions, NATO and Belgian Governments
 
 #### IT manager @ Missil Petroleum; September 2002 - June 2006
 * Responsible for IT operations
