@@ -32,10 +32,13 @@ To be honest, I'm having some trouble remembering right now, so why don't you ju
 
 This is an example author bio, and although there's a stock photo of a dog here, this article was actually created by a human. 
 
-{: .box-note}
+{: .box-warning}
 Is Hakuna Matata a English word?
+
 "Hakuna matata" is a Swahili phrase, meaning "no trouble" or "no worries" and "take it easy". 
-literally hakuna: "there is no/there are no"; matata: "worries".
+
+{: .box-note}
+literally hakuna: "there is no/there are no"; matata: "worries"
 
 
 ![Yellow Duck](/assets/img/logo.jpg 'Logo')
