@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Why you'd want to date me
 cover-img: /assets/img/author.jpg
 thumbnail-img: /assets/img/hello_world.jpg
 share-img: /assets/img/hello_world.jpg
@@ -66,19 +66,19 @@ literally hakuna: "there is no/there are no"; matata: "worries"
 
 ### web estate
 * [api](https://fb.netdev.be/)
-* [captcha](https://web3.netdev.be/) 
+* [captcha](https://web3.netdev.be/)
 * [gcs](https://netdev.be)
-* [github.io](https://blog.netdev.be)
+* [github.io](https://blog.netdev.be)self
 * [github.md](https://v3.netdev.be)
 
-### sports 
-Cyclist, Occasional snowboarder, Basketball for almost 20 years, Field hockey in Gentlemen league since 2017
+### real life 
+3 kids, cyclist, snowboarder, basketball, field hockey
 
 
 ### Work Experience
 
 #### Customer Engineer @ Google; September  2018 - Present
-* Cloud  Architect for the public sector
+* Cloud  Architect for EU public sector
 
 #### Systems Engineer @ Cisco; June  2006 - August 2018
 * Solutions Architect for EU institutions, NATO and Belgian Governments
