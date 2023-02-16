@@ -10,7 +10,7 @@ readtime: true
 ---
 
 {: .box-note}
-My name is Jerome. I have the following attributes:
+Hello, I'm Jerome. I have the following attributes:
 
 - I bike
 - I meet 
@@ -30,10 +30,7 @@ To be honest, I'm having some trouble remembering right now, so why don't you ju
 
 ### I'm born and raised in [Brussels, Belgium](https://goo.gl/maps/Xhy4aBu1WYrbBHe97)
 
-This is an example author bio, and although there's no stock photo of a dog here, this article was actually created by a human. 
-
-
-
+This is an example author bio, and although there's no stock photo of a dog here, this article was actually created by a human.
 
 ![Yellow Duck](/assets/img/logo.jpg 'Logo')
 
@@ -46,6 +43,7 @@ const startup =
     {build: "whats_next"
 }
 ```
+
 I'm a Cloud Architect with Google's [Cloud](https://cloud.google.com) team. I meet innovative teams and together we discuss their future with Google Cloud Platform, ensuring that tough engineering problems are solved, and we elevate to the next step in digitalization.
 
 ![Yellow Duck](/assets/img/logo.png 'Logo')
