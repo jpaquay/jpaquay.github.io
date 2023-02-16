@@ -68,7 +68,7 @@ literally hakuna: "there is no/there are no"; matata: "worries"
 * [api](https://fb.netdev.be/)
 * [captcha](https://web3.netdev.be/)
 * [gcs](https://netdev.be)
-* [github.io](https://blog.netdev.be)self
+* self [github.io](https://blog.netdev.be)
 * [github.md](https://v3.netdev.be)
 
 ### real life 
