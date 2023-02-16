@@ -13,20 +13,18 @@ readtime: true
 Hello, I'm Jerome. I have the following attributes:
 
 - I bike
-- I meet 
+- I meet
 - I learn
 - I climb
-- I laugh 
-- I code 
+- I laugh
+- I code
 - I rock a great beard
 - I'm a handsome genius &#8482;
 - I succeed the Completely Automated Public Turing test to tell Computers and Humans Apart
 
-
 ### What else do you need?
 
 To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
-
 
 ### I'm born and raised in [Brussels, Belgium](https://goo.gl/maps/Xhy4aBu1WYrbBHe97)
 
@@ -50,39 +48,42 @@ I'm a Cloud Architect with Google's [Cloud](https://cloud.google.com) team. I me
 
 ## philosophy
 
-I’m a passionate technologist with a recognized customer centric attitude working for over twenty years in IT.  I strive to provide my teams with the best solutions taking into account their needs and expectations. This produced xx successful projects to launch and land.  In my role, I’ve been  designing and developing architectures for on-premise and cloud based systems to solve large global organizations business requirements.  I have a natural leadership that expresses best when organizing cross functional teams around concrete goals. 
-
+I’m a passionate technologist with a recognized customer centric attitude working for over twenty years in IT.  I strive to provide my teams with the best solutions taking into account their needs and expectations. This produced xx successful projects to launch and land.  In my role, I’ve been  designing and developing architectures for on-premise and cloud based systems to solve large global organizations business requirements.  I have a natural leadership that expresses best when organizing cross functional teams around concrete goals.
 
 {: .box-warning}
-"Hakuna matata" is a Swahili phrase, meaning "no trouble" or "no worries" and "take it easy". 
+"Hakuna matata" is a Swahili phrase, meaning "no trouble" or "no worries" and "take it easy".
 
 ## Crypto-Agility: Cybersecurity for the Quantum Era
+
 As we enter the Quantum Era, cybersecurity threats are evolving. Quantum computers are expected to soon break public-key cryptography, putting your sensitive data at risk. To meet these current and emerging threats, it’s vital that your organization become [crypto-agile](https://cloud.google.com/blog/products/identity-security/how-google-is-preparing-for-a-post-quantum-world).
 
 {: .box-error}
 literally hakuna: "there is no/there are no"; matata: "worries"
 
 ### web estate
-* [api](https://fb.netdev.be/)
-* [captcha](https://web3.netdev.be/)
-* [gcs](https://netdev.be)
-* self [github.io](https://blog.netdev.be)
-* [github.md](https://v3.netdev.be)
 
-### real life 
+- [api](https://fb.netdev.be/)
+- [captcha](https://web3.netdev.be/)
+- [gcs](https://netdev.be)
+- self [github.io](https://blog.netdev.be)
+- [github.md](https://v3.netdev.be)
+
+### real life
+
 3 kids, cyclist, snowboarder, basketball, field hockey
-
 
 ### Work Experience
 
 #### Customer Engineer @ Google; September  2018 - Present
-* Cloud  Architect for EU public sector
+
+- Cloud  Architect for EU public sector
 
 #### Systems Engineer @ Cisco; June  2006 - August 2018
-* Solutions Architect for EU institutions, NATO and Belgian Governments
+
+- Solutions Architect for EU institutions, NATO and Belgian Governments
 
 #### IT manager @ Missil Petroleum; September 2002 - June 2006
-* Responsible for IT operations
 
+- Responsible for IT operations
 
 ![Yellow Duck](/assets/img/avatar.jpg 'avatar')
