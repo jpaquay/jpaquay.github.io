@@ -10,7 +10,7 @@ readtime: true
 ---
 
 {: .box-note}
-Hello, I'm Jerome. I have the following attributes:
+Hello, I'm Jerome. I have the following attributes 
 
 - I bike
 - I meet
@@ -53,7 +53,7 @@ I’m a passionate technologist with a recognized customer centric attitude work
 {: .box-warning}
 "Hakuna matata" is a Swahili phrase, meaning "no trouble" or "no worries" and "take it easy".
 
-## Crypto-Agility: Cybersecurity for the Quantum Era
+## Cybersecurity for the Quantum Era
 
 As we enter the Quantum Era, cybersecurity threats are evolving. Quantum computers are expected to soon break public-key cryptography, putting your sensitive data at risk. To meet these current and emerging threats, it’s vital that your organization become [crypto-agile](https://cloud.google.com/blog/products/identity-security/how-google-is-preparing-for-a-post-quantum-world).
 
