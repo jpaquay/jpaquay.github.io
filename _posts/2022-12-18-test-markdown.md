@@ -58,6 +58,12 @@ var foo = function(x) {
 foo(3)
 ```
 
+```javascript
+const startup = 
+    {build: "whats_next"
+}
+```
+
 And here is the same code yet again but with line numbers:
 
 {% highlight javascript linenos %}
