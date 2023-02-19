@@ -39,7 +39,7 @@ How about a nice seanery ?
 
 It can also be a centered logo!
 
-![Crepe](/assets/img/einstein.jpg){: .mx-auto.d-block :}
+![Crepe](/assets/img/avatar-icon.png){: .mx-auto.d-block :}
 
 Here's a code chunk:
 
@@ -72,17 +72,11 @@ foo(3)
 ## Boxes
 You can add notification, warning and error boxes like this:
 
-### Notification
-
 {: .box-note}
 **Note:** This is 
 
-### Warning
-
 {: .box-warning}
 **Warning:**  not an
-
-### Error
 
 {: .box-error}
 **Error:**  error box !

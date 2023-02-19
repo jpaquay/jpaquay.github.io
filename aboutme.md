@@ -51,7 +51,7 @@ I'm a Cloud Architect with Google's [Cloud](https://cloud.google.com) team. I me
 I’m a passionate technologist with a recognized customer centric attitude working for over twenty years in IT.  I strive to provide my teams with the best solutions taking into account their needs and expectations. This produced xx successful projects to launch and land.  In my role, I’ve been  designing and developing architectures for on-premise and cloud based systems to solve large global organizations business requirements.  I have a natural leadership that expresses best when organizing cross functional teams around concrete goals.
 
 {: .box-warning}
-"Hakuna matata" is a Swahili phrase, meaning "take it easy"
+'Hakuna matata' is a Swahili phrase, meaning `take it easy`
 
 ## Cybersecurity for the Quantum Era
 
@@ -63,11 +63,11 @@ literally hakuna: "there is no/there are no"; matata: "worries"
 ### web estate
 
 - [Santorini](https://beyond.netdev.be/)
-- [api](https://fb.netdev.be/)
+- [firebase](https://fb.netdev.be/)
 - [captcha](https://web3.netdev.be/)
 - [gcs](https://netdev.be)
-- self [github.io](https://blog.netdev.be)
 - [github.md](https://v3.netdev.be)
+- self [github.io](https://blog.netdev.be)
 
 ### real life
 
