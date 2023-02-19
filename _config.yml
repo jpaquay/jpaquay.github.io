@@ -25,7 +25,7 @@ navbar-links:
     - be healthier: "https://health.google/"
     - learn markdown: "https://www.markdowntutorial.com/"
     - go Hugo: "https://gohugo.io"
-    - API : "https://fb.netdev.be/"
+    - firebase : "https://fb.netdev.be/"
     - reCaptcha: "https://web3.netdev.be/"
 
   
@@ -98,7 +98,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "Netdev.be"
+url-pretty: "/net/dev"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 58
