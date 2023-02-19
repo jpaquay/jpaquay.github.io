@@ -32,7 +32,6 @@ It is the quickest way to configure the menu as you can simply refer to any Hugo
 | Seven | Eight | Six |
 | Two | Three | One |
 
-
 How about a nice seanery ?
 
 ![Drag logo](/assets/img/einstein.jpg)
@@ -43,7 +42,7 @@ It can also be a centered logo!
 
 Here's a code chunk:
 
-~~~
+~~~javascript
 var innovate = function(x) {
   return(10x);
 }
@@ -63,7 +62,7 @@ And here is the same code yet again but with line numbers:
 
 {% highlight javascript linenos %}
 var foo = function(x) {
-  return(x + 5);
+  return(x + 2);
 }
 foo(3)
 {% endhighlight %}
