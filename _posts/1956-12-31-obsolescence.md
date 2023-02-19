@@ -1,7 +1,7 @@
 ---
 layout: post
 title: l’obsolescence de l’homme 
-subtitle: Günther Anders - 1956
+subtitle: Günther Anders
 cover-img: /assets/img/sun.jpg
 thumbnail-img: /assets/img/sun.jpg
 tags: [books, health, story]
@@ -9,7 +9,7 @@ readtime: true
 ---
 
 {: .box-error}
-C'est en 1956 que le philosophe juif Allemand Günther Anders écrivit cette réflexion prémonitoire :
+C'est en `1956` que le philosophe juif Allemand Günther Anders écrivit cette réflexion prémonitoire :
 
 "Pour étouffer par avance toute révolte, il ne faut surtout pas s’y prendre de manière violente. Les méthodes archaïques comme celles d’Hitler sont nettement dépassées. Il suffit de créer un conditionnement collectif si puissant que l’idée même de révolte ne viendra même plus à l’esprit des hommes. L’idéal serait de formater les individus dès la naissance en limitant leurs aptitudes biologiques innées...
 
@@ -23,7 +23,7 @@ Le conditionnement produira ainsi de lui-même une telle intégration, que la se
 Toute doctrine remettant en cause le système doit d’abord être désignée comme subversive et terroriste et ceux qui la soutiennent devront ensuite être traités comme tels."
 
 {: .box-note}
-Günther Anders    -   « l’obsolescence de l’homme » 1956
+Günther Anders    -   « l’obsolescence de l’homme » `1956`
 
 
 ![Year long](/assets/img/1an.jpg)
