@@ -37,12 +37,13 @@ This is an example author bio, and although there's no stock photo of a dog here
 I build trusted relationships with people by listening to their needs and meet them where they are in their digital transformation.
 
 ```javascript
-const startup = 
-    {build: "whats_next"
+var innovate = function(x) {
+  return(10x);
 }
+innovate("whats_next")
 ```
 
-I'm a Cloud Architect with Google's [Cloud](https://cloud.google.com) team. I meet innovative teams and together we discuss their future with Google Cloud Platform, ensuring that tough engineering problems are solved, and we elevate to the next step in digitalization.
+I'm Enterprise Architect with Google's [Cloud](https://cloud.google.com) team. I meet innovative teams and together we discuss their future with Google Cloud Platform, ensuring that tough engineering problems are solved, and we elevate to the next step in digitalization.
 
 ![Yellow Duck](/assets/img/logo.png 'Logo')
 
