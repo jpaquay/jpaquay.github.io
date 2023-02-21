@@ -49,7 +49,7 @@ var innovate = function(x) {
 innovate("whats_next")
 ~~~
 
-And here is some code with syntax highlighting:
+And here is some more with syntax highlighting:
 
 ```javascript
 var foo = function(x) {
