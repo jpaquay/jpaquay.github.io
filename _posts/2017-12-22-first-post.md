@@ -15,8 +15,7 @@ readtime: true
 
 Open carefully. I'm mostly `harmless`
 
-{: .box-note}
- If you now run `hugo server` you will be presented with a blank Congo
+> Both menus are completely optional and can be commented out if not required. Use the template provided in the [file](/aboutme) as a guide.
 
  ```javascript
 var foo = function(x) {
@@ -27,14 +26,15 @@ foo(3)
 
  The steps above are the bare minimum configuration
 
+{: .box-note}
+ If you now run `hugo server` you will be presented with a blank Congo
 
-> Both menus are completely optional and can be commented out if not required. Use the template provided in the [file](/aboutme) as a guide.
+#### step 1
+## talk
+#### step 2 
+## be kind
+#### Last advice 
 
-## step 1
-#### talk
-## step 2 
-#### be kind
-## Last advice 
 {: .box-error}
 This is `2023` rant !
 
