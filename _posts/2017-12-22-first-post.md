@@ -14,22 +14,43 @@ readtime: true
 
 
 Open carefully. I'm mostly `harmless`
- If you now run `hugo server` you will be presented with a blank Congo.
 
 {: .box-note}
-The steps above are the bare minimum configuration.
+ If you now run `hugo server` you will be presented with a blank Congo
 
----
+ ```javascript
+var foo = function(x) {
+  return(x + 5);
+}
+foo(3)
+```
 
-Both menus are completely optional and can be commented out if not required. Use the template provided in the [file](/aboutme) as a guide.
+ The steps above are the bare minimum configuration
+
+
+> Both menus are completely optional and can be commented out if not required. Use the template provided in the [file](/aboutme) as a guide.
 
 ## step 1
-talk
+#### talk
 ## step 2 
-be kind
+#### be kind
 ## Last advice 
-Open carefully. This is 2023 rant !
+{: .box-error}
+This is `2023` rant !
 
 #  mostly `harmless`
 
 ![Yellow Duck](/assets/img/fire.jpg 'Netdev')
+
+**Here's a useless table:**
+
+| Number | Next number | Previous number |
+| :------ |:--- | :--- |
+| Five | Six | Four |
+| Ten | Eleven | Nine |
+| Seven | Eight | Six |
+| Two | Three | One |
+
+It can also be a centered logo!
+
+![Crepe](/assets/img/avatar-icon.png){: .mx-auto.d-block :}

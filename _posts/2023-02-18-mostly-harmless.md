@@ -11,34 +11,25 @@ tags: [random, story]
 readtime: true
 ---
 
+Open carefully. I'm mostly `harmless`
+
 {: .box-note}
-Both menus are completely optional and can be commented out if not required. Use the template provided in the [file](/aboutme) as a guide. Open carefully. I'm mostly `harmless`
+Both menus are completely optional and can be commented out if not required. Use the template provided in the [file](/aboutme) as a guide. 
 
  If you now run `hugo server` you will be presented with a blank Congo.
 
 ### Last advice 
 
-{: .box-warning}
 The `pageRef` parameter allows you to easily reference Hugo
-It is the quickest way to configure the menu as you can simply refer to any Hugo.
----
+
+{: .box-warning}
+It is the quickest way to configure the menu as you can simply refer to any Hugo
 
 How about a nice seanery ?
+---
+
 
 ![Drag logo](/assets/img/amsterdam.jpg)
-
-**Here's a useless table:**
-
-| Number | Next number | Previous number |
-| :------ |:--- | :--- |
-| Five | Six | Four |
-| Ten | Eleven | Nine |
-| Seven | Eight | Six |
-| Two | Three | One |
-
-It can also be a centered logo!
-
-![Crepe](/assets/img/avatar-icon.png){: .mx-auto.d-block :}
 
 Here's a code chunk:
 
@@ -49,16 +40,7 @@ var innovate = function(x) {
 innovate("whats_next")
 ~~~
 
-And here is some more with syntax highlighting:
-
-```javascript
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-```
-
-And here is the same code yet again but with line numbers:
+And here is more code with line numbers:
 
 {% highlight javascript linenos %}
 const startup = 
