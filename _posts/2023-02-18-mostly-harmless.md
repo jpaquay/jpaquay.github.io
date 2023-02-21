@@ -3,8 +3,8 @@ layout: post
 title: mostly harmless
 subtitle: The steps above are the bare minimum configuration
 cover-img: /assets/img/einstein.jpg
-thumbnail-img: /assets/img/logo.png
-share-img: /assets/img/logo.png
+thumbnail-img: /assets/img/logo.jpg
+share-img: /assets/img/logo.jpg
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [random, story]

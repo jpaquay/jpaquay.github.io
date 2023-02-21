@@ -3,9 +3,9 @@ layout: post
 title: Open first, carefully
 subtitle: "All the front matter variables available in Congo."
 slug: "go"
-cover-img: /assets/img/japan.jpg
-thumbnail-img: /assets/img/logo.jpg
-share-img: /assets/img/logo.jpg
+cover-img: /assets/img/logo.png
+thumbnail-img: /assets/img/logo.png
+share-img: /assets/img/logo.png
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [create, random, story]
