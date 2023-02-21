@@ -76,10 +76,9 @@ literally `hakuna` there are no; : `matata` worries
 - Responsible for IT operations
 
 #### garage mechanics
-
-- [beyond](https://beyond.netdev.be/)
-- [firebase](https://fb.netdev.be/)
-- [captcha](https://web3.netdev.be/)
 - [gcs](https://netdev.be)
+- [firebase](https://fb.netdev.be/)
+- [beyond](https://beyond.netdev.be/)
+- [captcha](https://web3.netdev.be/)
 - [gh.md](https://v3.netdev.be)
 - self [github.io](https://blog.netdev.be)
