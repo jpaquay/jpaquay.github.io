@@ -10,7 +10,7 @@ readtime: true
 
 ### Saint Of Souvenirs
 
-A traveler pockets smallest pieces.
+> A traveler pockets smallest pieces.
 Beach glass rhymes in shades of amber,
 morning sky or beer-green, all grayed,
 tumbled in time. It grates her, too.
