@@ -22,11 +22,11 @@ author: Jerome
 navbar-links:
   be healthier: "https://health.google/"
   Resources:
-    - learn markdown: "https://www.markdowntutorial.com/"
+    - markdown: "https://www.markdowntutorial.com/"
     - go Hugo: "https://gohugo.io"
-    - about: "aboutme"
     - firebase : "https://fb.netdev.be/"
-    - reCaptcha: "https://web3.netdev.be/"
+    - about: "aboutme"
+    - web3: "https://web3.netdev.be/"
 
   
 ################
