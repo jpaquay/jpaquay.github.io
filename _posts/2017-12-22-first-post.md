@@ -21,7 +21,7 @@ The steps above are the bare minimum configuration.
 
 ---
 
-Both menus are completely optional and can be commented out if not required. Use the template provided in the [file](/post/about) as a guide.
+Both menus are completely optional and can be commented out if not required. Use the template provided in the [file](/aboutme) as a guide.
 
 ## step 1
 talk
