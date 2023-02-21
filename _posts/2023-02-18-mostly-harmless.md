@@ -23,6 +23,10 @@ The `pageRef` parameter allows you to easily reference Hugo
 It is the quickest way to configure the menu as you can simply refer to any Hugo.
 ---
 
+How about a nice seanery ?
+
+![Drag logo](/assets/img/amsterdam.jpg)
+
 **Here's a useless table:**
 
 | Number | Next number | Previous number |
@@ -31,10 +35,6 @@ It is the quickest way to configure the menu as you can simply refer to any Hugo
 | Ten | Eleven | Nine |
 | Seven | Eight | Six |
 | Two | Three | One |
-
-How about a nice seanery ?
-
-![Drag logo](/assets/img/amsterdam.jpg)
 
 It can also be a centered logo!
 
