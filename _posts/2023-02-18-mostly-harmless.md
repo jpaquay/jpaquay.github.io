@@ -34,7 +34,7 @@ It is the quickest way to configure the menu as you can simply refer to any Hugo
 
 How about a nice seanery ?
 
-![Drag logo](/assets/img/einstein.jpg)
+![Drag logo](/assets/img/amsterdam.jpg)
 
 It can also be a centered logo!
 
