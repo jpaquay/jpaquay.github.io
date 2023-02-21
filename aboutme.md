@@ -30,9 +30,9 @@ To be honest, I'm having some trouble remembering right now, so why don't you ju
 
 This is an example author bio, and although there's no stock photo of a dog here, this article was actually created by a human.
 
-![Yellow Duck](/assets/img/logo.jpg 'Logo')
+![Yellow Duck](/assets/img/logo.png 'Logo')
 
-### Stuff I work on
+## Stuff I do
 
 I build trusted relationships with people by listening to their needs and meet them where they are in their digital transformation.
 
@@ -45,7 +45,9 @@ innovate("whats_next")
 
 I'm Enterprise Architect with Google's [Cloud](https://cloud.google.com) team. I meet innovative teams and together we discuss their future with Google Cloud Platform, ensuring that tough engineering problems are solved, and we elevate to the next step in digitalization.
 
-![Yellow Duck](/assets/img/logo.png 'Logo')
+#### Cybersecurity for the Quantum Era
+
+As we enter the Quantum Era, cybersecurity threats are evolving. Quantum computers are expected to soon break public-key cryptography, putting your sensitive data at risk. To meet these current and emerging threats, it’s vital that your organization become [crypto-agile](https://cloud.google.com/blog/products/identity-security/how-google-is-preparing-for-a-post-quantum-world)
 
 ## philosophy
 
@@ -54,25 +56,14 @@ I’m a passionate technologist with a recognized customer centric attitude work
 {: .box-warning}
 `Hakuna matata` is a Swahili phrase, meaning `take it easy`
 
-## Cybersecurity for the Quantum Era
-
-As we enter the Quantum Era, cybersecurity threats are evolving. Quantum computers are expected to soon break public-key cryptography, putting your sensitive data at risk. To meet these current and emerging threats, it’s vital that your organization become [crypto-agile](https://cloud.google.com/blog/products/identity-security/how-google-is-preparing-for-a-post-quantum-world).
-
 {: .box-error}
 literally `hakuna` there are no; : `matata` worries
 
-### web estate
-
-- [Santorini](https://beyond.netdev.be/)
-- [firebase](https://fb.netdev.be/)
-- [captcha](https://web3.netdev.be/)
-- [gcs](https://netdev.be)
-- [github.md](https://v3.netdev.be)
-- self [github.io](https://blog.netdev.be)
-
-### real life
+## human on Earth
 
 3 kids, cyclist, snowboarder, basketball, field hockey
+
+![Yellow Duck](/assets/img/avatar.jpg 'avatar')
 
 ### Work Experience
 
@@ -88,4 +79,11 @@ literally `hakuna` there are no; : `matata` worries
 
 - Responsible for IT operations
 
-![Yellow Duck](/assets/img/avatar.jpg 'avatar')
+#### garage mechanics
+
+- [beyond](https://beyond.netdev.be/)
+- [firebase](https://fb.netdev.be/)
+- [captcha](https://web3.netdev.be/)
+- [gcs](https://netdev.be)
+- [gh.md](https://v3.netdev.be)
+- self [github.io](https://blog.netdev.be)
