@@ -12,7 +12,7 @@ readtime: true
 ---
 
 {: .box-note}
-Both menus are completely optional and can be commented out if not required. Use the template provided in the [file](/post/about) as a guide.
+Both menus are completely optional and can be commented out if not required. Use the template provided in the [file](/post/aboutme) as a guide.
 
  If you now run `hugo server` you will be presented with a blank Congo.
 
@@ -49,7 +49,7 @@ var innovate = function(x) {
 innovate("whats_next")
 ~~~
 
-And here is the same code with syntax highlighting:
+And here is some code with syntax highlighting:
 
 ```javascript
 var foo = function(x) {
@@ -57,20 +57,13 @@ var foo = function(x) {
 }
 foo(3)
 ```
-.
-```javascript
-const startup = 
-    {build: "whats_next"
-}
-```
 
 And here is the same code yet again but with line numbers:
 
 {% highlight javascript linenos %}
-var foo = function(x) {
-  return(x + 2);
+const startup = 
+    {build: "whats_next"
 }
-foo(3)
 {% endhighlight %}
 
 
@@ -78,10 +71,10 @@ foo(3)
 You can add notification, warning and error boxes like this:
 
 {: .box-note}
-**Note:** This is 
+**Note: This is**  
 
 {: .box-warning}
-**Warning:**  not an
+**not an:**  
 
 {: .box-error}
-**Error:**  error box !
+**Error: box !**
