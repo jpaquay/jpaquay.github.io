@@ -3,7 +3,7 @@ layout: post
 title: mostly harmless
 subtitle: The steps above are the bare minimum configuration
 cover-img: /assets/img/einstein.jpg
-thumbnail-img: /assets/img/logo.jpg
+thumbnail-img: /assets/img/logo.png
 share-img: /assets/img/logo.png
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
