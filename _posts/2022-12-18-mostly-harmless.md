@@ -2,7 +2,7 @@
 layout: post
 title: mostly harmless
 subtitle: The steps above are the bare minimum configuration
-cover-img: /assets/img/amsterdam.jpg
+cover-img: /assets/img/einstein.jpg
 thumbnail-img: /assets/img/logo.jpg
 share-img: /assets/img/logo.png
 gh-repo: jpaquay/jpaquay.github.io/
@@ -57,7 +57,7 @@ var foo = function(x) {
 }
 foo(3)
 ```
-
+.
 ```javascript
 const startup = 
     {build: "whats_next"
