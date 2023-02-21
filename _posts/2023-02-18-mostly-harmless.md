@@ -12,7 +12,7 @@ readtime: true
 ---
 
 {: .box-note}
-Both menus are completely optional and can be commented out if not required. Use the template provided in the [file](/post/aboutme) as a guide.
+Both menus are completely optional and can be commented out if not required. Use the template provided in the [file](/aboutme) as a guide.
 
  If you now run `hugo server` you will be presented with a blank Congo.
 
