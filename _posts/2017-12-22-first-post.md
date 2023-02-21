@@ -39,7 +39,7 @@ foo(3)
 This is `2023` rant !
 
 
-![Yellow Duck](/assets/img/fire.jpg 'Netdev')
+![Yellow Duck](/assets/img/fire.jpg '/net/dev')
 
 **Here's a useless table:**
 
