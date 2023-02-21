@@ -32,9 +32,9 @@ This is an example author bio, and although there's no stock photo of a dog here
 
 ![Yellow Duck](/assets/img/logo.png 'Logo')
 
-## Stuff I do
+### Things I do
 
-I build trusted relationships with people by listening to their needs and meet them where they are in their digital transformation.
+I build trusted relationships with people by listening to their needs and meet them where they are in their transformation.
 
 ```javascript
 var innovate = function(x) {
@@ -48,11 +48,11 @@ I'm Enterprise Architect with Google's [Cloud](https://cloud.google.com) team. I
 {: .box-warning}
 `Hakuna matata` is a Swahili phrase, meaning `take it easy`
 
-#### Cybersecurity for the Quantum Era
+### Cybersecurity for the Quantum Era
 
 As we enter the Quantum Era, cybersecurity threats are evolving. Quantum computers are expected to soon break public-key cryptography, putting your sensitive data at risk. To meet these current and emerging threats, it’s vital that your organization become [crypto-agile](https://cloud.google.com/blog/products/identity-security/how-google-is-preparing-for-a-post-quantum-world)
 
-## philosophy
+### philosophy
 
 I’m a passionate technologist with a recognized customer centric attitude working for over twenty years in IT.  I strive to provide my teams with the best solutions taking into account their needs and expectations. This produced xx successful projects to launch and land.  In my role, I’ve been  designing and developing architectures for on-premise and cloud based systems to solve large global organizations business requirements.  I have a natural leadership that expresses best when organizing cross functional teams around concrete goals.
 
