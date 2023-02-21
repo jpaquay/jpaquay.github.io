@@ -28,7 +28,7 @@ To be honest, I'm having some trouble remembering right now, so why don't you ju
 
 ### I'm born and raised in [Brussels, Belgium](https://goo.gl/maps/Xhy4aBu1WYrbBHe97)
 
-This is an example author bio, and although there's no stock photo of a dog here, this article was actually created by a human.
+This is an example author bio, and although there's no stock photo of a dog here, this article was actually created by a human. `/net/dev` is my online garage 
 
 ![Yellow Duck](/assets/img/logo.png 'Logo')
 
@@ -45,6 +45,9 @@ innovate("whats_next")
 
 I'm Enterprise Architect with Google's [Cloud](https://cloud.google.com) team. I meet innovative teams and together we discuss their future with Google Cloud Platform, ensuring that tough engineering problems are solved, and we elevate to the next step in digitalization.
 
+{: .box-warning}
+`Hakuna matata` is a Swahili phrase, meaning `take it easy`
+
 #### Cybersecurity for the Quantum Era
 
 As we enter the Quantum Era, cybersecurity threats are evolving. Quantum computers are expected to soon break public-key cryptography, putting your sensitive data at risk. To meet these current and emerging threats, it’s vital that your organization become [crypto-agile](https://cloud.google.com/blog/products/identity-security/how-google-is-preparing-for-a-post-quantum-world)
@@ -53,15 +56,8 @@ As we enter the Quantum Era, cybersecurity threats are evolving. Quantum compute
 
 I’m a passionate technologist with a recognized customer centric attitude working for over twenty years in IT.  I strive to provide my teams with the best solutions taking into account their needs and expectations. This produced xx successful projects to launch and land.  In my role, I’ve been  designing and developing architectures for on-premise and cloud based systems to solve large global organizations business requirements.  I have a natural leadership that expresses best when organizing cross functional teams around concrete goals.
 
-{: .box-warning}
-`Hakuna matata` is a Swahili phrase, meaning `take it easy`
-
 {: .box-error}
 literally `hakuna` there are no; : `matata` worries
-
-## human on Earth
-
-3 kids, cyclist, snowboarder, basketball, field hockey
 
 ![Yellow Duck](/assets/img/avatar.jpg 'avatar')
 
