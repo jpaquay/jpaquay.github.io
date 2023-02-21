@@ -38,7 +38,6 @@ foo(3)
 {: .box-error}
 This is `2023` rant !
 
-#  mostly `harmless`
 
 ![Yellow Duck](/assets/img/fire.jpg 'Netdev')
 
@@ -54,3 +53,6 @@ This is `2023` rant !
 It can also be a centered logo!
 
 ![Crepe](/assets/img/avatar-icon.png){: .mx-auto.d-block :}
+
+
+#  mostly `harmless`

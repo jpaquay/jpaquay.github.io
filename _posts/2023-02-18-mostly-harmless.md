@@ -49,14 +49,8 @@ const startup =
 {% endhighlight %}
 
 
-## Boxes
-You can add notification, warning and error boxes like this:
 
-{: .box-note}
-**Note: This is**  
 
-{: .box-warning}
-**not an:**  
 
-{: .box-error}
-**Error: box !**
+
+#  mostly `harmless`
