@@ -30,3 +30,6 @@ A resident of Yonkers, NY, Marion Brown earned a Ph.D. in English and Comparativ
 ~~~
 A lifelong resident of New York State, Marion Brown lives with her husband in Yonkers. Her poems and reviews have appeared in Barrow Street, Big City Lit, DIAGRAM, Kestrel, Poetry International, Women’s Review of Books and elsewhere. In the Portico Library Poetry Competition, her poem “In the Dock, Fagin Reflects” was awarded First Prize. Her second chapbook of poems, The Morning After Summer, is from Finishing Line Press.
 ~~~
+
+
+[More about Marion](https://marionbrownpoet.com/about/)
