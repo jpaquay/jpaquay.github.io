@@ -21,15 +21,25 @@ context [twitter](https://twitter.com/JeffDean/status/1627885526127874049)
 1995, own computer, Pentium, 133Mhz , 64Mb
 
 MS-DOS and Windows
+
 ```VBscript```; office macros; MS Access
+
 ```Html```
+
 ```CSS```
+
 ```JavaScript```
+
 Flash : ```ActionScript```
+
 ```Asp.net```: IIS / access
+
 ```Wamp``` to ```lamp```
+
 ```bash```
+
 ```PHP```
+
 ```MySQL```
 
 {: .box-note}
@@ -39,27 +49,39 @@ Flash : ```ActionScript```
 1999
 
 ```MATLAB```
+
 ```C```
+
 ```C++```
+
 ```Java```
+
 ```UML```
+
 ```assembler```
+
 ```SQL```
 
 {: .box-note}
 2006
 
 Cisco IOS TCL
+
 ```Python```
+
 ```Rust```
+
 ```CoffeeScript```
+
 Node.js
 
 {: .box-note}
 2018
 
 ```Go```
+
 TenserFlow with ```Keras```
+
 ```Flutter```, ```TypeScript```
 
 {: .box-note}
