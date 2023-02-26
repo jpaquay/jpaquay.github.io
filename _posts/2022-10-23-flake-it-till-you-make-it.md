@@ -5,7 +5,7 @@ subtitle: Excerpt from Soulshaping by Jeff Brown
 cover-img: /assets/img/sail.jpg
 thumbnail-img: /assets/img/sail.jpg
 share-img: /assets/img/sail.jpg
-tags: [books, story]
+tags: [books, create, story]
 readtime: true
 ---
 

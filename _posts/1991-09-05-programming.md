@@ -1,0 +1,72 @@
+---
+layout: post
+title: Programming memories
+subtitle: in what order did you learn your languages? 
+cover-img: /assets/img/network-fosdem-2009.jpg
+thumbnail-img: /assets/img/fosdem-2009.jpg
+share-img: /assets/img/network-fosdem-2009.jpg
+tags: [health, tech, story]
+readtime: true
+---
+
+
+
+{: .box-note}
+1991, after school lessons 🚸 
+```Basic``` on ```Commodore 64```  
+
+{: .box-note}
+1995
+first own computer, Pentium, 133Mhz , 64Mb
+MS-DOS and Windows
+VBscript; office macros; MS Access dB
+```Html```, ```CSS```, ```JavaScript```
+Flash / ```ActionScript```
+```Asp.net``` / IIS / access
+```Wamp``` to ```lamp```
+```bash``` , ````PHP``` , ```MySQL```
+
+{: .box-note} 
+1997 
+internet at home 🏠 @56kbps 
+
+{: .box-note} 
+1999-2006
+MATLAB / C / C++ / Java
+UML / C / assembler / SQL
+2006-2018
+Cisco IOS TCL
+Python
+Rust
+CoffeeScript
+Node.js
+
+{: .box-note} 
+2018
+Keras
+Go 
+Flutter
+TypeScript
+
+{: .box-note} 
+2021 
+Scratch 👾
+
+
+
+
+
+
+
+
+
+
+{: .box-warning} 
+context 
+
+
+[twitter](https://twitter.com/JeffDean/status/1627885526127874049)
+
+
+
+https://twitter.com/JeffDean/status/1627885526127874049

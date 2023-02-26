@@ -8,7 +8,7 @@ thumbnail-img: /assets/img/logo.png
 share-img: /assets/img/logo.png
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
-tags: [create, random, story]
+tags: [create, random, tech, story]
 readtime: true
 ---
 
