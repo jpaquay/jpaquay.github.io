@@ -10,7 +10,7 @@ readtime: true
 ---
 
 {: .box-warning} 
-context [twitter](https://twitter.com/JeffDean/status/1627885526127874049)
+[context](https://twitter.com/JeffDean/status/1627885526127874049)
 
 {: .box-note}
 1991, after school lessons 🚸
