@@ -2,9 +2,9 @@
 layout: post
 title: Programming memories
 subtitle: in what order did you learn your languages? 
-cover-img: /assets/img/network-fosdem-2009.jpg
+cover-img: /assets/img/fosdem-network-2009.jpg
 thumbnail-img: /assets/img/fosdem-2009.jpg
-share-img: /assets/img/network-fosdem-2009.jpg
+share-img: /assets/img/fosdem-network-2009.jpg
 tags: [health, tech, story]
 readtime: true
 ---
