@@ -14,20 +14,19 @@ readtime: true
 Open carefully. I'm mostly `harmless`
 
 {: .box-note}
-Both menus are completely optional and can be commented out if not required. Use the template provided in the [file](/aboutme) as a guide. 
+Both menus are completely optional and can be commented out if not required. Use the template provided in the [file](/aboutme) as a guide.
 
  If you now run `hugo server` you will be presented with a blank Congo.
 
-### Last advice 
+### Last advice
 
 The `pageRef` parameter allows you to easily reference Hugo
 
 {: .box-warning}
 It is the quickest way to configure the menu as you can simply refer to any Hugo
 
-How about a nice seanery ?
+### How about a nice seanery ?
 ---
-
 
 ![Drag logo](/assets/img/amsterdam.jpg)
 
@@ -43,14 +42,9 @@ innovate("whats_next")
 And here is more code with line numbers:
 
 {% highlight javascript linenos %}
-const startup = 
+const startup =
     {build: "whats_next"
 }
 {% endhighlight %}
 
-
-
-
-
-
-#  mostly `harmless`
+# mostly `harmless`
