@@ -12,12 +12,13 @@ readtime: true
 
 
 {: .box-note}
-1991, after school lessons 🚸 
+1991, after school lessons 🚸
+
 ```Basic``` on ```Commodore 64```  
 
 {: .box-note}
-1995
-first own computer, Pentium, 133Mhz , 64Mb
+1995, own computer, Pentium, 133Mhz , 64Mb
+
 MS-DOS and Windows
 VBscript; office macros; MS Access dB
 ```Html```, ```CSS```, ```JavaScript```
@@ -27,37 +28,35 @@ Flash / ```ActionScript```
 ```bash``` , ````PHP``` , ```MySQL```
 
 {: .box-note} 
-1997 
-internet at home 🏠 @56kbps 
+1997, ```internet``` at home 🏠 @56kbps 
 
-{: .box-note} 
+{: .box-note}
 1999-2006
+
 MATLAB / C / C++ / Java
 UML / C / assembler / SQL
+
+{: .box-note}
 2006-2018
+
 Cisco IOS TCL
-Python
-Rust
-CoffeeScript
+```Python```
+```Rust```
+```CoffeeScript```
 Node.js
 
 {: .box-note} 
 2018
+
 Keras
-Go 
-Flutter
-TypeScript
+```Go```
+```Flutter```
+```TypeScript```
 
 {: .box-note} 
 2021 
+
 Scratch 👾
-
-
-
-
-
-
-
 
 
 
