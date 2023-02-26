@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Author’s Statement
-subtitle: Marion Brown, Poem
+subtitle: Marion Brown
 cover-img: assets/img/flowers.jpg
 thumbnail-img: assets/img/Marion-Brown.jpg
 share-img: assets/img/flowers.jpg
