@@ -29,11 +29,11 @@ Flash : ```ActionScript```
 ```Asp.net```: IIS / access
 ```Wamp``` to ```lamp```
 ```bash```
-````PHP```
+```PHP```
 ```MySQL```
 
-{: .box-note} 
-1997, ```internet``` at home 🏠 @56kbps 
+{: .box-note}
+1997, ```internet``` at home 🏠 @56kbps
 
 {: .box-note}
 1999
@@ -55,17 +55,14 @@ Cisco IOS TCL
 ```CoffeeScript```
 Node.js
 
-{: .box-note} 
+{: .box-note}
 2018
 
 ```Go```
 TenserFlow with ```Keras```
 ```Flutter```, ```TypeScript```
 
-{: .box-note} 
-2021 
+{: .box-note}
+2021
 
 Scratch 👾
-
-
-
