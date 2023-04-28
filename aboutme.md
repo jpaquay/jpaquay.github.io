@@ -43,7 +43,7 @@ var innovate = function(x) {
 innovate("whats_next")
 ```
 
-I'm Enterprise Architect with Google's [Cloud](https://cloud.google.com) team. I meet innovative teams and together we discuss their future with Google Cloud Platform, ensuring that tough engineering problems are solved, and we elevate to the next step in digitalization.
+I'm Enterprise Architect with Google's [Cloud](https://cloud.google.com). I meet innovative teams and together we discuss their future with Google Cloud Platform, ensuring that tough engineering problems are solved, and we accelerate to the next step in digitalization.
 
 {: .box-warning}
 `Hakuna matata` is a Swahili phrase, meaning `take it easy`
