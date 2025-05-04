@@ -1,4 +1,4 @@
-----
+---
 layout: page
 title: About me
 subtitle: Why you'd date me
