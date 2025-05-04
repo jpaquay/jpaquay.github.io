@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: why would you date me ?
+subtitle: why date me 
 cover-img: /assets/img/author.jpg
 thumbnail-img: /assets/img/hello_world.jpg
 share-img: /assets/img/hello_world.jpg
