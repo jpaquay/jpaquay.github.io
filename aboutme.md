@@ -1,4 +1,4 @@
----
+----
 layout: page
 title: About me
 subtitle: Why you'd date me
@@ -25,6 +25,8 @@ Hello, I'm Jerome. I have the following attributes
 ### What else do you need?
 
 To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+
+![Yellow Duck](/assets/img/me-ghibli.jpg 'ghibli'){: .mx-auto.d-block :}
 
 ### I'm born and raised in [Brussels, Belgium](https://goo.gl/maps/Xhy4aBu1WYrbBHe97)
 
