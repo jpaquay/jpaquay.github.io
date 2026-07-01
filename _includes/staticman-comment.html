@@ -1,13 +1,13 @@
 <article id="comment{{ include.index }}" class="js-comment comment" itemprop="comment" itemscope itemtype="https://schema.org/Comment">
   <div class="comment__avatar-wrapper">
-    <img class="comment__avatar" src="https://www.gravatar.com/avatar/{{ include.email }}?d=mm&s=80" alt="{{ include.name }}">
+    <img class="comment__avatar" src="https://www.gravatar.com/avatar/{{ include.email }}?d=mm&s=80" alt="{{ include.name | escape }}">
   </div>
   <div class="comment__content-wrapper">
     <h4 class="comment__author" itemprop="author" itemscope itemtype="https://schema.org/Person">
       {% unless include.url == blank %}
-        <span itemprop="name"><a rel="external nofollow" itemprop="url" href="{{ include.url }}">{{ include.name }}</a></span>
+        <span itemprop="name"><a rel="external nofollow" itemprop="url" href="{{ include.url | escape }}">{{ include.name | escape }}</a></span>
       {% else %}
-        <span itemprop="name">{{ include.name }}</span>
+        <span itemprop="name">{{ include.name | escape }}</span>
       {% endunless %}
     </h4>
     <p class="comment__date">
