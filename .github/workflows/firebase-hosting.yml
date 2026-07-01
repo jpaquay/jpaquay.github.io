@@ -30,3 +30,4 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_NETDEV_FIREBASE }}'
           channelId: live
           projectId: netdev-firebase
+          target: netdev-blog
