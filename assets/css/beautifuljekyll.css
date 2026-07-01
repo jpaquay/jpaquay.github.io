@@ -69,11 +69,8 @@ hr.small {
 }
 
 /* fix in-page anchors to not be behind fixed header */
-:target:before {
-  content: "";
-  display: block;
-  height: 3.125rem; /* navbar height */
-  margin: -3.125rem 0 0;
+:target {
+  scroll-margin-top: 3.125rem; /* navbar height */
 }
 
 .hideme {
