@@ -33,16 +33,20 @@ var BeautifulJekyllJS = {
 
   initNavbar : function() {
     // Set the navbar-dark/light class based on its background color
-    const rgb = $('.navbar').css("background-color").replace(/[^\d,]/g,'').split(",");
-    const brightness = Math.round(( // http://www.w3.org/TR/AERT#color-contrast
-      parseInt(rgb[0]) * 299 +
-      parseInt(rgb[1]) * 587 +
-      parseInt(rgb[2]) * 114
-    ) / 1000);
-    if (brightness <= 125) {
-      $(".navbar").removeClass("navbar-light").addClass("navbar-dark");
-    } else {
-      $(".navbar").removeClass("navbar-dark").addClass("navbar-light");
+    const $navbar = $('.navbar');
+    const cssBg = $navbar.css("background-color");
+    const rgb = cssBg ? cssBg.match(/\d+/g) : null;
+    if (rgb && rgb.length >= 3) {
+      const brightness = Math.round(( // http://www.w3.org/TR/AERT#color-contrast
+        rgb[0] * 299 +
+        rgb[1] * 587 +
+        rgb[2] * 114
+      ) / 1000);
+      if (brightness <= 125) {
+        $navbar.removeClass("navbar-light").addClass("navbar-dark");
+      } else {
+        $navbar.removeClass("navbar-dark").addClass("navbar-light");
+      }
     }
   },
 
