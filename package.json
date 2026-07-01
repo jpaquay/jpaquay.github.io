@@ -1,0 +1,14 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "Beautiful Jekyll",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^30.4.2",
+    "jest-environment-jsdom": "^30.4.2",
+    "jquery": "^4.0.0",
+    "jsdom": "^29.1.1"
+  }
+}
