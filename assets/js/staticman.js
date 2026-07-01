@@ -30,20 +30,21 @@ layout: null
       }
     };
 
+    function updateFormState(isSuccess) {
+      $('#comment-form-submit').toggleClass('d-none', isSuccess);
+      $('#comment-form-submitted').toggleClass('d-none', !isSuccess);
+      $('.page__comments-form .js-notice')
+        .toggleClass('alert-success', isSuccess)
+        .toggleClass('alert-danger', !isSuccess);
+      showAlert(isSuccess ? 'success' : 'failure');
+    }
+
     function formSubmitted() {
-      $('#comment-form-submit').addClass('d-none');
-      $('#comment-form-submitted').removeClass('d-none');
-      $('.page__comments-form .js-notice').removeClass('alert-danger');
-      $('.page__comments-form .js-notice').addClass('alert-success');
-      showAlert('success');
+      updateFormState(true);
     }
 
     function formError() {
-      $('#comment-form-submitted').addClass('d-none');
-      $('#comment-form-submit').removeClass('d-none');
-      $('.page__comments-form .js-notice').removeClass('alert-success');
-      $('.page__comments-form .js-notice').addClass('alert-danger');
-      showAlert('failure');
+      updateFormState(false);
       $(form).removeClass('disabled');
     }
 
