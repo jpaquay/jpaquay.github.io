@@ -14,13 +14,13 @@ permalink: /admin/
   <!-- Authentication Screen -->
   <div id="auth-section" class="admin-card auth-box">
     <h2>Admin Portal Login</h2>
-    <p>Sign in with an authorized admin account (<code>jpaquay@gmail.com</code>, <code>jerome@netdev.be</code>, <code>jpaquay@google.com</code>) to manage blog posts.</p>
+    <p>Sign in with an authorized Google account to manage blog posts.</p>
     
     <div class="auth-providers">
       <div id="g_id_onload"></div>
       <div style="margin-top: 1rem;">
         <button id="btn-demo-auth" class="admin-btn admin-btn-outline" onclick="handleDemoLogin()">
-          Quick Admin Sign-In (Demo / Dev)
+          Sign In / Switch Account (Custom Email)
         </button>
       </div>
     </div>
@@ -35,12 +35,13 @@ permalink: /admin/
         <p>Manage Jekyll blog posts directly in Git repository</p>
       </div>
       <div class="admin-user-info">
-        <img id="user-avatar" src="https://github.com/identicons/jpaquay.png" class="admin-avatar" alt="Avatar">
+        <img id="user-avatar" src="https://github.com/identicons/user.png" class="admin-avatar" alt="Avatar">
         <div>
           <strong id="user-display-name">Admin User</strong><br>
-          <small id="user-email" style="color: var(--admin-muted);">user@google.com</small>
+          <small id="user-email" style="color: var(--admin-muted);">user@domain.com</small>
         </div>
-        <button id="btn-logout" class="admin-btn admin-btn-outline" style="margin-left: 1rem;">Logout</button>
+        <button id="btn-switch-user" class="admin-btn admin-btn-outline" style="margin-left: 1rem;">Switch User</button>
+        <button id="btn-logout" class="admin-btn admin-btn-outline" style="margin-left: 0.5rem;">Logout</button>
       </div>
     </header>
 

@@ -129,6 +129,14 @@ function initEventListeners() {
     document.getElementById('auth-section').classList.remove('hidden');
   });
 
+  document.getElementById('btn-switch-user')?.addEventListener('click', () => {
+    localStorage.removeItem('admin_user');
+    currentUser = null;
+    document.getElementById('admin-app').classList.add('hidden');
+    document.getElementById('auth-section').classList.remove('hidden');
+    showToast('Signed out. Select or enter an account to switch.');
+  });
+
   document.getElementById('btn-save-token')?.addEventListener('click', () => {
     const token = document.getElementById('gh-token-input').value.trim();
     if (token) {
@@ -143,6 +151,25 @@ function initEventListeners() {
 
   document.getElementById('post-form')?.addEventListener('submit', handlePostSubmit);
 }
+
+window.handleDemoLogin = function() {
+  const emailInput = prompt('Enter your admin email address to sign in:');
+  if (!emailInput) return;
+
+  const email = emailInput.trim().toLowerCase();
+  if (ALLOWED_ADMINS.includes(email)) {
+    const user = {
+      name: email.split('@')[0],
+      email: email,
+      picture: `https://github.com/identicons/${email.split('@')[0]}.png`
+    };
+    localStorage.setItem('admin_user', JSON.stringify(user));
+    setAuthenticatedUser(user);
+    showToast(`Signed in as ${user.email}`);
+  } else {
+    showToast(`Access Denied: ${email} is not in the list of authorized admin emails.`, true);
+  }
+};
 
 function getOctokitHeaders() {
   return {
