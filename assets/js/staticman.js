@@ -3,6 +3,12 @@ layout: null
 ---
 
 (function ($) {
+  const $submit = $('#comment-form-submit');
+  const $submitted = $('#comment-form-submitted');
+  const $notice = $('.page__comments-form .js-notice');
+  const $noticeSuccess = $('.page__comments-form .js-notice-text-success');
+  const $noticeFailure = $('.page__comments-form .js-notice-text-failure');
+
   $('#new_comment').submit(function () {
     const form = this;
 
@@ -31,18 +37,18 @@ layout: null
     };
 
     function formSubmitted() {
-      $('#comment-form-submit').addClass('d-none');
-      $('#comment-form-submitted').removeClass('d-none');
-      $('.page__comments-form .js-notice').removeClass('alert-danger');
-      $('.page__comments-form .js-notice').addClass('alert-success');
+      $submit.addClass('d-none');
+      $submitted.removeClass('d-none');
+      $notice.removeClass('alert-danger');
+      $notice.addClass('alert-success');
       showAlert('success');
     }
 
     function formError() {
-      $('#comment-form-submitted').addClass('d-none');
-      $('#comment-form-submit').removeClass('d-none');
-      $('.page__comments-form .js-notice').removeClass('alert-success');
-      $('.page__comments-form .js-notice').addClass('alert-danger');
+      $submitted.addClass('d-none');
+      $submit.removeClass('d-none');
+      $notice.removeClass('alert-success');
+      $notice.addClass('alert-danger');
       showAlert('failure');
       $(form).removeClass('disabled');
     }
@@ -53,13 +59,13 @@ layout: null
   });
 
   function showAlert(message) {
-    $('.page__comments-form .js-notice').removeClass('d-none');
+    $notice.removeClass('d-none');
     if (message == 'success') {
-      $('.page__comments-form .js-notice-text-success').removeClass('d-none');
-      $('.page__comments-form .js-notice-text-failure').addClass('d-none');
+      $noticeSuccess.removeClass('d-none');
+      $noticeFailure.addClass('d-none');
     } else {
-      $('.page__comments-form .js-notice-text-success').addClass('d-none');
-      $('.page__comments-form .js-notice-text-failure').removeClass('d-none');
+      $noticeSuccess.addClass('d-none');
+      $noticeFailure.removeClass('d-none');
     }
   }
 })(jQuery);
