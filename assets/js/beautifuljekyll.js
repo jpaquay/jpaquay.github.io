@@ -59,37 +59,37 @@ var BeautifulJekyllJS = {
       var desc = imgInfo.desc;
       BeautifulJekyllJS.setImg(src, desc);
 
-      // For better UX, prefetch the next image so that it will already be loaded when we want to show it
-      var getNextImg = function() {
-        var imgInfo = BeautifulJekyllJS.getImgInfo();
-        var src = imgInfo.src;
-        var desc = imgInfo.desc;
-
-        var prefetchImg = new Image();
-        prefetchImg.src = src;
-        // if I want to do something once the image is ready: `prefetchImg.onload = function(){}`
-
-        setTimeout(function(){
-          var img = $("<div></div>").addClass("big-img-transition").css("background-image", 'url(' + src + ')');
-          $(".intro-header.big-img").prepend(img);
-          setTimeout(function(){ img.css("opacity", "1"); }, 50);
-
-          // after the animation of fading in the new image is done, prefetch the next one
-          //img.one("transitioned webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
-          setTimeout(function() {
-            BeautifulJekyllJS.setImg(src, desc);
-            img.remove();
-            getNextImg();
-          }, 1000);
-          //});
-        }, 6000);
-      };
-
       // If there are multiple images, cycle through them
       if (BeautifulJekyllJS.numImgs > 1) {
-        getNextImg();
+        BeautifulJekyllJS.cycleImgs();
       }
     }
+  },
+
+  cycleImgs : function() {
+    // For better UX, prefetch the next image so that it will already be loaded when we want to show it
+    var imgInfo = BeautifulJekyllJS.getImgInfo();
+    var src = imgInfo.src;
+    var desc = imgInfo.desc;
+
+    var prefetchImg = new Image();
+    prefetchImg.src = src;
+    // if I want to do something once the image is ready: `prefetchImg.onload = function(){}`
+
+    setTimeout(function(){
+      var img = $("<div></div>").addClass("big-img-transition").css("background-image", 'url(' + src + ')');
+      $(".intro-header.big-img").prepend(img);
+      setTimeout(function(){ img.css("opacity", "1"); }, 50);
+
+      // after the animation of fading in the new image is done, prefetch the next one
+      //img.one("transitioned webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
+      setTimeout(function() {
+        BeautifulJekyllJS.setImg(src, desc);
+        img.remove();
+        BeautifulJekyllJS.cycleImgs();
+      }, 1000);
+      //});
+    }, 6000);
   },
 
   getImgInfo : function() {

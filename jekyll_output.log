@@ -1,0 +1,1606 @@
+Configuration file: /app/_config.yml
+            Source: /app
+       Destination: /app/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating...
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    done in 1.037 seconds.
+ Auto-regeneration: enabled for '/app'
+    Server address: http://0.0.0.0:3000
+  Server running... press ctrl-c to stop.
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:22
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.644921374 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:23
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.396700387 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:23
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.38926611 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:24
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.392132169 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:24
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.459018164 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:25
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.371084969 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:25
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.442790432 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:26
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.482606346 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:27
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.490925569 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:27
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.40252527 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:28
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.535786216 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:28
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.410147371 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:29
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.489659609 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:29
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.540895273 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:30
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.334393367 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:30
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.419912587 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:31
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.49089676 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:32
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.3306879 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:32
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.428316417 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:33
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.52280016 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:33
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.366945167 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:34
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.461572036 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:34
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.477575222 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:35
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.316901384 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:35
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.429051718 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:36
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.464465573 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:36
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.393700951 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:37
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.5164065 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:37
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.418892194 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:38
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.483763786 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:38
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.412151619 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:39
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.442421235 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:40
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.409541011 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:40
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.442142004 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:41
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.395877061 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:41
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.503494139 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:42
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.344762182 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:42
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.375693319 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:43
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.298099481 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:43
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.344228214 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:43
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.290197283 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:44
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.314550129 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:44
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.257915205 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:45
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.29986726 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:45
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.257933606 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:45
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.287662155 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:46
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.251418006 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:46
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.30053389 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:47
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.31514742 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:47
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.256165337 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:47
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.239727629 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:48
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.237245109 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:48
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.267980511 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:48
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.273166954 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:49
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.281559929 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:49
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.284476549 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:49
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.297412695 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:50
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.29310607 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:50
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.321509186 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:51
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.289603492 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:51
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.294446534 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:51
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.297000016 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:52
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.331719627 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:52
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.334876016 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:53
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.365672861 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:53
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.287051398 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:54
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.302367332 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:54
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.352151811 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:54
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.332726281 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:55
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.559364993 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:56
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.470574896 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:56
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.501458011 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:57
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.518385589 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:57
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.478978295 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:58
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.527403285 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:59
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.488265096 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:26:59
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.650884222 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:00
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.451353902 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:00
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.662755771 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:01
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.476107408 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:02
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.499479736 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:02
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.29999794 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:03
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.350735652 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:03
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.327276568 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:04
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.35412857 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:04
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.295723897 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:05
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.271403699 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:05
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.27849598 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:05
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.271788035 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:06
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.269941771 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:06
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.284334372 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:06
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.342394199 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:07
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.277867014 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:07
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.282835945 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:08
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.278301009 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:08
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.338305084 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:08
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.414951645 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:09
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.3346664 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:09
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.265858889 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:10
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.311577589 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:10
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.260268748 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:11
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.273346131 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:11
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.265686524 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:11
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.330334049 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:12
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.266126822 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:12
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.267356365 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:12
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.269969897 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:13
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.327955829 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:13
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.262188639 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:14
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.31962298 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:14
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.272826762 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:14
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.256916428 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:15
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.270373435 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:15
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.268181129 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:16
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.278390059 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:16
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.282537963 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:16
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.332925438 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:17
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.285213993 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:17
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.267696196 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:17
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.27624526 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:18
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.295522304 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:18
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.30936573 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:19
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.354337753 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:19
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.378363375 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:20
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.300951233 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:20
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.283169848 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:20
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.263061373 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:21
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.260668333 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:21
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.252871745 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:21
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.293225851 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:22
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.285980992 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:22
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.281396613 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:23
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.247063199 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:23
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.246545271 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:23
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.294334074 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:24
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.312215708 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:24
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.25938349 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:24
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.255660254 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:25
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.296788594 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:25
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.299540445 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:26
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.35892574 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:26
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.289903255 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:26
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.279495091 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:27
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.272732686 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:27
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.44989602 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:28
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.441944892 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:28
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.530942897 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:29
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.255893256 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:29
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.258717518 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:30
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.266007625 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:30
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.329725284 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:30
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.265177372 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:31
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.270551325 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:31
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.270914259 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:32
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.271073904 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:32
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.324751859 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:32
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.273923881 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:33
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.248527259 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:33
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.253689892 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:33
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.31870853 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:34
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.253549906 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:34
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.244530364 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:35
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.245984032 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:35
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.299872966 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:35
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.233693776 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:36
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.236068022 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:36
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.24870986 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:36
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.327506419 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:37
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.249071625 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:37
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.255761564 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:37
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.261647916 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:38
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.317920996 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:38
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.258786725 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:39
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.253574608 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:39
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.254306695 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:39
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.298892254 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:40
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.238313976 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:40
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.245977211 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:40
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.249342539 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:41
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.291271131 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:41
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.243360311 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:42
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.243655378 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:42
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.29941616 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:42
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.251334628 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:43
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.249447609 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:43
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.253905888 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:43
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.305248219 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:44
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.25878003 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:44
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.264329695 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:44
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.321467495 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:45
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.266670918 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:45
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.261138301 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:46
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.328803512 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:46
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.260289723 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:46
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.264231469 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:47
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.313902366 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:47
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.271213675 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:48
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.256656719 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:48
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.318140116 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:48
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.261230093 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:49
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.307847821 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:49
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.252215285 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:49
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.251447976 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:50
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.299826068 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:50
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.241649128 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:51
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.298693529 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:51
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.242987246 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:51
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.317232519 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:52
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.255229405 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:52
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.31745411 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:52
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.266681002 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:53
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.319789489 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:53
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.264731383 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:54
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.327236861 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:54
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.289148587 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:54
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.341615429 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:55
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.266314263 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:55
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.310966936 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:56
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.264645842 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:56
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.457040028 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:57
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.40051803 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:57
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.436741371 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:58
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.41393522 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:58
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.301792226 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:59
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.283688709 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:59
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.363403494 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:27:59
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
+                    ...done in 0.445564473 seconds.
+
+      Regenerating: 1 file(s) changed at 2026-07-01 12:28:00
+                    jekyll_output.log
+[33m          Skipping: _posts/kids/2108-08-16-chloe.md has a future date[0m
+[33m          Skipping: _posts/kids/2110-10-12-arthur.md has a future date[0m
+[33m          Skipping: _posts/kids/2117-06-20-manon.md has a future date[0m
