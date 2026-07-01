@@ -9,12 +9,28 @@ const BeautifulJekyllJS = {
     setTimeout(BeautifulJekyllJS.initNavbar, 10);
 
     // Shorten the navbar after scrolling a little bit down
+    // ⚡ Bolt: Optimize scroll handler by using requestAnimationFrame and window.scrollY
+    // This prevents layout thrashing caused by repeatedly calculating .offset().top
     var $navbar = $(".navbar");
+    var isShort = false;
+    var ticking = false;
+
     $(window).scroll(function() {
-        if ($navbar.offset().top > 50) {
-            $navbar.addClass("top-nav-short");
-        } else {
-            $navbar.removeClass("top-nav-short");
+        if (!ticking) {
+            window.requestAnimationFrame(function() {
+                var shouldBeShort = window.scrollY > 50;
+
+                if (shouldBeShort !== isShort) {
+                    if (shouldBeShort) {
+                        $navbar.addClass("top-nav-short");
+                    } else {
+                        $navbar.removeClass("top-nav-short");
+                    }
+                    isShort = shouldBeShort;
+                }
+                ticking = false;
+            });
+            ticking = true;
         }
     });
 
