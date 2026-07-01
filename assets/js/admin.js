@@ -57,16 +57,22 @@ function initAuth() {
     }
   }
 
-  // Initialize Google Identity Services if available
-  if (window.google && google.accounts && google.accounts.id) {
+  // Initialize Google Identity Services if client_id is configured
+  const clientId = window.GOOGLE_CLIENT_ID || 'YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com';
+  const gIdContainer = document.getElementById('g_id_onload');
+  if (window.google && google.accounts && google.accounts.id && clientId !== 'YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com') {
     google.accounts.id.initialize({
-      client_id: 'YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com', // Configurable
+      client_id: clientId,
       callback: handleGoogleSignIn
     });
-    google.accounts.id.renderButton(
-      document.getElementById('g_id_onload'),
-      { theme: 'outline', size: 'large', width: 280 }
-    );
+    if (gIdContainer) {
+      google.accounts.id.renderButton(
+        gIdContainer,
+        { theme: 'outline', size: 'large', width: 280 }
+      );
+    }
+  } else if (gIdContainer) {
+    gIdContainer.style.display = 'none';
   }
 }
 
