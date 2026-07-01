@@ -125,21 +125,25 @@ const BeautifulJekyllJS = {
       return;
     }
 
+    var $searchOverlay = $("#beautifuljekyll-search-overlay");
+    var $searchInput = $("#nav-search-input");
+    var $body = $("body");
+
     $("#nav-search-link").click(function(e) {
       e.preventDefault();
-      $("#beautifuljekyll-search-overlay").show();
-      $("#nav-search-input").focus().select();
-      $("body").addClass("overflow-hidden");
+      $searchOverlay.show();
+      $searchInput.focus().select();
+      $body.addClass("overflow-hidden");
     });
     $("#nav-search-exit").click(function(e) {
       e.preventDefault();
-      $("#beautifuljekyll-search-overlay").hide();
-      $("body").removeClass("overflow-hidden");
+      $searchOverlay.hide();
+      $body.removeClass("overflow-hidden");
     });
     $(document).on('keyup', function(e) {
       if (e.key == "Escape") {
-        $("#beautifuljekyll-search-overlay").hide();
-        $("body").removeClass("overflow-hidden");
+        $searchOverlay.hide();
+        $body.removeClass("overflow-hidden");
       }
     });
   }
