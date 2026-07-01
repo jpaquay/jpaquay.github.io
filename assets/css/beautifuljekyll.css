@@ -926,11 +926,11 @@ pre {
 
 /* Fix table border github gist snippets */
 
-.gist, .gist-file table tr {
+.gist .gist-file table tr {
   border: unset;
 }
 
-.gist, .gist-file table tr td {
+.gist .gist-file table tr td {
   border: unset;
 }
 
