@@ -1,0 +1,143 @@
+---
+layout: default
+title: Admin Post Editor
+permalink: /admin/
+---
+
+<!-- External Dependencies (EasyMDE & Google GIS) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.css">
+<script src="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.js"></script>
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+<link rel="stylesheet" href="{{ '/assets/css/admin.css' | relative_url }}">
+
+<div class="admin-container">
+  <!-- Authentication Screen -->
+  <div id="auth-section" class="admin-card auth-box">
+    <h2>Admin Portal Login</h2>
+    <p>Sign in with an authorized admin account (<code>jpaquay@gmail.com</code>, <code>jerome@netdev.be</code>, <code>jpaquay@google.com</code>) to manage blog posts.</p>
+    
+    <div class="auth-providers">
+      <div id="g_id_onload"></div>
+      <div style="margin-top: 1rem;">
+        <button id="btn-demo-auth" class="admin-btn admin-btn-outline" onclick="handleDemoLogin()">
+          Quick Admin Sign-In (Demo / Dev)
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Admin Main Dashboard & Editor (Hidden until authenticated) -->
+  <div id="admin-app" class="hidden">
+    <!-- Header -->
+    <header class="admin-header">
+      <div class="admin-title-area">
+        <h1>Post Editor Admin</h1>
+        <p>Manage Jekyll blog posts directly in Git repository</p>
+      </div>
+      <div class="admin-user-info">
+        <img id="user-avatar" src="https://github.com/identicons/jpaquay.png" class="admin-avatar" alt="Avatar">
+        <div>
+          <strong id="user-display-name">Admin User</strong><br>
+          <small id="user-email" style="color: var(--admin-muted);">user@google.com</small>
+        </div>
+        <button id="btn-logout" class="admin-btn admin-btn-outline" style="margin-left: 1rem;">Logout</button>
+      </div>
+    </header>
+
+    <!-- GitHub Personal Access Token Config -->
+    <div class="admin-card">
+      <div style="display: flex; gap: 1rem; align-items: flex-end;">
+        <div class="form-group" style="flex: 1; margin-bottom: 0;">
+          <label for="gh-token-input">GitHub Personal Access Token (PAT)</label>
+          <input type="password" id="gh-token-input" class="form-control" placeholder="ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx">
+        </div>
+        <button id="btn-save-token" class="admin-btn admin-btn-secondary">Save Token</button>
+      </div>
+      <small style="color: var(--admin-muted); display: block; margin-top: 0.5rem;">
+        Token requires <code>repo</code> permissions to read/write <code>_posts/</code> files.
+      </small>
+    </div>
+
+    <div class="admin-grid">
+      <!-- Editor Form -->
+      <div class="admin-card" id="post-form-section">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+          <h2 id="editor-heading" style="margin: 0;">Create New Post</h2>
+          <button id="btn-new-post" class="admin-btn admin-btn-outline">Clear / New Post</button>
+        </div>
+
+        <form id="post-form">
+          <div class="form-group">
+            <label for="post-title">Post Title *</label>
+            <input type="text" id="post-title" class="form-control" placeholder="e.g. Exploring New Technologies" required>
+          </div>
+
+          <div class="admin-grid" style="grid-template-columns: 1fr 1fr; margin-bottom: 0;">
+            <div class="form-group">
+              <label for="post-date">Publish Date</label>
+              <input type="date" id="post-date" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="post-tags">Tags (comma-separated)</label>
+              <input type="text" id="post-tags" class="form-control" placeholder="e.g. tech, news, jekyll">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="post-subtitle">Subtitle / Short Description</label>
+            <input type="text" id="post-subtitle" class="form-control" placeholder="e.g. A deep dive into modern static sites">
+          </div>
+
+          <div class="form-group">
+            <label for="post-content">Markdown Content</label>
+            <textarea id="post-content" rows="12" class="form-control"></textarea>
+          </div>
+
+          <div style="display: flex; justify-content: flex-end; gap: 1rem; margin-top: 1.5rem;">
+            <button type="submit" class="admin-btn admin-btn-primary">
+              Commit Post to GitHub
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Posts List Sidebar -->
+      <div class="admin-card">
+        <h2 style="margin-top: 0;">Existing Posts</h2>
+        <div style="max-height: 550px; overflow-y: auto;">
+          <table class="posts-table">
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="posts-list-body">
+              <tr><td colspan="4" style="text-align: center;">Authenticating...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Toast Notifications -->
+<div id="admin-toast" class="admin-toast hidden">Notification message</div>
+
+<script>
+  function handleDemoLogin() {
+    const demoUser = {
+      name: 'Jerome Paquay',
+      email: 'jpaquay@google.com',
+      picture: 'https://github.com/jpaquay.png'
+    };
+    localStorage.setItem('admin_user', JSON.stringify(demoUser));
+    if (typeof setAuthenticatedUser === 'function') {
+      setAuthenticatedUser(demoUser);
+    }
+  }
+</script>
+<script src="{{ '/assets/js/admin.js' | relative_url }}"></script>
