@@ -62,4 +62,12 @@ layout: null
       $('.page__comments-form .js-notice-text-failure').removeClass('d-none');
     }
   }
+
+  // Expose for testing
+  if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { showAlert };
+  } else if (typeof window !== 'undefined' && window.process && window.process.env && window.process.env.NODE_ENV === 'test') {
+    // Only expose globally if explicitly in a test environment and module.exports isn't used
+    window.__staticman_showAlert = showAlert;
+  }
 })(jQuery);
