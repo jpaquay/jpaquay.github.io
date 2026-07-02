@@ -1,89 +1,682 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en" data-theme="minimal">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jerome Paquay - Dynamic CV & Tech Showcase</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/12.15.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/12.15.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/12.15.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/12.15.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/12.15.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/12.15.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/12.15.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/12.15.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/12.15.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/12.15.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+  <!-- Background Animated Canvas / FX -->
+  <div id="bg-canvas-container"></div>
+  <div class="theme-transition-overlay" id="theme-overlay"></div>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+  <!-- Left-Hand Collapsible Sidebar Drawer -->
+  <aside class="sidebar-drawer" id="sidebar">
+    <div class="sidebar-header">
+      <div class="brand-info">
+        <span class="brand-logo">/net/dev</span>
+        <span class="brand-author">Jerome Paquay</span>
+      </div>
+      <button class="sidebar-toggle-btn" id="sidebar-toggle-btn" title="Toggle Navigation Menu">
+        <span class="toggle-icon">◀</span>
+      </button>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <!-- Navigation Menu Items -->
+    <nav class="sidebar-nav">
+      <span class="nav-section-title">Navigation</span>
+      <a href="#hero" class="nav-item active">
+        <span class="nav-icon">👤</span> <span class="nav-text">About Jerome</span>
+      </a>
+      <a href="#attributes" class="nav-item">
+        <span class="nav-icon">🎯</span> <span class="nav-text">Verified Attributes</span>
+      </a>
+      <a href="#tech-lifeline" class="nav-item">
+        <span class="nav-icon">🚀</span> <span class="nav-text">Programming Lifeline</span>
+      </a>
+      <a href="#timeline" class="nav-item">
+        <span class="nav-icon">💼</span> <span class="nav-text">Work Experience</span>
+      </a>
+      <a href="#garage" class="nav-item">
+        <span class="nav-icon">🛠️</span> <span class="nav-text">Garage Mechanics</span>
+      </a>
+      <a href="#ai-cloud-arch" class="nav-item">
+        <span class="nav-icon">☁️</span> <span class="nav-text">AI & Cloud Arch</span>
+      </a>
+      <a href="#quantum-sec" class="nav-item">
+        <span class="nav-icon">🛡️</span> <span class="nav-text">Quantum Security</span>
+      </a>
+      <a href="#sre-chaos-sim" class="nav-item">
+        <span class="nav-icon">📉</span> <span class="nav-text">SRE & Cloud Chaos</span>
+      </a>
+    </nav>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+    <!-- Social Links Block -->
+    <div class="sidebar-socials">
+      <span class="nav-section-title">Connect</span>
+      <div class="social-icons-grid">
+        <a href="https://twitter.com/jpaquay" target="_blank" class="social-link" title="X (Twitter) @jpaquay">
+          <svg class="social-icon" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+          </svg>
+          <span class="nav-text">X / Twitter</span>
+        </a>
+        <a href="https://linkedin.com/in/jeromepaquay" target="_blank" class="social-link" title="LinkedIn /jeromepaquay">
+          <svg class="social-icon" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+            <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+          </svg>
+          <span class="nav-text">LinkedIn</span>
+        </a>
+        <a href="https://github.com/jpaquay" target="_blank" class="social-link" title="GitHub @jpaquay">
+          <svg class="social-icon" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+            <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+          </svg>
+          <span class="nav-text">GitHub</span>
+        </a>
+        <a href="mailto:jpaquay+hugo@gmail.com" class="social-link" title="Email Jerome">
+          <svg class="social-icon" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+          </svg>
+          <span class="nav-text">Email</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Theme Switcher inside Sidebar -->
+    <div class="sidebar-theme-switcher">
+      <span class="nav-section-title">Theme Engine</span>
+      <div class="theme-buttons-vertical">
+        <button class="theme-btn" data-theme-id="ghibli"><span class="btn-icon">🍃</span> <span class="btn-label">Ghibli</span></button>
+        <button class="theme-btn" data-theme-id="terminal"><span class="btn-icon">📟</span> <span class="btn-label">Terminal</span></button>
+        <button class="theme-btn" data-theme-id="cyberpunk"><span class="btn-icon">⚡</span> <span class="btn-label">Cyberpunk</span></button>
+        <button class="theme-btn active" data-theme-id="minimal"><span class="btn-icon">🌊</span> <span class="btn-label">Ocean Blue</span></button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content Wrapper -->
+  <div class="main-content-layout">
+    
+    <!-- Top Bar Mobile Toggle -->
+    <header class="mobile-top-bar">
+      <button class="mobile-menu-btn" id="mobile-menu-btn">☰ Menu</button>
+      <span class="brand-logo">/net/dev</span>
+    </header>
+
+    <div class="app-wrapper">
+
+      <!-- 1. Hero / About Section -->
+      <section class="hero-section" id="hero">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="badge-row">
+              <span class="badge badge-primary">Enterprise Architect @ Google Cloud</span>
+              <span class="badge badge-accent" id="turing-badge">Turing Test Verified Human ✓</span>
+            </div>
+            
+            <h1 class="hero-title">
+              Hi, I'm <span class="highlight-text">Jerome</span> 👋
+            </h1>
+            <p class="hero-subtitle">
+              Building trusted relationships, solving tough engineering problems, and accelerating organizations to the next step in digitalization.
+            </p>
+
+            <!-- Interactive Code Snippet Simulator -->
+            <div class="code-card">
+              <div class="code-header">
+                <span class="code-dot red"></span>
+                <span class="code-dot yellow"></span>
+                <span class="code-dot green"></span>
+                <span class="code-title">innovate.js</span>
+              </div>
+              <pre class="code-body"><code><span class="keyword">var</span> innovate = <span class="keyword">function</span>(x) {
+  <span class="keyword">return</span> (<span class="number">10</span> * x);
+};
+<span class="function">innovate</span>(<span class="string">"whats_next"</span>); <span class="comment">// 🚀 Output: 10x Transformation</span></code></pre>
+              <button class="btn-sm" id="run-code-btn">▶ Execute 10x Simulator</button>
+              <div class="code-output hidden" id="code-output-box"></div>
+            </div>
+
+            <div class="hero-actions">
+              <a href="#tech-lifeline" class="btn btn-primary">My Programming Lifeline</a>
+              <a href="#quantum-sec" class="btn btn-secondary">Quantum Security</a>
+              <a href="#garage" class="btn btn-outline">Garage Projects</a>
+            </div>
+          </div>
+
+          <!-- Avatar / Visual Card -->
+          <div class="hero-avatar-card">
+            <div class="avatar-frame">
+              <img src="https://blog.netdev.be/assets/img/author.jpg" alt="Jerome Paquay Avatar" class="avatar-img" id="main-avatar">
+              <div class="avatar-backdrop"></div>
+              <div class="avatar-theme-badge">
+                <span class="badge-icon">🛡️</span>
+              </div>
+            </div>
+            <div class="avatar-caption">
+              <h3>Handsome Genius ™</h3>
+              <p>Brussels, Belgium • 20+ Years in IT</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. Human Attributes & Skills Matrix -->
+      <section class="section" id="attributes">
+        <div class="section-header">
+          <h2 class="section-title">Verified Attributes & Capabilities 🎯</h2>
+          <p class="section-desc">Interactive filterable trait matrix based on human Turing verification.</p>
+        </div>
+
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">All Attributes</button>
+          <button class="filter-btn" data-filter="core">Core Traits</button>
+          <button class="filter-btn" data-filter="skills">Tech & Architecture</button>
+          <button class="filter-btn" data-filter="fun">Fun & Humor</button>
+        </div>
+
+        <div class="attributes-grid" id="attributes-grid">
+          <!-- Dynamic Cards Injected via JS -->
+        </div>
+      </section>
+
+      <!-- 3. Programming Lifeline (Boxed Card like Quantum) -->
+      <section class="section quantum-section" id="tech-lifeline">
+        <div class="quantum-card">
+          <div class="section-header">
+            <h2 class="section-title">My Programming Lifeline 🚀</h2>
+            <p class="section-desc">Jerome's personal code history, key milestones, language evolutions, and tech stack experience since 1991.</p>
+          </div>
+
+          <div class="filter-bar">
+            <button class="lifeline-filter-btn active" data-tech-filter="all">All Stack</button>
+            <button class="lifeline-filter-btn" data-tech-filter="programming">Programming & Web</button>
+            <button class="lifeline-filter-btn" data-tech-filter="cloud">Cloud & Infra</button>
+            <button class="lifeline-filter-btn" data-tech-filter="ai">AI & ML</button>
+            <button class="lifeline-filter-btn" data-tech-filter="network">Network & Security</button>
+          </div>
+
+          <!-- Horizontal Scroll Navigation Slider -->
+          <div class="lifeline-scroll-control">
+            <div class="scroll-slider-wrapper">
+              <span class="scroll-slider-label">📍 Scroll Timeline:</span>
+              <input type="range" id="lifeline-scroll-slider" min="0" max="100" value="0" step="1" title="Drag to navigate timeline horizontally">
+            </div>
+          </div>
+
+          <div class="lifeline-container" id="lifeline-scroll-container">
+            <div class="lifeline-track" id="lifeline-track">
+              
+              <!-- 1991 -->
+              <div class="lifeline-node top" data-year="1991" data-category="programming">
+                <div class="node-badge">1991</div>
+                <div class="node-card">
+                  <div class="node-icon">🕹️</div>
+                  <h4>Commodore 64 & BASIC</h4>
+                  <p>First after-school coding lessons. Typing POKE & PEEK commands in <code>BASIC</code> on 8-bit hardware.</p>
+                  <div class="node-tags"><span class="node-tag">BASIC</span><span class="node-tag">C64</span></div>
+                </div>
+              </div>
+
+              <!-- 1995 -->
+              <div class="lifeline-node bottom" data-year="1995" data-category="programming">
+                <div class="node-badge">1995</div>
+                <div class="node-card">
+                  <div class="node-icon">💻</div>
+                  <h4>First PC & Web Dawn</h4>
+                  <p>Pentium 133MHz, 64MB RAM. Writing MS Office Macros, MS Access DBs, VBScript, HTML, CSS, JavaScript, and Flash <code>ActionScript</code>.</p>
+                  <div class="node-tags">
+                    <span class="node-tag">VBScript</span><span class="node-tag">HTML/CSS</span><span class="node-tag">JS</span><span class="node-tag">ActionScript</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 1997 -->
+              <div class="lifeline-node top" data-year="1997" data-category="programming">
+                <div class="node-badge">1997</div>
+                <div class="node-card">
+                  <div class="node-icon">🌐</div>
+                  <h4>56kbps Dial-Up & LAMP Stack</h4>
+                  <p>Home Internet setup @ 56kbps. Building full-stack web applications with ASP.net (IIS/Access), WAMP/LAMP, PHP, MySQL & Bash scripts.</p>
+                  <div class="node-tags">
+                    <span class="node-tag">PHP</span><span class="node-tag">MySQL</span><span class="node-tag">Bash</span><span class="node-tag">ASP.NET</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 1999 -->
+              <div class="lifeline-node bottom" data-year="1999" data-category="programming">
+                <div class="node-badge">1999</div>
+                <div class="node-card">
+                  <div class="node-icon">⚙️</div>
+                  <h4>Computer Science & Systems</h4>
+                  <p>University CS engineering. Deep dive into MATLAB, C, C++, Java, UML architectural design, x86 Assembler, and SQL database design.</p>
+                  <div class="node-tags">
+                    <span class="node-tag">C</span><span class="node-tag">C++</span><span class="node-tag">Java</span><span class="node-tag">Assembly</span><span class="node-tag">SQL</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2006 -->
+              <div class="lifeline-node top" data-year="2006" data-category="network">
+                <div class="node-badge">2006</div>
+                <div class="node-card">
+                  <div class="node-icon">🐍</div>
+                  <h4>Python, Rust & Cisco TCL</h4>
+                  <p>Joined Cisco Systems. Scripting network infrastructure with Cisco IOS TCL, adopting Python, Rust, CoffeeScript, and server-side Node.js.</p>
+                  <div class="node-tags">
+                    <span class="node-tag">Python</span><span class="node-tag">Rust</span><span class="node-tag">Node.js</span><span class="node-tag">Cisco TCL</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2018 -->
+              <div class="lifeline-node bottom" data-year="2018" data-category="cloud ai">
+                <div class="node-badge">2018</div>
+                <div class="node-card">
+                  <div class="node-icon">☁️</div>
+                  <h4>Google Cloud, Go & Machine Learning</h4>
+                  <p>Joined Google Cloud as Customer Engineer. Scaling Go architectures, TensorFlow with Keras, Flutter cross-platform apps & TypeScript.</p>
+                  <div class="node-tags">
+                    <span class="node-tag os">Go</span><span class="node-tag os">TensorFlow</span><span class="node-tag">TypeScript</span><span class="node-tag">Flutter</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2021+ -->
+              <div class="lifeline-node top" data-year="2021" data-category="network ai programming">
+                <div class="node-badge">2021+</div>
+                <div class="node-card">
+                  <div class="node-icon">🤖</div>
+                  <h4>Quantum Security & Scratch Education</h4>
+                  <p>PQC Crypto-Agility, Post-Quantum security design, and teaching fundamental block programming to the next generation with Scratch 👾.</p>
+                  <div class="node-tags">
+                    <span class="node-tag">Scratch</span><span class="node-tag os">PQC</span><span class="node-tag os">GKE</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Work Experience Timeline -->
+      <section class="section" id="timeline">
+        <div class="section-header">
+          <h2 class="section-title">Work Experience & Leadership 💼</h2>
+          <p class="section-desc">Over 20 years of designing scalable architectures and driving digital transformation.</p>
+        </div>
+
+        <div class="timeline">
+          
+          <!-- Job 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">September 2018 - Present</div>
+              <h3 class="timeline-role">Customer Engineer / Cloud Architect</h3>
+              <h4 class="timeline-company">Google Cloud</h4>
+              <p class="timeline-body">
+                Cloud Architect for EU public sector. Partnering with innovative teams to design resilient Google Cloud Platform solutions, solve complex engineering challenges, and accelerate digital maturity.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">Google Cloud</span>
+                <span class="tag">Enterprise Architecture</span>
+                <span class="tag">EU Public Sector</span>
+                <span class="tag">Security & Compliance</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Job 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">June 2006 - August 2018</div>
+              <h3 class="timeline-role">Systems Engineer / Solutions Architect</h3>
+              <h4 class="timeline-company">Cisco Systems</h4>
+              <p class="timeline-body">
+                Solutions Architect for EU institutions, NATO, and Belgian Governments. Engineered mission-critical networking, cybersecurity, and infrastructure solutions across large global organizations.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">Cisco</span>
+                <span class="tag">NATO / EU Institutions</span>
+                <span class="tag">Network Security</span>
+                <span class="tag">Infrastructure</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Job 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">September 2002 - June 2006</div>
+              <h3 class="timeline-role">IT Manager</h3>
+              <h4 class="timeline-company">Missil Petroleum</h4>
+              <p class="timeline-body">
+                Responsible for end-to-end IT operations, infrastructure availability, and internal systems deployment.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">IT Management</span>
+                <span class="tag">Operations</span>
+                <span class="tag">Infrastructure</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 5. Garage Mechanics Projects Showcase -->
+      <section class="section" id="garage">
+        <div class="section-header">
+          <h2 class="section-title">Garage Mechanics 🛠️</h2>
+          <p class="section-desc">Personal lab environments, micro-apps, and web experiments.</p>
+        </div>
+
+        <div class="garage-grid">
+          
+          <a href="http://bg.netdev.be" target="_blank" class="garage-card">
+            <div class="garage-icon">🌐</div>
+            <div class="garage-info">
+              <h3>gcs</h3>
+              <p>Google Cloud Storage custom hosting endpoint & lab domain.</p>
+              <span class="garage-link">bg.netdev.be ↗</span>
+            </div>
+          </a>
+
+          <a href="https://fb.netdev.be/" target="_blank" class="garage-card">
+            <div class="garage-icon">🔥</div>
+            <div class="garage-info">
+              <h3>firebase</h3>
+              <p>Firebase App Hosting deployment & serverless backend sandbox.</p>
+              <span class="garage-link">fb.netdev.be ↗</span>
+            </div>
+          </a>
+
+          <a href="https://beyond.netdev.be/" target="_blank" class="garage-card">
+            <div class="garage-icon">🚀</div>
+            <div class="garage-info">
+              <h3>beyond</h3>
+              <p>BeyondCorp Zero Trust architecture lab & identity endpoint.</p>
+              <span class="garage-link">beyond.netdev.be ↗</span>
+            </div>
+          </a>
+
+          <a href="https://web3.netdev.be/" target="_blank" class="garage-card">
+            <div class="garage-icon">🧩</div>
+            <div class="garage-info">
+              <h3>captcha</h3>
+              <p>Web3 & Turing test validation experiment platform.</p>
+              <span class="garage-link">web3.netdev.be ↗</span>
+            </div>
+          </a>
+
+          <a href="https://v3.netdev.be" target="_blank" class="garage-card">
+            <div class="garage-icon">📄</div>
+            <div class="garage-info">
+              <h3>gh.md</h3>
+              <p>GitHub Markdown renderer & static document viewer.</p>
+              <span class="garage-link">v3.netdev.be ↗</span>
+            </div>
+          </a>
+
+          <a href="https://blog.netdev.be" target="_blank" class="garage-card">
+            <div class="garage-icon">✍️</div>
+            <div class="garage-info">
+              <h3>github.io blog</h3>
+              <p>Main online garage & technical thought leadership blog.</p>
+              <span class="garage-link">blog.netdev.be ↗</span>
+            </div>
+          </a>
+
+        </div>
+      </section>
+
+      <!-- 6. Google Cloud AI Architecture Sandbox & Flow Visualizer -->
+      <section class="section quantum-section" id="ai-cloud-arch">
+        <div class="quantum-card">
+          <div class="quantum-header">
+            <span class="badge badge-primary">Interactive Architecture Lab</span>
+            <h2>Google Cloud & Gemini 3.5 AI Flow Sandbox ☁️🤖</h2>
+            <p>
+              Design enterprise AI workloads using Gemini 3.5 Pro, Vertex AI, GKE Autopilot, and Zero Trust security. Select a scenario below to watch data flow, compute metrics, and estimate cost latency live!
+            </p>
+          </div>
+
+          <div class="ai-arch-wrapper">
+            <div class="arch-scenario-selector">
+              <span class="arch-label">Select Enterprise AI Workload:</span>
+              <button class="arch-scenario-btn active" data-scenario="doc-ai">📄 EU Public Sector Doc Processing</button>
+              <button class="arch-scenario-btn" data-scenario="multimodal">🎥 Real-Time Multimodal Stream</button>
+              <button class="arch-scenario-btn" data-scenario="code-refactor">⚡ Agentic Monolith Refactoring</button>
+            </div>
+
+            <div class="arch-topology-grid">
+              <!-- Node 1: Ingestion Layer -->
+              <div class="arch-node-card" id="arch-node-ingest">
+                <div class="node-header-row">
+                  <span class="node-icon">📥</span>
+                  <span class="node-title">Ingestion Layer</span>
+                </div>
+                <h4 id="arch-ingest-val">GCS Secure Bucket</h4>
+                <p id="arch-ingest-desc">Customer PDF/Document store with KMS Encryption.</p>
+                <div class="node-badge-mini" id="arch-ingest-badge">Cloud Storage</div>
+              </div>
+
+              <!-- Node 2: Compute & Orchestration -->
+              <div class="arch-node-card highlight" id="arch-node-compute">
+                <div class="node-header-row">
+                  <span class="node-icon">⚙️</span>
+                  <span class="node-title">Compute Orchestrator</span>
+                </div>
+                <h4 id="arch-compute-val">GKE Autopilot + Ray</h4>
+                <p id="arch-compute-desc">Distributed container scaling with auto-provisioned GPUs.</p>
+                <div class="node-badge-mini" id="arch-compute-badge">GKE Autopilot</div>
+              </div>
+
+              <!-- Node 3: AI Model Core -->
+              <div class="arch-node-card ai-core-card" id="arch-node-model">
+                <div class="node-header-row">
+                  <span class="node-icon">🧠</span>
+                  <span class="node-title">AI Engine</span>
+                </div>
+                <h4 id="arch-model-val">Gemini 3.5 Pro</h4>
+                <p id="arch-model-desc">1M Token Context Window & Multimodal Reasoning.</p>
+                <div class="node-badge-mini" id="arch-model-badge">Vertex AI</div>
+              </div>
+
+              <!-- Node 4: Security & Zero Trust -->
+              <div class="arch-node-card" id="arch-node-sec">
+                <div class="node-header-row">
+                  <span class="node-icon">🛡️</span>
+                  <span class="node-title">Zero Trust Security</span>
+                </div>
+                <h4 id="arch-sec-val">BeyondCorp + IAM</h4>
+                <p id="arch-sec-desc">Context-aware access, Secret Manager, DLP data masking.</p>
+                <div class="node-badge-mini" id="arch-sec-badge">BeyondCorp</div>
+              </div>
+            </div>
+
+            <!-- Dynamic Metrics & Flow Output -->
+            <div class="arch-metrics-bar">
+              <div class="arch-metric-item">
+                <span class="arch-metric-lbl">Model Core</span>
+                <span class="arch-metric-val highlight-blue" id="arch-metric-model">Gemini 3.5 Pro</span>
+              </div>
+              <div class="arch-metric-item">
+                <span class="arch-metric-lbl">Est. Latency (p95)</span>
+                <span class="arch-metric-val" id="arch-metric-latency">42 ms</span>
+              </div>
+              <div class="arch-metric-item">
+                <span class="arch-metric-lbl">Throughput</span>
+                <span class="arch-metric-val" id="arch-metric-tps">1,250 doc/sec</span>
+              </div>
+              <div class="arch-metric-item">
+                <span class="arch-metric-lbl">Cost Efficiency</span>
+                <span class="arch-metric-val green" id="arch-metric-cost">98% Optimal</span>
+              </div>
+            </div>
+
+            <div class="arch-flow-stream" id="arch-flow-log">
+              ⚡ <strong>[Gemini 3.5 AI Pipeline]</strong> Initialized EU Public Sector Document Pipeline. Gemini 3.5 Pro active with zero-data retention security policy.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. Standalone Horizontal Post-Quantum Cryptography Threat Simulator -->
+      <section class="section quantum-section" id="quantum-sec">
+        <div class="quantum-card">
+          <div class="quantum-header">
+            <span class="badge badge-warning">Crypto-Agility Simulator</span>
+            <h2>Cybersecurity for the Quantum Era 🛡️⚡</h2>
+            <p>
+              Quantum computers are expected to soon break traditional public-key cryptography (RSA-2048/ECC).
+              Drag the quantum timeline slider below to test enterprise crypto-agility & threat metrics!
+            </p>
+          </div>
+
+          <div class="interactive-pqc">
+            <div class="pqc-controls">
+              <div class="slider-header-row">
+                <label for="quantum-slider">Quantum Era Year:</label>
+                <span id="slider-year-label" class="current-year-badge">2026</span>
+              </div>
+              <input type="range" id="quantum-slider" min="2024" max="2035" value="2026" step="1">
+              <div class="slider-labels">
+                <span>2024 (Today)</span>
+                <span>2028 (CRQC Threshold)</span>
+                <span>2035 (Post-Quantum)</span>
+              </div>
+            </div>
+
+            <div class="pqc-simulation-grid">
+              <div class="algo-box" id="classical-box">
+                <h3>Classical RSA-2048 / ECC</h3>
+                <p class="algo-type">Public-Key Cryptography</p>
+                <div class="status-indicator" id="classical-status">
+                  <span class="indicator-dot green"></span> Secure
+                </div>
+                <div class="vulnerability-bar">
+                  <div class="vuln-fill" id="classical-vuln" style="width: 15%;"></div>
+                </div>
+                <span class="vuln-text" id="classical-vuln-text">Quantum Vulnerability: Low (2026)</span>
+              </div>
+
+              <div class="vs-divider">VS</div>
+
+              <div class="algo-box highlight" id="pqc-box">
+                <h3>Post-Quantum Cryptography</h3>
+                <p class="algo-type">FIPS 203/204 (Kyber / Dilithium)</p>
+                <div class="status-indicator">
+                  <span class="indicator-dot green"></span> Quantum-Resistant
+                </div>
+                <div class="vulnerability-bar">
+                  <div class="vuln-fill safe" style="width: 0%;"></div>
+                </div>
+                <span class="vuln-text">Quantum Vulnerability: Immune</span>
+              </div>
+            </div>
+
+            <div class="pqc-summary" id="pqc-summary-text">
+              💡 <strong>Status (2026):</strong> Transitioning algorithms to PQC hybrid mode ensures long-term data security against store-now-decrypt-later attacks.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. SRE & Cloud Autoscaling Chaos Simulator -->
+      <section class="section quantum-section" id="sre-chaos-sim">
+        <div class="quantum-card">
+          <div class="quantum-header">
+            <span class="badge badge-warning">Interactive SRE Lab</span>
+            <h2>Google Cloud SRE & Autoscaling Chaos Simulator 📉💥</h2>
+            <p>
+              Simulate enterprise cloud traffic spikes, regional network outages, and DB failover. Watch GKE pod autoscaling, Spanner multi-region sync, and load balancing resilience live!
+            </p>
+          </div>
+
+          <div class="chaos-simulator-wrapper">
+            <div class="chaos-controls-bar">
+              <button class="chaos-btn" id="chaos-btn-spike">💥 Inject 10x Traffic Spike</button>
+              <button class="chaos-btn" id="chaos-btn-outage">⚡ Simulate Region Outage</button>
+              <button class="chaos-btn btn-reset" id="chaos-btn-reset">↺ Reset Baseline</button>
+            </div>
+
+            <div class="chaos-dashboard-grid">
+              <!-- Metric Gauge 1: Active GKE Pods -->
+              <div class="metric-card">
+                <div class="metric-header">
+                  <span class="metric-title">GKE Pod Replicas</span>
+                  <span class="metric-status green" id="gke-status-tag">NORMAL</span>
+                </div>
+                <div class="metric-value" id="gke-pod-count">12 Pods</div>
+                <div class="progress-bar">
+                  <div class="progress-fill" id="gke-pod-fill" style="width: 25%;"></div>
+                </div>
+                <span class="metric-footer" id="gke-autoscale-label">Autoscaler: Idle (Target 70% CPU)</span>
+              </div>
+
+              <!-- Metric Gauge 2: System Latency (p99) -->
+              <div class="metric-card">
+                <div class="metric-header">
+                  <span class="metric-title">Latency (p99)</span>
+                  <span class="metric-status green" id="latency-status-tag">OPTIMAL</span>
+                </div>
+                <div class="metric-value" id="latency-value">24 ms</div>
+                <div class="progress-bar">
+                  <div class="progress-fill" id="latency-fill" style="width: 15%;"></div>
+                </div>
+                <span class="metric-footer" id="latency-label">SLO Target: &lt; 100 ms</span>
+              </div>
+
+              <!-- Metric Gauge 3: Cloud Spanner DB Sync -->
+              <div class="metric-card">
+                <div class="metric-header">
+                  <span class="metric-title">Spanner Multi-Region DB</span>
+                  <span class="metric-status green" id="spanner-status-tag">HEALTHY</span>
+                </div>
+                <div class="metric-value" id="spanner-value">99.999% Sync</div>
+                <div class="progress-bar">
+                  <div class="progress-fill safe" id="spanner-fill" style="width: 100%;"></div>
+                </div>
+                <span class="metric-footer" id="spanner-label">Quorum Leader: europe-west1</span>
+              </div>
+            </div>
+
+            <div class="chaos-console-log" id="chaos-console">
+              💻 <strong>[SRE Telemetry Console]</strong> Baseline state initialized. All systems operating within normal parameters.
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-content">
+          <p>Jerome Paquay • Born & Raised in Brussels, Belgium 🇧🇪</p>
+          <p class="quote">"Hakuna matata - take it easy, there are no worries."</p>
+          <div class="footer-links">
+            <a href="https://en.wikipedia.org/wiki/L%C3%A9on:_The_Professional" target="_blank">Watch My Favorite Movie: Léon by Luc Besson 🎬</a>
+            <span>•</span>
+            <a href="https://goo.gl/maps/Xhy4aBu1WYrbBHe97" target="_blank">Brussels on Maps 📍</a>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
 </html>
