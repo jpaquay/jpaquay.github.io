@@ -28,13 +28,12 @@
       <nav>
         <ul class="vp-nav-links">
           <li><a href="#about" class="vp-nav-link">About</a></li>
-          <li><a href="#experience" class="vp-nav-link">Experience</a></li>
           <li><a href="#traits" class="vp-nav-link">Traits</a></li>
           <li><a href="#philosophy" class="vp-nav-link">Philosophy</a></li>
-          <li><a href="#ai-arch" class="vp-nav-link">AI Arch</a></li>
-          <li><a href="#quantum-sec" class="vp-nav-link">Quantum Sec</a></li>
+          <li><a href="#experience" class="vp-nav-link">Experience</a></li>
           <li><a href="#lifeline" class="vp-nav-link">Lifeline</a></li>
           <li><a href="#garage" class="vp-nav-link">Garage</a></li>
+          <li><a href="#simulators" class="vp-nav-link">Simulators</a></li>
         </ul>
       </nav>
 
@@ -62,8 +61,8 @@
   <!-- Main Container -->
   <main class="vp-container">
 
-    <!-- 1. INFO SECTION: Hero & Biography -->
-    <section class="vp-section" id="about">
+    <!-- 1. HERO SECTION (With Compact 10x Simulator above Avatar) -->
+    <section class="vp-hero" id="about">
       <div class="vp-hero-grid">
         <div class="vp-hero-content">
           <div class="vp-badge-row">
@@ -83,52 +82,86 @@
           <div class="vp-hero-actions">
             <button class="vp-btn vp-btn-primary" data-contact-trigger>✉️ Contact Me & Socials</button>
             <a href="#experience" class="vp-btn vp-btn-secondary">💼 Work Experience</a>
-            <a href="#ai-arch" class="vp-btn vp-btn-secondary">☁️ AI Flow Sandbox</a>
+            <a href="#simulators" class="vp-btn vp-btn-secondary">⚡ Interactive Labs</a>
           </div>
         </div>
 
-        <!-- Hero Card / Avatar -->
-        <div class="vp-hero-card">
-          <div class="vp-avatar-wrapper">
-            <img src="https://blog.netdev.be/assets/img/author.jpg" alt="Jerome Paquay" class="vp-avatar-img">
+        <!-- Right Column: Compact 10x Simulator + Avatar Card -->
+        <div class="vp-hero-right-col">
+          <!-- Compact 10x Transformation Simulator -->
+          <div class="vp-code-block">
+            <div class="vp-code-header">
+              <div class="vp-code-dots">
+                <span class="vp-code-dot red"></span>
+                <span class="vp-code-dot yellow"></span>
+                <span class="vp-code-dot green"></span>
+              </div>
+              <span class="vp-code-title">innovate.js</span>
+            </div>
+            <pre class="vp-code-body"><code><span class="keyword">var</span> innovate = <span class="keyword">function</span>(x) { <span class="keyword">return</span> (<span class="number">10</span> * x); };
+<span class="function">innovate</span>(<span class="string">"whats_next"</span>);</code></pre>
+            <div class="vp-code-footer">
+              <button class="vp-btn vp-btn-primary" id="run-code-btn" style="padding: 6px 14px; font-size: 0.8rem;">▶ Run 10x Sim</button>
+            </div>
+            <div class="vp-code-output hidden" id="code-output-box"></div>
           </div>
-          <div class="vp-hero-card-info">
-            <h3>Handsome Genius ™</h3>
-            <p>Brussels, Belgium 🇧🇪 • 20+ Years in IT</p>
-            <p style="font-size: 0.8rem; color: var(--vp-c-brand); margin-top: 4px;"><em>"Hakuna matata - take it easy, no worries"</em></p>
+
+          <!-- Avatar Card -->
+          <div class="vp-hero-card">
+            <div class="vp-avatar-wrapper">
+              <img src="https://blog.netdev.be/assets/img/author.jpg" alt="Jerome Paquay" class="vp-avatar-img">
+            </div>
+            <div class="vp-hero-card-info">
+              <h3>Handsome Genius ™</h3>
+              <p>Brussels, Belgium 🇧🇪 • 20+ Years in IT</p>
+              <p style="font-size: 0.8rem; color: var(--vp-c-brand); margin-top: 4px;"><em>"Hakuna matata - take it easy, no worries"</em></p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 2. SIMULATOR SECTION: 10x Transformation Simulator -->
-    <section class="vp-section simulator-section">
+    <!-- 2. SECTION: TRAITS (Compact Tag Cloud Style) -->
+    <section class="vp-section" id="traits">
       <div class="vp-section-header">
-        <h2 class="vp-section-title">10x Transformation Simulator ⚡</h2>
-        <p class="vp-section-desc">Interactive execution model for digital acceleration.</p>
+        <h2 class="vp-section-title">Verified Attributes & Capabilities 🎯</h2>
+        <p class="vp-section-desc">Filterable human trait cloud verified via automated Turing test.</p>
       </div>
 
-      <div class="vp-code-block">
-        <div class="vp-code-header">
-          <div class="vp-code-dots">
-            <span class="vp-code-dot red"></span>
-            <span class="vp-code-dot yellow"></span>
-            <span class="vp-code-dot green"></span>
-          </div>
-          <span class="vp-code-title">innovate.js</span>
-        </div>
-        <pre class="vp-code-body"><code><span class="keyword">var</span> innovate = <span class="keyword">function</span>(x) {
-  <span class="keyword">return</span> (<span class="number">10</span> * x);
-};
-<span class="function">innovate</span>(<span class="string">"whats_next"</span>); <span class="comment">// 🚀 Accelerating enterprise digital transformation</span></code></pre>
-        <div class="vp-code-footer">
-          <button class="vp-btn vp-btn-primary" id="run-code-btn">▶ Execute Simulator</button>
-        </div>
-        <div class="vp-code-output hidden" id="code-output-box"></div>
+      <div class="vp-filter-bar">
+        <button class="vp-filter-btn active" data-attr-filter="all">🌟 All Traits</button>
+        <button class="vp-filter-btn" data-attr-filter="core">👤 Core Traits</button>
+        <button class="vp-filter-btn" data-attr-filter="skills">⚡ Tech & Architecture</button>
+        <button class="vp-filter-btn" data-attr-filter="fun">😄 Fun & Family</button>
+      </div>
+
+      <!-- Compact Tag Cloud Container -->
+      <div class="vp-traits-cloud" id="traits-tag-cloud">
+        <!-- Injected via JS -->
       </div>
     </section>
 
-    <!-- 3. INFO SECTION: Work Experience -->
+    <!-- 3. SECTION: PHILOSOPHY (Exact CV Content) -->
+    <section class="vp-section" id="philosophy">
+      <div class="vp-section-header">
+        <h2 class="vp-section-title">Philosophy & Leadership 📖</h2>
+        <p class="vp-section-desc">Principles honed over 20+ years of enterprise architecture and technology leadership.</p>
+      </div>
+
+      <div class="vp-feature-card" style="padding: 32px; font-size: 1.05rem; line-height: 1.75;">
+        <p style="margin-bottom: 16px;">
+          I’m a passionate technologist with a recognized customer-centric attitude working for over twenty years in IT. I strive to provide my teams with the best solutions taking into account their needs and expectations.
+        </p>
+        <p style="margin-bottom: 16px;">
+          This produced 50+ successful projects to launch and land. In my role, I’ve been designing and developing architectures for on-premise and cloud-based systems to solve large global organizations' business requirements.
+        </p>
+        <p>
+          I have a natural leadership that expresses best when organizing cross-functional teams around concrete goals. Born and raised in Brussels, Belgium 🇧🇪, <code>/net/dev</code> is my online garage.
+        </p>
+      </div>
+    </section>
+
+    <!-- 4. SECTION: CV WORK EXPERIENCE & LEADERSHIP -->
     <section class="vp-section" id="experience">
       <div class="vp-section-header">
         <h2 class="vp-section-title">Work Experience & Leadership 💼</h2>
@@ -208,130 +241,7 @@
       </div>
     </section>
 
-    <!-- 4. INFO SECTION: Verified Traits (PLACED ABOVE PHILOSOPHY) -->
-    <section class="vp-section" id="traits">
-      <div class="vp-section-header">
-        <h2 class="vp-section-title">Verified Attributes & Capabilities 🎯</h2>
-        <p class="vp-section-desc">Filterable human trait cloud verified via automated Turing test.</p>
-      </div>
-
-      <div class="vp-filter-bar">
-        <button class="vp-filter-btn active" data-attr-filter="all">🌟 All Traits</button>
-        <button class="vp-filter-btn" data-attr-filter="core">👤 Core Traits</button>
-        <button class="vp-filter-btn" data-attr-filter="skills">⚡ Tech & Architecture</button>
-        <button class="vp-filter-btn" data-attr-filter="fun">😄 Fun & Family</button>
-      </div>
-
-      <!-- Compact Tag Cloud Container -->
-      <div class="vp-traits-cloud" id="traits-tag-cloud">
-        <!-- Injected via JS -->
-      </div>
-    </section>
-
-    <!-- 5. INFO SECTION: Philosophy & Leadership (Exact CV Content) -->
-    <section class="vp-section" id="philosophy">
-      <div class="vp-section-header">
-        <h2 class="vp-section-title">Philosophy & Leadership 📖</h2>
-        <p class="vp-section-desc">Principles honed over 20+ years of enterprise architecture and technology leadership.</p>
-      </div>
-
-      <div class="vp-feature-card" style="padding: 32px; font-size: 1.05rem; line-height: 1.75;">
-        <p style="margin-bottom: 16px;">
-          I’m a passionate technologist with a recognized customer-centric attitude working for over twenty years in IT. I strive to provide my teams with the best solutions taking into account their needs and expectations.
-        </p>
-        <p style="margin-bottom: 16px;">
-          This produced 50+ successful projects to launch and land. In my role, I’ve been designing and developing architectures for on-premise and cloud-based systems to solve large global organizations' business requirements.
-        </p>
-        <p>
-          I have a natural leadership that expresses best when organizing cross-functional teams around concrete goals. Born and raised in Brussels, Belgium 🇧🇪, <code>/net/dev</code> is my online garage.
-        </p>
-      </div>
-    </section>
-
-    <!-- 6. SIMULATOR SECTION: Google Cloud AI Flow Sandbox -->
-    <section class="vp-section simulator-section" id="ai-arch">
-      <div class="vp-section-header">
-        <h2 class="vp-section-title">Google Cloud & Gemini 3.5 AI Flow Sandbox ☁️🤖</h2>
-        <p class="vp-section-desc">Design enterprise AI workloads using Gemini 3.5 Pro, Vertex AI, GKE Autopilot, and Zero Trust security.</p>
-      </div>
-
-      <div class="vp-sim-card">
-        <div class="vp-sim-controls">
-          <button class="vp-sim-btn active" data-arch-scenario="doc-ai">📄 EU Public Sector Doc Processing</button>
-          <button class="vp-sim-btn" data-arch-scenario="multimodal">🎥 Real-Time Multimodal Stream</button>
-          <button class="vp-sim-btn" data-arch-scenario="code-refactor">⚡ Agentic Monolith Refactoring</button>
-        </div>
-
-        <div class="vp-sim-grid">
-          <div class="vp-sim-node">
-            <div class="vp-sim-node-title">AI Engine</div>
-            <div class="vp-sim-node-value" id="arch-model-val">Gemini 3.5 Pro</div>
-          </div>
-          <div class="vp-sim-node">
-            <div class="vp-sim-node-title">Est. Latency (p95)</div>
-            <div class="vp-sim-node-value" id="arch-metric-latency">42 ms</div>
-          </div>
-          <div class="vp-sim-node">
-            <div class="vp-sim-node-title">Throughput</div>
-            <div class="vp-sim-node-value" id="arch-metric-tps">1,250 doc/sec</div>
-          </div>
-          <div class="vp-sim-node highlight">
-            <div class="vp-sim-node-title">Cost Efficiency</div>
-            <div class="vp-sim-node-value" id="arch-metric-cost">98% Optimal</div>
-          </div>
-        </div>
-
-        <div class="vp-sim-log" id="arch-flow-log">
-          ⚡ <strong>[Gemini 3.5 AI Pipeline]</strong> Initialized EU Public Sector Document Pipeline. Gemini 3.5 Pro active with zero-data retention security policy.
-        </div>
-      </div>
-    </section>
-
-    <!-- 7. SIMULATOR SECTION: Post-Quantum Cryptography Threat Simulator -->
-    <section class="vp-section simulator-section" id="quantum-sec">
-      <div class="vp-section-header">
-        <h2 class="vp-section-title">Cybersecurity for the Quantum Era 🛡️⚡</h2>
-        <p class="vp-section-desc">As we enter the Quantum Era, quantum computers put public-key cryptography at risk. Learn how organizations become crypto-agile.</p>
-      </div>
-
-      <div class="vp-custom-block warning" style="margin-bottom: 24px;">
-        <div class="vp-custom-block-title">⚠️ Quantum Vulnerability Warning</div>
-        <p>
-          Quantum computers are expected to soon break public-key cryptography (RSA-2048/ECC), putting your sensitive data at risk. To meet these current and emerging threats, it’s vital that your organization become <a href="https://cloud.google.com/blog/products/identity-security/how-google-is-preparing-for-a-post-quantum-world" target="_blank">crypto-agile</a>.
-        </p>
-      </div>
-
-      <div class="vp-sim-card">
-        <div style="margin-bottom: 16px;">
-          <label for="pqc-slider" style="font-weight: 600; margin-right: 12px;">Timeline Slider Year: <span id="pqc-year-label" class="vp-pill-badge primary">2026</span></label>
-          <input type="range" id="pqc-slider" min="2024" max="2035" value="2026" style="width: 100%; max-width: 400px; margin-top: 10px;">
-        </div>
-
-        <div class="vp-sim-grid">
-          <div class="vp-sim-node">
-            <div class="vp-sim-node-title">Classical RSA-2048</div>
-            <div class="vp-sim-node-value" id="rsa-status">✓ Active Transition</div>
-            <div style="background: #e2e8f0; height: 8px; border-radius: 4px; margin-top: 10px; overflow: hidden;">
-              <div id="rsa-vuln-fill" style="background: #ef4444; width: 35%; height: 100%;"></div>
-            </div>
-          </div>
-
-          <div class="vp-sim-node highlight">
-            <div class="vp-sim-node-title">Post-Quantum Cryptography</div>
-            <div class="vp-sim-node-value">FIPS 203/204 (Kyber)</div>
-            <div style="background: #e2e8f0; height: 8px; border-radius: 4px; margin-top: 10px; overflow: hidden;">
-              <div style="background: #10b981; width: 100%; height: 100%;"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="vp-sim-log" id="pqc-summary">
-          💡 <strong>Status (2026):</strong> Transitioning algorithms to PQC hybrid mode ensures long-term data security against store-now-decrypt-later attacks.
-        </div>
-      </div>
-    </section>
-
-    <!-- 8. INFO SECTION: Programming Lifeline (1991 - 2026+) -->
+    <!-- 5. SECTION: PROGRAMMING LIFELINE -->
     <section class="vp-section" id="lifeline">
       <div class="vp-section-header">
         <h2 class="vp-section-title">Programming Lifeline 🚀</h2>
@@ -447,45 +357,7 @@
       </div>
     </section>
 
-    <!-- 9. SIMULATOR SECTION: SRE Autoscaling Chaos Simulator -->
-    <section class="vp-section simulator-section">
-      <div class="vp-section-header">
-        <h2 class="vp-section-title">SRE & Cloud Autoscaling Chaos Simulator 📉💥</h2>
-        <p class="vp-section-desc">Simulate enterprise cloud traffic spikes, regional network outages, and DB failovers live.</p>
-      </div>
-
-      <div class="vp-sim-card">
-        <div class="vp-sim-controls">
-          <button class="vp-sim-btn" id="chaos-spike-btn">💥 Inject 10x Traffic Spike</button>
-          <button class="vp-sim-btn" id="chaos-outage-btn">⚡ Simulate Region Outage</button>
-          <button class="vp-sim-btn" id="chaos-reset-btn">↺ Reset Baseline</button>
-        </div>
-
-        <div class="vp-sim-grid">
-          <div class="vp-sim-node">
-            <div class="vp-sim-node-title">GKE Pod Replicas</div>
-            <div class="vp-sim-node-value" id="gke-pods-val">12 Pods (Baseline)</div>
-            <div style="background: #e2e8f0; height: 8px; border-radius: 4px; margin-top: 10px; overflow: hidden;">
-              <div id="gke-pods-fill" style="background: #3b82f6; width: 25%; height: 100%;"></div>
-            </div>
-          </div>
-
-          <div class="vp-sim-node">
-            <div class="vp-sim-node-title">System Latency (p99)</div>
-            <div class="vp-sim-node-value" id="sre-latency-val">24 ms (Optimal)</div>
-            <div style="background: #e2e8f0; height: 8px; border-radius: 4px; margin-top: 10px; overflow: hidden;">
-              <div id="sre-latency-fill" style="background: #10b981; width: 15%; height: 100%;"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="vp-sim-log" id="chaos-console-log">
-          💻 <strong>[SRE Telemetry Console]</strong> Baseline state initialized. All systems operating within normal parameters.
-        </div>
-      </div>
-    </section>
-
-    <!-- 10. INFO SECTION: Garage Mechanics Showcase Grid -->
+    <!-- 6. SECTION: GARAGE MECHANICS -->
     <section class="vp-section" id="garage">
       <div class="vp-section-header">
         <h2 class="vp-section-title">Garage Mechanics 🛠️</h2>
@@ -547,6 +419,141 @@
           </div>
         </a>
       </div>
+    </section>
+
+    <!-- 7. SECTION: THE THREE INTERACTIVE SIMULATORS (IN FOLDABLE BOXES) -->
+    <section class="vp-section" id="simulators">
+      <div class="vp-section-header">
+        <h2 class="vp-section-title">Interactive Simulators & Labs 🧪</h2>
+        <p class="vp-section-desc">Click any simulator below to expand the interactive execution sandbox.</p>
+      </div>
+
+      <!-- Foldable Simulator 1: AI Flow Sandbox -->
+      <details class="vp-sim-accordion" open>
+        <summary class="vp-sim-accordion-header">
+          <span>☁️🤖 Google Cloud & Gemini 3.5 AI Flow Sandbox</span>
+          <span style="font-size: 0.9rem; color: var(--vp-c-brand);">[Click to Toggle Foldable Box]</span>
+        </summary>
+        <div class="vp-sim-accordion-body">
+          <p class="vp-section-desc" style="margin-top: 16px;">Design enterprise AI workloads using Gemini 3.5 Pro, Vertex AI, GKE Autopilot, and Zero Trust security.</p>
+          <div class="vp-sim-card">
+            <div class="vp-sim-controls">
+              <button class="vp-sim-btn active" data-arch-scenario="doc-ai">📄 EU Public Sector Doc Processing</button>
+              <button class="vp-sim-btn" data-arch-scenario="multimodal">🎥 Real-Time Multimodal Stream</button>
+              <button class="vp-sim-btn" data-arch-scenario="code-refactor">⚡ Agentic Monolith Refactoring</button>
+            </div>
+
+            <div class="vp-sim-grid">
+              <div class="vp-sim-node">
+                <div class="vp-sim-node-title">AI Engine</div>
+                <div class="vp-sim-node-value" id="arch-model-val">Gemini 3.5 Pro</div>
+              </div>
+              <div class="vp-sim-node">
+                <div class="vp-sim-node-title">Est. Latency (p95)</div>
+                <div class="vp-sim-node-value" id="arch-metric-latency">42 ms</div>
+              </div>
+              <div class="vp-sim-node">
+                <div class="vp-sim-node-title">Throughput</div>
+                <div class="vp-sim-node-value" id="arch-metric-tps">1,250 doc/sec</div>
+              </div>
+              <div class="vp-sim-node highlight">
+                <div class="vp-sim-node-title">Cost Efficiency</div>
+                <div class="vp-sim-node-value" id="arch-metric-cost">98% Optimal</div>
+              </div>
+            </div>
+
+            <div class="vp-sim-log" id="arch-flow-log">
+              ⚡ <strong>[Gemini 3.5 AI Pipeline]</strong> Initialized EU Public Sector Document Pipeline. Gemini 3.5 Pro active with zero-data retention security policy.
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <!-- Foldable Simulator 2: Post-Quantum Cryptography -->
+      <details class="vp-sim-accordion">
+        <summary class="vp-sim-accordion-header">
+          <span>🛡️⚡ Cybersecurity for the Quantum Era (PQC Simulator)</span>
+          <span style="font-size: 0.9rem; color: var(--vp-c-brand);">[Click to Toggle Foldable Box]</span>
+        </summary>
+        <div class="vp-sim-accordion-body">
+          <div class="vp-custom-block warning" style="margin-top: 16px;">
+            <div class="vp-custom-block-title">⚠️ Quantum Vulnerability Warning</div>
+            <p>
+              Quantum computers are expected to soon break public-key cryptography (RSA-2048/ECC), putting your sensitive data at risk. To meet these current and emerging threats, it’s vital that your organization become <a href="https://cloud.google.com/blog/products/identity-security/how-google-is-preparing-for-a-post-quantum-world" target="_blank">crypto-agile</a>.
+            </p>
+          </div>
+
+          <div class="vp-sim-card">
+            <div style="margin-bottom: 16px;">
+              <label for="pqc-slider" style="font-weight: 600; margin-right: 12px;">Timeline Slider Year: <span id="pqc-year-label" class="vp-pill-badge primary">2026</span></label>
+              <input type="range" id="pqc-slider" min="2024" max="2035" value="2026" style="width: 100%; max-width: 400px; margin-top: 10px;">
+            </div>
+
+            <div class="vp-sim-grid">
+              <div class="vp-sim-node">
+                <div class="vp-sim-node-title">Classical RSA-2048</div>
+                <div class="vp-sim-node-value" id="rsa-status">✓ Active Transition</div>
+                <div style="background: #e2e8f0; height: 8px; border-radius: 4px; margin-top: 10px; overflow: hidden;">
+                  <div id="rsa-vuln-fill" style="background: #ef4444; width: 35%; height: 100%;"></div>
+                </div>
+              </div>
+
+              <div class="vp-sim-node highlight">
+                <div class="vp-sim-node-title">Post-Quantum Cryptography</div>
+                <div class="vp-sim-node-value">FIPS 203/204 (Kyber)</div>
+                <div style="background: #e2e8f0; height: 8px; border-radius: 4px; margin-top: 10px; overflow: hidden;">
+                  <div style="background: #10b981; width: 100%; height: 100%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="vp-sim-log" id="pqc-summary">
+              💡 <strong>Status (2026):</strong> Transitioning algorithms to PQC hybrid mode ensures long-term data security against store-now-decrypt-later attacks.
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <!-- Foldable Simulator 3: SRE Chaos Autoscaling -->
+      <details class="vp-sim-accordion">
+        <summary class="vp-sim-accordion-header">
+          <span>📉💥 SRE & Cloud Autoscaling Chaos Simulator</span>
+          <span style="font-size: 0.9rem; color: var(--vp-c-brand);">[Click to Toggle Foldable Box]</span>
+        </summary>
+        <div class="vp-sim-accordion-body">
+          <p class="vp-section-desc" style="margin-top: 16px;">Simulate enterprise cloud traffic spikes, regional network outages, and DB failovers live.</p>
+
+          <div class="vp-sim-card">
+            <div class="vp-sim-controls">
+              <button class="vp-sim-btn" id="chaos-spike-btn">💥 Inject 10x Traffic Spike</button>
+              <button class="vp-sim-btn" id="chaos-outage-btn">⚡ Simulate Region Outage</button>
+              <button class="vp-sim-btn" id="chaos-reset-btn">↺ Reset Baseline</button>
+            </div>
+
+            <div class="vp-sim-grid">
+              <div class="vp-sim-node">
+                <div class="vp-sim-node-title">GKE Pod Replicas</div>
+                <div class="vp-sim-node-value" id="gke-pods-val">12 Pods (Baseline)</div>
+                <div style="background: #e2e8f0; height: 8px; border-radius: 4px; margin-top: 10px; overflow: hidden;">
+                  <div id="gke-pods-fill" style="background: #3b82f6; width: 25%; height: 100%;"></div>
+                </div>
+              </div>
+
+              <div class="vp-sim-node">
+                <div class="vp-sim-node-title">System Latency (p99)</div>
+                <div class="vp-sim-node-value" id="sre-latency-val">24 ms (Optimal)</div>
+                <div style="background: #e2e8f0; height: 8px; border-radius: 4px; margin-top: 10px; overflow: hidden;">
+                  <div id="sre-latency-fill" style="background: #10b981; width: 15%; height: 100%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="vp-sim-log" id="chaos-console-log">
+              💻 <strong>[SRE Telemetry Console]</strong> Baseline state initialized. All systems operating within normal parameters.
+            </div>
+          </div>
+        </div>
+      </details>
     </section>
 
   </main>

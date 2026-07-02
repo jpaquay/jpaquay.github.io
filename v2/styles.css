@@ -228,9 +228,15 @@ a:hover {
 
 .vp-hero-grid {
   display: grid;
-  grid-template-columns: 1.3fr 0.9fr;
-  gap: 48px;
-  align-items: center;
+  grid-template-columns: 1.2fr 0.95fr;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.vp-hero-right-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .vp-badge-row {
@@ -331,7 +337,7 @@ a:hover {
   background: var(--vp-c-bg-soft);
   border: 1px solid var(--vp-c-border);
   border-radius: 20px;
-  padding: 28px;
+  padding: 24px;
   text-align: center;
   box-shadow: var(--vp-shadow-2);
   position: relative;
@@ -353,9 +359,9 @@ a:hover {
 .vp-avatar-wrapper {
   position: relative;
   z-index: 1;
-  width: 160px;
-  height: 160px;
-  margin: 0 auto 20px;
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 16px;
   border-radius: 50%;
   padding: 4px;
   background: var(--vp-c-brand-gradient);
@@ -375,26 +381,20 @@ a:hover {
 }
 
 .vp-hero-card-info h3 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 800;
   margin-bottom: 4px;
 }
 
 .vp-hero-card-info p {
   color: var(--vp-c-text-2);
-  font-size: 0.9rem;
+  font-size: 0.875rem;
 }
 
 /* Section Common */
 .vp-section {
   padding: 56px 0;
   border-top: 1px solid var(--vp-c-divider);
-}
-
-.vp-section.simulator-section {
-  background: var(--vp-c-bg-alt);
-  margin: 0 -24px;
-  padding: 56px 24px;
 }
 
 .vp-section-header {
@@ -434,32 +434,6 @@ a:hover {
   border-color: var(--vp-c-brand);
   transform: translateY(-3px);
   box-shadow: var(--vp-shadow-2);
-}
-
-.vp-feature-icon {
-  width: 48px;
-  height: 48px;
-  border-radius: 10px;
-  background: var(--vp-c-brand-light);
-  color: var(--vp-c-brand);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
-  margin-bottom: 16px;
-}
-
-.vp-feature-title {
-  font-size: 1.15rem;
-  font-weight: 700;
-  margin-bottom: 8px;
-}
-
-.vp-feature-details {
-  font-size: 0.95rem;
-  color: var(--vp-c-text-2);
-  line-height: 1.65;
-  flex-grow: 1;
 }
 
 /* Compact Tag Cloud Style for Traits */
@@ -507,19 +481,9 @@ a:hover {
   font-size: 0.95rem;
 }
 
-.vp-custom-block.tip {
-  border-left-color: #10b981;
-  background: rgba(16, 185, 129, 0.08);
-}
-
 .vp-custom-block.warning {
   border-left-color: #f59e0b;
   background: rgba(245, 158, 11, 0.08);
-}
-
-.vp-custom-block.info {
-  border-left-color: #3b82f6;
-  background: rgba(59, 130, 246, 0.08);
 }
 
 .vp-custom-block-title {
@@ -536,7 +500,6 @@ a:hover {
   background: var(--vp-code-bg);
   border-radius: 12px;
   overflow: hidden;
-  margin: 24px 0;
   border: 1px solid var(--vp-c-border);
   box-shadow: var(--vp-shadow-2);
 }
@@ -545,7 +508,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 18px;
+  padding: 10px 14px;
   background: rgba(0, 0, 0, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -556,8 +519,8 @@ a:hover {
 }
 
 .vp-code-dot {
-  width: 10px;
-  height: 10px;
+  width: 9px;
+  height: 9px;
   border-radius: 50%;
 }
 
@@ -567,17 +530,17 @@ a:hover {
 
 .vp-code-title {
   font-family: var(--vp-font-family-mono);
-  font-size: 0.825rem;
+  font-size: 0.8rem;
   color: #94a3b8;
 }
 
 .vp-code-body {
-  padding: 20px;
+  padding: 14px;
   overflow-x: auto;
   font-family: var(--vp-font-family-mono);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: var(--vp-code-text);
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 .vp-code-body .keyword { color: #f472b6; font-weight: 600; }
@@ -587,7 +550,7 @@ a:hover {
 .vp-code-body .comment { color: #64748b; font-style: italic; }
 
 .vp-code-footer {
-  padding: 12px 18px;
+  padding: 8px 12px;
   background: rgba(0, 0, 0, 0.15);
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   display: flex;
@@ -596,14 +559,14 @@ a:hover {
 }
 
 .vp-code-output {
-  margin-top: 10px;
-  padding: 10px 14px;
+  margin-top: 8px;
+  padding: 8px 12px;
   background: rgba(16, 185, 129, 0.15);
   border: 1px solid #10b981;
   border-radius: 6px;
   color: #34d399;
   font-family: var(--vp-font-family-mono);
-  font-size: 0.85rem;
+  font-size: 0.8rem;
 }
 
 /* Timeline Experience Section */
@@ -782,83 +745,6 @@ a:hover {
   margin-bottom: 12px;
 }
 
-/* Interactive Simulators */
-.vp-sim-card {
-  background: var(--vp-c-bg-soft);
-  border: 1px solid var(--vp-c-border);
-  border-radius: 16px;
-  padding: 28px;
-  margin-bottom: 0;
-  box-shadow: var(--vp-shadow-1);
-}
-
-.vp-sim-controls {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin: 20px 0;
-}
-
-.vp-sim-btn {
-  padding: 10px 18px;
-  border-radius: 8px;
-  font-size: 0.875rem;
-  font-weight: 600;
-  border: 1px solid var(--vp-c-border);
-  background: var(--vp-c-bg);
-  color: var(--vp-c-text-1);
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.vp-sim-btn:hover, .vp-sim-btn.active {
-  border-color: var(--vp-c-brand);
-  background: var(--vp-c-brand-light);
-  color: var(--vp-c-brand);
-}
-
-.vp-sim-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
-  margin: 20px 0;
-}
-
-.vp-sim-node {
-  background: var(--vp-c-bg);
-  border: 1px solid var(--vp-c-border);
-  border-radius: 10px;
-  padding: 16px;
-  transition: all 0.2s ease;
-}
-
-.vp-sim-node.highlight {
-  border-color: var(--vp-c-brand);
-  background: var(--vp-c-brand-light);
-}
-
-.vp-sim-node-title {
-  font-size: 0.85rem;
-  color: var(--vp-c-text-2);
-  margin-bottom: 6px;
-}
-
-.vp-sim-node-value {
-  font-size: 1.1rem;
-  font-weight: 700;
-}
-
-.vp-sim-log {
-  background: var(--vp-code-bg);
-  color: var(--vp-code-text);
-  font-family: var(--vp-font-family-mono);
-  font-size: 0.85rem;
-  padding: 14px 18px;
-  border-radius: 8px;
-  line-height: 1.5;
-  border: 1px solid var(--vp-c-border);
-}
-
 /* Garage Mechanics Showcase */
 .vp-garage-grid {
   display: grid;
@@ -906,6 +792,122 @@ a:hover {
   font-size: 0.825rem;
   font-weight: 600;
   color: var(--vp-c-brand);
+}
+
+/* Foldable Simulator Accordions */
+.vp-sim-accordion {
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-border);
+  border-radius: 16px;
+  margin-bottom: 24px;
+  overflow: hidden;
+  transition: border-color 0.25s ease;
+}
+
+.vp-sim-accordion[open] {
+  border-color: var(--vp-c-brand);
+}
+
+.vp-sim-accordion-header {
+  padding: 20px 24px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  background: var(--vp-c-bg-soft);
+  user-select: none;
+}
+
+.vp-sim-accordion-header::-webkit-details-marker {
+  display: none;
+}
+
+.vp-sim-accordion-header:hover {
+  color: var(--vp-c-brand);
+}
+
+.vp-sim-accordion-body {
+  padding: 0 24px 24px 24px;
+  border-top: 1px solid var(--vp-c-divider);
+}
+
+/* Interactive Simulators Inner Components */
+.vp-sim-card {
+  background: var(--vp-c-bg);
+  border: 1px solid var(--vp-c-border);
+  border-radius: 14px;
+  padding: 24px;
+  margin-top: 16px;
+}
+
+.vp-sim-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 16px 0;
+}
+
+.vp-sim-btn {
+  padding: 9px 16px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid var(--vp-c-border);
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-1);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.vp-sim-btn:hover, .vp-sim-btn.active {
+  border-color: var(--vp-c-brand);
+  background: var(--vp-c-brand-light);
+  color: var(--vp-c-brand);
+}
+
+.vp-sim-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 14px;
+  margin: 16px 0;
+}
+
+.vp-sim-node {
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-border);
+  border-radius: 10px;
+  padding: 14px;
+  transition: all 0.2s ease;
+}
+
+.vp-sim-node.highlight {
+  border-color: var(--vp-c-brand);
+  background: var(--vp-c-brand-light);
+}
+
+.vp-sim-node-title {
+  font-size: 0.8rem;
+  color: var(--vp-c-text-2);
+  margin-bottom: 4px;
+}
+
+.vp-sim-node-value {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.vp-sim-log {
+  background: var(--vp-code-bg);
+  color: var(--vp-code-text);
+  font-family: var(--vp-font-family-mono);
+  font-size: 0.85rem;
+  padding: 12px 16px;
+  border-radius: 8px;
+  line-height: 1.5;
+  border: 1px solid var(--vp-c-border);
 }
 
 /* Contact Social Overlay Modal Box */
