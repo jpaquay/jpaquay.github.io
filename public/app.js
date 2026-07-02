@@ -1,5 +1,7 @@
 // Attributes Data
 const ATTRIBUTES = [
+  { icon: '🌱', title: 'Eco Hacker', desc: 'IoT FarmBot & sustainable tech advocate', category: 'core' },
+  { icon: '❤️', title: 'Dad of 3', desc: 'Proud father of 3 rockstar teenagers', category: 'core' },
   { icon: '🚴', title: 'I bike', desc: 'Commuter & cycling enthusiast', category: 'fun' },
   { icon: '🤝', title: 'I meet', desc: 'Connecting innovative teams', category: 'core' },
   { icon: '📚', title: 'I learn', desc: 'Continuous tech exploration', category: 'core' },
@@ -9,7 +11,7 @@ const ATTRIBUTES = [
   { icon: '🧔', title: 'Great Beard', desc: 'Rocking a top-tier engineer beard', category: 'fun' },
   { icon: '🧠', title: 'Handsome Genius ™', desc: 'Verified 10x innovator', category: 'skills' },
   { icon: '🛡️', title: 'Crypto-Agile', desc: 'Post-quantum security advocate', category: 'skills' },
-  { icon: '🎯', title: 'Turing Verified', desc: '100% Passed Turing Human Test', category: 'core' }
+  { icon: '🎯', title: 'Turing Verified', desc: '100% Passed Turing Human Test', category: 'fun' }
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -308,14 +310,20 @@ function initSidebarDrawer() {
   const toggleBtn = document.getElementById('sidebar-toggle-btn');
   const mobileMenuBtn = document.getElementById('mobile-menu-btn');
 
-  if (toggleBtn && sidebar) {
-    toggleBtn.addEventListener('click', () => {
+  if (sidebar) {
+    // Click anywhere on sidebar (outside interactive buttons/links) to toggle fold
+    sidebar.addEventListener('click', (e) => {
+      // Prevent toggling when clicking directly on interactive links or buttons
+      if (e.target.closest('a, button, input, select, textarea')) {
+        return;
+      }
       sidebar.classList.toggle('collapsed');
     });
   }
 
   if (mobileMenuBtn && sidebar) {
-    mobileMenuBtn.addEventListener('click', () => {
+    mobileMenuBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
       sidebar.classList.toggle('open');
     });
   }

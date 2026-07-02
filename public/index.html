@@ -22,9 +22,6 @@
         <span class="brand-logo">/net/dev</span>
         <span class="brand-author">Jerome Paquay</span>
       </div>
-      <button class="sidebar-toggle-btn" id="sidebar-toggle-btn" title="Toggle Navigation Menu">
-        <span class="toggle-icon">◀</span>
-      </button>
     </div>
 
     <!-- Navigation Menu Items -->
@@ -174,10 +171,10 @@
         </div>
 
         <div class="filter-bar">
-          <button class="filter-btn active" data-filter="all">All Attributes</button>
-          <button class="filter-btn" data-filter="core">Core Traits</button>
-          <button class="filter-btn" data-filter="skills">Tech & Architecture</button>
-          <button class="filter-btn" data-filter="fun">Fun & Humor</button>
+          <button class="filter-btn active" data-filter="all">🌟 All Traits</button>
+          <button class="filter-btn" data-filter="core">👤 Core Traits</button>
+          <button class="filter-btn" data-filter="skills">⚡ Tech & Architecture</button>
+          <button class="filter-btn" data-filter="fun">😄 Fun & Family</button>
         </div>
 
         <div class="attributes-grid" id="attributes-grid">
@@ -194,11 +191,11 @@
           </div>
 
           <div class="filter-bar">
-            <button class="lifeline-filter-btn active" data-tech-filter="all">All Stack</button>
-            <button class="lifeline-filter-btn" data-tech-filter="programming">Programming & Web</button>
-            <button class="lifeline-filter-btn" data-tech-filter="cloud">Cloud & Infra</button>
-            <button class="lifeline-filter-btn" data-tech-filter="ai">AI & ML</button>
-            <button class="lifeline-filter-btn" data-tech-filter="network">Network & Security</button>
+            <button class="lifeline-filter-btn active" data-tech-filter="all">🌐 All Stack</button>
+            <button class="lifeline-filter-btn" data-tech-filter="programming">💻 Programming & Web</button>
+            <button class="lifeline-filter-btn" data-tech-filter="cloud">☁️ Cloud & Infra</button>
+            <button class="lifeline-filter-btn" data-tech-filter="ai">🤖 AI & ML</button>
+            <button class="lifeline-filter-btn" data-tech-filter="network">🛡️ Network & Security</button>
           </div>
 
           <div class="lifeline-container" id="lifeline-scroll-container">
@@ -506,221 +503,239 @@
 
       <!-- 6. Google Cloud AI Architecture Sandbox & Flow Visualizer -->
       <section class="section quantum-section" id="ai-cloud-arch">
-        <div class="quantum-card">
-          <div class="quantum-header">
-            <span class="badge badge-primary">Interactive Architecture Lab</span>
-            <h2>Google Cloud & Gemini 3.5 AI Flow Sandbox ☁️🤖</h2>
-            <p>
+        <details open class="sim-accordion">
+          <summary class="sim-accordion-header">
+            <div class="summary-title-group">
+              <span class="badge badge-primary">Interactive Architecture Lab</span>
+              <h2>Google Cloud & Gemini 3.5 AI Flow Sandbox ☁️🤖</h2>
+            </div>
+            <span class="accordion-chevron">▼</span>
+          </summary>
+          
+          <div class="quantum-card accordion-body">
+            <p class="section-desc-sub">
               Design enterprise AI workloads using Gemini 3.5 Pro, Vertex AI, GKE Autopilot, and Zero Trust security. Select a scenario below to watch data flow, compute metrics, and estimate cost latency live!
             </p>
+
+            <div class="ai-arch-wrapper">
+              <div class="arch-scenario-selector">
+                <span class="arch-label">Select Enterprise AI Workload:</span>
+                <button class="arch-scenario-btn active" data-scenario="doc-ai">📄 EU Public Sector Doc Processing</button>
+                <button class="arch-scenario-btn" data-scenario="multimodal">🎥 Real-Time Multimodal Stream</button>
+                <button class="arch-scenario-btn" data-scenario="code-refactor">⚡ Agentic Monolith Refactoring</button>
+              </div>
+
+              <div class="arch-topology-grid">
+                <!-- Node 1: Ingestion Layer -->
+                <div class="arch-node-card" id="arch-node-ingest">
+                  <div class="node-header-row">
+                    <span class="node-icon">📥</span>
+                    <span class="node-title">Ingestion Layer</span>
+                  </div>
+                  <h4 id="arch-ingest-val">GCS Secure Bucket</h4>
+                  <p id="arch-ingest-desc">Customer PDF/Document store with KMS Encryption.</p>
+                  <div class="node-badge-mini" id="arch-ingest-badge">Cloud Storage</div>
+                </div>
+
+                <!-- Node 2: Compute & Orchestration -->
+                <div class="arch-node-card highlight" id="arch-node-compute">
+                  <div class="node-header-row">
+                    <span class="node-icon">⚙️</span>
+                    <span class="node-title">Compute Orchestrator</span>
+                  </div>
+                  <h4 id="arch-compute-val">GKE Autopilot + Ray</h4>
+                  <p id="arch-compute-desc">Distributed container scaling with auto-provisioned GPUs.</p>
+                  <div class="node-badge-mini" id="arch-compute-badge">GKE Autopilot</div>
+                </div>
+
+                <!-- Node 3: AI Model Core -->
+                <div class="arch-node-card ai-core-card" id="arch-node-model">
+                  <div class="node-header-row">
+                    <span class="node-icon">🧠</span>
+                    <span class="node-title">AI Engine</span>
+                  </div>
+                  <h4 id="arch-model-val">Gemini 3.5 Pro</h4>
+                  <p id="arch-model-desc">1M Token Context Window & Multimodal Reasoning.</p>
+                  <div class="node-badge-mini" id="arch-model-badge">Vertex AI</div>
+                </div>
+
+                <!-- Node 4: Security & Zero Trust -->
+                <div class="arch-node-card" id="arch-node-sec">
+                  <div class="node-header-row">
+                    <span class="node-icon">🛡️</span>
+                    <span class="node-title">Zero Trust Security</span>
+                  </div>
+                  <h4 id="arch-sec-val">BeyondCorp + IAM</h4>
+                  <p id="arch-sec-desc">Context-aware access, Secret Manager, DLP data masking.</p>
+                  <div class="node-badge-mini" id="arch-sec-badge">BeyondCorp</div>
+                </div>
+              </div>
+
+              <!-- Dynamic Metrics & Flow Output -->
+              <div class="arch-metrics-bar">
+                <div class="arch-metric-item">
+                  <span class="arch-metric-lbl">Model Core</span>
+                  <span class="arch-metric-val highlight-blue" id="arch-metric-model">Gemini 3.5 Pro</span>
+                </div>
+                <div class="arch-metric-item">
+                  <span class="arch-metric-lbl">Est. Latency (p95)</span>
+                  <span class="arch-metric-val" id="arch-metric-latency">42 ms</span>
+                </div>
+                <div class="arch-metric-item">
+                  <span class="arch-metric-lbl">Throughput</span>
+                  <span class="arch-metric-val" id="arch-metric-tps">1,250 doc/sec</span>
+                </div>
+                <div class="arch-metric-item">
+                  <span class="arch-metric-lbl">Cost Efficiency</span>
+                  <span class="arch-metric-val green" id="arch-metric-cost">98% Optimal</span>
+                </div>
+              </div>
+
+              <div class="arch-flow-stream" id="arch-flow-log">
+                ⚡ <strong>[Gemini 3.5 AI Pipeline]</strong> Initialized EU Public Sector Document Pipeline. Gemini 3.5 Pro active with zero-data retention security policy.
+              </div>
+            </div>
           </div>
-
-          <div class="ai-arch-wrapper">
-            <div class="arch-scenario-selector">
-              <span class="arch-label">Select Enterprise AI Workload:</span>
-              <button class="arch-scenario-btn active" data-scenario="doc-ai">📄 EU Public Sector Doc Processing</button>
-              <button class="arch-scenario-btn" data-scenario="multimodal">🎥 Real-Time Multimodal Stream</button>
-              <button class="arch-scenario-btn" data-scenario="code-refactor">⚡ Agentic Monolith Refactoring</button>
-            </div>
-
-            <div class="arch-topology-grid">
-              <!-- Node 1: Ingestion Layer -->
-              <div class="arch-node-card" id="arch-node-ingest">
-                <div class="node-header-row">
-                  <span class="node-icon">📥</span>
-                  <span class="node-title">Ingestion Layer</span>
-                </div>
-                <h4 id="arch-ingest-val">GCS Secure Bucket</h4>
-                <p id="arch-ingest-desc">Customer PDF/Document store with KMS Encryption.</p>
-                <div class="node-badge-mini" id="arch-ingest-badge">Cloud Storage</div>
-              </div>
-
-              <!-- Node 2: Compute & Orchestration -->
-              <div class="arch-node-card highlight" id="arch-node-compute">
-                <div class="node-header-row">
-                  <span class="node-icon">⚙️</span>
-                  <span class="node-title">Compute Orchestrator</span>
-                </div>
-                <h4 id="arch-compute-val">GKE Autopilot + Ray</h4>
-                <p id="arch-compute-desc">Distributed container scaling with auto-provisioned GPUs.</p>
-                <div class="node-badge-mini" id="arch-compute-badge">GKE Autopilot</div>
-              </div>
-
-              <!-- Node 3: AI Model Core -->
-              <div class="arch-node-card ai-core-card" id="arch-node-model">
-                <div class="node-header-row">
-                  <span class="node-icon">🧠</span>
-                  <span class="node-title">AI Engine</span>
-                </div>
-                <h4 id="arch-model-val">Gemini 3.5 Pro</h4>
-                <p id="arch-model-desc">1M Token Context Window & Multimodal Reasoning.</p>
-                <div class="node-badge-mini" id="arch-model-badge">Vertex AI</div>
-              </div>
-
-              <!-- Node 4: Security & Zero Trust -->
-              <div class="arch-node-card" id="arch-node-sec">
-                <div class="node-header-row">
-                  <span class="node-icon">🛡️</span>
-                  <span class="node-title">Zero Trust Security</span>
-                </div>
-                <h4 id="arch-sec-val">BeyondCorp + IAM</h4>
-                <p id="arch-sec-desc">Context-aware access, Secret Manager, DLP data masking.</p>
-                <div class="node-badge-mini" id="arch-sec-badge">BeyondCorp</div>
-              </div>
-            </div>
-
-            <!-- Dynamic Metrics & Flow Output -->
-            <div class="arch-metrics-bar">
-              <div class="arch-metric-item">
-                <span class="arch-metric-lbl">Model Core</span>
-                <span class="arch-metric-val highlight-blue" id="arch-metric-model">Gemini 3.5 Pro</span>
-              </div>
-              <div class="arch-metric-item">
-                <span class="arch-metric-lbl">Est. Latency (p95)</span>
-                <span class="arch-metric-val" id="arch-metric-latency">42 ms</span>
-              </div>
-              <div class="arch-metric-item">
-                <span class="arch-metric-lbl">Throughput</span>
-                <span class="arch-metric-val" id="arch-metric-tps">1,250 doc/sec</span>
-              </div>
-              <div class="arch-metric-item">
-                <span class="arch-metric-lbl">Cost Efficiency</span>
-                <span class="arch-metric-val green" id="arch-metric-cost">98% Optimal</span>
-              </div>
-            </div>
-
-            <div class="arch-flow-stream" id="arch-flow-log">
-              ⚡ <strong>[Gemini 3.5 AI Pipeline]</strong> Initialized EU Public Sector Document Pipeline. Gemini 3.5 Pro active with zero-data retention security policy.
-            </div>
-          </div>
-        </div>
+        </details>
       </section>
 
       <!-- 7. Standalone Horizontal Post-Quantum Cryptography Threat Simulator -->
       <section class="section quantum-section" id="quantum-sec">
-        <div class="quantum-card">
-          <div class="quantum-header">
-            <span class="badge badge-warning">Crypto-Agility Simulator</span>
-            <h2>Cybersecurity for the Quantum Era 🛡️⚡</h2>
-            <p>
+        <details open class="sim-accordion">
+          <summary class="sim-accordion-header">
+            <div class="summary-title-group">
+              <span class="badge badge-warning">Crypto-Agility Simulator</span>
+              <h2>Cybersecurity for the Quantum Era 🛡️⚡</h2>
+            </div>
+            <span class="accordion-chevron">▼</span>
+          </summary>
+          
+          <div class="quantum-card accordion-body">
+            <p class="section-desc-sub">
               Quantum computers are expected to soon break traditional public-key cryptography (RSA-2048/ECC).
               Drag the quantum timeline slider below to test enterprise crypto-agility & threat metrics!
             </p>
+
+            <div class="interactive-pqc">
+              <div class="pqc-controls">
+                <div class="slider-header-row">
+                  <label for="quantum-slider">Quantum Era Year:</label>
+                  <span id="slider-year-label" class="current-year-badge">2026</span>
+                </div>
+                <input type="range" id="quantum-slider" min="2024" max="2035" value="2026" step="1">
+                <div class="slider-labels">
+                  <span>2024 (Today)</span>
+                  <span>2028 (CRQC Threshold)</span>
+                  <span>2035 (Post-Quantum)</span>
+                </div>
+              </div>
+
+              <div class="pqc-simulation-grid">
+                <div class="algo-box" id="classical-box">
+                  <h3>Classical RSA-2048 / ECC</h3>
+                  <p class="algo-type">Public-Key Cryptography</p>
+                  <div class="status-indicator" id="classical-status">
+                    <span class="indicator-dot green"></span> Secure
+                  </div>
+                  <div class="vulnerability-bar">
+                    <div class="vuln-fill" id="classical-vuln" style="width: 15%;"></div>
+                  </div>
+                  <span class="vuln-text" id="classical-vuln-text">Quantum Vulnerability: Low (2026)</span>
+                </div>
+
+                <div class="vs-divider">VS</div>
+
+                <div class="algo-box highlight" id="pqc-box">
+                  <h3>Post-Quantum Cryptography</h3>
+                  <p class="algo-type">FIPS 203/204 (Kyber / Dilithium)</p>
+                  <div class="status-indicator">
+                    <span class="indicator-dot green"></span> Quantum-Resistant
+                  </div>
+                  <div class="vulnerability-bar">
+                    <div class="vuln-fill safe" style="width: 0%;"></div>
+                  </div>
+                  <span class="vuln-text">Quantum Vulnerability: Immune</span>
+                </div>
+              </div>
+
+              <div class="pqc-summary" id="pqc-summary-text">
+                💡 <strong>Status (2026):</strong> Transitioning algorithms to PQC hybrid mode ensures long-term data security against store-now-decrypt-later attacks.
+              </div>
+            </div>
           </div>
-
-          <div class="interactive-pqc">
-            <div class="pqc-controls">
-              <div class="slider-header-row">
-                <label for="quantum-slider">Quantum Era Year:</label>
-                <span id="slider-year-label" class="current-year-badge">2026</span>
-              </div>
-              <input type="range" id="quantum-slider" min="2024" max="2035" value="2026" step="1">
-              <div class="slider-labels">
-                <span>2024 (Today)</span>
-                <span>2028 (CRQC Threshold)</span>
-                <span>2035 (Post-Quantum)</span>
-              </div>
-            </div>
-
-            <div class="pqc-simulation-grid">
-              <div class="algo-box" id="classical-box">
-                <h3>Classical RSA-2048 / ECC</h3>
-                <p class="algo-type">Public-Key Cryptography</p>
-                <div class="status-indicator" id="classical-status">
-                  <span class="indicator-dot green"></span> Secure
-                </div>
-                <div class="vulnerability-bar">
-                  <div class="vuln-fill" id="classical-vuln" style="width: 15%;"></div>
-                </div>
-                <span class="vuln-text" id="classical-vuln-text">Quantum Vulnerability: Low (2026)</span>
-              </div>
-
-              <div class="vs-divider">VS</div>
-
-              <div class="algo-box highlight" id="pqc-box">
-                <h3>Post-Quantum Cryptography</h3>
-                <p class="algo-type">FIPS 203/204 (Kyber / Dilithium)</p>
-                <div class="status-indicator">
-                  <span class="indicator-dot green"></span> Quantum-Resistant
-                </div>
-                <div class="vulnerability-bar">
-                  <div class="vuln-fill safe" style="width: 0%;"></div>
-                </div>
-                <span class="vuln-text">Quantum Vulnerability: Immune</span>
-              </div>
-            </div>
-
-            <div class="pqc-summary" id="pqc-summary-text">
-              💡 <strong>Status (2026):</strong> Transitioning algorithms to PQC hybrid mode ensures long-term data security against store-now-decrypt-later attacks.
-            </div>
-          </div>
-        </div>
+        </details>
       </section>
 
-      <!-- 7. SRE & Cloud Autoscaling Chaos Simulator -->
+      <!-- 8. SRE & Cloud Autoscaling Chaos Simulator -->
       <section class="section quantum-section" id="sre-chaos-sim">
-        <div class="quantum-card">
-          <div class="quantum-header">
-            <span class="badge badge-warning">Interactive SRE Lab</span>
-            <h2>Google Cloud SRE & Autoscaling Chaos Simulator 📉💥</h2>
-            <p>
+        <details open class="sim-accordion">
+          <summary class="sim-accordion-header">
+            <div class="summary-title-group">
+              <span class="badge badge-warning">Interactive SRE Lab</span>
+              <h2>Google Cloud SRE & Autoscaling Chaos Simulator 📉💥</h2>
+            </div>
+            <span class="accordion-chevron">▼</span>
+          </summary>
+          
+          <div class="quantum-card accordion-body">
+            <p class="section-desc-sub">
               Simulate enterprise cloud traffic spikes, regional network outages, and DB failover. Watch GKE pod autoscaling, Spanner multi-region sync, and load balancing resilience live!
             </p>
+
+            <div class="chaos-simulator-wrapper">
+              <div class="chaos-controls-bar">
+                <button class="chaos-btn" id="chaos-btn-spike">💥 Inject 10x Traffic Spike</button>
+                <button class="chaos-btn" id="chaos-btn-outage">⚡ Simulate Region Outage</button>
+                <button class="chaos-btn btn-reset" id="chaos-btn-reset">↺ Reset Baseline</button>
+              </div>
+
+              <div class="chaos-dashboard-grid">
+                <!-- Metric Gauge 1: Active GKE Pods -->
+                <div class="metric-card">
+                  <div class="metric-header">
+                    <span class="metric-title">GKE Pod Replicas</span>
+                    <span class="metric-status green" id="gke-status-tag">NORMAL</span>
+                  </div>
+                  <div class="metric-value" id="gke-pod-count">12 Pods</div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" id="gke-pod-fill" style="width: 25%;"></div>
+                  </div>
+                  <span class="metric-footer" id="gke-autoscale-label">Autoscaler: Idle (Target 70% CPU)</span>
+                </div>
+
+                <!-- Metric Gauge 2: System Latency (p99) -->
+                <div class="metric-card">
+                  <div class="metric-header">
+                    <span class="metric-title">Latency (p99)</span>
+                    <span class="metric-status green" id="latency-status-tag">OPTIMAL</span>
+                  </div>
+                  <div class="metric-value" id="latency-value">24 ms</div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" id="latency-fill" style="width: 15%;"></div>
+                  </div>
+                  <span class="metric-footer" id="latency-label">SLO Target: &lt; 100 ms</span>
+                </div>
+
+                <!-- Metric Gauge 3: Cloud Spanner DB Sync -->
+                <div class="metric-card">
+                  <div class="metric-header">
+                    <span class="metric-title">Spanner Multi-Region DB</span>
+                    <span class="metric-status green" id="spanner-status-tag">HEALTHY</span>
+                  </div>
+                  <div class="metric-value" id="spanner-value">99.999% Sync</div>
+                  <div class="progress-bar">
+                    <div class="progress-fill safe" id="spanner-fill" style="width: 100%;"></div>
+                  </div>
+                  <span class="metric-footer" id="spanner-label">Quorum Leader: europe-west1</span>
+                </div>
+              </div>
+
+              <div class="chaos-console-log" id="chaos-console">
+                💻 <strong>[SRE Telemetry Console]</strong> Baseline state initialized. All systems operating within normal parameters.
+              </div>
+            </div>
           </div>
-
-          <div class="chaos-simulator-wrapper">
-            <div class="chaos-controls-bar">
-              <button class="chaos-btn" id="chaos-btn-spike">💥 Inject 10x Traffic Spike</button>
-              <button class="chaos-btn" id="chaos-btn-outage">⚡ Simulate Region Outage</button>
-              <button class="chaos-btn btn-reset" id="chaos-btn-reset">↺ Reset Baseline</button>
-            </div>
-
-            <div class="chaos-dashboard-grid">
-              <!-- Metric Gauge 1: Active GKE Pods -->
-              <div class="metric-card">
-                <div class="metric-header">
-                  <span class="metric-title">GKE Pod Replicas</span>
-                  <span class="metric-status green" id="gke-status-tag">NORMAL</span>
-                </div>
-                <div class="metric-value" id="gke-pod-count">12 Pods</div>
-                <div class="progress-bar">
-                  <div class="progress-fill" id="gke-pod-fill" style="width: 25%;"></div>
-                </div>
-                <span class="metric-footer" id="gke-autoscale-label">Autoscaler: Idle (Target 70% CPU)</span>
-              </div>
-
-              <!-- Metric Gauge 2: System Latency (p99) -->
-              <div class="metric-card">
-                <div class="metric-header">
-                  <span class="metric-title">Latency (p99)</span>
-                  <span class="metric-status green" id="latency-status-tag">OPTIMAL</span>
-                </div>
-                <div class="metric-value" id="latency-value">24 ms</div>
-                <div class="progress-bar">
-                  <div class="progress-fill" id="latency-fill" style="width: 15%;"></div>
-                </div>
-                <span class="metric-footer" id="latency-label">SLO Target: &lt; 100 ms</span>
-              </div>
-
-              <!-- Metric Gauge 3: Cloud Spanner DB Sync -->
-              <div class="metric-card">
-                <div class="metric-header">
-                  <span class="metric-title">Spanner Multi-Region DB</span>
-                  <span class="metric-status green" id="spanner-status-tag">HEALTHY</span>
-                </div>
-                <div class="metric-value" id="spanner-value">99.999% Sync</div>
-                <div class="progress-bar">
-                  <div class="progress-fill safe" id="spanner-fill" style="width: 100%;"></div>
-                </div>
-                <span class="metric-footer" id="spanner-label">Quorum Leader: europe-west1</span>
-              </div>
-            </div>
-
-            <div class="chaos-console-log" id="chaos-console">
-              💻 <strong>[SRE Telemetry Console]</strong> Baseline state initialized. All systems operating within normal parameters.
-            </div>
-          </div>
-        </div>
+        </details>
       </section>
 
 

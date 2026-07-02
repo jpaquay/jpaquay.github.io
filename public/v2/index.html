@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jerome Paquay - CV & Portfolio v2 | Open Notebook Style</title>
+  <meta name="description" content="Jerome Paquay CV v2 - Enterprise Architect @ Google Cloud. Styled with Open Notebook / VitePress aesthetic.">
+  
+  <!-- Preconnect Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Navigation Bar (VPNav Style) -->
+  <header class="vp-nav">
+    <div class="vp-container vp-nav-container">
+      <div class="vp-brand">
+        <div class="vp-brand-logo">/nd</div>
+        <span>/net/dev</span>
+        <span class="vp-version-badge">v2.0</span>
+      </div>
+
+      <nav>
+        <ul class="vp-nav-links">
+          <li><a href="#about" class="vp-nav-link">About</a></li>
+          <li><a href="#experience" class="vp-nav-link">Experience</a></li>
+          <li><a href="#ai-arch" class="vp-nav-link">AI Arch</a></li>
+          <li><a href="#traits" class="vp-nav-link">Traits</a></li>
+          <li><a href="#quantum-sec" class="vp-nav-link">Quantum Sec</a></li>
+          <li><a href="#lifeline" class="vp-nav-link">Lifeline</a></li>
+          <li><a href="#garage" class="vp-nav-link">Garage</a></li>
+        </ul>
+      </nav>
+
+      <div class="vp-nav-controls">
+        <!-- Social Buttons -->
+        <a href="https://github.com/jpaquay" target="_blank" class="vp-social-btn" title="GitHub @jpaquay">
+          <svg class="vp-social-icon" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/jeromepaquay" target="_blank" class="vp-social-btn" title="LinkedIn /jeromepaquay">
+          <svg class="vp-social-icon" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+        </a>
+        <button class="vp-social-btn" data-contact-trigger title="Contact & Social Links Overlay">
+          <svg class="vp-social-icon" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </button>
+
+        <!-- Theme Toggle -->
+        <button class="vp-theme-toggle" id="theme-toggle-btn" title="Toggle Light/Dark Theme">
+          <span id="theme-icon">☀️</span>
+          <span id="theme-label">Light</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="vp-container">
+
+    <!-- 1. INFO SECTION: Hero & Biography -->
+    <section class="vp-section" id="about">
+      <div class="vp-hero-grid">
+        <div class="vp-hero-content">
+          <div class="vp-badge-row">
+            <span class="vp-pill-badge primary">Enterprise Architect @ Google Cloud</span>
+            <span class="vp-pill-badge">Turing Test Verified Human ✓</span>
+          </div>
+
+          <h1 class="vp-hero-title">
+            Hi, I'm <span class="vp-gradient-text">Jerome Paquay</span> 👋
+          </h1>
+
+          <p class="vp-hero-subtitle">
+            Building trusted relationships with people by listening to their needs and meeting them where they are in their transformation. Solving tough engineering problems and accelerating organizations to the next step in digitalization.
+          </p>
+
+          <div class="vp-hero-actions">
+            <button class="vp-btn vp-btn-primary" data-contact-trigger>✉️ Contact Me & Socials</button>
+            <a href="#experience" class="vp-btn vp-btn-secondary">💼 Work Experience</a>
+            <a href="#ai-arch" class="vp-btn vp-btn-secondary">☁️ AI Flow Sandbox</a>
+          </div>
+        </div>
+
+        <!-- Hero Card / Avatar -->
+        <div class="vp-hero-card">
+          <div class="vp-avatar-wrapper">
+            <img src="https://blog.netdev.be/assets/img/author.jpg" alt="Jerome Paquay" class="vp-avatar-img">
+          </div>
+          <div class="vp-hero-card-info">
+            <h3>Handsome Genius ™</h3>
+            <p>Brussels, Belgium 🇧🇪 • 20+ Years in IT</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Callout Container (Swahili Philosophy) -->
+      <div class="vp-custom-block tip">
+        <div class="vp-custom-block-title">💡 Swahili Wisdom</div>
+        <p>
+          <strong><code>Hakuna matata</code></strong> is a Swahili phrase, meaning <strong><code>take it easy</code></strong>.<br>
+          <em>Literally <code>hakuna</code> = there are no; <code>matata</code> = worries.</em>
+        </p>
+      </div>
+
+      <!-- Philosophy & Biography Storytelling Notebook Blocks -->
+      <div style="margin-top: 32px; display: flex; flex-direction: column; gap: 20px;">
+        <div class="vp-custom-block info">
+          <div class="vp-custom-block-title">📜 Chapter 1: Origin & Tech Passion</div>
+          <p>
+            Born and raised in Brussels, Belgium 🇧🇪, I’m a passionate technologist with a recognized customer-centric attitude working for over twenty years in IT. My journey started with a fascination for systems, code, and human connection—striving every day to provide teams with the best solutions by listening to their needs and meeting them where they are in their digital transformation.
+          </p>
+        </div>
+
+        <div class="vp-custom-block tip">
+          <div class="vp-custom-block-title">🏛️ Chapter 2: Enterprise Impact @ Google Cloud & Cisco</div>
+          <p>
+            As an Enterprise Architect with Google Cloud and previously a Solutions Architect at Cisco Systems, I’ve spent decades designing and delivering complex architectures for EU public sector institutions, NATO, and global enterprises. Solving tough engineering problems, ensuring security and compliance, and guiding cross-functional teams has driven over 50+ successful mission-critical project launches.
+          </p>
+        </div>
+
+        <div class="vp-custom-block warning">
+          <div class="vp-custom-block-title">🛠️ Chapter 3: Hands-on Garage Builder Mindset</div>
+          <p>
+            Beyond large-scale cloud infrastructure, <code>/net/dev</code> is my online garage laboratory—a space to experiment with emerging AI models, post-quantum cryptography, and serverless edge applications. I believe in natural leadership through concrete goals, continuous learning, and accelerating to the next step in 10x digitalization with zero worries.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. SIMULATOR SECTION: 10x Transformation Simulator -->
+    <section class="vp-section simulator-section">
+      <div class="vp-section-header">
+        <h2 class="vp-section-title">10x Transformation Simulator ⚡</h2>
+        <p class="vp-section-desc">Interactive execution model for digital acceleration.</p>
+      </div>
+
+      <div class="vp-code-block">
+        <div class="vp-code-header">
+          <div class="vp-code-dots">
+            <span class="vp-code-dot red"></span>
+            <span class="vp-code-dot yellow"></span>
+            <span class="vp-code-dot green"></span>
+          </div>
+          <span class="vp-code-title">innovate.js</span>
+        </div>
+        <pre class="vp-code-body"><code><span class="keyword">var</span> innovate = <span class="keyword">function</span>(x) {
+  <span class="keyword">return</span> (<span class="number">10</span> * x);
+};
+<span class="function">innovate</span>(<span class="string">"whats_next"</span>); <span class="comment">// 🚀 Accelerating enterprise digital transformation</span></code></pre>
+        <div class="vp-code-footer">
+          <button class="vp-btn vp-btn-primary" id="run-code-btn">▶ Execute Simulator</button>
+        </div>
+        <div class="vp-code-output hidden" id="code-output-box"></div>
+      </div>
+    </section>
+
+    <!-- 3. INFO SECTION: Work Experience -->
+    <section class="vp-section" id="experience">
+      <div class="vp-section-header">
+        <h2 class="vp-section-title">Work Experience & Leadership 💼</h2>
+        <p class="vp-section-desc">20+ years of leading enterprise architecture, public sector cloud, and critical infrastructure.</p>
+      </div>
+
+      <div class="vp-timeline">
+        
+        <!-- Job 1 -->
+        <div class="vp-timeline-item">
+          <div class="vp-timeline-dot"></div>
+          <div class="vp-timeline-card">
+            <div class="vp-timeline-header">
+              <div>
+                <h3 class="vp-timeline-role">Customer Engineer / Cloud Architect</h3>
+                <h4 class="vp-timeline-company">Google Cloud</h4>
+              </div>
+              <span class="vp-timeline-date">September 2018 - Present</span>
+            </div>
+            <p class="vp-timeline-body">
+              Cloud Architect for EU public sector. Partnering with innovative teams to design resilient Google Cloud Platform solutions, solve complex engineering challenges, and accelerate digital maturity.
+            </p>
+            <div class="vp-tag-cloud">
+              <span class="vp-tag">Google Cloud</span>
+              <span class="vp-tag">Enterprise Architecture</span>
+              <span class="vp-tag">EU Public Sector</span>
+              <span class="vp-tag">Security & Compliance</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Job 2 -->
+        <div class="vp-timeline-item">
+          <div class="vp-timeline-dot"></div>
+          <div class="vp-timeline-card">
+            <div class="vp-timeline-header">
+              <div>
+                <h3 class="vp-timeline-role">Systems Engineer / Solutions Architect</h3>
+                <h4 class="vp-timeline-company">Cisco Systems</h4>
+              </div>
+              <span class="vp-timeline-date">June 2006 - August 2018</span>
+            </div>
+            <p class="vp-timeline-body">
+              Solutions Architect for EU institutions, NATO, and Belgian Governments. Engineered mission-critical networking, cybersecurity, and infrastructure solutions across large global organizations.
+            </p>
+            <div class="vp-tag-cloud">
+              <span class="vp-tag">Cisco</span>
+              <span class="vp-tag">NATO & EU Institutions</span>
+              <span class="vp-tag">Network Security</span>
+              <span class="vp-tag">Infrastructure</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Job 3 -->
+        <div class="vp-timeline-item">
+          <div class="vp-timeline-dot"></div>
+          <div class="vp-timeline-card">
+            <div class="vp-timeline-header">
+              <div>
+                <h3 class="vp-timeline-role">IT Manager</h3>
+                <h4 class="vp-timeline-company">Missil Petroleum</h4>
+              </div>
+              <span class="vp-timeline-date">September 2002 - June 2006</span>
+            </div>
+            <p class="vp-timeline-body">
+              Responsible for end-to-end IT operations, infrastructure availability, and internal systems deployment.
+            </p>
+            <div class="vp-tag-cloud">
+              <span class="vp-tag">IT Management</span>
+              <span class="vp-tag">Operations</span>
+              <span class="vp-tag">Infrastructure</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. SIMULATOR SECTION: Google Cloud AI Flow Sandbox -->
+    <section class="vp-section simulator-section" id="ai-arch">
+      <div class="vp-section-header">
+        <h2 class="vp-section-title">Google Cloud & Gemini 3.5 AI Flow Sandbox ☁️🤖</h2>
+        <p class="vp-section-desc">Design enterprise AI workloads using Gemini 3.5 Pro, Vertex AI, GKE Autopilot, and Zero Trust security.</p>
+      </div>
+
+      <div class="vp-sim-card">
+        <div class="vp-sim-controls">
+          <button class="vp-sim-btn active" data-arch-scenario="doc-ai">📄 EU Public Sector Doc Processing</button>
+          <button class="vp-sim-btn" data-arch-scenario="multimodal">🎥 Real-Time Multimodal Stream</button>
+          <button class="vp-sim-btn" data-arch-scenario="code-refactor">⚡ Agentic Monolith Refactoring</button>
+        </div>
+
+        <div class="vp-sim-grid">
+          <div class="vp-sim-node">
+            <div class="vp-sim-node-title">AI Engine</div>
+            <div class="vp-sim-node-value" id="arch-model-val">Gemini 3.5 Pro</div>
+          </div>
+          <div class="vp-sim-node">
+            <div class="vp-sim-node-title">Est. Latency (p95)</div>
+            <div class="vp-sim-node-value" id="arch-metric-latency">42 ms</div>
+          </div>
+          <div class="vp-sim-node">
+            <div class="vp-sim-node-title">Throughput</div>
+            <div class="vp-sim-node-value" id="arch-metric-tps">1,250 doc/sec</div>
+          </div>
+          <div class="vp-sim-node highlight">
+            <div class="vp-sim-node-title">Cost Efficiency</div>
+            <div class="vp-sim-node-value" id="arch-metric-cost">98% Optimal</div>
+          </div>
+        </div>
+
+        <div class="vp-sim-log" id="arch-flow-log">
+          ⚡ <strong>[Gemini 3.5 AI Pipeline]</strong> Initialized EU Public Sector Document Pipeline. Gemini 3.5 Pro active with zero-data retention security policy.
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. INFO SECTION: Verified Traits & Skill Cloud (Compact Tag Cloud) -->
+    <section class="vp-section" id="traits">
+      <div class="vp-section-header">
+        <h2 class="vp-section-title">Verified Attributes & Capabilities 🎯</h2>
+        <p class="vp-section-desc">Filterable human trait cloud verified via automated Turing test.</p>
+      </div>
+
+      <div class="vp-filter-bar">
+        <button class="vp-filter-btn active" data-attr-filter="all">🌟 All Traits</button>
+        <button class="vp-filter-btn" data-attr-filter="core">👤 Core Traits</button>
+        <button class="vp-filter-btn" data-attr-filter="skills">⚡ Tech & Architecture</button>
+        <button class="vp-filter-btn" data-attr-filter="fun">😄 Fun & Family</button>
+      </div>
+
+      <!-- Compact Tag Cloud Container -->
+      <div class="vp-traits-cloud" id="traits-tag-cloud">
+        <!-- Injected via JS -->
+      </div>
+    </section>
+
+    <!-- 6. SIMULATOR SECTION: Post-Quantum Cryptography Threat Simulator -->
+    <section class="vp-section simulator-section" id="quantum-sec">
+      <div class="vp-section-header">
+        <h2 class="vp-section-title">Cybersecurity for the Quantum Era 🛡️⚡</h2>
+        <p class="vp-section-desc">As we enter the Quantum Era, quantum computers put public-key cryptography at risk. Learn how organizations become crypto-agile.</p>
+      </div>
+
+      <div class="vp-custom-block warning" style="margin-bottom: 24px;">
+        <div class="vp-custom-block-title">⚠️ Quantum Vulnerability Warning</div>
+        <p>
+          Quantum computers are expected to soon break public-key cryptography (RSA-2048/ECC), putting your sensitive data at risk. To meet these current and emerging threats, it’s vital that your organization become <a href="https://cloud.google.com/blog/products/identity-security/how-google-is-preparing-for-a-post-quantum-world" target="_blank">crypto-agile</a>.
+        </p>
+      </div>
+
+      <div class="vp-sim-card">
+        <div style="margin-bottom: 16px;">
+          <label for="pqc-slider" style="font-weight: 600; margin-right: 12px;">Timeline Slider Year: <span id="pqc-year-label" class="vp-pill-badge primary">2026</span></label>
+          <input type="range" id="pqc-slider" min="2024" max="2035" value="2026" style="width: 100%; max-width: 400px; margin-top: 10px;">
+        </div>
+
+        <div class="vp-sim-grid">
+          <div class="vp-sim-node">
+            <div class="vp-sim-node-title">Classical RSA-2048</div>
+            <div class="vp-sim-node-value" id="rsa-status">✓ Active Transition</div>
+            <div style="background: #e2e8f0; height: 8px; border-radius: 4px; margin-top: 10px; overflow: hidden;">
+              <div id="rsa-vuln-fill" style="background: #ef4444; width: 35%; height: 100%;"></div>
+            </div>
+          </div>
+
+          <div class="vp-sim-node highlight">
+            <div class="vp-sim-node-title">Post-Quantum Cryptography</div>
+            <div class="vp-sim-node-value">FIPS 203/204 (Kyber)</div>
+            <div style="background: #e2e8f0; height: 8px; border-radius: 4px; margin-top: 10px; overflow: hidden;">
+              <div style="background: #10b981; width: 100%; height: 100%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="vp-sim-log" id="pqc-summary">
+          💡 <strong>Status (2026):</strong> Transitioning algorithms to PQC hybrid mode ensures long-term data security against store-now-decrypt-later attacks.
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. INFO SECTION: Programming Lifeline (1991 - 2026+) -->
+    <section class="vp-section" id="lifeline">
+      <div class="vp-section-header">
+        <h2 class="vp-section-title">Programming Lifeline 🚀</h2>
+        <p class="vp-section-desc">Jerome's personal code history, key milestones, language evolutions, and tech stack experience since 1991.</p>
+      </div>
+
+      <div class="vp-filter-bar">
+        <button class="vp-filter-btn active" data-lifeline-filter="all">🌐 All Stack</button>
+        <button class="vp-filter-btn" data-lifeline-filter="programming">💻 Programming & Web</button>
+        <button class="vp-filter-btn" data-lifeline-filter="cloud">☁️ Cloud & Infra</button>
+        <button class="vp-filter-btn" data-lifeline-filter="ai">🤖 AI & ML</button>
+        <button class="vp-filter-btn" data-lifeline-filter="network">🛡️ Network & Security</button>
+      </div>
+
+      <div class="vp-lifeline-grid">
+        
+        <!-- 1991 -->
+        <div class="vp-lifeline-card" data-category="programming">
+          <span class="vp-lifeline-year">1991</span>
+          <h3 class="vp-lifeline-title">🕹️ Commodore 64 & BASIC</h3>
+          <p class="vp-lifeline-desc">First after-school coding lessons. Typing POKE & PEEK commands in BASIC on 8-bit hardware.</p>
+          <div class="vp-tag-cloud"><span class="vp-tag">BASIC</span><span class="vp-tag">C64</span></div>
+        </div>
+
+        <!-- 1995 -->
+        <div class="vp-lifeline-card" data-category="programming">
+          <span class="vp-lifeline-year">1995</span>
+          <h3 class="vp-lifeline-title">💻 First PC & Web Dawn</h3>
+          <p class="vp-lifeline-desc">Pentium 133MHz, 64MB RAM. Writing MS Office Macros, MS Access DBs, VBScript, HTML, CSS, JavaScript, and Flash ActionScript.</p>
+          <div class="vp-tag-cloud"><span class="vp-tag">HTML/CSS</span><span class="vp-tag">JavaScript</span><span class="vp-tag">ActionScript</span></div>
+        </div>
+
+        <!-- 1997 -->
+        <div class="vp-lifeline-card" data-category="programming">
+          <span class="vp-lifeline-year">1997</span>
+          <h3 class="vp-lifeline-title">🌐 56kbps Dial-Up & LAMP Stack</h3>
+          <p class="vp-lifeline-desc">Building full-stack web applications with ASP.net (IIS/Access), WAMP/LAMP, PHP, MySQL & Bash scripts.</p>
+          <div class="vp-tag-cloud"><span class="vp-tag">PHP</span><span class="vp-tag">MySQL</span><span class="vp-tag">Bash</span><span class="vp-tag">ASP.NET</span></div>
+        </div>
+
+        <!-- 1999 -->
+        <div class="vp-lifeline-card" data-category="programming">
+          <span class="vp-lifeline-year">1999</span>
+          <h3 class="vp-lifeline-title">⚙️ Computer Science & Systems</h3>
+          <p class="vp-lifeline-desc">University CS engineering. Deep dive into MATLAB, C, C++, Java, UML architectural design, x86 Assembler, and SQL database design.</p>
+          <div class="vp-tag-cloud"><span class="vp-tag">C</span><span class="vp-tag">C++</span><span class="vp-tag">Java</span><span class="vp-tag">Assembly</span><span class="vp-tag">SQL</span></div>
+        </div>
+
+        <!-- 2006 -->
+        <div class="vp-lifeline-card" data-category="network programming">
+          <span class="vp-lifeline-year">2006</span>
+          <h3 class="vp-lifeline-title">🐍 Python, Rust & Cisco TCL</h3>
+          <p class="vp-lifeline-desc">Joined Cisco Systems. Scripting network infrastructure with Cisco IOS TCL, adopting Python, Rust, CoffeeScript, and server-side Node.js.</p>
+          <div class="vp-tag-cloud"><span class="vp-tag">Python</span><span class="vp-tag">Rust</span><span class="vp-tag">Node.js</span><span class="vp-tag">Cisco TCL</span></div>
+        </div>
+
+        <!-- 2018 -->
+        <div class="vp-lifeline-card" data-category="cloud ai">
+          <span class="vp-lifeline-year">2018</span>
+          <h3 class="vp-lifeline-title">☁️ Google Cloud, Go & Machine Learning</h3>
+          <p class="vp-lifeline-desc">Joined Google Cloud as Customer Engineer. Scaling Go architectures, TensorFlow with Keras, Flutter cross-platform apps & TypeScript.</p>
+          <div class="vp-tag-cloud"><span class="vp-tag">Go</span><span class="vp-tag">TensorFlow</span><span class="vp-tag">TypeScript</span><span class="vp-tag">Flutter</span></div>
+        </div>
+
+        <!-- 2021 -->
+        <div class="vp-lifeline-card" data-category="network ai">
+          <span class="vp-lifeline-year">2021</span>
+          <h3 class="vp-lifeline-title">🤖 Quantum Security & Scratch Education</h3>
+          <p class="vp-lifeline-desc">PQC Crypto-Agility, Post-Quantum security design, and teaching fundamental block programming to the next generation with Scratch.</p>
+          <div class="vp-tag-cloud"><span class="vp-tag">Scratch</span><span class="vp-tag">PQC</span><span class="vp-tag">GKE</span></div>
+        </div>
+
+        <!-- 2022 -->
+        <div class="vp-lifeline-card" data-category="ai">
+          <span class="vp-lifeline-year">2022</span>
+          <h3 class="vp-lifeline-title">⚡ GPT & LLMs</h3>
+          <p class="vp-lifeline-desc">GPT & Transformer architectures emerge. LLMs accelerate tech transformation, making the once-impossible possible.</p>
+          <div class="vp-tag-cloud"><span class="vp-tag">BERT</span><span class="vp-tag">GPT</span><span class="vp-tag">LLMs</span></div>
+        </div>
+
+        <!-- 2023 -->
+        <div class="vp-lifeline-card" data-category="ai">
+          <span class="vp-lifeline-year">2023</span>
+          <h3 class="vp-lifeline-title">🧠 Open Weights & Local LLMs</h3>
+          <p class="vp-lifeline-desc">Open-weight models explode (Llama, Gemma, Ollama). Running local LLM inference engines and MCP protocol integrations.</p>
+          <div class="vp-tag-cloud"><span class="vp-tag">Gemini</span><span class="vp-tag">MCP</span><span class="vp-tag">Ollama</span></div>
+        </div>
+
+        <!-- 2024 -->
+        <div class="vp-lifeline-card" data-category="ai cloud">
+          <span class="vp-lifeline-year">2024</span>
+          <h3 class="vp-lifeline-title">🔮 Multimodal Gemini 1.5 & Vibe Coding</h3>
+          <p class="vp-lifeline-desc">1M+ token context window, native multimodal reasoning (video/audio), and AI-driven Vibe Coding workflows taking flight.</p>
+          <div class="vp-tag-cloud"><span class="vp-tag">Gemini 1.5</span><span class="vp-tag">Vibe Coding</span><span class="vp-tag">Vertex AI</span></div>
+        </div>
+
+        <!-- 2025 -->
+        <div class="vp-lifeline-card" data-category="ai cloud">
+          <span class="vp-lifeline-year">2025</span>
+          <h3 class="vp-lifeline-title">🐝 Agentic Revolution & Swarms</h3>
+          <p class="vp-lifeline-desc">Multi-agent swarms working on long-running code refactoring, automated security audits, and complex science breakthroughs.</p>
+          <div class="vp-tag-cloud"><span class="vp-tag">ADK Agents</span><span class="vp-tag">DeepSeek</span><span class="vp-tag">Unsloth</span></div>
+        </div>
+
+        <!-- 2026+ -->
+        <div class="vp-lifeline-card" data-category="ai cloud network">
+          <span class="vp-lifeline-year">2026+</span>
+          <h3 class="vp-lifeline-title">🚀 Gemini 3.5 & Autonomous AI Engineering</h3>
+          <p class="vp-lifeline-desc">Autonomous AI pair programmers & SRE co-piloting. Deploying serverless multi-agent architectures with zero-downtime chaos resilience.</p>
+          <div class="vp-tag-cloud"><span class="vp-tag">Gemini 3.5</span><span class="vp-tag">Jetski</span><span class="vp-tag">SRE Chaos</span></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 8. SIMULATOR SECTION: SRE Autoscaling Chaos Simulator -->
+    <section class="vp-section simulator-section">
+      <div class="vp-section-header">
+        <h2 class="vp-section-title">SRE & Cloud Autoscaling Chaos Simulator 📉💥</h2>
+        <p class="vp-section-desc">Simulate enterprise cloud traffic spikes, regional network outages, and DB failovers live.</p>
+      </div>
+
+      <div class="vp-sim-card">
+        <div class="vp-sim-controls">
+          <button class="vp-sim-btn" id="chaos-spike-btn">💥 Inject 10x Traffic Spike</button>
+          <button class="vp-sim-btn" id="chaos-outage-btn">⚡ Simulate Region Outage</button>
+          <button class="vp-sim-btn" id="chaos-reset-btn">↺ Reset Baseline</button>
+        </div>
+
+        <div class="vp-sim-grid">
+          <div class="vp-sim-node">
+            <div class="vp-sim-node-title">GKE Pod Replicas</div>
+            <div class="vp-sim-node-value" id="gke-pods-val">12 Pods (Baseline)</div>
+            <div style="background: #e2e8f0; height: 8px; border-radius: 4px; margin-top: 10px; overflow: hidden;">
+              <div id="gke-pods-fill" style="background: #3b82f6; width: 25%; height: 100%;"></div>
+            </div>
+          </div>
+
+          <div class="vp-sim-node">
+            <div class="vp-sim-node-title">System Latency (p99)</div>
+            <div class="vp-sim-node-value" id="sre-latency-val">24 ms (Optimal)</div>
+            <div style="background: #e2e8f0; height: 8px; border-radius: 4px; margin-top: 10px; overflow: hidden;">
+              <div id="sre-latency-fill" style="background: #10b981; width: 15%; height: 100%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="vp-sim-log" id="chaos-console-log">
+          💻 <strong>[SRE Telemetry Console]</strong> Baseline state initialized. All systems operating within normal parameters.
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. INFO SECTION: Garage Mechanics Showcase Grid -->
+    <section class="vp-section" id="garage">
+      <div class="vp-section-header">
+        <h2 class="vp-section-title">Garage Mechanics 🛠️</h2>
+        <p class="vp-section-desc">Personal lab environments, micro-apps, and web experiments.</p>
+      </div>
+
+      <div class="vp-garage-grid">
+        <a href="https://netdev.be" target="_blank" class="vp-garage-card">
+          <div class="vp-garage-icon">🌐</div>
+          <div class="vp-garage-info">
+            <h3>gcs</h3>
+            <p>Google Cloud Storage custom hosting endpoint & lab domain.</p>
+            <span class="vp-garage-link">netdev.be ↗</span>
+          </div>
+        </a>
+
+        <a href="https://fb.netdev.be/" target="_blank" class="vp-garage-card">
+          <div class="vp-garage-icon">🔥</div>
+          <div class="vp-garage-info">
+            <h3>firebase</h3>
+            <p>Firebase App Hosting deployment & serverless backend sandbox.</p>
+            <span class="vp-garage-link">fb.netdev.be ↗</span>
+          </div>
+        </a>
+
+        <a href="https://beyond.netdev.be/" target="_blank" class="vp-garage-card">
+          <div class="vp-garage-icon">🚀</div>
+          <div class="vp-garage-info">
+            <h3>beyond</h3>
+            <p>BeyondCorp Zero Trust architecture lab & identity endpoint.</p>
+            <span class="vp-garage-link">beyond.netdev.be ↗</span>
+          </div>
+        </a>
+
+        <a href="https://web3.netdev.be/" target="_blank" class="vp-garage-card">
+          <div class="vp-garage-icon">🧩</div>
+          <div class="vp-garage-info">
+            <h3>captcha</h3>
+            <p>Web3 & Turing test validation experiment platform.</p>
+            <span class="vp-garage-link">web3.netdev.be ↗</span>
+          </div>
+        </a>
+
+        <a href="https://v3.netdev.be" target="_blank" class="vp-garage-card">
+          <div class="vp-garage-icon">📄</div>
+          <div class="vp-garage-info">
+            <h3>gh.md</h3>
+            <p>GitHub Markdown renderer & static document viewer.</p>
+            <span class="vp-garage-link">v3.netdev.be ↗</span>
+          </div>
+        </a>
+
+        <a href="https://blog.netdev.be" target="_blank" class="vp-garage-card">
+          <div class="vp-garage-icon">✍️</div>
+          <div class="vp-garage-info">
+            <h3>github.io blog</h3>
+            <p>Main online garage & technical thought leadership blog.</p>
+            <span class="vp-garage-link">blog.netdev.be ↗</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Contact Me Socials Overlay Modal Box -->
+  <div class="vp-modal-overlay" id="contact-modal">
+    <div class="vp-modal-card">
+      <div class="vp-modal-header">
+        <h3 class="vp-modal-title">
+          <span>✉️</span> Connect & Socials
+        </h3>
+        <button class="vp-modal-close" id="close-contact-modal" title="Close Overlay">&times;</button>
+      </div>
+
+      <div class="vp-modal-social-grid">
+        <a href="mailto:jpaquay+hugo@gmail.com" class="vp-modal-social-item">
+          <svg class="vp-modal-social-icon" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          <div class="vp-modal-social-info">
+            <h4>Email</h4>
+            <p>jpaquay+hugo@gmail.com</p>
+          </div>
+        </a>
+
+        <a href="https://linkedin.com/in/jeromepaquay" target="_blank" class="vp-modal-social-item">
+          <svg class="vp-modal-social-icon" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+          <div class="vp-modal-social-info">
+            <h4>LinkedIn</h4>
+            <p>/in/jeromepaquay</p>
+          </div>
+        </a>
+
+        <a href="https://twitter.com/jpaquay" target="_blank" class="vp-modal-social-item">
+          <svg class="vp-modal-social-icon" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          <div class="vp-modal-social-info">
+            <h4>X / Twitter</h4>
+            <p>@jpaquay</p>
+          </div>
+        </a>
+
+        <a href="https://github.com/jpaquay" target="_blank" class="vp-modal-social-item">
+          <svg class="vp-modal-social-icon" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+          <div class="vp-modal-social-info">
+            <h4>GitHub</h4>
+            <p>@jpaquay</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer (VPFooter Style) -->
+  <footer class="vp-footer">
+    <div class="vp-container vp-footer-content">
+      <p>Jerome Paquay • Bike & Run in Brussels, Belgium 🇧🇪</p>
+      <p><em>"Hakuna matata - take it easy, there are no worries."</em></p>
+
+      <div class="vp-footer-social-row">
+        <a href="https://github.com/jpaquay" target="_blank" class="vp-social-btn" title="GitHub @jpaquay">
+          <svg class="vp-social-icon" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/jeromepaquay" target="_blank" class="vp-social-btn" title="LinkedIn /jeromepaquay">
+          <svg class="vp-social-icon" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+        </a>
+        <a href="https://twitter.com/jpaquay" target="_blank" class="vp-social-btn" title="X / Twitter @jpaquay">
+          <svg class="vp-social-icon" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <button class="vp-social-btn" data-contact-trigger title="Contact Me">
+          <svg class="vp-social-icon" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
