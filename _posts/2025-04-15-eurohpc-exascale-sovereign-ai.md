@@ -2,9 +2,9 @@
 layout: post
 title: "Supercomputers on the Canal: EuroHPC and the Rise of European Sovereign AI"
 subtitle: "Inside the exascale infrastructure powering open European models and green datacenters."
-cover-img: /assets/img/peyresq.jpg
-thumbnail-img: /assets/img/1an.jpg
-share-img: /assets/img/peyresq.jpg
+cover-img: /assets/img/posts/2025-04-15-eurohpc.jpg
+thumbnail-img: /assets/img/posts/2025-04-15-eurohpc.jpg
+share-img: /assets/img/posts/2025-04-15-eurohpc.jpg
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [eurohpc, ai, supercomputing, cloud, green-tech, europe]

@@ -2,9 +2,9 @@
 layout: post
 title: "The Phantom in the Pipeline: Defending European Cloud Infrastructure Against Synthetic AI Exploits"
 subtitle: "Mitigating deepfake social engineering, LLM prompt injection, and automated supply chain poisoning."
-cover-img: /assets/img/newyorker.jpg
-thumbnail-img: /assets/img/avatar.jpg
-share-img: /assets/img/newyorker.jpg
+cover-img: /assets/img/posts/2025-12-15-shadow-ai.jpg
+thumbnail-img: /assets/img/posts/2025-12-15-shadow-ai.jpg
+share-img: /assets/img/posts/2025-12-15-shadow-ai.jpg
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [cybersecurity, shadow-ai, prompt-injection, cloud, ai-security]

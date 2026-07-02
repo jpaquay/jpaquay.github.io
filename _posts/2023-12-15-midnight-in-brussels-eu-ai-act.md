@@ -2,9 +2,9 @@
 layout: post
 title: "Midnight in Brussels: Architecting for the World’s First EU AI Act"
 subtitle: "Breaking down high-risk AI classification, transparency logs, and cloud ML governance."
-cover-img: /assets/img/manatthan.jpeg
-thumbnail-img: /assets/img/logo-sq.png
-share-img: /assets/img/manatthan.jpeg
+cover-img: /assets/img/posts/2023-12-15-eu-ai-act.jpg
+thumbnail-img: /assets/img/posts/2023-12-15-eu-ai-act.jpg
+share-img: /assets/img/posts/2023-12-15-eu-ai-act.jpg
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [ai, ai-act, governance, cloud, europe]

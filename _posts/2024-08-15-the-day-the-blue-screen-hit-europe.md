@@ -2,9 +2,9 @@
 layout: post
 title: "The Day Cloud Monoculture Broke: Post-Mortem of a European Outage"
 subtitle: "Why resilience requires cloud diversity, canary deployments, and eBPF kernel isolation."
-cover-img: /assets/img/fire.jpg
-thumbnail-img: /assets/img/logo.jpg
-share-img: /assets/img/fire.jpg
+cover-img: /assets/img/posts/2024-08-15-cloud-outage.jpg
+thumbnail-img: /assets/img/posts/2024-08-15-cloud-outage.jpg
+share-img: /assets/img/posts/2024-08-15-cloud-outage.jpg
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [cloud, resilience, devops, infrastructure, europe]

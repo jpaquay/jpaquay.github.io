@@ -2,9 +2,9 @@
 layout: post
 title: "Watts, FLOPS, and Zero Trust: The Green & Post-Quantum Cloud of 2026"
 subtitle: "How European cloud centers achieved PUE < 1.1 while deploying NIST post-quantum encryption."
-cover-img: /assets/img/sun.jpg
-thumbnail-img: /assets/img/logo.jpg
-share-img: /assets/img/sun.jpg
+cover-img: /assets/img/posts/2026-04-15-green-quantum-cloud.jpg
+thumbnail-img: /assets/img/posts/2026-04-15-green-quantum-cloud.jpg
+share-img: /assets/img/posts/2026-04-15-green-quantum-cloud.jpg
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [cloud, post-quantum, green-tech, zero-trust, europe, belgium]
