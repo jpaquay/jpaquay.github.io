@@ -1,0 +1,3 @@
+## 2024-07-01 - Layout Thrashing in Scroll Handlers
+**Learning:** Using `jQuery().offset().top` directly inside a `scroll` event handler forces synchronous layout calculation on the main thread, resulting in layout thrashing. Because scroll events fire at high frequency, this completely ruins scrolling jank/performance.
+**Action:** Decouple the DOM writes from scroll read operations. Always use `window.scrollY` over `.offset()` where appropriate, and wrap DOM updates inside `window.requestAnimationFrame` to ensure visual updates run at the browser's refresh rate without blocking the scroll event execution.

@@ -30,20 +30,21 @@ layout: null
       }
     };
 
+    function updateFormState(isSuccess) {
+      $('#comment-form-submit').toggleClass('d-none', isSuccess);
+      $('#comment-form-submitted').toggleClass('d-none', !isSuccess);
+      $('.page__comments-form .js-notice')
+        .toggleClass('alert-success', isSuccess)
+        .toggleClass('alert-danger', !isSuccess);
+      showAlert(isSuccess ? 'success' : 'failure');
+    }
+
     function formSubmitted() {
-      $('#comment-form-submit').addClass('d-none');
-      $('#comment-form-submitted').removeClass('d-none');
-      $('.page__comments-form .js-notice').removeClass('alert-danger');
-      $('.page__comments-form .js-notice').addClass('alert-success');
-      showAlert('success');
+      updateFormState(true);
     }
 
     function formError() {
-      $('#comment-form-submitted').addClass('d-none');
-      $('#comment-form-submit').removeClass('d-none');
-      $('.page__comments-form .js-notice').removeClass('alert-success');
-      $('.page__comments-form .js-notice').addClass('alert-danger');
-      showAlert('failure');
+      updateFormState(false);
       $(form).removeClass('disabled');
     }
 
@@ -61,5 +62,13 @@ layout: null
       $('.page__comments-form .js-notice-text-success').addClass('d-none');
       $('.page__comments-form .js-notice-text-failure').removeClass('d-none');
     }
+  }
+
+  // Expose for testing
+  if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { showAlert };
+  } else if (typeof window !== 'undefined' && window.process && window.process.env && window.process.env.NODE_ENV === 'test') {
+    // Only expose globally if explicitly in a test environment and module.exports isn't used
+    window.__staticman_showAlert = showAlert;
   }
 })(jQuery);
