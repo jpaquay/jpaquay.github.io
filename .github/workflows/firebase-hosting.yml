@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - feature/upgrade-beautiful-jekyll
 
 jobs:
   build_and_deploy:
@@ -23,11 +24,23 @@ jobs:
           bundle install
           bundle exec jekyll build
 
-      - name: Deploy to Firebase Hosting
+      - name: Deploy Live (Master Branch)
+        if: github.ref == 'refs/heads/master'
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_NETDEV_FIREBASE }}'
           channelId: live
+          projectId: netdev-firebase
+          target: netdev-blog
+
+      - name: Deploy Preview Channel (Feature Branches)
+        if: github.ref != 'refs/heads/master'
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_NETDEV_FIREBASE }}'
+          channelId: 'preview-${{ github.sha }}'
+          expires: 7d
           projectId: netdev-firebase
           target: netdev-blog
