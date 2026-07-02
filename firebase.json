@@ -1,7 +1,7 @@
 {
   "hosting": {
     "site": "netdev-firebase",
-    "public": "public",
+    "public": "_site",
     "ignore": [
       "firebase.json",
       "**/.*",

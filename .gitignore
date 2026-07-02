@@ -2,6 +2,7 @@
 _site
 .sass-cache
 .vagrant
+jekyll.log
 
 # general
 .DS_Store
@@ -13,3 +14,4 @@ Gemfile.lock
 beautiful-jekyll-theme-*.gem
 node_modules/
 package-lock.json
+.firebase/
