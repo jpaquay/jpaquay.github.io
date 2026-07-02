@@ -340,20 +340,32 @@ body {
   justify-content: flex-start;
 }
 
-/* Horizontal Timeline Scroll Slider Controls */
+/* Horizontal Timeline Scroll Slider Controls (Translucid & Positioned Under Timeline) */
 .lifeline-scroll-control {
-  margin: 12px 0 20px;
+  margin: 16px 0 0;
+  display: flex;
+  justify-content: center;
 }
 
 .scroll-slider-wrapper {
   display: flex;
   align-items: center;
   gap: 14px;
-  background: var(--bg-secondary);
-  padding: 10px 18px;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 8px 20px;
   border-radius: 30px;
-  border: 1px solid var(--border-color);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: var(--glow-shadow);
+  width: 90%;
+  max-width: 600px;
+  transition: all 0.3s ease;
+}
+
+.scroll-slider-wrapper:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--accent-primary);
 }
 
 .scroll-slider-label {
@@ -361,12 +373,19 @@ body {
   font-weight: 600;
   color: var(--text-secondary);
   white-space: nowrap;
+  opacity: 0.85;
 }
 
 .scroll-slider-wrapper input[type="range"] {
   flex: 1;
   accent-color: var(--accent-primary);
   cursor: pointer;
+  opacity: 0.75;
+  transition: opacity 0.2s ease;
+}
+
+.scroll-slider-wrapper input[type="range"]:hover {
+  opacity: 1;
 }
 
 /* Main Content Layout Adjustments */
