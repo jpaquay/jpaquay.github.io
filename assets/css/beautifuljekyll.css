@@ -69,11 +69,8 @@ hr.small {
 }
 
 /* fix in-page anchors to not be behind fixed header */
-:target:before {
-  content: "";
-  display: block;
-  height: 3.125rem; /* navbar height */
-  margin: -3.125rem 0 0;
+:target {
+  scroll-margin-top: 3.125rem; /* navbar height */
 }
 
 .hideme {
@@ -828,37 +825,37 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
 
 /* --- Tables --- */
 
-table {
+table:not(.rouge-table) {
   padding: 0;
 }
-table tr {
+table:not(.rouge-table) tr {
   border-top: 1px solid #cccccc;
   background-color: #ffffff;
   margin: 0;
   padding: 0;
 }
-table tr:nth-child(2n) {
+table:not(.rouge-table) tr:nth-child(2n) {
   background-color: #f8f8f8;
 }
-table tr th {
+table:not(.rouge-table) tr th {
   font-weight: bold;
   border: 1px solid #cccccc;
   text-align: left;
   margin: 0;
   padding: 0.375rem 0.8125rem;
 }
-table tr td {
+table:not(.rouge-table) tr td {
   border: 1px solid #cccccc;
   text-align: left;
   margin: 0;
   padding: 0.375rem 0.8125rem;
 }
-table tr th :first-child,
-table tr td :first-child {
+table:not(.rouge-table) tr th :first-child,
+table:not(.rouge-table) tr td :first-child {
   margin-top: 0;
 }
-table tr th :last-child,
-table tr td :last-child {
+table:not(.rouge-table) tr th :last-child,
+table:not(.rouge-table) tr td :last-child {
   margin-bottom: 0;
 }
 
@@ -899,14 +896,6 @@ pre {
 .highlight > pre:not([class~="highlight"]) { /* code block with line number */
   padding: 0;
 }
-.highlight table,
-.highlight tr,
-.highlight td { /* to be removed after fixing table styles */
-  border: none;
-  background: none;
-  padding: 0;
-  margin: 0;
-}
 .highlight pre.lineno {
   color: rgba(0,0,0,0.3);
   border-radius: 0;
@@ -926,11 +915,11 @@ pre {
 
 /* Fix table border github gist snippets */
 
-.gist, .gist-file table tr {
+.gist .gist-file table tr {
   border: unset;
 }
 
-.gist, .gist-file table tr td {
+.gist .gist-file table tr td {
   border: unset;
 }
 

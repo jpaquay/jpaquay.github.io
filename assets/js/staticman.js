@@ -36,6 +36,15 @@ layout: null
       }
     };
 
+    function updateFormState(isSuccess) {
+      $('#comment-form-submit').toggleClass('d-none', isSuccess);
+      $('#comment-form-submitted').toggleClass('d-none', !isSuccess);
+      $('.page__comments-form .js-notice')
+        .toggleClass('alert-success', isSuccess)
+        .toggleClass('alert-danger', !isSuccess);
+      showAlert(isSuccess ? 'success' : 'failure');
+    }
+
     function formSubmitted() {
       $submit.addClass('d-none');
       $submitted.removeClass('d-none');
@@ -67,5 +76,13 @@ layout: null
       $noticeSuccess.addClass('d-none');
       $noticeFailure.removeClass('d-none');
     }
+  }
+
+  // Expose for testing
+  if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { showAlert };
+  } else if (typeof window !== 'undefined' && window.process && window.process.env && window.process.env.NODE_ENV === 'test') {
+    // Only expose globally if explicitly in a test environment and module.exports isn't used
+    window.__staticman_showAlert = showAlert;
   }
 })(jQuery);
