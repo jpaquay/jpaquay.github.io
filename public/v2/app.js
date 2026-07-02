@@ -91,20 +91,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // --- 4. Verified Traits Tag Cloud (All 12 v1 Traits Included) ---
+  // --- 4. Verified Traits Tag Cloud (Only Traits, No Descriptions) ---
   const traitsData = [
-    { text: "Eco Hacker", desc: "IoT FarmBot & sustainable tech advocate", icon: "🌱" },
-    { text: "Dad of 3", desc: "Proud father of 3 rockstar teenagers", icon: "❤️" },
-    { text: "I bike", desc: "Commuter & cycling enthusiast", icon: "🚴" },
-    { text: "I meet", desc: "Connecting innovative teams", icon: "🤝" },
-    { text: "I learn", desc: "Continuous tech exploration", icon: "📚" },
-    { text: "I climb", desc: "Scaling physical & architecture heights", icon: "🧗" },
-    { text: "I laugh", desc: "Hakuna matata philosophy", icon: "😄" },
-    { text: "I code", desc: "Building trusted systems & tools", icon: "💻" },
-    { text: "Great Beard", desc: "Rocking a top-tier engineer beard", icon: "🧔" },
-    { text: "Handsome Genius ™", desc: "Verified 10x innovator", icon: "🧠" },
-    { text: "Crypto-Agile", desc: "Post-quantum security advocate", icon: "🛡️" },
-    { text: "Turing Verified", desc: "100% Passed Turing Human Test", icon: "🎯" }
+    { text: "Eco Hacker", icon: "🌱" },
+    { text: "Dad of 3", icon: "❤️" },
+    { text: "I bike", icon: "🚴" },
+    { text: "I meet", icon: "🤝" },
+    { text: "I learn", icon: "📚" },
+    { text: "I climb", icon: "🧗" },
+    { text: "I laugh", icon: "😄" },
+    { text: "I code", icon: "💻" },
+    { text: "Great Beard", icon: "🧔" },
+    { text: "Handsome Genius ™", icon: "🧠" },
+    { text: "Crypto-Agile", icon: "🛡️" },
+    { text: "Turing Verified", icon: "🎯" }
   ];
 
   const traitsContainer = document.getElementById('traits-tag-cloud');
@@ -116,8 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
     traitsData.forEach(item => {
       const badge = document.createElement('span');
       badge.className = 'vp-trait-badge';
-      badge.title = item.desc;
-      badge.innerHTML = `<span class="vp-trait-icon">${item.icon}</span> <strong>${item.text}</strong> — ${item.desc}`;
+      badge.innerHTML = `<span class="vp-trait-icon">${item.icon}</span> ${item.text}`;
       traitsContainer.appendChild(badge);
     });
   };
