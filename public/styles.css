@@ -645,8 +645,9 @@ body {
   display: flex;
   gap: 32px;
   position: relative;
-  min-width: 1200px;
-  padding: 60px 20px;
+  min-width: 1600px;
+  padding: 60px 40px;
+  align-items: center;
 }
 
 .lifeline-track::before {
@@ -665,36 +666,36 @@ body {
 .lifeline-node {
   position: relative;
   flex: 1;
-  min-width: 200px;
-}
-
-.node-badge {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: var(--accent-primary);
-  color: var(--bg-primary);
-  font-weight: 700;
-  font-size: 0.85rem;
-  padding: 4px 12px;
-  border-radius: 20px;
-  z-index: 5;
-  box-shadow: 0 0 12px rgba(0,0,0,0.3);
-}
-
-.node-badge.os-badge {
-  background: var(--accent-success);
-  color: #000;
+  min-width: 210px;
 }
 
 .node-card {
   background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: var(--card-radius);
-  padding: 16px;
+  padding: 20px 16px 16px;
   position: relative;
   transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.node-badge {
+  position: absolute;
+  top: -12px;
+  left: 16px;
+  background: var(--accent-primary);
+  color: var(--bg-primary);
+  font-weight: 800;
+  font-size: 0.8rem;
+  padding: 3px 10px;
+  border-radius: 12px;
+  z-index: 5;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  letter-spacing: 0.5px;
+}
+
+.node-badge.os-badge {
+  background: var(--accent-success);
+  color: #000;
 }
 
 .lifeline-node.top .node-card {
