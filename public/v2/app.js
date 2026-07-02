@@ -91,118 +91,89 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // --- 4. Filterable Verified Traits (Compact Tag Cloud Style) ---
+  // --- 4. Verified Traits Tag Cloud (All 12 v1 Traits Included) ---
   const traitsData = [
-    { text: "I bike", type: "core", icon: "🚴" },
-    { text: "I meet", type: "core", icon: "🤝" },
-    { text: "I learn", type: "core", icon: "📚" },
-    { text: "I climb", type: "fun", icon: "🧗" },
-    { text: "I laugh", type: "fun", icon: "😂" },
-    { text: "I code", type: "skills", icon: "💻" },
-    { text: "I rock a great beard", type: "fun", icon: "🧔" },
-    { text: "Handsome genius ™", type: "fun", icon: "✨" },
-    { text: "Completely Automated Public Turing Test Passed", type: "skills", icon: "🤖" }
+    { text: "Eco Hacker", desc: "IoT FarmBot & sustainable tech advocate", icon: "🌱" },
+    { text: "Dad of 3", desc: "Proud father of 3 rockstar teenagers", icon: "❤️" },
+    { text: "I bike", desc: "Commuter & cycling enthusiast", icon: "🚴" },
+    { text: "I meet", desc: "Connecting innovative teams", icon: "🤝" },
+    { text: "I learn", desc: "Continuous tech exploration", icon: "📚" },
+    { text: "I climb", desc: "Scaling physical & architecture heights", icon: "🧗" },
+    { text: "I laugh", desc: "Hakuna matata philosophy", icon: "😄" },
+    { text: "I code", desc: "Building trusted systems & tools", icon: "💻" },
+    { text: "Great Beard", desc: "Rocking a top-tier engineer beard", icon: "🧔" },
+    { text: "Handsome Genius ™", desc: "Verified 10x innovator", icon: "🧠" },
+    { text: "Crypto-Agile", desc: "Post-quantum security advocate", icon: "🛡️" },
+    { text: "Turing Verified", desc: "100% Passed Turing Human Test", icon: "🎯" }
   ];
 
   const traitsContainer = document.getElementById('traits-tag-cloud');
-  const traitFilters = document.querySelectorAll('[data-attr-filter]');
 
-  const renderTraits = (filter = 'all') => {
+  const renderTraits = () => {
     if (!traitsContainer) return;
     traitsContainer.innerHTML = '';
-    
-    const filtered = filter === 'all' 
-      ? traitsData 
-      : traitsData.filter(item => item.type === filter);
 
-    filtered.forEach(item => {
+    traitsData.forEach(item => {
       const badge = document.createElement('span');
       badge.className = 'vp-trait-badge';
-      badge.innerHTML = `<span class="vp-trait-icon">${item.icon}</span> ${item.text}`;
+      badge.title = item.desc;
+      badge.innerHTML = `<span class="vp-trait-icon">${item.icon}</span> <strong>${item.text}</strong> — ${item.desc}`;
       traitsContainer.appendChild(badge);
     });
   };
 
   renderTraits();
 
-  traitFilters.forEach(btn => {
-    btn.addEventListener('click', () => {
-      traitFilters.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      renderTraits(btn.getAttribute('data-attr-filter'));
-    });
-  });
-
-  // --- 5. Programming Lifeline Filter ---
-  const lifelineFilters = document.querySelectorAll('[data-lifeline-filter]');
-  const lifelineCards = document.querySelectorAll('.vp-lifeline-card');
-
-  lifelineFilters.forEach(btn => {
-    btn.addEventListener('click', () => {
-      lifelineFilters.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      
-      const filter = btn.getAttribute('data-lifeline-filter');
-      lifelineCards.forEach(card => {
-        const category = card.getAttribute('data-category') || '';
-        if (filter === 'all' || category.includes(filter)) {
-          card.style.display = 'flex';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    });
-  });
-
-  // --- 6. Google Cloud AI Architecture Sandbox ---
-  const archScenarioBtns = document.querySelectorAll('[data-arch-scenario]');
+  // --- 5. Google Cloud & Gemini 3.5 AI Flow Sandbox ---
+  const archBtns = document.querySelectorAll('[data-arch-scenario]');
   const archModelVal = document.getElementById('arch-model-val');
   const archLatencyVal = document.getElementById('arch-metric-latency');
   const archTpsVal = document.getElementById('arch-metric-tps');
   const archCostVal = document.getElementById('arch-metric-cost');
   const archLog = document.getElementById('arch-flow-log');
 
-  const archScenarios = {
+  const scenarioConfigs = {
     'doc-ai': {
       model: 'Gemini 3.5 Pro',
       latency: '42 ms',
       tps: '1,250 doc/sec',
       cost: '98% Optimal',
-      log: '⚡ [Doc AI Pipeline] Processing EU Public Sector document queue with Zero-Trust Secret Manager & KMS.'
+      log: '⚡ <strong>[Gemini 3.5 AI Pipeline]</strong> Initialized EU Public Sector Document Pipeline. Gemini 3.5 Pro active with zero-data retention security policy.'
     },
     'multimodal': {
-      model: 'Gemini 3.5 Flash Multimodal',
-      latency: '18 ms',
-      tps: '4,500 frames/sec',
-      cost: '99% Optimal',
-      log: '🎥 [Multimodal Stream] Real-time audio/video ingestion on GKE Autopilot + Ray GPUs.'
+      model: 'Gemini 3.5 Flash',
+      latency: '14 ms',
+      tps: '4,800 frames/sec',
+      cost: '99.2% Optimal',
+      log: '🎥 <strong>[Real-time Multimodal Stream]</strong> Streaming audio/video directly to Gemini 3.5 Flash via Vertex AI Low-Latency Sockets.'
     },
     'code-refactor': {
-      model: 'Gemini 3.5 Pro Agentic Swarm',
+      model: 'Gemini 3.5 Pro (1M Token)',
       latency: '85 ms',
-      tps: '3,200 LOC/sec',
-      cost: '96% Optimal',
-      log: '🐝 [Agentic Refactoring] Swarm intelligence running parallel unit testing and security compliance audits.'
+      tps: '350 files/min',
+      cost: '95.5% Optimal',
+      log: '🤖 <strong>[Agentic Refactoring Swarm]</strong> ADK Subagent swarm analyzing legacy codebase context and emitting post-quantum safe code diffs.'
     }
   };
 
-  archScenarioBtns.forEach(btn => {
+  archBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-      archScenarioBtns.forEach(b => b.classList.remove('active'));
+      archBtns.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       const scenarioKey = btn.getAttribute('data-arch-scenario');
-      const data = archScenarios[scenarioKey];
-      if (data) {
-        if (archModelVal) archModelVal.textContent = data.model;
-        if (archLatencyVal) archLatencyVal.textContent = data.latency;
-        if (archTpsVal) archTpsVal.textContent = data.tps;
-        if (archCostVal) archCostVal.textContent = data.cost;
-        if (archLog) archLog.innerHTML = data.log;
+      const config = scenarioConfigs[scenarioKey];
+
+      if (config) {
+        if (archModelVal) archModelVal.textContent = config.model;
+        if (archLatencyVal) archLatencyVal.textContent = config.latency;
+        if (archTpsVal) archTpsVal.textContent = config.tps;
+        if (archCostVal) archCostVal.textContent = config.cost;
+        if (archLog) archLog.innerHTML = config.log;
       }
     });
   });
 
-  // --- 7. Post-Quantum Cryptography Simulator ---
+  // --- 6. Post-Quantum Cryptography Threat Simulator ---
   const pqcSlider = document.getElementById('pqc-slider');
   const pqcYearLabel = document.getElementById('pqc-year-label');
   const rsaStatus = document.getElementById('rsa-status');
@@ -211,63 +182,83 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (pqcSlider) {
     pqcSlider.addEventListener('input', (e) => {
-      const year = parseInt(e.target.value, 10);
+      const year = parseInt(e.target.value);
       if (pqcYearLabel) pqcYearLabel.textContent = year;
 
-      let vulnPercent = Math.min(100, Math.max(10, (year - 2024) * 10 + 15));
-      if (rsaVulnFill) rsaVulnFill.style.width = `${vulnPercent}%`;
+      let vulnPct = Math.min(100, Math.max(10, (year - 2024) * 10 + 15));
+      if (rsaVulnFill) rsaVulnFill.style.width = `${vulnPct}%`;
 
-      if (year >= 2030) {
-        if (rsaStatus) rsaStatus.innerHTML = `<span style="color: #ef4444;">⚠️ Deprecated / Broken</span>`;
-        if (pqcSummary) pqcSummary.innerHTML = `🚨 <strong>Status (${year}):</strong> Quantum computers exceed CRQC threshold. RSA-2048 broken. PQC FIPS 203/204 is MANDATORY!`;
-      } else if (year >= 2028) {
-        if (rsaStatus) rsaStatus.innerHTML = `<span style="color: #f59e0b;">⚡ High Risk</span>`;
-        if (pqcSummary) pqcSummary.innerHTML = `⚠️ <strong>Status (${year}):</strong> Store-now-decrypt-later threat elevated. Organizations adopting hybrid PQC suites.`;
+      if (year < 2027) {
+        if (rsaStatus) rsaStatus.textContent = "✓ RSA Active (Migration Recommended)";
+        if (pqcSummary) pqcSummary.innerHTML = `💡 <strong>Status (${year}):</strong> RSA-2048 is currently viable but vulnerable to Harvest-Now-Decrypt-Later threats.`;
+      } else if (year < 2030) {
+        if (rsaStatus) rsaStatus.textContent = "⚠️ High Risk (Quantum Sup. Approaching)";
+        if (pqcSummary) pqcSummary.innerHTML = `⚠️ <strong>Status (${year}):</strong> PQC Hybrid mode (FIPS 203/204) mandatory for enterprise protection.`;
       } else {
-        if (rsaStatus) rsaStatus.innerHTML = `<span style="color: #10b981;">✓ Active Transition</span>`;
-        if (pqcSummary) pqcSummary.innerHTML = `💡 <strong>Status (${year}):</strong> Transitioning algorithms to PQC hybrid mode ensures long-term data security.`;
+        if (rsaStatus) rsaStatus.textContent = "❌ DEPRECATED / BROKEN";
+        if (pqcSummary) pqcSummary.innerHTML = `🚨 <strong>Status (${year}):</strong> Classical RSA-2048 broken by Cryptographic Quantum Hardware. Full PQC required!`;
       }
     });
   }
 
-  // --- 8. SRE Chaos Autoscaling Simulator ---
+  // --- 7. SRE Chaos Autoscaling Simulator ---
   const chaosSpikeBtn = document.getElementById('chaos-spike-btn');
   const chaosOutageBtn = document.getElementById('chaos-outage-btn');
   const chaosResetBtn = document.getElementById('chaos-reset-btn');
-
   const gkePodsVal = document.getElementById('gke-pods-val');
   const gkePodsFill = document.getElementById('gke-pods-fill');
-  const latencyVal = document.getElementById('sre-latency-val');
-  const latencyFill = document.getElementById('sre-latency-fill');
-  const chaosConsole = document.getElementById('chaos-console-log');
+  const sreLatencyVal = document.getElementById('sre-latency-val');
+  const sreLatencyFill = document.getElementById('sre-latency-fill');
+  const chaosConsoleLog = document.getElementById('chaos-console-log');
 
   if (chaosSpikeBtn) {
     chaosSpikeBtn.addEventListener('click', () => {
-      if (gkePodsVal) gkePodsVal.textContent = '64 Pods (Scaled up)';
-      if (gkePodsFill) gkePodsFill.style.width = '85%';
-      if (latencyVal) latencyVal.textContent = '38 ms (Mitigated)';
-      if (latencyFill) latencyFill.style.width = '38%';
-      if (chaosConsole) chaosConsole.innerHTML = `💥 <strong>[Traffic Spike]</strong> 10x HTTP requests detected! GKE HPA autoscaled 12 -> 64 pods. Latency stabilized at 38ms.`;
+      if (gkePodsVal) gkePodsVal.textContent = "120 Pods (HPA Autoscaled 🚀)";
+      if (gkePodsFill) gkePodsFill.style.width = "90%";
+      if (sreLatencyVal) sreLatencyVal.textContent = "28 ms (Spike Mitigated ✓)";
+      if (sreLatencyFill) sreLatencyFill.style.width = "20%";
+      if (chaosConsoleLog) chaosConsoleLog.innerHTML = `💥 <strong>[Traffic Surge Detected]</strong> 10x HTTP RPS burst. GKE Autopilot scaled pod replicas from 12 to 120 in 4.2s. Zero dropped packets!`;
     });
   }
 
   if (chaosOutageBtn) {
     chaosOutageBtn.addEventListener('click', () => {
-      if (gkePodsVal) gkePodsVal.textContent = '32 Pods (Failover Region)';
-      if (gkePodsFill) gkePodsFill.style.width = '50%';
-      if (latencyVal) latencyVal.textContent = '45 ms (Cross-Region)';
-      if (latencyFill) latencyFill.style.width = '45%';
-      if (chaosConsole) chaosConsole.innerHTML = `⚡ <strong>[Region Outage]</strong> Simulated europe-west1 failure! Traffic rerouted to europe-west4 via Cloud Load Balancer in 1.2 seconds.`;
+      if (gkePodsVal) gkePodsVal.textContent = "48 Pods (Failover Region)";
+      if (gkePodsFill) gkePodsFill.style.width = "40%";
+      if (sreLatencyVal) sreLatencyVal.textContent = "38 ms (Multi-Region DNS Reroute)";
+      if (sreLatencyFill) sreLatencyFill.style.width = "30%";
+      if (chaosConsoleLog) chaosConsoleLog.innerHTML = `⚡ <strong>[Regional Outage Injected]</strong> europe-west1 simulated offline. Cloud DNS automatically rerouted traffic to europe-west4 within 800ms.`;
     });
   }
 
   if (chaosResetBtn) {
     chaosResetBtn.addEventListener('click', () => {
-      if (gkePodsVal) gkePodsVal.textContent = '12 Pods (Baseline)';
-      if (gkePodsFill) gkePodsFill.style.width = '25%';
-      if (latencyVal) latencyVal.textContent = '24 ms (Optimal)';
-      if (latencyFill) latencyFill.style.width = '15%';
-      if (chaosConsole) chaosConsole.innerHTML = `💻 <strong>[SRE Baseline]</strong> Infrastructure restored to baseline parameters. All metrics nominal.`;
+      if (gkePodsVal) gkePodsVal.textContent = "12 Pods (Baseline)";
+      if (gkePodsFill) gkePodsFill.style.width = "25%";
+      if (sreLatencyVal) sreLatencyVal.textContent = "24 ms (Optimal)";
+      if (sreLatencyFill) sreLatencyFill.style.width = "15%";
+      if (chaosConsoleLog) chaosConsoleLog.innerHTML = `💻 <strong>[SRE Telemetry Console]</strong> Baseline state restored. All systems operating within normal parameters.`;
     });
   }
+
+  // --- 8. Lifeline Interactive Filter ---
+  const lifelineFilters = document.querySelectorAll('[data-lifeline-filter]');
+  const lifelineCards = document.querySelectorAll('.vp-lifeline-card');
+
+  lifelineFilters.forEach(btn => {
+    btn.addEventListener('click', () => {
+      lifelineFilters.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.getAttribute('data-lifeline-filter');
+
+      lifelineCards.forEach(card => {
+        const cat = card.getAttribute('data-category') || '';
+        if (filter === 'all' || cat.includes(filter)) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
 });
