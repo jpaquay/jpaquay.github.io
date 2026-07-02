@@ -212,10 +212,10 @@ gtm: "GTM-5SG5N6T"
 # https://github.com/eduardoboucas/staticman/ and https://staticman.net/ for further 
 # instructions. For any support with staticman please direct questions to staticman and 
 # not to BeautifulJekyll.
-#staticman:
-#  repository : # GitHub username/repository eg. "daattali/beautiful-jekyll"
-#  branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
-#  endpoint   : # URL of your deployment, with a trailing slash eg. "https://<your-api>/v3/entry/github/"
+staticman:
+  repository : dummy/dummy
+  branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
+  endpoint: https://dummy.com
 #  reCaptcha:   # (optional, set these parameters in `staticman.yml` as well) 
 #    siteKey  : # You need to apply for a site key on Google
 #    secret   : # Encrypt your password by going to https://<your-own-api>/v3/encrypt/<your-site-secret>
