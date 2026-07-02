@@ -156,6 +156,20 @@ function initEventListeners() {
   document.getElementById('btn-new-post')?.addEventListener('click', resetEditor);
 
   document.getElementById('post-form')?.addEventListener('submit', handlePostSubmit);
+
+  const postsListBody = document.getElementById('posts-list-body');
+  if (postsListBody) {
+    postsListBody.addEventListener('click', (e) => {
+      const editBtn = e.target.closest('.btn-edit-post');
+      if (editBtn) {
+        const path = editBtn.getAttribute('data-path');
+        const sha = editBtn.getAttribute('data-sha');
+        if (path && sha) {
+          editPost(path, sha);
+        }
+      }
+    });
+  }
 }
 
 window.handleDemoLogin = function() {
@@ -223,18 +237,18 @@ async function loadPostsList() {
       }
 
       tr.innerHTML = `
-        <td><strong>${escapeHtml(titleStr)}</strong><br><small style="color: #64748b">${file.name}</small></td>
-        <td>${dateStr}</td>
+        <td><strong>${escapeHtml(titleStr)}</strong><br><small style="color: #64748b">${escapeHtml(file.name)}</small></td>
+        <td>${escapeHtml(dateStr)}</td>
         <td><span class="status-badge status-published">Published</span></td>
         <td>
-          <button class="admin-btn admin-btn-secondary admin-btn-sm" onclick="editPost('${file.path}', '${file.sha}')">Edit</button>
+          <button class="admin-btn admin-btn-secondary admin-btn-sm btn-edit-post" data-path="${escapeHtml(file.path)}" data-sha="${escapeHtml(file.sha)}">Edit</button>
         </td>
       `;
       tbody.appendChild(tr);
     });
   } catch (err) {
     console.error('Failed to load posts:', err);
-    tbody.innerHTML = `<tr><td colspan="4" style="color: red;">Error loading posts: ${err.message}. Please check your GitHub Token.</td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="4" style="color: red;">Error loading posts: ${escapeHtml(err.message)}. Please check your GitHub Token.</td></tr>`;
   }
 }
 
@@ -377,7 +391,8 @@ function parseFrontMatter(text) {
 }
 
 function escapeHtml(str) {
-  return str.replace(/[&<>"']/g, function(m) {
+  if (!str) return '';
+  return String(str).replace(/[&<>"']/g, function(m) {
     return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' }[m];
   });
 }
