@@ -17,10 +17,7 @@ We take the security of this site, administrative portal, and public services se
 ## Security Architecture & Best Practices
 
 ### 1. Administrative Access Control
-Access to the `/admin` Post Editor GUI is strictly restricted to designated Google accounts:
-* `jpaquay@gmail.com`
-* `jerome@netdev.be`
-* `jpaquay@google.com`
+Access to the `/admin` Post Editor GUI is strictly restricted to designated Google Admin accounts configured in authorized user lists.
 
 Attempts to sign in with unauthorized accounts will be blocked by both the client-side module ([`assets/js/firebase-config.js`](file:///usr/local/google/home/jpaquay/dev/Apps/jpaquay.github.io/assets/js/firebase-config.js)) and Firebase Auth rules.
 
@@ -40,9 +37,7 @@ Attempts to sign in with unauthorized accounts will be blocked by both the clien
 If you discover a security vulnerability or security issue affecting this repository or site:
 
 1. **Do NOT open a public GitHub issue.**
-2. Report the vulnerability details directly via email to:
-   * **Email**: `jpaquay@gmail.com` or `jpaquay@google.com`
-   * **Subject**: `[SECURITY VULNERABILITY] netdev blog - <Short Description>`
+2. Report vulnerability details confidentially via the repository owner's contact channels.
 3. Please include:
    * Description of the issue and potential impact.
    * Proof-of-Concept (PoC) steps or script to reproduce the vulnerability.
@@ -54,4 +49,4 @@ If you discover a security vulnerability or security issue affecting this reposi
 
 * **Acknowledgement**: We aim to acknowledge vulnerability reports within **48 hours**.
 * **Remediation**: Validated security vulnerabilities will be prioritized and patched promptly.
-* **Attribution**: Responsible security researchers who report valid vulnerabilities will be acknowledged in the release patch notes.
+* **Attribution**: Responsible security researchers who report valid vulnerabilities will be acknowledged in release notes.

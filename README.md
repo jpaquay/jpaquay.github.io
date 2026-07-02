@@ -72,7 +72,7 @@ bundle exec jekyll serve
 
 To edit or create posts via the web interface:
 1. Navigate to `/admin` on your deployed site or local server.
-2. Sign in with your authorized Google Admin account (`jpaquay@gmail.com`, `jerome@netdev.be`, or `jpaquay@google.com`).
+2. Sign in with your authorized Google Admin account.
 3. Enter your GitHub Personal Access Token (PAT with `repo` scope).
 4. Create or edit posts — commits are pushed directly to `_posts/` in the GitHub repository, triggering an automatic site rebuild and deployment.
 
@@ -83,4 +83,4 @@ To edit or create posts via the web interface:
 Deployments to Firebase Hosting are fully automated via GitHub Actions:
 * **Workflow**: `.github/workflows/firebase-hosting.yml`
 * **Trigger**: Every `push` to the `master` branch.
-* **Deployment target**: Firebase Hosting project `netdev-firebase`.
+* **Deployment target**: Firebase Hosting project `netdev-firebase` (Site: `netdev-blog`).

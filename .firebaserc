@@ -7,6 +7,9 @@
       "hosting": {
         "netdev-firebase": [
           "netdev-firebase"
+        ],
+        "netdev-blog": [
+          "netdev-blog"
         ]
       }
     }
