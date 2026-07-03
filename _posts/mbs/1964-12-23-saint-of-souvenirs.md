@@ -2,8 +2,8 @@
 layout: post
 title: Saint Of Souvenirs
 subtitle: Marion Brown, Poem
-cover-img: /assets/img/posts/marion-brown-monet.jpg
-thumbnail-img: /assets/img/posts/westport.jpg
+cover-img: /assets/img/posts/1964-12-23-saint-of-souvenirs.jpg
+thumbnail-img: /assets/img/posts/1964-12-23-saint-of-souvenirs.jpg
 tags: [poems, mbs]
 readtime: true
 ---

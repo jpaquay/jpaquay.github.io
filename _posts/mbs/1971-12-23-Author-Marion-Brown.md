@@ -2,9 +2,9 @@
 layout: post
 title: Author’s Statement
 subtitle: Marion Brown
-cover-img: /assets/img/posts/marion-brown-monet.jpg
-thumbnail-img: /assets/img/posts/Marion-Brown.jpg
-share-img: /assets/img/posts/marion-brown-monet.jpg
+cover-img: /assets/img/posts/1971-12-23-author-statement.jpg
+thumbnail-img: /assets/img/posts/1971-12-23-author-statement.jpg
+share-img: /assets/img/posts/1971-12-23-author-statement.jpg
 tags: [books, mbs]
 comments: true
 readtime: true

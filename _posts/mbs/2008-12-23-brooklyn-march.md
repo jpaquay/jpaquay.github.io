@@ -2,9 +2,9 @@
 ayout: post
 title: Brooklyn
 subtitle: Marion Brown, Poem
-cover-img: /assets/img/posts/marion-brown-monet.jpg
-thumbnail-img: /assets/img/posts/newyorker.jpg
-share-img: /assets/img/posts/marion-brown-monet.jpg
+cover-img: /assets/img/posts/2008-12-23-brooklyn-march.jpg
+thumbnail-img: /assets/img/posts/2008-12-23-brooklyn-march.jpg
+share-img: /assets/img/posts/2008-12-23-brooklyn-march.jpg
 tags: [poems, mbs]
 readtime: true
 ---
