@@ -2,8 +2,8 @@
 layout: post
 title: And why is the World
 subtitle: Marion Brown, Poem
-cover-img: /assets/img/sand.jpg
-thumbnail-img: /assets/img/sand.jpg
+cover-img: /assets/img/posts/marion-brown-monet.jpg
+thumbnail-img: //assets/img/posts/posts/sand.jpg
 tags: [poems, mbs]
 readtime: true
 ---

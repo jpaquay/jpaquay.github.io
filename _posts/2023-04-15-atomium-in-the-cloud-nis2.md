@@ -2,9 +2,9 @@
 layout: post
 title: "The Atomium in the Cloud: Building Cyber Resilience under Europe's NIS2"
 subtitle: "How Belgian infrastructure and European cloud providers adapted to tougher EU cyber rules."
-cover-img: /assets/img/posts/2023-04-15-atomium-nis2.jpg
-thumbnail-img: /assets/img/posts/2023-04-15-atomium-nis2.jpg
-share-img: /assets/img/posts/2023-04-15-atomium-nis2.jpg
+cover-img: //assets/img/posts/posts/posts/2023-04-15-atomium-nis2.jpg
+thumbnail-img: //assets/img/posts/posts/posts/2023-04-15-atomium-nis2.jpg
+share-img: //assets/img/posts/posts/posts/2023-04-15-atomium-nis2.jpg
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [cybersecurity, cloud, nis2, belgium, europe]

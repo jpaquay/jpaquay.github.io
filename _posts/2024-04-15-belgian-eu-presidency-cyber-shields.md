@@ -2,9 +2,9 @@
 layout: post
 title: "Shielding the Union: Lessons from Belgium’s EU Presidency Cyber Drills"
 subtitle: "How cross-border EU threat sharing and cloud SOC automation defended critical infrastructure."
-cover-img: /assets/img/posts/2024-04-15-belgian-cyber-shield.jpg
-thumbnail-img: /assets/img/posts/2024-04-15-belgian-cyber-shield.jpg
-share-img: /assets/img/posts/2024-04-15-belgian-cyber-shield.jpg
+cover-img: //assets/img/posts/posts/posts/2024-04-15-belgian-cyber-shield.jpg
+thumbnail-img: //assets/img/posts/posts/posts/2024-04-15-belgian-cyber-shield.jpg
+share-img: //assets/img/posts/posts/posts/2024-04-15-belgian-cyber-shield.jpg
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [cybersecurity, belgium, eu-presidency, cloud, soc]

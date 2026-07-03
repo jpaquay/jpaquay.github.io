@@ -3,9 +3,9 @@ layout: post
 title: Open first, carefully
 subtitle: "All the front matter variables available in Congo."
 slug: "go"
-cover-img: /assets/img/japan.jpg
-thumbnail-img: /assets/img/logo.png
-share-img: /assets/img/logo.png
+cover-img: //assets/img/posts/posts/japan.jpg
+thumbnail-img: //assets/img/posts/posts/logo.png
+share-img: //assets/img/posts/posts/logo.png
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [create, random, tech, story]
@@ -39,7 +39,7 @@ foo(3)
 This is `2023` rant !
 
 
-![Yellow Duck](/assets/img/fire.jpg '/net/dev')
+![Yellow Duck](//assets/img/posts/posts/fire.jpg '/net/dev')
 
 **Here's a useless table:**
 
@@ -52,7 +52,7 @@ This is `2023` rant !
 
 It can also be a centered logo!
 
-![Crepe](/assets/img/avatar-icon.png){: .mx-auto.d-block :}
+![Crepe](//assets/img/posts/posts/avatar-icon.png){: .mx-auto.d-block :}
 
 
 #  mostly `harmless`

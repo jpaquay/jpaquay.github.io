@@ -2,9 +2,9 @@
 layout: post
 title: Flake it till you make it
 subtitle: Excerpt from Soulshaping by Jeff Brown
-cover-img: /assets/img/sail.jpg
-thumbnail-img: /assets/img/sail.jpg
-share-img: /assets/img/sail.jpg
+cover-img: //assets/img/posts/posts/sail.jpg
+thumbnail-img: //assets/img/posts/posts/sail.jpg
+share-img: //assets/img/posts/posts/sail.jpg
 tags: [books, create, story]
 readtime: true
 ---

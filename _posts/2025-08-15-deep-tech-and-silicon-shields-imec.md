@@ -2,9 +2,9 @@
 layout: post
 title: "From Leuven to the Cloud: Microchips, Hardware Roots of Trust, and AI Security"
 subtitle: "Why cloud security now starts at the sub-2nanometer wafer level in Belgium's silicon hub."
-cover-img: /assets/img/posts/2025-08-15-imec-silicon.jpg
-thumbnail-img: /assets/img/posts/2025-08-15-imec-silicon.jpg
-share-img: /assets/img/posts/2025-08-15-imec-silicon.jpg
+cover-img: //assets/img/posts/posts/posts/2025-08-15-imec-silicon.jpg
+thumbnail-img: //assets/img/posts/posts/posts/2025-08-15-imec-silicon.jpg
+share-img: //assets/img/posts/posts/posts/2025-08-15-imec-silicon.jpg
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [hardware, imec, belgium, confidential-computing, ai, cloud]

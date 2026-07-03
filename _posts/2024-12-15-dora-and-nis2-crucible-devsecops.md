@@ -2,9 +2,9 @@
 layout: post
 title: "The DORA & NIS2 Crucible: Transforming EU Compliance into CI/CD Code"
 subtitle: "How European fintechs and enterprises turned regulations into continuous automated guardrails."
-cover-img: /assets/img/posts/2024-12-15-dora-devsecops.jpg
-thumbnail-img: /assets/img/posts/2024-12-15-dora-devsecops.jpg
-share-img: /assets/img/posts/2024-12-15-dora-devsecops.jpg
+cover-img: //assets/img/posts/posts/posts/2024-12-15-dora-devsecops.jpg
+thumbnail-img: //assets/img/posts/posts/posts/2024-12-15-dora-devsecops.jpg
+share-img: //assets/img/posts/posts/posts/2024-12-15-dora-devsecops.jpg
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [dora, nis2, devsecops, cloud, compliance, europe]

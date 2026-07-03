@@ -2,9 +2,9 @@
 layout: post
 title: mostly harmless
 subtitle: The steps above are the bare minimum configuration
-cover-img: /assets/img/einstein.jpg
-thumbnail-img: /assets/img/logo.jpg
-share-img: /assets/img/logo.jpg
+cover-img: //assets/img/posts/posts/einstein.jpg
+thumbnail-img: //assets/img/posts/posts/logo.jpg
+share-img: //assets/img/posts/posts/logo.jpg
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [random, story]
@@ -28,7 +28,7 @@ It is the quickest way to configure the menu as you can simply refer to any Hugo
 ### How about a nice seanery ?
 ---
 
-![Drag logo](/assets/img/amsterdam.jpg)
+![Drag logo](//assets/img/posts/posts/amsterdam.jpg)
 
 Here's a code chunk:
 

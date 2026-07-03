@@ -2,9 +2,9 @@
 layout: post
 title: Author’s Statement
 subtitle: Marion Brown
-cover-img: assets/img/flowers.jpg
-thumbnail-img: assets/img/Marion-Brown.jpg
-share-img: assets/img/flowers.jpg
+cover-img: /assets/img/posts/marion-brown-monet.jpg
+thumbnail-img: /assets/img/posts/Marion-Brown.jpg
+share-img: /assets/img/posts/marion-brown-monet.jpg
 tags: [books, mbs]
 comments: true
 readtime: true
@@ -21,7 +21,7 @@ What a coincidence to be asked to say something about beauty a couple of days af
 
  
 
-![Marion Brown](/assets/img/Marion-Brown.jpg)
+![Marion Brown](//assets/img/posts/posts/Marion-Brown.jpg)
 
 
 A resident of Yonkers, NY, Marion Brown earned a Ph.D. in English and Comparative Literature from Columbia University. Her chapbooks Tasted and The Morning After Summer were published by Finishing Line Press. Her poems and reviews have appeared in Barrow Street, Stone Canoe, Kestrel, Poetry International and the Women’s Review of Books. “In the Dock, Fagin Reflects” won First Prize in the Portico Library Poetry Competition. She serves on the Advisory Committee of Slapering Hol Press and the National Council of Graywolf Press.

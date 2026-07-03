@@ -33,11 +33,11 @@ When \\(a \ne 0\\), there are two solutions to \\(ax^2 + bx + c = 0\\) and they 
 
 How about a yummy crepe?
 
-![Crepe](https://beautifuljekyll.com/assets/img/crepe.jpg)
+![Crepe](https://beautifuljekyll.com//assets/img/posts/posts/crepe.jpg)
 
 It can also be centered!
 
-![Crepe](https://beautifuljekyll.com/assets/img/crepe.jpg){: .mx-auto.d-block :}
+![Crepe](https://beautifuljekyll.com//assets/img/posts/posts/crepe.jpg){: .mx-auto.d-block :}
 
 Here's a code chunk:
 
@@ -88,11 +88,11 @@ You can add notification, warning and error boxes like this:
 
 When hosting a *project site* on GitHub Pages (for example, `https://USERNAME.github.io/MyProject`), URLs that begin with `/` and refer to local files may not work correctly due to how the root URL (`/`) is interpreted by GitHub Pages. You can read more about it [in the FAQ](https://beautifuljekyll.com/faq/#links-in-project-page). To demonstrate the issue, the following local image will be broken **if your site is a project site:**
 
-![Crepe](/assets/img/crepe.jpg)
+![Crepe](//assets/img/posts/posts/crepe.jpg)
 
 If the above image is broken, then you'll need to follow the instructions [in the FAQ](https://beautifuljekyll.com/faq/#links-in-project-page). Here is proof that it can be fixed:
 
-![Crepe]({{ '/assets/img/crepe.jpg' | relative_url }})
+![Crepe]({{ '//assets/img/posts/posts/crepe.jpg' | relative_url }})
 
 <details markdown="1">
 <summary>Click here!</summary>
