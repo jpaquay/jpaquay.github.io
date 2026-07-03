@@ -2,9 +2,9 @@
 layout: post
 title: "The Agentic Engineering Paradigm: Software Development at the Speed of Context"
 subtitle: "From pair programming to multi-agent swarm orchestration in cloud-native enterprise architectures."
-cover-img: //assets/img/posts/posts/posts/2026-06-15-agentic-paradigm.jpg
-thumbnail-img: //assets/img/posts/posts/posts/2026-06-15-agentic-paradigm.jpg
-share-img: //assets/img/posts/posts/posts/2026-06-15-agentic-paradigm.jpg
+cover-img: /assets/img/posts/2026-06-15-agentic-paradigm.jpg
+thumbnail-img: /assets/img/posts/2026-06-15-agentic-paradigm.jpg
+share-img: /assets/img/posts/2026-06-15-agentic-paradigm.jpg
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [agentic-engineering, sdlc, cloud, software-architecture, future-tech]

@@ -2,9 +2,9 @@
 layout: post
 title: Flake it till you make it
 subtitle: Excerpt from Soulshaping by Jeff Brown
-cover-img: //assets/img/posts/posts/path.jpg
-thumbnail-img: //assets/img/posts/posts/thumb.png
-share-img: //assets/img/posts/posts/path.jpg
+cover-img: /assets/img/posts/path.jpg
+thumbnail-img: /assets/img/posts/thumb.png
+share-img: /assets/img/posts/path.jpg
 tags: [books, test]
 author: Sharon Smith and Barry Simpson
 ---

@@ -2,9 +2,9 @@
 layout: post
 title: "The Rise of Agentic DevSecOps: Reimagining Internal Developer Platforms (IDPs)"
 subtitle: "How self-healing platform orchestrators and LLM sidecars transformed developer experience."
-cover-img: //assets/img/posts/posts/posts/2025-11-20-agentic-idp.jpg
-thumbnail-img: //assets/img/posts/posts/posts/2025-11-20-agentic-idp.jpg
-share-img: //assets/img/posts/posts/posts/2025-11-20-agentic-idp.jpg
+cover-img: /assets/img/posts/2025-11-20-agentic-idp.jpg
+thumbnail-img: /assets/img/posts/2025-11-20-agentic-idp.jpg
+share-img: /assets/img/posts/2025-11-20-agentic-idp.jpg
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [devops, idp, agentic-engineering, cloud, platform-engineering]

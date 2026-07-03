@@ -2,9 +2,9 @@
 layout: post
 title: "GDPR Meets GenAI: Navigating Data Sovereignty in European LLMs"
 subtitle: "Inside EDPB taskforce guidance and privacy-preserving RAG architectures in the EU."
-cover-img: //assets/img/posts/posts/posts/2023-08-15-gdpr-genai.jpg
-thumbnail-img: //assets/img/posts/posts/posts/2023-08-15-gdpr-genai.jpg
-share-img: //assets/img/posts/posts/posts/2023-08-15-gdpr-genai.jpg
+cover-img: /assets/img/posts/2023-08-15-gdpr-genai.jpg
+thumbnail-img: /assets/img/posts/2023-08-15-gdpr-genai.jpg
+share-img: /assets/img/posts/2023-08-15-gdpr-genai.jpg
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [ai, gdpr, cloud, europe, privacy]

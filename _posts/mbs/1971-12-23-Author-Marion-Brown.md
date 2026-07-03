@@ -21,7 +21,7 @@ What a coincidence to be asked to say something about beauty a couple of days af
 
  
 
-![Marion Brown](//assets/img/posts/posts/Marion-Brown.jpg)
+![Marion Brown](/assets/img/posts/Marion-Brown.jpg)
 
 
 A resident of Yonkers, NY, Marion Brown earned a Ph.D. in English and Comparative Literature from Columbia University. Her chapbooks Tasted and The Morning After Summer were published by Finishing Line Press. Her poems and reviews have appeared in Barrow Street, Stone Canoe, Kestrel, Poetry International and the Women’s Review of Books. “In the Dock, Fagin Reflects” won First Prize in the Portico Library Poetry Competition. She serves on the Advisory Committee of Slapering Hol Press and the National Council of Graywolf Press.
@@ -32,4 +32,4 @@ A lifelong resident of New York State, Marion Brown lives with her husband in Yo
 ~~~
 
 
-[More about Marion](https://marionbrownpoet.com/about/)
+[More about Marion](https:/marionbrownpoet.com/about/)

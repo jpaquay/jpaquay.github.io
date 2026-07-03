@@ -2,9 +2,9 @@
 layout: post
 title: "From Leuven to the Cloud: Microchips, Hardware Roots of Trust, and AI Security"
 subtitle: "Why cloud security now starts at the sub-2nanometer wafer level in Belgium's silicon hub."
-cover-img: //assets/img/posts/posts/posts/2025-08-15-imec-silicon.jpg
-thumbnail-img: //assets/img/posts/posts/posts/2025-08-15-imec-silicon.jpg
-share-img: //assets/img/posts/posts/posts/2025-08-15-imec-silicon.jpg
+cover-img: /assets/img/posts/2025-08-15-imec-silicon.jpg
+thumbnail-img: /assets/img/posts/2025-08-15-imec-silicon.jpg
+share-img: /assets/img/posts/2025-08-15-imec-silicon.jpg
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [hardware, imec, belgium, confidential-computing, ai, cloud]
@@ -50,7 +50,7 @@ def verify_confidential_enclave_attestation(report_bytes: bytes) -> bool:
     """Validate that the cloud VM AI inference node is running inside a verified hardware enclave."""
     # Send attestation report to hardware vendor's trusted root authority
     payload = {"attestation_report": base64.b64encode(report_bytes).decode('utf-8')}
-    response = requests.post("https://attestation.eu-sovereign-cloud.be/v1/verify", json=payload)
+    response = requests.post("https:/attestation.eu-sovereign-cloud.be/v1/verify", json=payload)
     
     if response.status_code == 200 and response.json().get("status") == "PASSED":
         print("Hardware Root of Trust Verified: Memory encryption active.")

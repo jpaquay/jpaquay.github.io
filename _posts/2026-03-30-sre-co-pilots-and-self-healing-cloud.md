@@ -2,9 +2,9 @@
 layout: post
 title: "From Monitoring to Autonomous Remediation: The SRE Agent Revolution"
 subtitle: "How multi-agent triage loops reduced incident MTTR from hours to seconds in multi-cloud mesh."
-cover-img: //assets/img/posts/posts/posts/2026-03-30-agentic-sre.jpg
-thumbnail-img: //assets/img/posts/posts/posts/2026-03-30-agentic-sre.jpg
-share-img: //assets/img/posts/posts/posts/2026-03-30-agentic-sre.jpg
+cover-img: /assets/img/posts/2026-03-30-agentic-sre.jpg
+thumbnail-img: /assets/img/posts/2026-03-30-agentic-sre.jpg
+share-img: /assets/img/posts/2026-03-30-agentic-sre.jpg
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [sre, cloud-ops, observability, agentic-engineering, self-healing]

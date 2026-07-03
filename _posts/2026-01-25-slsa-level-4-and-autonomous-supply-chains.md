@@ -2,9 +2,9 @@
 layout: post
 title: "SLSA Level 4 in the Age of Autonomous Coders: Securing the Agentic SDLC"
 subtitle: "Cryptographic provenance, reproducible builds, and secret-less IAM when agents author code."
-cover-img: //assets/img/posts/posts/posts/2026-01-25-slsa-agentic.jpg
-thumbnail-img: //assets/img/posts/posts/posts/2026-01-25-slsa-agentic.jpg
-share-img: //assets/img/posts/posts/posts/2026-01-25-slsa-agentic.jpg
+cover-img: /assets/img/posts/2026-01-25-slsa-agentic.jpg
+thumbnail-img: /assets/img/posts/2026-01-25-slsa-agentic.jpg
+share-img: /assets/img/posts/2026-01-25-slsa-agentic.jpg
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [slsa, sdlc, cybersecurity, agentic-engineering, devops]
@@ -38,8 +38,8 @@ IMAGE_URI="registry.eu-sovereign.cloud/apps/payment-api:v3.1.0"
 echo "Verifying SLSA Level 4 provenance attestation for ${IMAGE_URI}..."
 cosign verify-attestation \
   --type slsaprovenance \
-  --certificate-identity-regex "^https://github.com/jpaquay/.*" \
-  --certificate-oidc-issuer "https://token.actions.githubusercontent.com" \
+  --certificate-identity-regex "^https:/github.com/jpaquay/.*" \
+  --certificate-oidc-issuer "https:/token.actions.githubusercontent.com" \
   ${IMAGE_URI}
 ```
 

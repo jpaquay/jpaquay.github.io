@@ -2,9 +2,9 @@
 layout: post
 title: "Watts, FLOPS, and Zero Trust: The Green & Post-Quantum Cloud of 2026"
 subtitle: "How European cloud centers achieved PUE < 1.1 while deploying NIST post-quantum encryption."
-cover-img: //assets/img/posts/posts/posts/2026-04-15-green-quantum-cloud.jpg
-thumbnail-img: //assets/img/posts/posts/posts/2026-04-15-green-quantum-cloud.jpg
-share-img: //assets/img/posts/posts/posts/2026-04-15-green-quantum-cloud.jpg
+cover-img: /assets/img/posts/2026-04-15-green-quantum-cloud.jpg
+thumbnail-img: /assets/img/posts/2026-04-15-green-quantum-cloud.jpg
+share-img: /assets/img/posts/2026-04-15-green-quantum-cloud.jpg
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [cloud, post-quantum, green-tech, zero-trust, europe, belgium]
@@ -24,7 +24,7 @@ import datetime
 
 def get_belgian_grid_carbon_intensity() -> float:
     """Fetch real-time carbon intensity (gCO2eq/kWh) for the Belgian electricity grid."""
-    res = requests.get("https://api.co2signal.com/v1/latest?countryCode=BE")
+    res = requests.get("https:/api.co2signal.com/v1/latest?countryCode=BE")
     if res.status_code == 200:
         return res.json()["data"]["carbonIntensity"]
     return 150.0  # Default fallback

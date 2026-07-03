@@ -2,15 +2,15 @@
 layout: post
 title: Programming memories
 subtitle: in what order did you learn your languages? 
-cover-img: //assets/img/posts/posts/fosdem-network-2009.jpg
-thumbnail-img: //assets/img/posts/posts/fosdem-2009.jpg
-share-img: //assets/img/posts/posts/fosdem-network-2009.jpg
+cover-img: /assets/img/posts/fosdem-network-2009.jpg
+thumbnail-img: /assets/img/posts/fosdem-2009.jpg
+share-img: /assets/img/posts/fosdem-network-2009.jpg
 tags: [random, tech, story]
 readtime: true
 ---
 
 {: .box-warning} 
-[context](https://twitter.com/JeffDean/status/1627885526127874049)
+[context](https:/twitter.com/JeffDean/status/1627885526127874049)
 
 {: .box-note}
 1991, after school lessons 🚸

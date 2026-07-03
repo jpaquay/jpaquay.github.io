@@ -2,8 +2,8 @@
 layout: post
 title: l’obsolescence de l’homme 
 subtitle: Günther Anders
-cover-img: //assets/img/posts/posts/sun.jpg
-thumbnail-img: //assets/img/posts/posts/sun.jpg
+cover-img: /assets/img/posts/sun.jpg
+thumbnail-img: /assets/img/posts/sun.jpg
 tags: [books, health, story]
 readtime: true
 ---
@@ -26,4 +26,4 @@ Toute doctrine remettant en cause le système doit d’abord être désignée co
 Günther Anders    -   « l’obsolescence de l’homme » `1956`
 
 
-![Year long](//assets/img/posts/posts/1an.jpg)
+![Year long](/assets/img/posts/1an.jpg)
