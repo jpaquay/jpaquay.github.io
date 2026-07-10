@@ -1,0 +1,11 @@
+# .gcloudignore - Auto-generated standard exclusions
+!include:.gitignore
+
+# Standard exclusions
+.git
+.git/
+**/.git
+**/.git/
+.venv/
+**/__pycache__/
+**/*.pyc
