@@ -11,7 +11,7 @@ const ATTRIBUTES = [
   { icon: '🧔', title: 'Great Beard', desc: 'Rocking a top-tier engineer beard', category: 'fun' },
   { icon: '🧠', title: 'Handsome Genius ™', desc: 'Verified 10x innovator', category: 'skills' },
   { icon: '🛡️', title: 'Crypto-Agile', desc: 'Post-quantum security advocate', category: 'skills' },
-  { icon: '🎯', title: 'Turing Verified', desc: '100% Passed Turing Human Test', category: 'fun' }
+  { icon: '🎯', title: 'Turing Verified', desc: '100% Passed Turing Human Test', category: 'skills' }
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -536,7 +536,7 @@ function initAIArchPlayground() {
       log: `🎥 <strong>[Gemini 3.5 Multimodal Stream]</strong> Real-time video stream connected. Sub-20ms inference latency achieved via Cloud Run GPU endpoints!`
     },
     'code-refactor': {
-      ingest: { val: 'Piper / Git Repository', desc: 'Monorepo source code & CL change inspection.', badge: 'Git/Piper' },
+      ingest: { val: 'Jujutsu / Git Repository', desc: 'Monorepo source code & CL change inspection.', badge: 'Git/Jujutsu' },
       compute: { val: 'ADK Agent Runtime', desc: 'Multi-agent orchestration engine & tool executor.', badge: 'Agent Engine' },
       model: { val: 'Gemini 3.5 Pro Code', desc: 'Deep reasoning model for automated code refactoring.', badge: 'Vertex AI Code' },
       sec: { val: 'Binary Authorization', desc: 'Cryptographic container provenance verification.', badge: 'SecOps' },
