@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jerome Paquay • Web3 Hugo-Astro Quantum Portal</title>
+  <meta name="description" content="Official migration portal landing page connecting Jerome Paquay's GitHub Pages blog to the new Hugo-Astro Web3 platform.">
+  <meta name="theme-color" content="#060908">
+  <link rel="preconnect" href="https://platform.twitter.com">
+  <link rel="preconnect" href="https://web3.netdev.be">
+  <style>
+    :root {
+      --bg-base: #060908;
+      --bg-card: rgba(12, 19, 15, 0.82);
+      --border-neon: #00ff66;
+      --border-dim: rgba(0, 255, 102, 0.22);
+      --pink-glitch: #ff0055;
+      --cyan-cyber: #00e5ff;
+      --amber-alert: #ffb703;
+      --text-main: #e2f1e8;
+      --text-muted: #7ca38e;
+      --font-mono: "Fira Code", "Cascadia Code", "JetBrains Mono", Consolas, monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-base);
+      color: var(--text-main);
+      font-family: var(--font-mono);
+      font-size: 14px;
+      line-height: 1.5;
+      min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Lean CRT Scanlines Overlays */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(255,255,255,0),
+        rgba(255,255,255,0) 50%,
+        rgba(0, 0, 0, 0.28) 50%,
+        rgba(0, 0, 0, 0.28)
+      );
+      background-size: 100% 4px;
+      pointer-events: none;
+      z-index: 9998;
+    }
+
+    /* Ambient CRT Flicker animation toggle */
+    .crt-flicker {
+      animation: crtFlicker 0.14s infinite;
+    }
+
+    @keyframes crtFlicker {
+      0% { opacity: 0.99; }
+      50% { opacity: 0.96; }
+      100% { opacity: 1; }
+    }
+
+    /* Chromatic Glitch Shake for SYS_OVERLOAD button */
+    .glitch-shake {
+      animation: glitchAnim 0.35s cubic-bezier(.25, .46, .45, .94) both infinite;
+    }
+
+    @keyframes glitchAnim {
+      0% { transform: translate(0); clip-path: inset(0 0 0 0); }
+      20% { transform: translate(-3px, 2px); filter: hue-rotate(90deg); }
+      40% { transform: translate(-2px, -2px); }
+      60% { transform: translate(3px, 2px); filter: invert(0.1); }
+      80% { transform: translate(2px, -1px); }
+      100% { transform: translate(0); }
+    }
+
+    /* Top Cybernetic Status Bar */
+    .telemetry-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      background: #020403;
+      border-bottom: 1px solid var(--border-dim);
+      padding: 8px 18px;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .telemetry-status {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .pulse-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--border-neon);
+      box-shadow: 0 0 10px var(--border-neon);
+      animation: pulseGlow 1.2s infinite ease-in-out;
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.45); opacity: 0.45; }
+    }
+
+    .telemetry-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .cyber-btn-sm {
+      background: transparent;
+      border: 1px solid var(--border-neon);
+      color: var(--border-neon);
+      font-family: inherit;
+      font-size: 10px;
+      padding: 4px 10px;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      transition: all 0.15s ease;
+    }
+
+    .cyber-btn-sm:hover {
+      background: var(--border-neon);
+      color: #000;
+      box-shadow: 0 0 12px var(--border-neon);
+    }
+
+    .cyber-btn-panic {
+      border-color: var(--pink-glitch);
+      color: var(--pink-glitch);
+    }
+
+    .cyber-btn-panic:hover {
+      background: var(--pink-glitch);
+      color: #fff;
+      box-shadow: 0 0 14px var(--pink-glitch);
+    }
+
+    /* Main Container */
+    .portal-wrapper {
+      max-width: 1720px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+
+    /* Header Section with ASCII Art & Banner */
+    .portal-header {
+      background: var(--bg-card);
+      border: 1px solid var(--border-dim);
+      border-left: 4px solid var(--border-neon);
+      padding: 14px 18px;
+      margin-bottom: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .ascii-banner {
+      font-size: 9px;
+      line-height: 1.1;
+      color: var(--border-neon);
+      white-space: pre;
+      user-select: none;
+      overflow-x: auto;
+    }
+
+    .portal-info {
+      max-width: 680px;
+    }
+
+    .portal-tag {
+      display: inline-block;
+      background: rgba(0, 255, 102, 0.12);
+      border: 1px solid var(--border-neon);
+      color: var(--border-neon);
+      font-size: 10px;
+      padding: 2px 8px;
+      border-radius: 2px;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+    }
+
+    .portal-title {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 4px;
+      letter-spacing: -0.02em;
+    }
+
+    .portal-subtitle {
+      color: var(--text-muted);
+      font-size: 12px;
+    }
+
+    .portal-subtitle strong {
+      color: var(--cyan-cyber);
+    }
+
+    .warp-hero-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(135deg, rgba(0,255,102,0.18), rgba(0,229,255,0.18));
+      border: 2px solid var(--border-neon);
+      color: var(--border-neon);
+      padding: 10px 18px;
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      transition: all 0.2s ease;
+      box-shadow: 0 0 15px rgba(0,255,102,0.15);
+    }
+
+    .warp-hero-btn:hover {
+      background: var(--border-neon);
+      color: #000;
+      transform: translateY(-2px);
+      box-shadow: 0 0 24px var(--border-neon);
+    }
+
+    /* Split-Screen Cyber Deck */
+    .portal-deck {
+      display: grid;
+      grid-template-columns: 1.45fr 1fr;
+      gap: 16px;
+    }
+
+    @media (max-width: 1100px) {
+      .portal-deck {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Cyber Console Box Frame */
+    .console-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-dim);
+      display: flex;
+      flex-direction: column;
+      height: 780px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .console-header {
+      background: #020504;
+      border-bottom: 1px solid var(--border-dim);
+      padding: 8px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .console-title-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .console-dots {
+      display: flex;
+      gap: 6px;
+    }
+
+    .dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+    }
+
+    .dot.red { background: #ff5f56; }
+    .dot.yellow { background: #ffbd2e; }
+    .dot.green { background: #27c93f; }
+
+    .console-label {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--cyan-cyber);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .console-toolbar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .console-toolbar a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 11px;
+      padding: 2px 8px;
+      border: 1px solid var(--border-dim);
+      transition: all 0.15s;
+    }
+
+    .console-toolbar a:hover {
+      color: var(--border-neon);
+      border-color: var(--border-neon);
+    }
+
+    /* Embedded Iframe Container */
+    .iframe-wrapper {
+      flex: 1;
+      width: 100%;
+      background: #000;
+      position: relative;
+    }
+
+    .iframe-wrapper iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+
+    .iframe-fallback {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 24px;
+      background: rgba(6, 9, 8, 0.94);
+      z-index: 1;
+    }
+
+    /* Twitter / X Social Console */
+    .twitter-scroll-area {
+      flex: 1;
+      overflow-y: auto;
+      padding: 12px;
+      background: #040706;
+      scrollbar-width: thin;
+      scrollbar-color: var(--border-neon) #040706;
+    }
+
+    .twitter-scroll-area::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .twitter-scroll-area::-webkit-scrollbar-thumb {
+      background: var(--border-neon);
+    }
+
+    /* Fallback Cyber Card Stream for X Posts */
+    .x-dispatch-card {
+      background: rgba(0, 255, 102, 0.03);
+      border: 1px solid var(--border-dim);
+      border-left: 3px solid var(--cyan-cyber);
+      padding: 12px 14px;
+      margin-bottom: 10px;
+      transition: border-color 0.2s;
+    }
+
+    .x-dispatch-card:hover {
+      border-color: var(--border-neon);
+    }
+
+    .x-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 10px;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    .x-content {
+      font-size: 12px;
+      color: var(--text-main);
+    }
+
+    .x-tag {
+      color: var(--border-neon);
+    }
+
+    /* Secret Konami Waffle Modal */
+    .secret-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.92);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      padding: 20px;
+    }
+
+    .secret-overlay.active {
+      display: flex;
+    }
+
+    .secret-card {
+      background: #0c1410;
+      border: 2px solid var(--amber-alert);
+      box-shadow: 0 0 35px var(--amber-alert);
+      max-width: 520px;
+      text-align: center;
+      padding: 28px;
+    }
+
+    .waffle-ascii {
+      font-size: 2.4rem;
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body class="crt-flicker">
+
+  <!-- Telemetry Top Bar -->
+  <div class="telemetry-bar">
+    <div class="telemetry-status">
+      <span class="pulse-dot"></span>
+      <span><strong>SYS_NODE:</strong> GH-PAGES // ARCHIVE PORTAL</span>
+      <span style="color:var(--text-muted);">|</span>
+      <span><strong>TARGET:</strong> web3.netdev.be [HUGO + ASTRO]</span>
+      <span style="color:var(--text-muted);">|</span>
+      <span id="clock-ticker">00:00:00 UTC</span>
+    </div>
+    <div class="telemetry-actions">
+      <button class="cyber-btn-sm" id="btn-audio" title="Toggle Web Audio CRT Degauss & Hum">🔊 SFX: OFF</button>
+      <button class="cyber-btn-sm" id="btn-scanlines" title="Toggle Scanline Flicker">📺 CRT FX</button>
+      <button class="cyber-btn-sm cyber-btn-panic" id="btn-panic" title="Trigger System Chromatic Aberration">⚡ SYS_OVERLOAD</button>
+    </div>
+  </div>
+
+  <!-- Main Portal Layout -->
+  <div class="portal-wrapper">
+
+    <!-- Splashy ASCII Banner Header -->
+    <header class="portal-header">
+      <div>
+        <span class="portal-tag">🇧🇪 ARCHITECTURE MIGRATION GATE • v3.0</span>
+        <h1 class="portal-title">Jerome Paquay / Technical Mind & Web3 Vault</h1>
+        <p class="portal-subtitle">
+          Long-form Jekyll blog posts are migrating to our high-frequency <strong>Hugo + Astro Web3 Engine</strong> at <code>web3.netdev.be</code>.
+        </p>
+      </div>
+
+      <a href="https://web3.netdev.be/" target="_blank" rel="noopener" class="warp-hero-btn">
+        <span>WARP TO WEB3 BLOG FULLSCREEN</span>
+        <span>🚀</span>
+      </a>
+    </header>
+
+    <!-- Split-Screen Live Deck -->
+    <div class="portal-deck">
+
+      <!-- LEFT DECK: LIVE EMBEDDED WEB3 HUGO-ASTRO BLOG PORTAL -->
+      <section class="console-box" aria-label="Live Hugo Astro Web3 Portal Frame">
+        <div class="console-header">
+          <div class="console-title-group">
+            <div class="console-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <span class="console-label">LIVE PORTAL // web3.netdev.be</span>
+          </div>
+          <div class="console-toolbar">
+            <a href="https://web3.netdev.be/" target="_blank" rel="noopener">Open Direct ↗</a>
+            <a href="https://blog.netdev.be/" target="_blank" rel="noopener">Classic Host ↗</a>
+          </div>
+        </div>
+
+        <div class="iframe-wrapper">
+          <iframe
+            src="https://web3.netdev.be/"
+            title="Jerome Paquay Hugo-Astro Web3 Blog"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"
+            sandbox="allow-scripts allow-same-origin allow-popups allow-forms">
+          </iframe>
+        </div>
+      </section>
+
+      <!-- RIGHT DECK: LIVE X/TWITTER DISPATCH FEED (17 POSTS) -->
+      <section class="console-box" aria-label="X Twitter Live Stream">
+        <div class="console-header">
+          <div class="console-title-group">
+            <div class="console-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <span class="console-label">X / TWITTER TELEMETRY STREAM (@jpaquay • 17 DISPATCHES)</span>
+          </div>
+          <div class="console-toolbar">
+            <a href="https://twitter.com/jpaquay" target="_blank" rel="noopener">Follow @jpaquay ↗</a>
+          </div>
+        </div>
+
+        <div class="twitter-scroll-area">
+          <!-- Official Twitter Timeline Embed displaying 17 tweets -->
+          <a class="twitter-timeline"
+             data-theme="dark"
+             data-chrome="noheader nofooter transparent noscrollbar"
+             data-tweet-limit="17"
+             href="https://twitter.com/jpaquay?ref_src=twsrc%5Etfw">
+            Loading Live X Dispatches (@jpaquay)...
+          </a>
+
+          <!-- Static Non-Blocking Fallback Cards (renders immediately while Twitter widget loads) -->
+          <div id="x-fallback-stream" style="margin-top: 10px;">
+            <article class="x-dispatch-card">
+              <div class="x-meta">
+                <span>@jpaquay • ARCHITECTURE TELEMETRY</span>
+                <span>DISPATCH #17</span>
+              </div>
+              <p class="x-content">
+                Continuous learning loop active. Shifting thoughts, talks, and cloud-native DevSecOps patterns to our new <span class="x-tag">#Hugo</span> + <span class="x-tag">#Astro</span> Web3 engine at web3.netdev.be ☕🇧🇪
+              </p>
+            </article>
+
+            <article class="x-dispatch-card">
+              <div class="x-meta">
+                <span>@jpaquay • BELGIAN SYSTEM INVARIANTS</span>
+                <span>DISPATCH #16</span>
+              </div>
+              <p class="x-content">
+                System Invariant: High-octane Belgian roasted espresso paired with twice-fried ox tallow Belgian frites & authentic Brussels Gaufres = 10x architectural output.
+              </p>
+            </article>
+
+            <article class="x-dispatch-card">
+              <div class="x-meta">
+                <span>@jpaquay • GCPA ARCHITECT</span>
+                <span>DISPATCH #15</span>
+              </div>
+              <p class="x-content">
+                Zero Trust / BeyondCorp security verification patterns running smoothly. Security + Performance are non-negotiable foundations of continuous modernization.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+  </div>
+
+  <!-- Secret Konami Code Belgian Waffle Modal -->
+  <div class="secret-overlay" id="konami-modal" role="dialog" aria-modal="true">
+    <div class="secret-card">
+      <div class="waffle-ascii">🧇 ☕ 🇧🇪 🛡️</div>
+      <h2 style="color:var(--amber-alert); margin-bottom:10px;">HAKUNA MATATA KONAMI MODE UNLOCKED!</h2>
+      <p style="font-size:12px; color:var(--text-main); margin-bottom:16px;">
+        "Hakuna matata — take it easy, there are no worries."<br>
+        You have activated 10x Belgian Technologist Override.
+      </p>
+      <button class="cyber-btn-sm" id="close-secret" style="border-color:var(--amber-alert); color:var(--amber-alert);">DISMISS OVERRIDE</button>
+    </div>
+  </div>
+
+  <!-- Twitter Platform Script (Loaded Async & Non-Blocking) -->
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+  <!-- Erratic Lean Web Audio & Telemetry Engine -->
+  <script>
+    (function () {
+      'use strict';
+
+      // 1. Live UTC Clock
+      const clockEl = document.getElementById('clock-ticker');
+      function updateClock() {
+        const d = new Date();
+        clockEl.textContent = d.toISOString().substring(11, 19) + ' UTC';
+      }
+      setInterval(updateClock, 1000);
+      updateClock();
+
+      // 2. Web Audio API CRT Degauss Sound Generator (Zero external audio dependency)
+      let audioCtx = null;
+      let audioEnabled = false;
+      const btnAudio = document.getElementById('btn-audio');
+
+      function playCrtDegauss() {
+        if (!audioEnabled) return;
+        try {
+          if (!audioCtx) {
+            const AudioCtx = window.AudioContext || window.webkitAudioContext;
+            audioCtx = new AudioCtx();
+          }
+          const osc = audioCtx.createOscillator();
+          const gain = audioCtx.createGain();
+          osc.type = 'sawtooth';
+          osc.frequency.setValueAtTime(420, audioCtx.currentTime);
+          osc.frequency.exponentialRampToValueAtTime(45, audioCtx.currentTime + 0.28);
+
+          gain.gain.setValueAtTime(0.18, audioCtx.currentTime);
+          gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.3);
+
+          osc.connect(gain);
+          gain.connect(audioCtx.destination);
+
+          osc.start();
+          osc.stop(audioCtx.currentTime + 0.32);
+        } catch (e) {
+          console.warn('Audio Context error:', e);
+        }
+      }
+
+      btnAudio.addEventListener('click', function () {
+        audioEnabled = !audioEnabled;
+        btnAudio.textContent = audioEnabled ? '🔊 SFX: ON' : '🔇 SFX: OFF';
+        if (audioEnabled) playCrtDegauss();
+      });
+
+      // 3. SYS_OVERLOAD Chromatic Aberration Panic Trigger
+      const btnPanic = document.getElementById('btn-panic');
+      btnPanic.addEventListener('click', function () {
+        playCrtDegauss();
+        document.body.classList.add('glitch-shake');
+        setTimeout(function () {
+          document.body.classList.remove('glitch-shake');
+        }, 1200);
+      });
+
+      // 4. CRT Flicker Toggle
+      const btnScanlines = document.getElementById('btn-scanlines');
+      btnScanlines.addEventListener('click', function () {
+        document.body.classList.toggle('crt-flicker');
+      });
+
+      // 5. Konami Code Secret Mode (↑ ↑ ↓ ↓ ← → ← → B A)
+      const konamiSeq = ['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','ArrowLeft','ArrowRight','b','a'];
+      let konamiIdx = 0;
+      const modalEl = document.getElementById('konami-modal');
+
+      window.addEventListener('keydown', function (e) {
+        if (e.key.toLowerCase() === konamiSeq[konamiIdx].toLowerCase()) {
+          konamiIdx++;
+          if (konamiIdx === konamiSeq.length) {
+            playCrtDegauss();
+            modalEl.classList.add('active');
+            konamiIdx = 0;
+          }
+        } else {
+          konamiIdx = 0;
+        }
+      });
+
+      document.getElementById('close-secret').addEventListener('click', function () {
+        modalEl.classList.remove('active');
+      });
+    })();
+  </script>
+</body>
+</html>
