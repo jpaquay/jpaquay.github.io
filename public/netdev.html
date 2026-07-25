@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="minimal">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jerome Paquay / Thoughts &amp; Talks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.credly.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background Animated Canvas / FX -->
+  <div id="bg-canvas-container"></div>
+  <div class="theme-transition-overlay" id="theme-overlay"></div>
+
+  <!-- Left-Hand Collapsible Sidebar Drawer -->
+  <aside class="sidebar-drawer" id="sidebar">
+    <div class="sidebar-header">
+      <div class="brand-info">
+        <span class="brand-logo">/net/dev</span>
+        <span class="brand-author">Jerome Paquay</span>
+      </div>
+    </div>
+
+    <!-- Navigation Menu Items -->
+    <nav class="sidebar-nav">
+      <span class="nav-section-title">Navigation</span>
+      <a href="#hero" class="nav-item active">
+        <span class="nav-icon">👤</span> <span class="nav-text">About Jerome</span>
+      </a>
+      <a href="#attributes" class="nav-item">
+        <span class="nav-icon">🎯</span> <span class="nav-text">Verified Attributes</span>
+      </a>
+      <a href="#tech-lifeline" class="nav-item">
+        <span class="nav-icon">🚀</span> <span class="nav-text">Programming Lifeline</span>
+      </a>
+      <a href="#timeline" class="nav-item">
+        <span class="nav-icon">💼</span> <span class="nav-text">Work Experience</span>
+      </a>
+      <a href="#garage" class="nav-item">
+        <span class="nav-icon">🛠️</span> <span class="nav-text">Garage Mechanics</span>
+      </a>
+      <a href="#ai-cloud-arch" class="nav-item">
+        <span class="nav-icon">☁️</span> <span class="nav-text">AI & Cloud Arch</span>
+      </a>
+      <a href="#quantum-sec" class="nav-item">
+        <span class="nav-icon">🛡️</span> <span class="nav-text">Quantum Security</span>
+      </a>
+      <a href="#sre-chaos-sim" class="nav-item">
+        <span class="nav-icon">📉</span> <span class="nav-text">SRE & Cloud Chaos</span>
+      </a>
+    </nav>
+
+    <!-- Social Links Block -->
+    <div class="sidebar-socials">
+      <span class="nav-section-title">Connect</span>
+      <div class="social-icons-grid">
+        <a href="https://twitter.com/jpaquay" target="_blank" class="social-link" title="X (Twitter) @jpaquay">
+          <svg class="social-icon" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+          </svg>
+          <span class="nav-text">X / Twitter</span>
+        </a>
+        <a href="https://linkedin.com/in/jeromepaquay" target="_blank" class="social-link" title="LinkedIn /jeromepaquay">
+          <svg class="social-icon" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+            <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+          </svg>
+          <span class="nav-text">LinkedIn</span>
+        </a>
+        <a href="https://github.com/jpaquay" target="_blank" class="social-link" title="GitHub @jpaquay">
+          <svg class="social-icon" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+            <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+          </svg>
+          <span class="nav-text">GitHub</span>
+        </a>
+        <a href="https://dev.to/jpaquay" target="_blank" class="social-link" title="DEV.to @jpaquay">
+          <svg class="social-icon" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+            <path d="M9.896 13.401c-.245-.213-.615-.308-1.125-.308H8l.027 3.256l.052 3.265l.749-.027c.547 0 .839-.093 1.104-.348c.323-.319.349-.48.349-2.933c0-2.547-.027-2.613-.385-2.905M0 6.588v18.824h32V6.588zm11.412 13.813c-.584.771-1.412 1.025-3.371 1.025h-1.76V11.374h1.864c2.229 0 2.881.24 3.469 1.199c.359.572.385.801.427 3.427c.063 2.973-.025 3.64-.629 4.401m6.785-7.297h-3.291v2.365h2.025v1.703l-.959.057l-1 .036v2.36l1.625.041l1.599.052v1.708h-2.129c-2.041 0-2.136-.015-2.495-.4l-.401-.376v-4.213c0-4.025.016-4.24.333-4.635c.307-.417.333-.417 2.511-.417h2.181v1.735zm6.24 7.271c-.224.573-.849 1.052-1.333 1.052c-.24 0-.599-.197-.891-.52c-.427-.428-.599-.839-1.093-2.771l-1.199-4.521l-.604-2.229h1.016c.531 0 1 .027 1 .068c0 .077 1.547 6.052 1.683 6.443c.052.197.421-.937.968-3.068l.88-3.359l.991-.057c.531-.027.973 0 .973.057c0 .181-2.229 8.504-2.401 8.905z"/>
+          </svg>
+          <span class="nav-text">DEV.to</span>
+        </a>
+        <a href="https://www.instagram.com/jpaquay" target="_blank" class="social-link" title="Instagram @jpaquay">
+          <svg class="social-icon" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+          <span class="nav-text">Instagram</span>
+        </a>
+        <a href="mailto:jpaquay+hugo@gmail.com" class="social-link" title="Email Jerome">
+          <svg class="social-icon" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+          </svg>
+          <span class="nav-text">Email</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Theme Switcher inside Sidebar -->
+    <div class="sidebar-theme-switcher">
+      <span class="nav-section-title">Theme Engine</span>
+      <div class="theme-buttons-vertical">
+        <button class="theme-btn" data-theme-id="ghibli"><span class="btn-icon">🍃</span> <span class="btn-label">Ghibli</span></button>
+        <button class="theme-btn" data-theme-id="terminal"><span class="btn-icon">📟</span> <span class="btn-label">Terminal</span></button>
+        <button class="theme-btn" data-theme-id="cyberpunk"><span class="btn-icon">⚡</span> <span class="btn-label">Cyberpunk</span></button>
+        <button class="theme-btn active" data-theme-id="minimal"><span class="btn-icon">🌊</span> <span class="btn-label">Ocean Blue</span></button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content Wrapper -->
+  <div class="main-content-layout">
+    
+    <!-- Top Bar Mobile Toggle -->
+    <header class="mobile-top-bar">
+      <button class="mobile-menu-btn" id="mobile-menu-btn">☰ Menu</button>
+      <span class="brand-logo">/net/dev</span>
+    </header>
+
+    <div class="app-wrapper">
+
+      <!-- 1. Hero / About Section -->
+      <section class="hero-section" id="hero">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="badge-row">
+              <span class="badge badge-primary">Enterprise Architect @ Google Cloud</span>
+              <span class="badge badge-accent" id="turing-badge">Turing Test Verified Human ✓</span>
+            </div>
+            
+            <h1 class="hero-title">
+              Hi, I'm <span class="highlight-text">Jerome</span> 👋
+            </h1>
+            <p class="hero-subtitle">
+              Building trusted relationships, solving tough engineering problems, and accelerating organizations to the next step in digitalization.
+            </p>
+
+            <!-- Interactive Code Snippet Simulator -->
+            <div class="code-card">
+              <div class="code-header">
+                <span class="code-dot red"></span>
+                <span class="code-dot yellow"></span>
+                <span class="code-dot green"></span>
+                <span class="code-title">innovate.js</span>
+              </div>
+              <pre class="code-body"><code><span class="keyword">var</span> innovate = <span class="keyword">function</span>(x) {
+  <span class="keyword">return</span> (<span class="number">10</span> * x);
+};
+<span class="function">innovate</span>(<span class="string">"whats_next"</span>); <span class="comment">// 🚀 Output: 10x Transformation</span></code></pre>
+              <button class="btn-sm" id="run-code-btn">▶ Execute 10x Simulator</button>
+              <div class="code-output hidden" id="code-output-box"></div>
+            </div>
+
+            <div class="hero-actions">
+              <a href="#tech-lifeline" class="btn btn-primary">My Programming Lifeline</a>
+              <a href="#quantum-sec" class="btn btn-secondary">Quantum Security</a>
+              <a href="#garage" class="btn btn-outline">Garage Projects</a>
+            </div>
+          </div>
+
+          <!-- Avatar / Visual Card -->
+          <div class="hero-avatar-card">
+            <div class="avatar-frame">
+              <img src="/assets/img/author.jpg" alt="Jerome Paquay Avatar" class="avatar-img" id="main-avatar">
+              <div class="avatar-backdrop"></div>
+              <div class="avatar-theme-badge">
+                <span class="badge-icon">🛡️</span>
+              </div>
+            </div>
+            <div class="avatar-caption">
+              <h3>Handsome Genius ™</h3>
+              <p>Brussels, Belgium • 20+ Years in IT</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Verified Google Cloud Credentials & Badges (Credly) -->
+      <section class="section" id="certifications" style="padding-bottom: 10px;">
+        <div class="section-header">
+          <h2 class="section-title">Verified Certifications & Credentials 🏅</h2>
+          <p class="section-desc">Official third-party Google Cloud digital badges verified on Credly.</p>
+        </div>
+        <div class="credly-badges-grid">
+          <a href="https://www.credly.com/badges/eaea15ea-eb91-4a22-84c5-53013f122ecf" target="_blank" class="credly-badge-card" rel="noopener noreferrer">
+            <img src="https://images.credly.com/images/71c579e0-51fd-4247-b493-d2fa8167157a/linkedin_thumb_image.png" alt="Professional Cloud Architect Certification" class="credly-badge-img" loading="lazy" decoding="async">
+            <div class="credly-badge-info">
+              <span class="credly-issuer">Google Cloud</span>
+              <h4>Professional Cloud Architect Certification</h4>
+              <p>Design, develop, and manage robust, secure, scalable, highly available, and dynamic solution architectures on Google Cloud.</p>
+              <span class="credly-verify-link">Verify on Credly ↗</span>
+            </div>
+          </a>
+          <a href="https://www.credly.com/badges/2840fdb9-da00-4819-8a5a-f352ffb4f135" target="_blank" class="credly-badge-card" rel="noopener noreferrer">
+            <img src="https://images.credly.com/images/a45057f4-ec6b-4c13-ab9d-60f54b4fc7e2/linkedin_thumb_blob" alt="Accelerate 2026 Hackathon Participant" class="credly-badge-img" loading="lazy" decoding="async">
+            <div class="credly-badge-info">
+              <span class="credly-issuer">Explore Google Cloud</span>
+              <h4>Accelerate 2026 Hackathon Participant</h4>
+              <p>Earned for hacking into the future and building AI & agentic cloud architectures at Google Cloud Accelerate 2026.</p>
+              <span class="credly-verify-link">Verify on Credly ↗</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- 2. Human Attributes & Skills Matrix -->
+      <section class="section" id="attributes">
+        <div class="section-header">
+          <h2 class="section-title">Verified Attributes & Capabilities 🎯</h2>
+          <p class="section-desc">Interactive filterable trait matrix based on human Turing verification.</p>
+        </div>
+
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">🌟 All Traits</button>
+          <button class="filter-btn" data-filter="core">👤 Core Traits</button>
+          <button class="filter-btn" data-filter="skills">⚡ Tech & Architecture</button>
+          <button class="filter-btn" data-filter="fun">😄 Fun & Family</button>
+        </div>
+
+        <div class="attributes-grid" id="attributes-grid">
+          <!-- Dynamic Cards Injected via JS -->
+        </div>
+      </section>
+
+      <!-- 3. Programming Lifeline (Boxed Card like Quantum) -->
+      <section class="section quantum-section" id="tech-lifeline">
+        <div class="quantum-card">
+          <div class="section-header">
+            <h2 class="section-title">My Programming Lifeline 🚀</h2>
+            <p class="section-desc">Jerome's personal code history, key milestones, language evolutions, and tech stack experience since 1991.</p>
+          </div>
+
+          <div class="filter-bar">
+            <button class="lifeline-filter-btn active" data-tech-filter="all">🌐 All Stack</button>
+            <button class="lifeline-filter-btn" data-tech-filter="programming">💻 Programming & Web</button>
+            <button class="lifeline-filter-btn" data-tech-filter="cloud">☁️ Cloud & Infra</button>
+            <button class="lifeline-filter-btn" data-tech-filter="ai">🤖 AI & ML</button>
+            <button class="lifeline-filter-btn" data-tech-filter="network">🛡️ Network & Security</button>
+          </div>
+
+          <div class="lifeline-container" id="lifeline-scroll-container">
+            <div class="lifeline-track" id="lifeline-track">
+              
+              <!-- 1991 -->
+              <div class="lifeline-node top" data-year="1991" data-category="programming">
+                <div class="node-badge">1991</div>
+                <div class="node-card">
+                  <div class="node-icon">🕹️</div>
+                  <h4>Commodore 64 & BASIC</h4>
+                  <p>First after-school coding lessons. Typing POKE & PEEK commands in <code>BASIC</code> on 8-bit hardware.</p>
+                  <div class="node-tags"><span class="node-tag">BASIC</span><span class="node-tag">C64</span></div>
+                </div>
+              </div>
+
+              <!-- 1995 -->
+              <div class="lifeline-node bottom" data-year="1995" data-category="programming">
+                <div class="node-badge">1995</div>
+                <div class="node-card">
+                  <div class="node-icon">💻</div>
+                  <h4>First PC & Web Dawn</h4>
+                  <p>Pentium 133MHz, 64MB RAM. Writing MS Office Macros, MS Access DBs, VBScript, HTML, CSS, JavaScript, and Flash <code>ActionScript</code>.</p>
+                  <div class="node-tags">
+                    <span class="node-tag">VBScript</span><span class="node-tag">HTML/CSS</span><span class="node-tag">JS</span><span class="node-tag">ActionScript</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 1997 -->
+              <div class="lifeline-node top" data-year="1997" data-category="programming">
+                <div class="node-badge">1997</div>
+                <div class="node-card">
+                  <div class="node-icon">🌐</div>
+                  <h4>56kbps Dial-Up & LAMP Stack</h4>
+                  <p>Home Internet setup @ 56kbps. Building full-stack web applications with ASP.net (IIS/Access), WAMP/LAMP, PHP, MySQL & Bash scripts.</p>
+                  <div class="node-tags">
+                    <span class="node-tag">PHP</span><span class="node-tag">MySQL</span><span class="node-tag">Bash</span><span class="node-tag">ASP.NET</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 1999 -->
+              <div class="lifeline-node bottom" data-year="1999" data-category="programming">
+                <div class="node-badge">1999</div>
+                <div class="node-card">
+                  <div class="node-icon">⚙️</div>
+                  <h4>Computer Science & Systems</h4>
+                  <p>University CS engineering. Deep dive into MATLAB, C, C++, Java, UML architectural design, x86 Assembler, and SQL database design.</p>
+                  <div class="node-tags">
+                    <span class="node-tag">C</span><span class="node-tag">C++</span><span class="node-tag">Java</span><span class="node-tag">Assembly</span><span class="node-tag">SQL</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2006 -->
+              <div class="lifeline-node top" data-year="2006" data-category="network">
+                <div class="node-badge">2006</div>
+                <div class="node-card">
+                  <div class="node-icon">🐍</div>
+                  <h4>Python, Rust & Cisco TCL</h4>
+                  <p>Joined Cisco Systems. Scripting network infrastructure with Cisco IOS TCL, adopting Python, Rust, CoffeeScript, and server-side Node.js.</p>
+                  <div class="node-tags">
+                    <span class="node-tag">Python</span><span class="node-tag">Rust</span><span class="node-tag">Node.js</span><span class="node-tag">Cisco TCL</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2018 -->
+              <div class="lifeline-node bottom" data-year="2018" data-category="cloud ai">
+                <div class="node-badge">2018</div>
+                <div class="node-card">
+                  <div class="node-icon">☁️</div>
+                  <h4>Google Cloud, Go & Machine Learning</h4>
+                  <p>Joined Google Cloud as Customer Engineer. Scaling Go architectures, TensorFlow with Keras, Flutter cross-platform apps & TypeScript.</p>
+                  <div class="node-tags">
+                    <span class="node-tag os">Go</span><span class="node-tag os">TensorFlow</span><span class="node-tag">TypeScript</span><span class="node-tag">Flutter</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2021 -->
+              <div class="lifeline-node top" data-year="2021" data-category="network ai programming">
+                <div class="node-badge">2021</div>
+                <div class="node-card">
+                  <div class="node-icon">🤖</div>
+                  <h4>Quantum Security & Scratch Education</h4>
+                  <p>PQC Crypto-Agility, Post-Quantum security design, and teaching fundamental block programming to the next generation with Scratch 👾.</p>
+                  <div class="node-tags">
+                    <span class="node-tag">Scratch</span><span class="node-tag os">PQC</span><span class="node-tag os">GKE</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2022 -->
+              <div class="lifeline-node bottom" data-year="2022" data-category="ai programming">
+                <div class="node-badge">2022</div>
+                <div class="node-card">
+                  <div class="node-icon">⚡</div>
+                  <h4>Generative Pre-trained Transformer & LLMs</h4>
+                  <p>GPT & Transformer architectures emerge. LLMs accelerate tech transformation, making the once-impossible possible 👾.</p>
+                  <div class="node-tags">
+                    <span class="node-tag">BERT</span><span class="node-tag os">GPT</span><span class="node-tag os">LLM</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2023 -->
+              <div class="lifeline-node top" data-year="2023" data-category="ai open-weight">
+                <div class="node-badge">2023</div>
+                <div class="node-card">
+                  <div class="node-icon">🧠</div>
+                  <h4>Open Weights & Local LLMs</h4>
+                  <p>Open-weight models explode (Llama, Gemma, Ollama). Running local LLM inference engines and MCP protocol integrations 🚀.</p>
+                  <div class="node-tags">
+                    <span class="node-tag">Gemini</span><span class="node-tag os">MCP</span><span class="node-tag os">Ollama</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2024 -->
+              <div class="lifeline-node bottom" data-year="2024" data-category="ai cloud programming">
+                <div class="node-badge">2024</div>
+                <div class="node-card">
+                  <div class="node-icon">🔮</div>
+                  <h4>Multimodal Gemini 1.5 & Vibe Coding</h4>
+                  <p>1M+ token context window, native multimodal reasoning (video/audio), and AI-driven Vibe Coding workflows taking flight ✨.</p>
+                  <div class="node-tags">
+                    <span class="node-tag os">Gemini 1.5</span><span class="node-tag">Vibe Coding</span><span class="node-tag os">Vertex AI</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2025 -->
+              <div class="lifeline-node top" data-year="2025" data-category="cloud ai agentic">
+                <div class="node-badge">2025</div>
+                <div class="node-card">
+                  <div class="node-icon">🐝</div>
+                  <h4>Agentic Revolution & Swarm Intelligence</h4>
+                  <p>Multi-agent swarms working on long-running code refactoring, automated security audits, and complex science breakthroughs 👾.</p>
+                  <div class="node-tags">
+                    <span class="node-tag">ADK Agents</span><span class="node-tag os">DeepSeek</span><span class="node-tag os">Unsloth</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2026 -->
+              <div class="lifeline-node bottom" data-year="2026" data-category="cloud ai agentic network">
+                <div class="node-badge">2026+</div>
+                <div class="node-card os-card">
+                  <div class="node-icon">🚀</div>
+                  <h4>Gemini 3.5 & Autonomous AI Engineering</h4>
+                  <p>Autonomous AI pair programmers & SRE co-piloting. Deploying serverless multi-agent architectures with zero-downtime chaos resilience 🛡️.</p>
+                  <div class="node-tags">
+                    <span class="node-tag os">Gemini 3.5</span><span class="node-tag os">Jetski</span><span class="node-tag">SRE Chaos</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Translucid Horizontal Scroll Navigation Slider (Positioned slightly under timeline) -->
+          <div class="lifeline-scroll-control">
+            <div class="scroll-slider-wrapper">
+              <span class="scroll-slider-label">📍 Scroll Timeline:</span>
+              <input type="range" id="lifeline-scroll-slider" min="0" max="100" value="0" step="1" title="Drag to navigate timeline horizontally">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Work Experience Timeline -->
+      <section class="section" id="timeline">
+        <div class="section-header">
+          <h2 class="section-title">Work Experience 💼</h2>
+          <p class="section-desc">Over 20 years of designing scalable architectures and driving digital transformation.</p>
+        </div>
+
+        <div class="timeline">
+          
+          <!-- Job 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">September 2018 - Present</div>
+              <h3 class="timeline-role">Customer Engineer / Cloud Architect</h3>
+              <h4 class="timeline-company">Google Cloud</h4>
+              <p class="timeline-body">
+                Cloud Architect for EU public sector. Partnering with innovative teams to design resilient Google Cloud Platform solutions, solve complex engineering challenges, and accelerate digital maturity.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">Google Cloud</span>
+                <span class="tag">Enterprise Architecture</span>
+                <span class="tag">EU Public Sector</span>
+                <span class="tag">Security & Compliance</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Job 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">June 2006 - August 2018</div>
+              <h3 class="timeline-role">Systems Engineer / Solutions Architect</h3>
+              <h4 class="timeline-company">Cisco Systems</h4>
+              <p class="timeline-body">
+                Solutions Architect for EU institutions, NATO, and Belgian Governments. Engineered mission-critical networking, cybersecurity, and infrastructure solutions across large global organizations.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">Cisco</span>
+                <span class="tag">NATO / EU Institutions</span>
+                <span class="tag">Network Security</span>
+                <span class="tag">Infrastructure</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Job 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">September 2002 - June 2006</div>
+              <h3 class="timeline-role">IT Manager</h3>
+              <h4 class="timeline-company">Missil Petroleum</h4>
+              <p class="timeline-body">
+                Responsible for end-to-end IT operations, infrastructure availability, and internal systems deployment.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">IT Management</span>
+                <span class="tag">Operations</span>
+                <span class="tag">Infrastructure</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 5. Garage Mechanics Projects Showcase -->
+      <section class="section" id="garage">
+        <div class="section-header">
+          <h2 class="section-title">Garage Mechanics 🛠️</h2>
+          <p class="section-desc">Personal lab environments, micro-apps, and web experiments.</p>
+        </div>
+
+        <div class="garage-grid">
+          
+          <a href="https://netdev.be" target="_blank" class="garage-card">
+            <div class="garage-icon">🌐</div>
+            <div class="garage-info">
+              <h3>gcs</h3>
+              <p>Google Cloud Storage custom hosting endpoint & lab domain.</p>
+              <span class="garage-link">netdev.be ↗</span>
+            </div>
+          </a>
+
+          <a href="https://netdev.be/v2" target="_blank" class="garage-card">
+            <div class="garage-icon">🔥</div>
+            <div class="garage-info">
+              <h3>firebase</h3>
+              <p>Firebase App Hosting deployment & serverless backend sandbox.</p>
+              <span class="garage-link">netdev.be/v2 ↗</span>
+            </div>
+          </a>
+
+          <a href="https://beyond.netdev.be/" target="_blank" class="garage-card">
+            <div class="garage-icon">🚀</div>
+            <div class="garage-info">
+              <h3>beyond</h3>
+              <p>BeyondCorp Zero Trust architecture lab & identity endpoint.</p>
+              <span class="garage-link">beyond.netdev.be ↗</span>
+            </div>
+          </a>
+
+          <a href="https://blog.netdev.be/web3/web3-portal.html" target="_blank" class="garage-card">
+            <div class="garage-icon">✍️</div>
+            <div class="garage-info">
+              <h3>web3 portal</h3>
+              <p>Hugo-Astro tech blog quantum launchpad & dispatches.</p>
+              <span class="garage-link">blog.netdev.be/web3/web3-portal.html ↗</span>
+            </div>
+          </a>
+
+          <a href="https://web3.netdev.be/" target="_blank" class="garage-card">
+            <div class="garage-icon">📰</div>
+            <div class="garage-info">
+              <h3>Blog v2</h3>
+              <p>Legacy v2 technical blog archive & mechanics lab.</p>
+              <span class="garage-link">web3.netdev.be ↗</span>
+            </div>
+          </a>
+
+          <a href="https://v3.netdev.be" target="_blank" class="garage-card">
+            <div class="garage-icon">☁️</div>
+            <div class="garage-info">
+              <h3>Google Cloud</h3>
+              <p>Google Cloud architecture renderer & static markdown viewer.</p>
+              <span class="garage-link">v3.netdev.be ↗</span>
+            </div>
+          </a>
+
+          <a href="https://blog.netdev.be" target="_blank" class="garage-card">
+            <div class="garage-icon">📰</div>
+            <div class="garage-info">
+              <h3>github.io blog</h3>
+              <p>Main online garage & technical thought leadership blog.</p>
+              <span class="garage-link">blog.netdev.be ↗</span>
+            </div>
+          </a>
+
+        </div>
+      </section>
+
+      <!-- 6. Google Cloud AI Architecture Sandbox & Flow Visualizer -->
+      <section class="section quantum-section" id="ai-cloud-arch">
+        <details open class="sim-accordion">
+          <summary class="sim-accordion-header">
+            <div class="summary-title-group">
+              <span class="badge badge-primary">Interactive Architecture Lab</span>
+              <h2>Google Cloud & Gemini 3.5 AI Flow Sandbox ☁️🤖</h2>
+            </div>
+            <span class="accordion-chevron">▼</span>
+          </summary>
+          
+          <div class="quantum-card accordion-body">
+            <p class="section-desc-sub">
+              Design enterprise AI workloads using Gemini 3.5 Pro, Vertex AI, GKE Autopilot, and Zero Trust security. Select a scenario below to watch data flow, compute metrics, and estimate cost latency live!
+            </p>
+
+            <div class="ai-arch-wrapper">
+              <div class="arch-scenario-selector">
+                <span class="arch-label">Select Enterprise AI Workload:</span>
+                <button class="arch-scenario-btn active" data-scenario="doc-ai">📄 EU Public Sector Doc Processing</button>
+                <button class="arch-scenario-btn" data-scenario="multimodal">🎥 Real-Time Multimodal Stream</button>
+                <button class="arch-scenario-btn" data-scenario="code-refactor">⚡ Agentic Monolith Refactoring</button>
+              </div>
+
+              <div class="arch-topology-grid">
+                <!-- Node 1: Ingestion Layer -->
+                <div class="arch-node-card" id="arch-node-ingest">
+                  <div class="node-header-row">
+                    <span class="node-icon">📥</span>
+                    <span class="node-title">Ingestion Layer</span>
+                  </div>
+                  <h4 id="arch-ingest-val">GCS Secure Bucket</h4>
+                  <p id="arch-ingest-desc">Customer PDF/Document store with KMS Encryption.</p>
+                  <div class="node-badge-mini" id="arch-ingest-badge">Cloud Storage</div>
+                </div>
+
+                <!-- Node 2: Compute & Orchestration -->
+                <div class="arch-node-card highlight" id="arch-node-compute">
+                  <div class="node-header-row">
+                    <span class="node-icon">⚙️</span>
+                    <span class="node-title">Compute Orchestrator</span>
+                  </div>
+                  <h4 id="arch-compute-val">GKE Autopilot + Ray</h4>
+                  <p id="arch-compute-desc">Distributed container scaling with auto-provisioned GPUs.</p>
+                  <div class="node-badge-mini" id="arch-compute-badge">GKE Autopilot</div>
+                </div>
+
+                <!-- Node 3: AI Model Core -->
+                <div class="arch-node-card ai-core-card" id="arch-node-model">
+                  <div class="node-header-row">
+                    <span class="node-icon">🧠</span>
+                    <span class="node-title">AI Engine</span>
+                  </div>
+                  <h4 id="arch-model-val">Gemini 3.5 Pro</h4>
+                  <p id="arch-model-desc">1M Token Context Window & Multimodal Reasoning.</p>
+                  <div class="node-badge-mini" id="arch-model-badge">Vertex AI</div>
+                </div>
+
+                <!-- Node 4: Security & Zero Trust -->
+                <div class="arch-node-card" id="arch-node-sec">
+                  <div class="node-header-row">
+                    <span class="node-icon">🛡️</span>
+                    <span class="node-title">Zero Trust Security</span>
+                  </div>
+                  <h4 id="arch-sec-val">BeyondCorp + IAM</h4>
+                  <p id="arch-sec-desc">Context-aware access, Secret Manager, DLP data masking.</p>
+                  <div class="node-badge-mini" id="arch-sec-badge">BeyondCorp</div>
+                </div>
+              </div>
+
+              <!-- Dynamic Metrics & Flow Output -->
+              <div class="arch-metrics-bar">
+                <div class="arch-metric-item">
+                  <span class="arch-metric-lbl">Model Core</span>
+                  <span class="arch-metric-val highlight-blue" id="arch-metric-model">Gemini 3.5 Pro</span>
+                </div>
+                <div class="arch-metric-item">
+                  <span class="arch-metric-lbl">Est. Latency (p95)</span>
+                  <span class="arch-metric-val" id="arch-metric-latency">42 ms</span>
+                </div>
+                <div class="arch-metric-item">
+                  <span class="arch-metric-lbl">Throughput</span>
+                  <span class="arch-metric-val" id="arch-metric-tps">1,250 doc/sec</span>
+                </div>
+                <div class="arch-metric-item">
+                  <span class="arch-metric-lbl">Cost Efficiency</span>
+                  <span class="arch-metric-val green" id="arch-metric-cost">98% Optimal</span>
+                </div>
+              </div>
+
+              <div class="arch-flow-stream" id="arch-flow-log">
+                ⚡ <strong>[Gemini 3.5 AI Pipeline]</strong> Initialized EU Public Sector Document Pipeline. Gemini 3.5 Pro active with zero-data retention security policy.
+              </div>
+            </div>
+          </div>
+        </details>
+      </section>
+
+      <!-- 7. Standalone Horizontal Post-Quantum Cryptography Threat Simulator -->
+      <section class="section quantum-section" id="quantum-sec">
+        <details open class="sim-accordion">
+          <summary class="sim-accordion-header">
+            <div class="summary-title-group">
+              <span class="badge badge-warning">Crypto-Agility Simulator</span>
+              <h2>Cybersecurity for the Quantum Era 🛡️⚡</h2>
+            </div>
+            <span class="accordion-chevron">▼</span>
+          </summary>
+          
+          <div class="quantum-card accordion-body">
+            <p class="section-desc-sub">
+              Quantum computers are expected to soon break traditional public-key cryptography (RSA-2048/ECC).
+              Drag the quantum timeline slider below to test enterprise crypto-agility & threat metrics!
+            </p>
+
+            <div class="interactive-pqc">
+              <div class="pqc-controls">
+                <div class="slider-header-row">
+                  <label for="quantum-slider">Quantum Era Year:</label>
+                  <span id="slider-year-label" class="current-year-badge">2026</span>
+                </div>
+                <input type="range" id="quantum-slider" min="2024" max="2035" value="2026" step="1">
+                <div class="slider-labels">
+                  <span>2024 (Today)</span>
+                  <span>2028 (CRQC Threshold)</span>
+                  <span>2035 (Post-Quantum)</span>
+                </div>
+              </div>
+
+              <div class="pqc-simulation-grid">
+                <div class="algo-box" id="classical-box">
+                  <h3>Classical RSA-2048 / ECC</h3>
+                  <p class="algo-type">Public-Key Cryptography</p>
+                  <div class="status-indicator" id="classical-status">
+                    <span class="indicator-dot green"></span> Secure
+                  </div>
+                  <div class="vulnerability-bar">
+                    <div class="vuln-fill" id="classical-vuln" style="width: 15%;"></div>
+                  </div>
+                  <span class="vuln-text" id="classical-vuln-text">Quantum Vulnerability: Low (2026)</span>
+                </div>
+
+                <div class="vs-divider">VS</div>
+
+                <div class="algo-box highlight" id="pqc-box">
+                  <h3>Post-Quantum Cryptography</h3>
+                  <p class="algo-type">FIPS 203/204 (Kyber / Dilithium)</p>
+                  <div class="status-indicator">
+                    <span class="indicator-dot green"></span> Quantum-Resistant
+                  </div>
+                  <div class="vulnerability-bar">
+                    <div class="vuln-fill safe" style="width: 0%;"></div>
+                  </div>
+                  <span class="vuln-text">Quantum Vulnerability: Immune</span>
+                </div>
+              </div>
+
+              <div class="pqc-summary" id="pqc-summary-text">
+                💡 <strong>Status (2026):</strong> Transitioning algorithms to PQC hybrid mode ensures long-term data security against store-now-decrypt-later attacks.
+              </div>
+            </div>
+          </div>
+        </details>
+      </section>
+
+      <!-- 8. SRE & Cloud Autoscaling Chaos Simulator -->
+      <section class="section quantum-section" id="sre-chaos-sim">
+        <details open class="sim-accordion">
+          <summary class="sim-accordion-header">
+            <div class="summary-title-group">
+              <span class="badge badge-warning">Interactive SRE Lab</span>
+              <h2>Google Cloud SRE & Autoscaling Chaos Simulator 📉💥</h2>
+            </div>
+            <span class="accordion-chevron">▼</span>
+          </summary>
+          
+          <div class="quantum-card accordion-body">
+            <p class="section-desc-sub">
+              Simulate enterprise cloud traffic spikes, regional network outages, and DB failover. Watch GKE pod autoscaling, Spanner multi-region sync, and load balancing resilience live!
+            </p>
+
+            <div class="chaos-simulator-wrapper">
+              <div class="chaos-controls-bar">
+                <button class="chaos-btn" id="chaos-btn-spike">💥 Inject 10x Traffic Spike</button>
+                <button class="chaos-btn" id="chaos-btn-outage">⚡ Simulate Region Outage</button>
+                <button class="chaos-btn btn-reset" id="chaos-btn-reset">↺ Reset Baseline</button>
+              </div>
+
+              <div class="chaos-dashboard-grid">
+                <!-- Metric Gauge 1: Active GKE Pods -->
+                <div class="metric-card">
+                  <div class="metric-header">
+                    <span class="metric-title">GKE Pod Replicas</span>
+                    <span class="metric-status green" id="gke-status-tag">NORMAL</span>
+                  </div>
+                  <div class="metric-value" id="gke-pod-count">12 Pods</div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" id="gke-pod-fill" style="width: 25%;"></div>
+                  </div>
+                  <span class="metric-footer" id="gke-autoscale-label">Autoscaler: Idle (Target 70% CPU)</span>
+                </div>
+
+                <!-- Metric Gauge 2: System Latency (p99) -->
+                <div class="metric-card">
+                  <div class="metric-header">
+                    <span class="metric-title">Latency (p99)</span>
+                    <span class="metric-status green" id="latency-status-tag">OPTIMAL</span>
+                  </div>
+                  <div class="metric-value" id="latency-value">24 ms</div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" id="latency-fill" style="width: 15%;"></div>
+                  </div>
+                  <span class="metric-footer" id="latency-label">SLO Target: &lt; 100 ms</span>
+                </div>
+
+                <!-- Metric Gauge 3: Cloud Spanner DB Sync -->
+                <div class="metric-card">
+                  <div class="metric-header">
+                    <span class="metric-title">Spanner Multi-Region DB</span>
+                    <span class="metric-status green" id="spanner-status-tag">HEALTHY</span>
+                  </div>
+                  <div class="metric-value" id="spanner-value">99.999% Sync</div>
+                  <div class="progress-bar">
+                    <div class="progress-fill safe" id="spanner-fill" style="width: 100%;"></div>
+                  </div>
+                  <span class="metric-footer" id="spanner-label">Quorum Leader: europe-west1</span>
+                </div>
+              </div>
+
+              <div class="chaos-console-log" id="chaos-console">
+                💻 <strong>[SRE Telemetry Console]</strong> Baseline state initialized. All systems operating within normal parameters.
+              </div>
+            </div>
+          </div>
+        </details>
+      </section>
+
+
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-content">
+          <p>Jerome Paquay • Bike & Run in Brussels, Belgium 🇧🇪</p>
+          <p class="quote">"Hakuna matata - take it easy, there are no worries."</p>
+          <div class="footer-links">
+            <a href="https://blog.netdev.be/web3/web3-portal.html">Web3 Portal 🚀</a>
+            <span>•</span>
+            <a href="https://web3.netdev.be/">Blog v2 📰</a>
+            <span>•</span>
+            <a href="https://www.instagram.com/jpaquay" target="_blank">Instagram 📷</a>
+            <span>•</span>
+            <a href="https://en.wikipedia.org/wiki/L%C3%A9on:_The_Professional" target="_blank">Léon by Luc Besson 🎬</a>
+            <span>•</span>
+            <a href="https://goo.gl/maps/Xhy4aBu1WYrbBHe97" target="_blank">Brussels on Maps 📍</a>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
