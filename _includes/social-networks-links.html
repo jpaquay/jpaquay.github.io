@@ -6,10 +6,10 @@
   {%- if network[0] == "rss" and network[1] and site.rss-description -%}
   <li class="list-inline-item">
     <a href="{{ '/feed.xml' | relative_url }}" title="RSS">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
-      </span>
+      <svg class="svg-social-icon" width="36" height="36" viewBox="0 0 32 32" aria-hidden="true" style="vertical-align:middle;">
+        <circle cx="16" cy="16" r="16" fill="currentColor"/>
+        <path fill="#ffffff" transform="translate(4, 4)" d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19 7.38 20 6.18 20C5 20 4 19 4 17.82a2.18 2.18 0 0 1 2.18-2.18M4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27V4.44m0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93V10.1z"/>
+      </svg>
       <span class="sr-only">RSS</span>
     </a>
   </li>
@@ -18,46 +18,46 @@
   {%- if network[0] == "email" -%}
   <li class="list-inline-item">
     <a href="mailto:{{ network[1] }}" title="Email me">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
-      </span>
+      <svg class="svg-social-icon" width="36" height="36" viewBox="0 0 32 32" aria-hidden="true" style="vertical-align:middle;">
+        <circle cx="16" cy="16" r="16" fill="currentColor"/>
+        <path fill="#ffffff" transform="translate(4, 4)" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+      </svg>
       <span class="sr-only">Email me</span>
-   </a>
+    </a>
   </li>
   {%- endif -%}
 
   {%- if network[0] == "calendly" -%}
   <li class="list-inline-item">
     <a href="https://calendly.com/{{ network[1] }}" title="Schedule a meeting with me">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fas fa-calendar-check fa-stack-1x fa-inverse"></i>
-      </span>
+      <svg class="svg-social-icon" width="36" height="36" viewBox="0 0 32 32" aria-hidden="true" style="vertical-align:middle;">
+        <circle cx="16" cy="16" r="16" fill="currentColor"/>
+        <path fill="#ffffff" transform="translate(4, 4)" d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM10.56 16.2L7.7 13.34l1.41-1.41 1.45 1.45 4.59-4.59 1.41 1.41z"/>
+      </svg>
       <span class="sr-only">Schedule a meeting with me</span>
-   </a>
+    </a>
   </li>
   {%- endif -%}
 
   {%- if network[0] == "facebook" -%}
   <li class="list-inline-item">
     <a href="https://www.facebook.com/{{ network[1] }}" title="Facebook">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
-      </span>
+      <svg class="svg-social-icon" width="36" height="36" viewBox="0 0 32 32" aria-hidden="true" style="vertical-align:middle;">
+        <circle cx="16" cy="16" r="16" fill="currentColor"/>
+        <path fill="#ffffff" transform="translate(4, 4)" d="M13 10h3v3h-3v7h-3v-7H8v-3h2V8.5C10 6.57 11.57 5 13.5 5H16v3h-2c-.55 0-1 .45-1 1v1z"/>
+      </svg>
       <span class="sr-only">Facebook</span>
-   </a>
+    </a>
   </li>
   {%- endif -%}
 
   {%- if network[0] == "telegram" -%}
   <li class="list-inline-item">
     <a href="https://t.me/{{ network[1] }}" title="Telegram">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fab fa-telegram-plane fa-stack-1x fa-inverse"></i>
-      </span>
+      <svg class="svg-social-icon" width="36" height="36" viewBox="0 0 32 32" aria-hidden="true" style="vertical-align:middle;">
+        <circle cx="16" cy="16" r="16" fill="currentColor"/>
+        <path fill="#ffffff" transform="translate(4, 4)" d="M21.6 3.2L2.4 10.6c-.8.3-.8 1.4 0 1.7l4.9 1.5 1.7 5.4c.2.6 1 .8 1.5.4l2.7-2.2 4.7 3.5c.7.5 1.7.1 1.8-.8l3.2-15.5c.2-.9-.7-1.6-1.3-1.4zM9.4 13.2l8.8-5.5-6.9 6.3-.3 3.2-1.6-4z"/>
+      </svg>
       <span class="sr-only">Telegram</span>
     </a>
   </li>
@@ -66,10 +66,10 @@
   {%- if network[0] == "whatsapp" -%}
   <li class="list-inline-item">
     <a href="https://wa.me/{{ network[1] }}" title="Whatsapp">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fab fa-whatsapp fa-stack-1x fa-inverse"></i>
-      </span>
+      <svg class="svg-social-icon" width="36" height="36" viewBox="0 0 32 32" aria-hidden="true" style="vertical-align:middle;">
+        <circle cx="16" cy="16" r="16" fill="currentColor"/>
+        <path fill="#ffffff" transform="translate(4, 4)" d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.802.965 5.38 2.577 7.417l-1.637 5.986 6.136-1.61c1.944 1.503 4.364 2.399 7.001 2.399 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/>
+      </svg>
       <span class="sr-only">Whatsapp</span>
     </a>
   </li>
@@ -78,36 +78,36 @@
   {%- if network[0] == "github" -%}
   <li class="list-inline-item">
     <a href="https://github.com/{{ network[1] }}" title="GitHub">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-      </span>
+      <svg class="svg-social-icon" width="36" height="36" viewBox="0 0 32 32" aria-hidden="true" style="vertical-align:middle;">
+        <circle cx="16" cy="16" r="16" fill="currentColor"/>
+        <path fill="#ffffff" transform="translate(4, 4)" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+      </svg>
       <span class="sr-only">GitHub</span>
-   </a>
+    </a>
   </li>
   {%- endif -%}
 
   {%- if network[0] == "gitlab" -%}
   <li class="list-inline-item">
     <a href="https://gitlab.com/{{ network[1] }}" title="GitLab">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fab fa-gitlab fa-stack-1x fa-inverse"></i>
-      </span>
+      <svg class="svg-social-icon" width="36" height="36" viewBox="0 0 32 32" aria-hidden="true" style="vertical-align:middle;">
+        <circle cx="16" cy="16" r="16" fill="currentColor"/>
+        <path fill="#ffffff" transform="translate(4, 4)" d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58.04l5.8 5.92h1.6l5.8-5.92a.43.43 0 0 1 .58-.04.42.42 0 0 1 .11.18l2.44 7.51 1.22 3.78a.84.84 0 0 1-.3.94z"/>
+      </svg>
       <span class="sr-only">GitLab</span>
-   </a>
+    </a>
   </li>
   {%- endif -%}
 
   {%- if network[0] == "twitter" -%}
   <li class="list-inline-item">
     <a href="https://twitter.com/{{ network[1] }}" title="X (Twitter)">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fab fa-x-twitter fa-stack-1x fa-inverse"></i>
-      </span>
+      <svg class="svg-social-icon" width="36" height="36" viewBox="0 0 32 32" aria-hidden="true" style="vertical-align:middle;">
+        <circle cx="16" cy="16" r="16" fill="currentColor"/>
+        <path fill="#ffffff" transform="translate(4, 4)" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+      </svg>
       <span class="sr-only">X (Twitter)</span>
-   </a>
+    </a>
   </li>
   {%- endif -%}
 
@@ -118,68 +118,69 @@
   {% endunless -%}
   <li class="list-inline-item">
     <a href="https://reddit.com/{{ reddit_url_prefix }}{{ network[1] }}" title="Reddit">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fab fa-reddit fa-stack-1x fa-inverse"></i>
-      </span>
+      <svg class="svg-social-icon" width="36" height="36" viewBox="0 0 32 32" aria-hidden="true" style="vertical-align:middle;">
+        <circle cx="16" cy="16" r="16" fill="currentColor"/>
+        <path fill="#ffffff" transform="translate(4, 4)" d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.249 1.249 1.249.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.25-1.25-1.25zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.071 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/>
+      </svg>
       <span class="sr-only">Reddit</span>
-   </a>
+    </a>
   </li>
   {%- endif -%}
 
   {%- if network[0] == "linkedin" -%}
   <li class="list-inline-item">
     <a href="https://linkedin.com/in/{{ network[1] }}" title="LinkedIn">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
-      </span>
+      <svg class="svg-social-icon" width="36" height="36" viewBox="0 0 32 32" aria-hidden="true" style="vertical-align:middle;">
+        <circle cx="16" cy="16" r="16" fill="currentColor"/>
+        <path fill="#ffffff" transform="translate(4, 4)" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+      </svg>
       <span class="sr-only">LinkedIn</span>
-   </a>
+    </a>
   </li>
   {%- endif -%}
 
   {%- if network[0] == "xing" -%}
   <li class="list-inline-item">
     <a href="https://www.xing.com/profile/{{ network[1] }}" title="Xing">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fab fa-xing fa-stack-1x fa-inverse"></i>
-      </span>
+      <svg class="svg-social-icon" width="36" height="36" viewBox="0 0 32 32" aria-hidden="true" style="vertical-align:middle;">
+        <circle cx="16" cy="16" r="16" fill="currentColor"/>
+        <path fill="#ffffff" transform="translate(4, 4)" d="M18.188 0c-.22 0-.417.116-.528.306L11.79 10.335l4.004 7.291c.108.194.305.317.528.317h3.684c.482 0 .783-.526.541-.944l-3.766-6.664 5.923-10.384c.241-.418-.06-.944-.542-.944h-3.975zM5.69 6.341c-.22 0-.417.116-.528.306L2.247 11.5c-.242.418.06.944.542.944h3.684c.22 0 .417-.116.528-.306l2.915-4.853-1.896-3.45c-.108-.194-.305-.317-.528-.317H5.69z"/>
+      </svg>
       <span class="sr-only">Xing</span>
-   </a>
+    </a>
   </li>
   {%- endif -%}
 
   {%- if network[0] == "stackoverflow" -%}
   <li class="list-inline-item">
     <a href="https://stackoverflow.com/users/{{ network[1] }}" title="StackOverflow">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
-      </span>
+      <svg class="svg-social-icon" width="36" height="36" viewBox="0 0 32 32" aria-hidden="true" style="vertical-align:middle;">
+        <circle cx="16" cy="16" r="16" fill="currentColor"/>
+        <path fill="#ffffff" transform="translate(4, 4)" d="M18.986 21.865v-6.404h2.134V24H1.844v-8.539h2.13v6.404h15.012zM6.111 19.771h12.19v-2.137H6.111v2.137zm.259-4.852l12.02 2.589.451-2.09-12.022-2.589-.449 2.09zm1.335-5.343l11.44 5.463.918-1.929-11.44-5.463-.918 1.93zm3.17-5.075l9.989 7.83 1.32-1.688-9.988-7.83-1.321 1.688zm5.541-4.946l7.747 10.05 1.688-1.298-7.747-10.05-1.688 1.298z"/>
+      </svg>
       <span class="sr-only">StackOverflow</span>
-   </a>
+    </a>
   </li>
   {%- endif -%}
 
   {%- if network[0] == "snapchat" -%}
   <li class="list-inline-item">
     <a href="https://www.snapchat.com/add/{{ network[1] }}" title="Snapchat">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fab fa-snapchat-ghost fa-stack-1x fa-inverse"></i>
-      </span>
+      <svg class="svg-social-icon" width="36" height="36" viewBox="0 0 32 32" aria-hidden="true" style="vertical-align:middle;">
+        <circle cx="16" cy="16" r="16" fill="currentColor"/>
+        <path fill="#ffffff" transform="translate(4, 4)" d="M12.042 2c-3.743 0-5.748 2.607-6.242 4.791-.194.858-.062 1.931.258 2.766.19.496.425.962.695 1.396.11.176.223.348.337.518.257.382.493.754.493 1.218 0 .546-.358.918-.73 1.297-.4.407-.84.855-1.127 1.484-.239.524-.264 1.15-.072 1.705.284.823 1.057 1.405 1.93 1.405.312 0 .638-.073.978-.216.593-.25 1.257-.53 1.831-.53.296 0 .584.074.86.216.711.368 1.488.77 2.302.77.814 0 1.591-.402 2.302-.77.276-.142.564-.216.86-.216.574 0 1.238.28 1.831.53.34.143.666.216.978.216.873 0 1.646-.582 1.93-1.405.192-.555.167-1.181-.072-1.705-.287-.629-.727-1.077-1.127-1.484-.372-.379-.73-.751-.73-1.297 0-.464.236-.836.493-1.218.114-.17.227-.342.337-.518.27-.434.505-.9.695-1.396.32-.835.452-1.908.258-2.766C17.79 4.607 15.785 2 12.042 2z"/>
+      </svg>
       <span class="sr-only">Snapchat</span>
-   </a>
+    </a>
   </li>
   {%- endif -%}
 
   {%- if network[0] == "instagram" -%}
   <li class="list-inline-item">
     <a href="https://www.instagram.com/{{ network[1] }}" title="Instagram" target="_blank" rel="noopener">
-      <svg class="svg-social-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;">
-        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+      <svg class="svg-social-icon" width="36" height="36" viewBox="0 0 32 32" aria-hidden="true" style="vertical-align:middle;">
+        <circle cx="16" cy="16" r="16" fill="currentColor"/>
+        <path fill="#ffffff" transform="translate(4, 4)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
       </svg>
       <span class="sr-only">Instagram</span>
     </a>
@@ -189,82 +190,82 @@
   {%- if network[0] == "youtube" -%}
   <li class="list-inline-item">
     <a href="https://www.youtube.com/{{ network[1] }}" title="YouTube">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
-      </span>
+      <svg class="svg-social-icon" width="36" height="36" viewBox="0 0 32 32" aria-hidden="true" style="vertical-align:middle;">
+        <circle cx="16" cy="16" r="16" fill="currentColor"/>
+        <path fill="#ffffff" transform="translate(4, 4)" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+      </svg>
       <span class="sr-only">YouTube</span>
-   </a>
+    </a>
   </li>
   {%- endif -%}
 
   {%- if network[0] == "spotify" -%}
   <li class="list-inline-item">
     <a href="https://open.spotify.com/user/{{ network[1] }}" title="Spotify">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fab fa-spotify fa-stack-1x fa-inverse"></i>
-      </span>
+      <svg class="svg-social-icon" width="36" height="36" viewBox="0 0 32 32" aria-hidden="true" style="vertical-align:middle;">
+        <circle cx="16" cy="16" r="16" fill="currentColor"/>
+        <path fill="#ffffff" transform="translate(4, 4)" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+      </svg>
       <span class="sr-only">Spotify</span>
-   </a>
+    </a>
   </li>
   {%- endif -%}
 
   {%- if network[0] == "telephone" -%}
   <li class="list-inline-item">
     <a href="tel:{{ network[1] }}" title="Phone">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fas fa-phone fa-stack-1x fa-inverse"></i>
-      </span>
+      <svg class="svg-social-icon" width="36" height="36" viewBox="0 0 32 32" aria-hidden="true" style="vertical-align:middle;">
+        <circle cx="16" cy="16" r="16" fill="currentColor"/>
+        <path fill="#ffffff" transform="translate(4, 4)" d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1.01A11.36 11.36 0 0 1 8.5 3.92c0-.55-.45-1-1-1H3.92c-.55 0-1 .45-1 1A17.08 17.08 0 0 0 19.99 21c.55 0 1-.45 1-1v-3.62c0-.55-.45-1-1-1z"/>
+      </svg>
       <span class="sr-only">Phone</span>
-   </a>
+    </a>
   </li>
   {%- endif -%}
 
   {%- if network[0] == "steam" -%}
   <li class="list-inline-item">
     <a href="https://steamcommunity.com/id/{{ network[1] }}" title="Steam">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fab fa-steam fa-stack-1x fa-inverse"></i>
-      </span>
+      <svg class="svg-social-icon" width="36" height="36" viewBox="0 0 32 32" aria-hidden="true" style="vertical-align:middle;">
+        <circle cx="16" cy="16" r="16" fill="currentColor"/>
+        <path fill="#ffffff" transform="translate(4, 4)" d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.064 0 .127.004.19.008l2.861-4.142V8.91c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.524-4.524 4.524h-.105l-4.076 2.911c.005.084.009.168.009.254 0 1.995-1.617 3.611-3.612 3.611-1.696 0-3.123-1.172-3.518-2.754l-4.47-1.847C1.488 20.03 6.305 24 11.979 24c6.627 0 12-5.373 12-12s-5.373-12-12-12z"/>
+      </svg>
       <span class="sr-only">Steam</span>
-   </a>
+    </a>
   </li>
   {%- endif -%}
 
   {%- if network[0] == "twitch" -%}
   <li class="list-inline-item">
     <a href="https://www.twitch.tv/{{ network[1] }}" title="Twitch">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fab fa-twitch fa-stack-1x fa-inverse"></i>
-      </span>
+      <svg class="svg-social-icon" width="36" height="36" viewBox="0 0 32 32" aria-hidden="true" style="vertical-align:middle;">
+        <circle cx="16" cy="16" r="16" fill="currentColor"/>
+        <path fill="#ffffff" transform="translate(4, 4)" d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714z"/>
+      </svg>
       <span class="sr-only">Twitch</span>
-   </a>
+    </a>
   </li>
   {%- endif -%}
 
   {%- if network[0] == "yelp" -%}
   <li class="list-inline-item">
     <a href="https://yelp.com/{{ network[1] }}" title="Yelp">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fab fa-yelp fa-stack-1x fa-inverse"></i>
-      </span>
+      <svg class="svg-social-icon" width="36" height="36" viewBox="0 0 32 32" aria-hidden="true" style="vertical-align:middle;">
+        <circle cx="16" cy="16" r="16" fill="currentColor"/>
+        <path fill="#ffffff" transform="translate(4, 4)" d="M20.16 12.74c-.11-.3-.39-.5-.71-.5h-4.32l2.36-3.83c.16-.27.15-.61-.03-.87l-2.12-3.1a.78.78 0 0 0-.66-.35c-.24 0-.46.11-.6.3l-2.9 4.18V2.78c0-.43-.35-.78-.78-.78H9.36c-.43 0-.78.35-.78.78v8.68L4.69 8.24a.78.78 0 0 0-.85-.16L.86 9.47a.78.78 0 0 0-.44.75c.02.31.22.58.51.68l4.47 1.55-4.42 1.68c-.28.11-.47.38-.47.69 0 .31.18.59.46.71l3.05 1.25a.78.78 0 0 0 .86-.18l3.82-4.14v5.33c0 .43.35.78.78.78h1.04c.43 0 .78-.35.78-.78v-4.08l2.95 3.96c.14.19.36.3.6.3.11 0 .22-.02.33-.07l3.05-1.4a.78.78 0 0 0 .42-.73c-.02-.3-.21-.56-.49-.66l-4.13-1.42 4.41-1.39c.31-.1.52-.37.52-.69z"/>
+      </svg>
       <span class="sr-only">Yelp</span>
-   </a>
+    </a>
   </li>
   {%- endif -%}
 
   {%- if network[0] == "mastodon" -%}
   <li class="list-inline-item">
     <a rel="me" href="https://{{ network[1] }}" title="Mastodon">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
-      </span>
+      <svg class="svg-social-icon" width="36" height="36" viewBox="0 0 32 32" aria-hidden="true" style="vertical-align:middle;">
+        <circle cx="16" cy="16" r="16" fill="currentColor"/>
+        <path fill="#ffffff" transform="translate(4, 4)" d="M23.268 5.313c-.35-2.578-2.617-4.61-5.304-5.004C17.51.242 15.792.043 12 .043h-.008c-3.792 0-5.51.199-5.964.306-2.687.394-4.954 2.426-5.304 5.004-.105.771-.258 3.095-.258 5.663 0 2.568.153 4.892.258 5.663.35 2.578 2.617 4.61 5.304 5.004 2.27.332 4.41.334 5.964.246 1.745-.098 3.518-.396 4.115-.992.427-.427.608-1.026.608-1.848h-2.182c-.044.426-.263.784-.693.914-.99.3-2.923.364-4.523.276-2.186-.12-3.77-.384-4.053-1.12-.086-.226-.145-.557-.176-.991 1.986.486 4.093.737 6.27.702 2.463-.039 4.807-.387 6.702-1.077.067-.024.132-.051.198-.078.802-.329 1.686-.882 2.112-1.846.304-.687.428-1.636.428-2.88 0-2.568-.153-4.892-.258-5.663zM18.89 13.91h-2.316V8.582h-2.285v4.549h-1.578V8.582H10.42v5.328H8.106V7.487h3.197l1.488 3.738 1.488-3.738h3.197z"/>
+      </svg>
       <span class="sr-only">Mastodon</span>
     </a>
   </li>
@@ -273,34 +274,34 @@
   {%- if network[0] == "bluesky" -%}
   <li class="list-inline-item">
     <a rel="me" href="https://bsky.app/profile/{{ network[1] }}" title="Bluesky">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fas fa-brands fa-bluesky fa-stack-1x fa-inverse"></i>
-      </span>
+      <svg class="svg-social-icon" width="36" height="36" viewBox="0 0 32 32" aria-hidden="true" style="vertical-align:middle;">
+        <circle cx="16" cy="16" r="16" fill="currentColor"/>
+        <path fill="#ffffff" transform="translate(4, 4)" d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.386.953 3.273 2.81 9.576 7.823 4.386 4.557-5.073 1.082-6.498-2.83-7.078-.139-.016-.277-.034-.415-.056.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.689-.139-1.86-.902-2.203-.659-.299-1.664-.621-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8z"/>
+      </svg>
       <span class="sr-only">Bluesky</span>
     </a>
   </li>
   {%- endif -%}
 
   {%- if network[0] == "ORCID" -%}
- <li class="list-inline-item">
-   <a href="https://orcid.org/{{ network[1] }}" title="ORCID">
-     <span class="fa-stack fa-lg" aria-hidden="true">
-       <i class="fas fa-circle fa-stack-2x"></i>
-       <i class="fab fa-orcid fa-stack-1x fa-inverse"></i>
-     </span>
-     <span class="sr-only">ORCID</span>
-   </a>
- </li>
+  <li class="list-inline-item">
+    <a href="https://orcid.org/{{ network[1] }}" title="ORCID">
+      <svg class="svg-social-icon" width="36" height="36" viewBox="0 0 32 32" aria-hidden="true" style="vertical-align:middle;">
+        <circle cx="16" cy="16" r="16" fill="currentColor"/>
+        <path fill="#ffffff" transform="translate(4, 4)" d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c2.712 0 4.341 1.938 4.341 5.02 0 3.047-1.644 5.021-4.35 5.021h-3.891V7.416zm1.444 1.303v7.434h2.453c1.784 0 2.875-1.191 2.875-3.717 0-2.503-1.072-3.717-2.856-3.717h-2.472z"/>
+      </svg>
+      <span class="sr-only">ORCID</span>
+    </a>
+  </li>
   {%- endif -%}
 
   {%- if network[0] == "google-scholar" -%}
   <li class="list-inline-item">
     <a href="https://scholar.google.com/citations?user={{ network[1] }}" title="Google Scholar">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
-      </span>
+      <svg class="svg-social-icon" width="36" height="36" viewBox="0 0 32 32" aria-hidden="true" style="vertical-align:middle;">
+        <circle cx="16" cy="16" r="16" fill="currentColor"/>
+        <path fill="#ffffff" transform="translate(4, 4)" d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/>
+      </svg>
       <span class="sr-only">Google Scholar</span>
     </a>
   </li>
@@ -309,10 +310,10 @@
   {%- if network[0] == "patreon" -%}
   <li class="list-inline-item">
     <a href="https://patreon.com/{{ network[1] }}" title="Patreon">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fab fa-patreon fa-stack-1x fa-inverse"></i>
-      </span>
+      <svg class="svg-social-icon" width="36" height="36" viewBox="0 0 32 32" aria-hidden="true" style="vertical-align:middle;">
+        <circle cx="16" cy="16" r="16" fill="currentColor"/>
+        <path fill="#ffffff" transform="translate(4, 4)" d="M14.82 2.41c-4.97 0-9.01 4.04-9.01 9.01 0 4.97 4.04 9.01 9.01 9.01 4.97 0 9.01-4.04 9.01-9.01 0-4.97-4.04-9.01-9.01-9.01zM1.5 2.41h3.38v18.02H1.5V2.41z"/>
+      </svg>
       <span class="sr-only">Patreon</span>
     </a>
   </li>
@@ -321,10 +322,10 @@
   {%- if network[0] == "medium" -%}
   <li class="list-inline-item">
     <a href="https://medium.com/@{{ network[1] }}" title="Medium">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fab fa-medium fa-stack-1x fa-inverse"></i>
-      </span>
+      <svg class="svg-social-icon" width="36" height="36" viewBox="0 0 32 32" aria-hidden="true" style="vertical-align:middle;">
+        <circle cx="16" cy="16" r="16" fill="currentColor"/>
+        <path fill="#ffffff" transform="translate(4, 4)" d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42zm3.04 0c0 3.16-.5 5.71-1.13 5.71-.63 0-1.13-2.55-1.13-5.71s.5-5.71 1.13-5.71c.63 0 1.13 2.55 1.13 5.71z"/>
+      </svg>
       <span class="sr-only">Medium</span>
     </a>
   </li>
@@ -333,12 +334,12 @@
   {%- if network[0] == "itchio" -%}
   <li class="list-inline-item">
     <a href="https://{{ network[1] }}.itch.io/" title="Itchio">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fab fa-itch-io fa-stack-1x fa-inverse"></i>
-      </span>
+      <svg class="svg-social-icon" width="36" height="36" viewBox="0 0 32 32" aria-hidden="true" style="vertical-align:middle;">
+        <circle cx="16" cy="16" r="16" fill="currentColor"/>
+        <path fill="#ffffff" transform="translate(4, 4)" d="M4.2 3A2.2 2.2 0 0 0 2 5.2v.5l2.4 2.8v9.7a2.8 2.8 0 0 0 2.8 2.8h9.6a2.8 2.8 0 0 0 2.8-2.8V8.5l2.4-2.8v-.5A2.2 2.2 0 0 0 19.8 3H4.2zm4.3 6h7v2h-7V9zm-1 4h9v2h-9v-2z"/>
+      </svg>
       <span class="sr-only">Itchio</span>
-   </a>
+    </a>
   </li>
   {%- endif -%}
 
@@ -349,60 +350,60 @@
   {% endunless -%}
   <li class="list-inline-item">
     <a href="https://discord.com/{{discord_url_prefix}}{{network[1]}}" title="Discord">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fab fa-discord fa-stack-1x fa-inverse"></i>
-      </span>
+      <svg class="svg-social-icon" width="36" height="36" viewBox="0 0 32 32" aria-hidden="true" style="vertical-align:middle;">
+        <circle cx="16" cy="16" r="16" fill="currentColor"/>
+        <path fill="#ffffff" transform="translate(4, 4)" d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189z"/>
+      </svg>
       <span class="sr-only">Discord</span>
-   </a>
+    </a>
   </li>
   {%- endif -%}
 
   {%- if network[0] == "kaggle" -%}
   <li class="list-inline-item">
     <a href="https://www.kaggle.com/{{ network[1] }}" title="Kaggle">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fab fa-kaggle fa-stack-1x fa-inverse"></i>
-      </span>
+      <svg class="svg-social-icon" width="36" height="36" viewBox="0 0 32 32" aria-hidden="true" style="vertical-align:middle;">
+        <circle cx="16" cy="16" r="16" fill="currentColor"/>
+        <path fill="#ffffff" transform="translate(4, 4)" d="M18.825 23.859c-.022.092-.117.141-.281.141h-3.139c-.187 0-.351-.082-.492-.248l-5.178-6.589-1.448 1.374v5.111c0 .235-.117.352-.351.352H5.505c-.235 0-.352-.117-.352-.352V.353c0-.235.117-.353.352-.353h2.431c.234 0 .351.118.351.353v14.343l6.203-6.423c.164-.165.339-.247.527-.247h3.351c.258 0 .38.139.367.417-.012.271-.127.506-.347.702l-6.508 6.039 6.93 8.991c.164.217.211.435.141.656z"/>
+      </svg>
       <span class="sr-only">Kaggle</span>
-   </a>
+    </a>
   </li>
   {%- endif -%}
 
   {%- if network[0] == "hackerrank" -%}
   <li class="list-inline-item">
     <a href="https://www.hackerrank.com/{{ network[1] }}" title="Hackerrank">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fab fa-hackerrank fa-stack-1x fa-inverse"></i>
-      </span>
+      <svg class="svg-social-icon" width="36" height="36" viewBox="0 0 32 32" aria-hidden="true" style="vertical-align:middle;">
+        <circle cx="16" cy="16" r="16" fill="currentColor"/>
+        <path fill="#ffffff" transform="translate(4, 4)" d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm3.42 17.76h-2.12v-4.15H10.69v4.15H8.58V6.25H10.69v4.15h2.61V6.25h2.12v11.51z"/>
+      </svg>
       <span class="sr-only">Hackerrank</span>
-   </a>
+    </a>
   </li>
   {%- endif -%}
 
   {%- if network[0] == "untappd" -%}
   <li class="list-inline-item">
     <a href="https://untappd.com/user/{{ network[1] }}" title="Untappd">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fab fa-untappd fa-stack-1x fa-inverse"></i>
-      </span>
+      <svg class="svg-social-icon" width="36" height="36" viewBox="0 0 32 32" aria-hidden="true" style="vertical-align:middle;">
+        <circle cx="16" cy="16" r="16" fill="currentColor"/>
+        <path fill="#ffffff" transform="translate(4, 4)" d="M12 0L1.608 6v12L12 24l10.392-6V6L12 0zm-1.076 18.06l-3.21-1.854V12.54l3.21 1.854v3.666zm5.362-1.854l-3.21 1.854v-3.666l3.21-1.854v3.666zm0-5.52l-4.286-2.475L7.714 10.686 12 8.211l4.286 2.475z"/>
+      </svg>
       <span class="sr-only">Untappd</span>
-   </a>
+    </a>
   </li>
   {%- endif -%}
 
   {%- if network[0] == "strava" -%}
   <li class="list-inline-item">
     <a href="https://www.strava.com/athletes/{{ site.social-network-links.strava}}" title="Strava">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fab fa-strava fa-stack-1x fa-inverse"></i>
-      </span>
+      <svg class="svg-social-icon" width="36" height="36" viewBox="0 0 32 32" aria-hidden="true" style="vertical-align:middle;">
+        <circle cx="16" cy="16" r="16" fill="currentColor"/>
+        <path fill="#ffffff" transform="translate(4, 4)" d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7.92 15.598h4.173"/>
+      </svg>
       <span class="sr-only">Strava</span>
-   </a>
+    </a>
   </li>
   {%- endif -%}
 

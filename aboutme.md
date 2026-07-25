@@ -79,7 +79,7 @@ literally `hakuna` there are no; : `matata` worries
 
 #### garage mechanics
 - [gcs](https://netdev.be)
-- [firebase](https://fb.netdev.be/)
+- [firebase](https://netdev.be/v2)
 - [beyond](https://beyond.netdev.be/)
 - [captcha](https://web3.netdev.be/)
 - [gh.md](https://v3.netdev.be)

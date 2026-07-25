@@ -24,7 +24,7 @@ navbar-links:
   Resources:
     - markdown: "https://www.markdowntutorial.com/"
     - go Hugo: "https://gohugo.io"
-    - firebase : "https://fb.netdev.be/"
+    - firebase : "https://netdev.be/v2"
     - about: "aboutme"
     - web3: "https://blog.netdev.be/web3/web3-portal.html"
     - Blog v2: "https://web3.netdev.be/"
