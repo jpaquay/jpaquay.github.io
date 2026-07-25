@@ -1,46 +1,92 @@
 {
-  "hosting": {
-    "target": "netdev-blog",
-    "public": "_site",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "/v2/**2020-02-28-sample-markdown**",
-        "destination": "/2020-02-28-sample-markdown/index.html"
-      },
-      {
-        "source": "/**2020-02-28-sample-markdown**",
-        "destination": "/2020-02-28-sample-markdown/index.html"
-      },
-      {
-        "source": "/admin/**",
-        "destination": "/admin/index.html"
-      }
-    ],
-    "headers": [
-      {
-        "source": "**",
-        "headers": [
-          { "key": "X-Content-Type-Options", "value": "nosniff" },
-          { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
-          { "key": "X-XSS-Protection", "value": "1; mode=block" },
-          { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
-          { "key": "Strict-Transport-Security", "value": "max-age=31536000; includeSubDomains" }
-        ]
-      },
-      {
-        "source": "**/*.@(jpg|jpeg|gif|png|svg|webp|js|css)",
-        "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "max-age=31536000, immutable"
-          }
-        ]
-      }
-    ]
-  }
+  "hosting": [
+    {
+      "target": "netdev-blog",
+      "public": "_site",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "/v2/**2020-02-28-sample-markdown**",
+          "destination": "/2020-02-28-sample-markdown/index.html"
+        },
+        {
+          "source": "/**2020-02-28-sample-markdown**",
+          "destination": "/2020-02-28-sample-markdown/index.html"
+        },
+        {
+          "source": "/admin/**",
+          "destination": "/admin/index.html"
+        }
+      ],
+      "headers": [
+        {
+          "source": "**",
+          "headers": [
+            { "key": "X-Content-Type-Options", "value": "nosniff" },
+            { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
+            { "key": "X-XSS-Protection", "value": "1; mode=block" },
+            { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+            { "key": "Strict-Transport-Security", "value": "max-age=31536000; includeSubDomains" }
+          ]
+        },
+        {
+          "source": "**/*.@(jpg|jpeg|gif|png|svg|webp|js|css)",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "max-age=31536000, immutable"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "target": "netdev-firebase",
+      "public": "_site",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "/v2/**2020-02-28-sample-markdown**",
+          "destination": "/2020-02-28-sample-markdown/index.html"
+        },
+        {
+          "source": "/**2020-02-28-sample-markdown**",
+          "destination": "/2020-02-28-sample-markdown/index.html"
+        },
+        {
+          "source": "/admin/**",
+          "destination": "/admin/index.html"
+        }
+      ],
+      "headers": [
+        {
+          "source": "**",
+          "headers": [
+            { "key": "X-Content-Type-Options", "value": "nosniff" },
+            { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
+            { "key": "X-XSS-Protection", "value": "1; mode=block" },
+            { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+            { "key": "Strict-Transport-Security", "value": "max-age=31536000; includeSubDomains" }
+          ]
+        },
+        {
+          "source": "**/*.@(jpg|jpeg|gif|png|svg|webp|js|css)",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "max-age=31536000, immutable"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
