@@ -10,11 +10,11 @@
     "rewrites": [
       {
         "source": "/v2/**2020-02-28-sample-markdown**",
-        "destination": "/v2/blog/2020-02-28-sample-markdown/index.html"
+        "destination": "/2020-02-28-sample-markdown/index.html"
       },
       {
         "source": "/**2020-02-28-sample-markdown**",
-        "destination": "/blog/2020-02-28-sample-markdown/index.html"
+        "destination": "/2020-02-28-sample-markdown/index.html"
       },
       {
         "source": "/admin/**",
