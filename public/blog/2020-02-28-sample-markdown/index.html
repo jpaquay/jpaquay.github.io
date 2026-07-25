@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="minimal">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Markdown Post: Belgian Delicacies & Infinite Coffee Loops | /net/dev</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.credly.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../../styles.css">
+  <style>
+    .post-wrapper {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+    .post-banner-frame {
+      width: 100%;
+      height: 340px;
+      border-radius: var(--card-radius, 16px);
+      overflow: hidden;
+      margin-bottom: 32px;
+      position: relative;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--glow-shadow);
+    }
+    .post-banner-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .post-banner-caption {
+      position: absolute;
+      bottom: 0;
+      inset-inline: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);
+      padding: 24px;
+      color: #fff;
+    }
+    .post-meta-strip {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+    }
+    .post-tag {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      padding: 3px 10px;
+      border-radius: 999px;
+      color: var(--accent-primary);
+      font-size: 0.78rem;
+      font-weight: 600;
+    }
+    .belgian-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      margin: 28px 0;
+    }
+    .food-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--card-radius, 14px);
+      overflow: hidden;
+      box-shadow: var(--glow-shadow);
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+    .food-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--accent-primary);
+    }
+    .food-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .food-card-body {
+      padding: 16px;
+    }
+    .food-card-body h4 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: var(--text-primary);
+    }
+    .food-card-body p {
+      font-size: 0.84rem;
+      color: var(--text-secondary);
+      line-height: 1.45;
+    }
+    /* Animated Live Code Box */
+    .animated-code-box {
+      background: #090d16;
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      margin: 28px 0;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+    .animated-code-header {
+      background: rgba(255,255,255,0.05);
+      padding: 12px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .animated-code-title {
+      font-family: var(--font-code);
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--accent-primary);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .status-beacon {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #10b981;
+      box-shadow: 0 0 10px #10b981;
+      animation: pulse-beacon 1.2s infinite;
+    }
+    @keyframes pulse-beacon {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.85); }
+    }
+    .animated-code-pre {
+      padding: 18px;
+      margin: 0;
+      font-family: var(--font-code);
+      font-size: 0.86rem;
+      color: #e2e8f0;
+      overflow-x: auto;
+      line-height: 1.6;
+    }
+    .live-terminal-ticker {
+      background: #03060b;
+      border-top: 1px solid var(--border-color);
+      padding: 10px 18px;
+      font-family: var(--font-code);
+      font-size: 0.8rem;
+      color: #34d399;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .back-btn-strip {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+    .back-link {
+      color: var(--accent-primary);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="post-wrapper">
+    <div class="back-btn-strip">
+      <a href="../../../#garage" class="back-link">← Back to Jerome Paquay /net/dev (v1)</a>
+      <span class="post-tag">v1 Portfolio Post</span>
+    </div>
+
+    <!-- Banner Media: Coffee Inspired Picture -->
+    <div class="post-banner-frame">
+      <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1400&q=80" alt="Artisanal Espresso Coffee Beans Banner">
+      <div class="post-banner-caption">
+        <span class="post-tag">⚡ Architecture & Culinary Essays</span>
+        <h1 style="font-size: 2.1rem; font-weight: 800; margin-top: 6px;">Sample Markdown Post: Belgian Delicacies & Endless Coffee Loops</h1>
+      </div>
+    </div>
+
+    <div class="post-meta-strip">
+      <span>✍️ Author: <strong>Jerome Paquay</strong></span>
+      <span>📅 Published: <strong>February 28, 2020</strong></span>
+      <span>📍 Brussels, Belgium 🇧🇪</span>
+      <span>☕ Energy Source: <strong>Continuous Espresso</strong></span>
+    </div>
+
+    <p style="font-size: 1.1rem; line-height: 1.7; color: var(--text-primary); margin-bottom: 24px;">
+      Welcome to this technical markdown essay! Beyond design patterns and enterprise public-sector cloud architectures, great engineering requires two foundational inputs: high-octane <strong>Belgian Coffee</strong> and authentic <strong>Belgian Culinary Delicacies</strong>. Forget generic pancakes—here is how true Belgian technologists build system invariants.
+    </p>
+
+    <!-- Animated Code Box 1: Infinite Java Coffee Consumer -->
+    <div class="animated-code-box">
+      <div class="animated-code-header">
+        <div class="animated-code-title">
+          <span class="status-beacon"></span>
+          <span>CoffeeConsumerStream.java — Infinite Fuel Thread</span>
+        </div>
+        <button class="btn-sm" id="coffee-toggle-btn" style="padding: 4px 10px; font-size: 0.76rem; cursor:pointer;">⏸ Pause Steam</button>
+      </div>
+      <pre class="animated-code-pre"><code><span style="color:#f472b6;">import</span> java.util.function.Consumer;
+
+<span style="color:#38bdf8;">public class</span> <span style="color:#facc15;">ContinuousTechnologist</span> {
+    <span style="color:#38bdf8;">public static void</span> <span style="color:#60a5fa;">main</span>(String[] args) {
+        Consumer&lt;Coffee&gt; drinkCoffee = coffee -&gt; {
+            System.out.println(<span style="color:#4ade80;">"Sipping Belgian roasted espresso... Energy=10x"</span>);
+        };
+
+        <span style="color:#f472b6;">while</span> (<span style="color:#f472b6;">true</span>) {
+            drinkCoffee.accept(<span style="color:#f472b6;">new</span> Coffee());
+        }
+    }
+}</code></pre>
+      <div class="live-terminal-ticker" id="coffee-ticker">
+        <span>☕ [LIVE LOOP INVARIANT] Processing stream... Cup counter: <strong id="cup-counter">4,812</strong></span>
+        <span>CPU Temp: 38°C • Alert: nominal</span>
+      </div>
+    </div>
+
+    <h2 style="font-size: 1.6rem; font-weight: 700; margin: 36px 0 14px; color: var(--text-primary);">
+      🇧🇪 Farewell Pancakes: The Authentic Belgian Gastronomy
+    </h2>
+    <p style="line-height: 1.65; color: var(--text-secondary);">
+      In many technical documentation boilerplates, you find generic pancakes or french crepes. Raised in Brussels, we uphold strict standards. Here are the four authentic culinary masterpieces of Belgian engineering:
+    </p>
+
+    <!-- Belgian Delicacies Showcase (Waffles, Fries, Mussels, Stoemp) -->
+    <div class="belgian-grid">
+      <div class="food-card">
+        <img src="https://images.unsplash.com/photo-1562376552-0d160a2f238d?auto=format&fit=crop&w=800&q=80" alt="Belgian Waffles">
+        <div class="food-card-body">
+          <h4>🧇 Gaufres de Bruxelles / Liège</h4>
+          <p>Crispy pearl-sugar caramelized Liège waffles or light airy rectangular Brussels waffles dusted with icing sugar.</p>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <img src="https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=800&q=80" alt="Belgian Fries">
+        <div class="food-card-body">
+          <h4>🍟 Double-Fried Belgian Frites</h4>
+          <p>Bintje potatoes twice-fried in ox tallow for an ultracrispy shell and fluffy core, served in a traditional cornnet with mayo.</p>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <img src="https://images.unsplash.com/photo-1559737679-b1d5bfcd32f3?auto=format&fit=crop&w=800&q=80" alt="Belgian Moules Frites">
+        <div class="food-card-body">
+          <h4>🦪 Moules-Frites à la Marinière</h4>
+          <p>Black enamel pots of fresh Zeeland mussels steamed with white wine, crisp celery, butter, and shallots.</p>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Stoemp_sauce_groene_kool.jpg/800px-Stoemp_sauce_groene_kool.jpg" alt="Belgian Stoemp">
+        <div class="food-card-body">
+          <h4>🍲 Traditional Brussels Stoemp</h4>
+          <p>Rustic purée of potatoes whipped with savoy cabbage, carrots, or leeks, paired with pan-seared artisan sausage.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Animated Code Box 2: Python Continuous Learning Forever Loop -->
+    <h2 style="font-size: 1.6rem; font-weight: 700; margin: 36px 0 14px; color: var(--text-primary);">
+      🤖 Python Continuous Learning Swarm Process
+    </h2>
+    <p style="line-height: 1.65; color: var(--text-secondary);">
+      Just like human taste buds evolve, autonomous AI feedback loops run non-stop learning phases:
+    </p>
+
+    <div class="animated-code-box">
+      <div class="animated-code-header">
+        <div class="animated-code-title">
+          <span class="status-beacon" style="background:#38bdf8; box-shadow:0 0 10px #38bdf8;"></span>
+          <span>continuous_learning.py — Autonomous Model Weight Update</span>
+        </div>
+        <span style="font-size:0.75rem; color:#94a3b8;">Python 3.12 • Agent Development Kit</span>
+      </div>
+      <pre class="animated-code-pre"><code><span style="color:#f472b6;">import</span> time
+
+<span style="color:#f472b6;">def</span> <span style="color:#60a5fa;">continuous_learning_loop</span>():
+    <span style="color:#64748b;"># Loop continuously as long as the condition remains True</span>
+    <span style="color:#f472b6;">while</span> <span style="color:#f472b6;">True</span>:
+        <span style="color:#64748b;"># Check if continuous learning is still occurring/available</span>
+        has_new_knowledge = check_for_new_data()
+        
+        <span style="color:#f472b6;">if not</span> has_new_knowledge:
+            print(<span style="color:#4ade80;">"Continuous learning stopped. Exiting loop."</span>)
+            <span style="color:#f472b6;">break</span>  <span style="color:#64748b;"># Terminates the forever loop gracefully</span>
+            
+        <span style="color:#64748b;"># Execute the "do forever loop on learning" block</span>
+        execute_learning_process()
+        
+        <span style="color:#64748b;"># Brief pause to prevent high CPU utilization</span>
+        time.sleep(<span style="color:#f87171;">1</span>)
+
+<span style="color:#f472b6;">def</span> <span style="color:#60a5fa;">check_for_new_data</span>() -&gt; <span style="color:#38bdf8;">bool</span>:
+    <span style="color:#64748b;">"""Simulates checking for new info or feedback loops."""</span>
+    <span style="color:#f472b6;">return</span> <span style="color:#f472b6;">True</span> 
+
+<span style="color:#f472b6;">def</span> <span style="color:#60a5fa;">execute_learning_process</span>():
+    <span style="color:#64748b;">"""Simulates the actual learning or model-updating process."""</span>
+    print(<span style="color:#4ade80;">"Learning phase active: Updating knowledge weights..."</span>)
+
+<span style="color:#f472b6;">if</span> __name__ == <span style="color:#4ade80;">"__main__"</span>:
+    continuous_learning_loop()</code></pre>
+      <div class="live-terminal-ticker" id="ai-ticker">
+        <span id="ai-status-text">▶ [PY-WORKER-09] Learning phase active: Updating knowledge weights... (loss=0.0014)</span>
+        <span>ADK Swarm Active ✓</span>
+      </div>
+    </div>
+
+    <!-- Embedded YouTube Player -->
+    <h2 style="font-size: 1.6rem; font-weight: 700; margin: 36px 0 14px; color: var(--text-primary);">
+      🎬 Tech Talk Video Player
+    </h2>
+    <div style="background: var(--bg-card); padding: 16px; border-radius: 16px; border: 1px solid var(--border-color);">
+      <iframe width="100%" height="460" src="https://www.youtube.com/embed/UGtKGX8B9hU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius:12px; display:block;"></iframe>
+    </div>
+
+  </div>
+
+  <script>
+    // Live Cup Counter Animation
+    let cups = 4812;
+    let coffeeRunning = true;
+    const cupCounterEl = document.getElementById('cup-counter');
+    const coffeeBtn = document.getElementById('coffee-toggle-btn');
+
+    setInterval(() => {
+      if (coffeeRunning && cupCounterEl) {
+        cups++;
+        cupCounterEl.textContent = cups.toLocaleString();
+      }
+    }, 450);
+
+    if (coffeeBtn) {
+      coffeeBtn.addEventListener('click', () => {
+        coffeeRunning = !coffeeRunning;
+        coffeeBtn.textContent = coffeeRunning ? '⏸ Pause Stream' : '▶ Resume Stream';
+      });
+    }
+
+    // Live AI Learner Animation
+    const aiStatusEl = document.getElementById('ai-status-text');
+    let epoch = 512;
+    setInterval(() => {
+      if (aiStatusEl) {
+        epoch++;
+        const loss = (0.0019 - (epoch % 30) * 0.00004).toFixed(5);
+        aiStatusEl.textContent = `▶ [PY-WORKER-09] Learning phase active: Updating knowledge weights... (epoch=${epoch}, loss=${loss})`;
+      }
+    }, 1000);
+  </script>
+</body>
+</html>

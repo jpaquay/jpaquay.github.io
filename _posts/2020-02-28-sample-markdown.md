@@ -1,100 +1,116 @@
 ---
 layout: post
-title: Sample blog post to learn markdown tips
-subtitle: There's lots to learn!
+title: Sample Markdown Post & Technical Notes
+subtitle: Belgian Delicacies, Endless Coffee Loops & Agentic Learning
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
-tags: [test]
+tags: [blog, coffee, belgian, ai, code]
 comments: true
 mathjax: true
-author: Bill Smith
+author: Jerome Paquay
+banner_image: https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1400&q=80
 ---
 
+![Fresh Artisanal Coffee Banner](https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1400&q=80){: .mx-auto.d-block.banner-media :}
+
 {: .box-success}
-This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](https:/markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/tables/etc.<br/>I also encourage you to look at the [code that created this post](https:/raw.githubusercontent.com/daattali/beautiful-jekyll/master/_posts/2020-02-28-sample-markdown.md) to learn some more advanced tips about using markdown in Beautiful Jekyll.
+Welcome to this interactive markdown showcase! Updated with **Belgian Culinary Delicacies**, **Infinite Coffee Consumer Loops**, **Continuous AI Learning Swarms**, and embedded multimedia.
 
-**Here is some bold text**
+---
 
-## Here is a secondary heading
+## ☕ The Infinite Coffee Fuel Loop
 
-[This is a link to a different site](https:/deanattali.com/) and [this is a link to a section inside this page](#local-urls).
+As an enterprise engineer & dad of 3, coffee is not just a beverage—it's an invariant functional stream:
 
-Here's a table:
+```java
+// Funny Java Infinite Coffee Consumer Loop ☕
+Consumer<Coffee> drinkCoffee = coffee -> {
+    System.out.println("Sip artisanal espresso... ⚡ Energy +10x");
+};
 
-| Number | Next number | Previous number |
-| :------ |:--- | :--- |
-| Five | Six | Four |
-| Ten | Eleven | Nine |
-| Seven | Eight | Six |
-| Two | Three | One |
-
-You can use [MathJax](https:/www.mathjax.org/) to write LaTeX expressions. For example:
-When \\(a \ne 0\\), there are two solutions to \\(ax^2 + bx + c = 0\\) and they are $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
-
-How about a yummy crepe?
-
-![Crepe](/assets/img/posts/crepe.jpg)
-
-It can also be centered!
-
-![Crepe](/assets/img/posts/crepe.jpg){: .mx-auto.d-block :}
-
-Here's a code chunk:
-
-~~~
-var foo = function(x) {
-  return(x + 5);
+while (true) {
+    drinkCoffee.accept(new Coffee());
 }
-foo(3)
-~~~
-
-And here is the same code with syntax highlighting:
-
-```javascript
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
 ```
 
-And here is the same code yet again but with line numbers:
+---
 
-{% highlight javascript linenos %}
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-{% endhighlight %}
+## 🇧🇪 Forget Pancakes: The True Belgian Delicacies
 
-## Boxes
-You can add notification, warning and error boxes like this:
+Why settle for generic pancakes or crepes when you can indulge in legendary Belgian gastronomy? Born and raised in Brussels 🇧🇪, here are the non-negotiables:
 
-### Notification
+### 1. 🧇 Brussels & Liège Waffles (*Gaufres de Bruxelles*)
+Crispy caramelized pearls of sugar or light rectangular golden perfection.
+
+![Authentic Belgian Waffles](https://images.unsplash.com/photo-1562376552-0d160a2f238d?auto=format&fit=crop&w=800&q=80){: .mx-auto.d-block :}
+
+### 2. 🍟 Double-Fried Belgian Frites (*Belgische Frieten*)
+Twice-fried in bœuf tallow, served in a paper cone with homemade Belgian mayonnaise.
+
+![Belgian Frites](https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=800&q=80){: .mx-auto.d-block :}
+
+### 3. 🦪 Moules-Frites (*Zeeland Mussels in White Wine*)
+Steaming black pots of fresh North Sea mussels cooked with white wine, celery, and shallots.
+
+![Moules-Frites](https://images.unsplash.com/photo-1559737679-b1d5bfcd32f3?auto=format&fit=crop&w=800&q=80){: .mx-auto.d-block :}
+
+### 4. 🍲 Traditional Brussels Stoemp
+Hearty mashed potatoes blended with winter kale, carrots, or leeks, topped with seared sausage.
+
+![Traditional Belgian Stoemp](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Stoemp_sauce_groene_kool.jpg/800px-Stoemp_sauce_groene_kool.jpg){: .mx-auto.d-block :}
+
+---
+
+## 🤖 Continuous Agentic Learning Process in Python
+
+Below is an automated feedback loop for agentic self-improvement:
+
+```python
+import time
+
+def continuous_learning_loop():
+    # Loop continuously as long as the condition remains True
+    while True:
+        # Check if continuous learning is still occurring/available
+        has_new_knowledge = check_for_new_data()
+        
+        if not has_new_knowledge:
+            print("Continuous learning stopped. Exiting loop.")
+            break  # Terminates the forever loop gracefully
+            
+        # Execute the "do forever loop on learning" block
+        execute_learning_process()
+        
+        # Brief pause to prevent high CPU utilization
+        time.sleep(1)
+
+def check_for_new_data() -> bool:
+    """Simulates checking for new info or feedback loops."""
+    # Replace with real logic (e.g., checking an API, database, or stream)
+    return True 
+
+def execute_learning_process():
+    """Simulates the actual learning or model-updating process."""
+    print("Learning phase active: Updating knowledge weights...")
+
+# Execute the process
+if __name__ == "__main__":
+    continuous_learning_loop()
+```
+
+---
+
+## 🎬 Featured Tech Talk & Presentation
+
+Check out this technical presentation embedded directly:
+
+<iframe width="100%" height="450" src="https://www.youtube.com/embed/UGtKGX8B9hU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius:12px; margin:20px 0; border: 1px solid rgba(255,255,255,0.15);"></iframe>
+
+---
+
+## MathJax & Technical Proofs
+
+When \\(a \ne 0\\), the quadratic formula yields $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 
 {: .box-note}
-**Note:** This is a notification box.
-
-### Warning
-
-{: .box-warning}
-**Warning:** This is a warning box.
-
-### Error
-
-{: .box-error}
-**Error:** This is an error box.
-
-## Local URLs in project sites {#local-urls}
-
-When hosting a *project site* on GitHub Pages (for example, `https:/USERNAME.github.io/MyProject`), URLs that begin with `/` and refer to local files may not work correctly due to how the root URL (`/`) is interpreted by GitHub Pages. You can read more about it [in the FAQ](https:/beautifuljekyll.com/faq/#links-in-project-page). To demonstrate the issue, the following local image will be broken **if your site is a project site:**
-
-![Crepe](/assets/img/posts/crepe.jpg)
-
-If the above image is broken, then you'll need to follow the instructions [in the FAQ](https:/beautifuljekyll.com/faq/#links-in-project-page). Here is proof that it can be fixed:
-
-![Crepe]({{ '/assets/img/posts/crepe.jpg' | relative_url }})
-
-<details markdown="1">
-<summary>Click here!</summary>
-Here you can see an **expandable** section
-</details>
+**Note:** Built with ❤️ in Brussels, Belgium 🇧🇪.
