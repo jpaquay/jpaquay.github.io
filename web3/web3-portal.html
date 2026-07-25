@@ -488,14 +488,25 @@
           </div>
         </div>
 
-        <div class="iframe-wrapper">
+        <div class="iframe-wrapper" id="portal-frame-wrapper">
           <iframe
+            id="web3-iframe"
             src="https://web3.netdev.be/"
             title="Jerome Paquay Hugo-Astro Web3 Blog"
             loading="lazy"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"
             sandbox="allow-scripts allow-same-origin allow-popups allow-forms">
           </iframe>
+          <div class="iframe-fallback" id="frame-fallback-hud" style="display:none;">
+            <span style="font-size:2rem; margin-bottom:8px;">🛰️</span>
+            <h3 style="color:var(--border-neon); margin-bottom:6px; font-size:15px;">CROSS-DOMAIN FRAME SHIELD ACTIVE</h3>
+            <p style="color:var(--text-muted); font-size:12px; max-width:440px; margin-bottom:14px;">
+              Your browser policy or security shield prevented direct iframe embed of <code>web3.netdev.be</code>. Click below to launch in hyperwarp portal window:
+            </p>
+            <a href="https://web3.netdev.be/" target="_blank" rel="noopener" class="warp-hero-btn" style="padding:10px 22px; font-size:13px;">
+              <span>ENGAGE WEB3.NETDEV.BE DIRECTLY</span> <span>🚀</span>
+            </a>
+          </div>
         </div>
       </section>
 
