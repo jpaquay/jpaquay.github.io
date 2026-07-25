@@ -897,6 +897,7 @@ a:hover {
 .vp-sim-node-value {
   font-size: 1.05rem;
   font-weight: 700;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .vp-sim-log {
@@ -908,6 +909,117 @@ a:hover {
   border-radius: 8px;
   line-height: 1.5;
   border: 1px solid var(--vp-c-border);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vp-sim-log.pulse-alert {
+  border-color: #ef4444;
+  box-shadow: 0 0 15px rgba(239, 68, 68, 0.35);
+}
+
+.vp-sim-log.pulse-success {
+  border-color: #10b981;
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.35);
+}
+
+/* Smooth Simulator Progress Fills */
+#rsa-vuln-fill, #gke-pods-fill, #sre-latency-fill {
+  transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.4s ease;
+}
+
+/* Credly Badges in v2 */
+.vp-credly-wrapper {
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-border);
+  border-radius: 14px;
+  padding: 20px 24px;
+}
+
+.vp-credly-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.vp-credly-badge-pill {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--vp-c-brand);
+  background: var(--vp-c-brand-light);
+  padding: 4px 12px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.vp-credly-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.vp-credly-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--vp-c-bg);
+  border: 1px solid var(--vp-c-border);
+  border-radius: 12px;
+  padding: 16px 20px;
+  text-decoration: none;
+  color: var(--vp-c-text-1);
+  transition: all 0.25s ease;
+}
+
+.vp-credly-card:hover {
+  border-color: var(--vp-c-brand);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(56, 189, 248, 0.15);
+}
+
+.vp-credly-img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: drop-shadow(0 3px 6px rgba(0,0,0,0.25));
+}
+
+.vp-credly-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.vp-credly-issuer {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--vp-c-brand);
+  font-weight: 700;
+}
+
+.vp-credly-info h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.vp-credly-info p {
+  font-size: 0.8rem;
+  color: var(--vp-c-text-2);
+  line-height: 1.35;
+  margin: 0;
+}
+
+.vp-credly-link {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #10b981;
+  margin-top: 4px;
 }
 
 /* Contact Social Overlay Modal Box */
