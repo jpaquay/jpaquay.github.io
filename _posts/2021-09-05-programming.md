@@ -10,7 +10,7 @@ readtime: true
 ---
 
 {: .box-warning} 
-[Inspired by Jeff Dean's programming timeline thread](https://twitter.com/JeffDean/status/1627885526127874049)
+[Also have a look at Jeff Dean's programming timeline](https://twitter.com/JeffDean/status/1627885526127874049)
 
 A cozy chronological journey through thirty-five years of code, computers, paradigms, and stacks.
 
