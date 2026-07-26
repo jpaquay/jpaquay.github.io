@@ -19,7 +19,7 @@ graph TD
 
 ## Key Features & Structure
 
-* **Static Site Generator**: Built on **Jekyll 4.x** with custom responsiveness and performance optimizations.
+* **Static Site Generator**: Built on **Jekyll 5.x** with custom responsiveness and performance optimizations.
 * **Hosting Platform**: Automated build & deploy to **Firebase Hosting** (Project: `netdev-firebase`).
 * **Interactive Post Editor (`/admin`)**:
   * Rich-text Markdown editing with EasyMDE and live preview.
