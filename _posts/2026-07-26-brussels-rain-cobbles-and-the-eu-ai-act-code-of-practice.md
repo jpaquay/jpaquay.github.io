@@ -29,7 +29,7 @@ At the core of the EU AI Act’s Article 50 is a vital principle: citizens have 
 By signing the voluntary Code of Practice facilitated by the European AI Office, Google is reinforcing its long-standing commitment to **Safety by Design**:
 
 1. **Imperceptible Latent Watermarking**: Deploying Google DeepMind's breakthrough **SynthID** technology, which embeds invisible, tamper-resistant watermarks into AI-generated images, audio, video, and text without diminishing quality.
-2. **Open Content Credentials (C2PA)**: Championing open industry standards through the Coalition for Content Provenance and Authenticity (C2PA), enabling cross-platform verification across browsers, cameras, and media platforms.
+2. **Open Content Credentials (C2PA)**: Championing open industry standards through the Coalition for Content Authenticity and Provenance (C2PA), enabling cross-platform verification across browsers, cameras, and media platforms.
 3. **Empowering Citizens and Media**: Equipping journalists, researchers, election monitors, and everyday users with reliable tools to verify content provenance effortlessly.
 
 ```
