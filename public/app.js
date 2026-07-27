@@ -59,30 +59,10 @@ function initThemeSwitcher() {
     });
   });
 
-  // Restore Saved Theme (Default: Ocean Blue / minimal or saved)
-  const savedTheme = localStorage.getItem('vp-theme') || localStorage.getItem('cv-theme') || 'minimal';
-  htmlRoot.setAttribute('data-theme', savedTheme);
+  // Restore Saved Theme (Default: Ocean Blue / minimal)
+  const savedTheme = localStorage.getItem('cv-theme') || 'minimal';
   const targetBtn = document.querySelector(`.theme-btn[data-theme-id="${savedTheme}"]`);
-  if (targetBtn) {
-    themeButtons.forEach(b => b.classList.remove('active'));
-    targetBtn.classList.add('active');
-  }
-
-  const themeToggleBtn = document.getElementById('theme-toggle-btn');
-  if (themeToggleBtn) {
-    themeToggleBtn.addEventListener('click', () => {
-      const currentTheme = htmlRoot.getAttribute('data-theme') || 'minimal';
-      const newTheme = currentTheme === 'light' ? 'minimal' : 'light';
-      htmlRoot.setAttribute('data-theme', newTheme);
-      localStorage.setItem('vp-theme', newTheme);
-      localStorage.setItem('cv-theme', newTheme);
-      const btn = document.querySelector(`.theme-btn[data-theme-id="${newTheme}"]`);
-      if (btn) {
-        themeButtons.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-      }
-    });
-  }
+  if (targetBtn) targetBtn.click();
 }
 
 // 2. Attributes Grid Filter
