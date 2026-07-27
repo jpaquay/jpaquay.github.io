@@ -149,10 +149,23 @@ function initCodeSimulator() {
   const runBtn = document.getElementById('run-code-btn');
   const outputBox = document.getElementById('code-output-box');
 
-  runBtn.addEventListener('click', () => {
-    outputBox.classList.remove('hidden');
-    outputBox.innerHTML = `⚡ Executing: innovate("whats_next") ...<br>✨ <strong>Result:</strong> 10x Transformation Achieved! 🚀`;
-  });
+  if (runBtn && outputBox) {
+    let isRunning = false;
+    runBtn.addEventListener('click', () => {
+      if (isRunning) return;
+      isRunning = true;
+      outputBox.classList.remove('hidden');
+      outputBox.innerHTML = `⚙️ <span style="color:var(--accent-primary);">Compiling vector spaces...</span>`;
+      
+      setTimeout(() => {
+        outputBox.innerHTML = `⚡ Running <code>innovate("whats_next")</code>...<br>🔍 Applying 10x architectural force multiplier...`;
+        setTimeout(() => {
+          outputBox.innerHTML = `⚡ Running <code>innovate("whats_next")</code>...<br>🚀 <strong>Result: 10x Transformation Achieved!</strong>`;
+          isRunning = false;
+        }, 650);
+      }, 450);
+    });
+  }
 }
 
 // Eras Data for Merged Lifeline Slider
