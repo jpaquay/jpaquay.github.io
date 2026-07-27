@@ -69,6 +69,59 @@
   --glow-shadow: 0 0 15px rgba(0, 255, 102, 0.4);
 }
 
+[data-theme="light"] {
+  --bg-primary: #f8fafc;
+  --bg-secondary: #ffffff;
+  --bg-card: #ffffff;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --accent-primary: #0284c7;
+  --accent-secondary: #6366f1;
+  --accent-success: #16a34a;
+  --accent-warning: #d97706;
+  --border-color: #e2e8f0;
+  --font-main: 'Inter', system-ui, sans-serif;
+  --font-heading: 'Outfit', system-ui, sans-serif;
+  --font-code: 'Fira Code', monospace;
+  --card-radius: 16px;
+  --glow-shadow: 0 10px 30px -10px rgba(2, 132, 199, 0.15);
+}
+
+.vp-theme-toggle {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  flex-shrink: 0;
+}
+
+.vp-theme-toggle:hover {
+  color: var(--accent-primary);
+  transform: scale(1.06);
+}
+
+.vp-theme-toggle .sun-icon {
+  display: none;
+}
+.vp-theme-toggle .moon-icon {
+  display: block;
+}
+[data-theme="light"] .vp-theme-toggle .sun-icon {
+  display: block;
+}
+[data-theme="light"] .vp-theme-toggle .moon-icon {
+  display: none;
+}
+
 /* Base Styles */
 *, *::before, *::after {
   box-sizing: border-box;

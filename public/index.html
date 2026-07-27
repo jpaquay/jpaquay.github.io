@@ -24,6 +24,43 @@
       --font-mono: "Fira Code", "Cascadia Code", "JetBrains Mono", Consolas, monospace;
     }
 
+    [data-theme="light"] {
+      --bg-base: #f8fafc;
+      --bg-card: #ffffff;
+      --border-neon: #059669;
+      --border-dim: rgba(5, 150, 105, 0.25);
+      --pink-glitch: #d97706;
+      --cyan-cyber: #0284c7;
+      --amber-alert: #d97706;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+    }
+
+    .vp-theme-toggle {
+      background: var(--bg-card);
+      border: 1px solid var(--border-dim);
+      color: var(--text-main);
+      width: 28px;
+      height: 28px;
+      padding: 0;
+      border-radius: 50%;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+      vertical-align: middle;
+      margin-left: 6px;
+    }
+    .vp-theme-toggle:hover {
+      border-color: var(--border-neon);
+      transform: scale(1.08);
+    }
+    .vp-theme-toggle .sun-icon { display: none; }
+    .vp-theme-toggle .moon-icon { display: block; }
+    [data-theme="light"] .vp-theme-toggle .sun-icon { display: block; }
+    [data-theme="light"] .vp-theme-toggle .moon-icon { display: none; }
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -448,6 +485,22 @@
       <button class="cyber-btn-sm" id="btn-audio" title="Toggle Web Audio CRT Degauss & Hum">🔊 SFX: OFF</button>
       <button class="cyber-btn-sm" id="btn-scanlines" title="Toggle Scanline Flicker">📺 CRT FX</button>
       <button class="cyber-btn-sm cyber-btn-panic" id="btn-panic" title="Trigger System Chromatic Aberration">⚡ SYS_OVERLOAD</button>
+      <button class="vp-theme-toggle" id="theme-toggle-btn" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+        <svg class="sun-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
     </div>
   </div>
 
@@ -614,6 +667,25 @@
   <script>
     (function () {
       'use strict';
+
+      // 0. Dark / Light Theme Engine
+      const themeToggleBtn = document.getElementById('theme-toggle-btn');
+      const getSavedTheme = () => {
+        return localStorage.getItem('vp-theme') || 
+          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      };
+      const applyTheme = (theme) => {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('vp-theme', theme);
+      };
+      applyTheme(getSavedTheme());
+      if (themeToggleBtn) {
+        themeToggleBtn.addEventListener('click', () => {
+          const currentTheme = document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+          const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+          applyTheme(newTheme);
+        });
+      }
 
       // 1. Live UTC Clock
       const clockEl = document.getElementById('clock-ticker');
