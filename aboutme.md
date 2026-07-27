@@ -2,7 +2,7 @@
 layout: page
 title: About me
 subtitle: why date me 
-cover-img: /assets/img/author.jpg
+cover-img: /assets/img/ai_act_transparency_provenance_map.webp
 thumbnail-img: /assets/img/hello_world.jpg
 share-img: /assets/img/hello_world.jpg
 tags: [about, story]
