@@ -14,15 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const applyTheme = (theme) => {
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('vp-theme', theme);
-    if (themeIcon && themeLabel) {
-      if (theme === 'dark') {
-        themeIcon.textContent = '🌙';
-        themeLabel.textContent = 'Dark';
-      } else {
-        themeIcon.textContent = '☀️';
-        themeLabel.textContent = 'Light';
-      }
-    }
   };
 
   applyTheme(getSavedTheme());

@@ -205,20 +205,41 @@ a:hover {
   background: var(--vp-c-bg-soft);
   border: 1px solid var(--vp-c-border);
   color: var(--vp-c-text-1);
-  padding: 8px 14px;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  font-weight: 600;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border-radius: 50%;
   cursor: pointer;
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 6px;
-  transition: all 0.2s ease;
+  justify-content: center;
+  transition: border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  flex-shrink: 0;
 }
 
 .vp-theme-toggle:hover {
   border-color: var(--vp-c-brand);
-  transform: translateY(-1px);
+  color: var(--vp-c-brand);
+  transform: scale(1.06);
+}
+
+.vp-theme-toggle:focus-visible {
+  outline: 2px solid var(--vp-c-brand);
+  outline-offset: 2px;
+}
+
+.vp-theme-toggle .sun-icon {
+  display: none;
+}
+.vp-theme-toggle .moon-icon {
+  display: block;
+}
+[data-theme="dark"] .vp-theme-toggle .sun-icon {
+  display: block;
+}
+[data-theme="dark"] .vp-theme-toggle .moon-icon {
+  display: none;
 }
 
 /* Hero Section (VPHero) */
