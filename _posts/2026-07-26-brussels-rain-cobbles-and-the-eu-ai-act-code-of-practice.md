@@ -2,16 +2,16 @@
 layout: post
 title: "A View from Schuman: Celebrating Google's Signature on the EU AI Act Code of Practice"
 subtitle: "A 20-year Brussels tech policy veteran's perspective on how Google is empowering users, advancing transparency, and pioneering responsible AI."
-cover-img: /assets/img/posts/2026-07-26-brussels-eu-ai-act-commute.webp
-thumbnail-img: /assets/img/posts/2026-07-26-brussels-eu-ai-act-commute.webp
-share-img: /assets/img/posts/2026-07-26-brussels-eu-ai-act-commute.webp
+cover-img: /assets/img/posts/2026-07-26-ai-act-transparency-provenance-map.webp
+thumbnail-img: /assets/img/posts/2026-07-26-ai-act-transparency-provenance-map.webp
+share-img: /assets/img/posts/2026-07-26-ai-act-transparency-provenance-map.webp
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [eu-ai-act, brussels-policy, google-ai, ai-safety, synthid, c2pa, responsible-ai]
 readtime: true
 ---
 
-![Brussels Berlaymont Tech Policy Veteran](/assets/img/posts/2026-07-26-brussels-eu-ai-act-commute.webp)
+![Ghibli Terrace View Google Engineer Laptop](/assets/img/posts/2026-07-26-ai-act-transparency-provenance-map.webp)
 
 If you have spent two decades walking and cycling past the iconic curved facade of the Berlaymont, under the blue European Union flags flying over Rond-Point Schuman, you develop a deep appreciation for moments when technology and public policy move in harmony.
 
@@ -47,7 +47,7 @@ By signing the voluntary Code of Practice facilitated by the European AI Office,
 
 Looking back at the trajectory of European tech policy over the past two decades—from early discussions on e-commerce to GDPR, NIS2, and now the EU AI Act—one clear lesson emerges: **technology is at its best when it serves human dignity.**
 
-![Google AI Safety and Transparency Interface](/assets/img/posts/2026-07-26-ai-act-transparency-provenance-map.webp)
+![Brussels Berlaymont Tech Policy Veteran](/assets/img/posts/2026-07-26-brussels-eu-ai-act-commute.webp)
 
 Google’s decision to sign the Code of Practice reflects a proactive mindset. Rather than waiting for mandatory enforcement deadlines, Google has consistently led the industry by developing safety tools long before regulations took shape. From pioneering **SynthID** in DeepMind labs to open-sourcing safety evaluation datasets, Google has demonstrated that user safety and cutting-edge innovation go hand in hand.
 
