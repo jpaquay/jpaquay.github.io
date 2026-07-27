@@ -55,16 +55,18 @@ In our daily work across Google's engineering platforms, this translates to defa
 
 ---
 
-## 3. Real-Time Watermarking & Provenance in Action
+## 3. End-to-End Transparency Architecture
 
-To visualize how these transparency mechanisms function seamlessly in production, the media stream below illustrates real-time content credential tag verification powered by SynthID and C2PA standards:
+To see how these protections operate together in cloud systems, the architectural blueprint below illustrates the full journey from model output to public auditability:
 
-<video width="100%" autoplay loop muted playsinline poster="/assets/img/posts/2026-07-26-ai-act-transparency-provenance-map.webp">
-  <source src="/assets/img/posts/2026-07-26-eu-ai-act-transparency-watermark.webm" type="video/webm">
-  Your browser does not support high-definition video embeds.
-</video>
+![Cloud Platform Architectural Blueprint Implementation of EU AI Act Article 50](/assets/img/posts/2026-07-26-eu-ai-act-transparency-watermark.webp)
 
-*Figure 1: Demonstration of machine-readable Article 50 digital watermarks and content credentials protecting synthetic media.*
+*Figure 1: Implementation blueprint showing Generative Models feeding into the Cryptographic Provenance Engine (SynthID, C2PA, Cosign SLSA-3) and connecting to the European AI Office Compliance Audit ecosystem.*
+
+As shown in the blueprint:
+- **Generative Media Creation**: Image generators, text generation models, and video synthesis engines ingest content requests inside secure boundaries.
+- **Cryptographic Provenance Engine**: Watermarking services (SynthID) tag latent spaces, C2PA signing adds open content credentials, and supply chain attestations (Cosign SLSA-3) verify build integrity.
+- **Verifiable Content Integrity**: Public verification portals, authenticity APIs, transparency reports, and evidence collection logs feed directly into European AI Office compliance audits.
 
 ---
 
