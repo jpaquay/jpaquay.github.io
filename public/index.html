@@ -78,8 +78,8 @@
       position: relative;
     }
 
-    /* Lean CRT Scanlines Overlays */
-    body::before {
+    /* Lean CRT Scanlines Overlays (Off by default, active only when crt-flicker is enabled) */
+    body.crt-flicker::before {
       content: "";
       position: fixed;
       inset: 0;
@@ -127,7 +127,7 @@
       align-items: center;
       justify-content: space-between;
       gap: 10px;
-      background: #020403;
+      background: var(--bg-card);
       border-bottom: 1px solid var(--border-dim);
       padding: 8px 18px;
       font-size: 11px;
@@ -240,7 +240,7 @@
     .portal-title {
       font-size: 1.35rem;
       font-weight: 700;
-      color: #fff;
+      color: var(--text-main);
       margin-bottom: 4px;
       letter-spacing: -0.02em;
     }
@@ -274,7 +274,7 @@
 
     .warp-hero-btn:hover {
       background: var(--border-neon);
-      color: #000;
+      color: var(--bg-card);
       transform: translateY(-2px);
       box-shadow: 0 0 24px var(--border-neon);
     }
@@ -304,7 +304,7 @@
     }
 
     .console-header {
-      background: #020504;
+      background: var(--bg-card);
       border-bottom: 1px solid var(--border-dim);
       padding: 8px 14px;
       display: flex;
@@ -365,7 +365,7 @@
     .iframe-wrapper {
       flex: 1;
       width: 100%;
-      background: #000;
+      background: var(--bg-base);
       position: relative;
     }
 
@@ -374,6 +374,7 @@
       height: 100%;
       border: none;
       display: block;
+      background: var(--bg-base);
     }
 
     .iframe-fallback {
@@ -385,7 +386,7 @@
       justify-content: center;
       text-align: center;
       padding: 24px;
-      background: rgba(6, 9, 8, 0.94);
+      background: var(--bg-card);
       z-index: 1;
     }
 
@@ -394,9 +395,9 @@
       flex: 1;
       overflow-y: auto;
       padding: 12px;
-      background: #040706;
+      background: var(--bg-card);
       scrollbar-width: thin;
-      scrollbar-color: var(--border-neon) #040706;
+      scrollbar-color: var(--border-neon) var(--bg-card);
     }
 
     .twitter-scroll-area::-webkit-scrollbar {
@@ -409,7 +410,7 @@
 
     /* Fallback Cyber Card Stream for X Posts */
     .x-dispatch-card {
-      background: rgba(0, 255, 102, 0.03);
+      background: var(--bg-base);
       border: 1px solid var(--border-dim);
       border-left: 3px solid var(--cyan-cyber);
       padding: 12px 14px;
@@ -442,7 +443,7 @@
     .secret-overlay {
       position: fixed;
       inset: 0;
-      background: rgba(0, 0, 0, 0.92);
+      background: rgba(0, 0, 0, 0.75);
       display: none;
       align-items: center;
       justify-content: center;
@@ -455,7 +456,7 @@
     }
 
     .secret-card {
-      background: #0c1410;
+      background: var(--bg-card);
       border: 2px solid var(--amber-alert);
       box-shadow: 0 0 35px var(--amber-alert);
       max-width: 520px;
@@ -469,7 +470,7 @@
     }
   </style>
 </head>
-<body class="crt-flicker">
+<body>
 
   <!-- Telemetry Top Bar -->
   <div class="telemetry-bar">
@@ -677,6 +678,20 @@
       const applyTheme = (theme) => {
         document.documentElement.setAttribute('data-theme', theme);
         localStorage.setItem('vp-theme', theme);
+
+        // Update Twitter Timeline attribute
+        const twitterEl = document.querySelector('.twitter-timeline');
+        if (twitterEl) {
+          twitterEl.setAttribute('data-theme', theme);
+        }
+
+        // Propagate theme to v3.netdev.be iframe
+        const iframe = document.getElementById('web3-iframe');
+        if (iframe) {
+          try {
+            iframe.contentWindow.postMessage({ type: 'set-theme', theme: theme }, '*');
+          } catch(e) {}
+        }
       };
       applyTheme(getSavedTheme());
       if (themeToggleBtn) {
