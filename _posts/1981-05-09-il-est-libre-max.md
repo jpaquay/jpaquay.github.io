@@ -13,7 +13,7 @@ readtime: true
 
 ![Il est libre Max](/assets/img/posts/1981-05-09-il-est-libre-max.webp)
 
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2DaAogJhLRyVqvpazcVXj7?utm_source=generator&autoplay=1" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2DaAogJhLRyVqvpazcVXj7?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 Il met de la magie, mine de rien, dans tout ce qu'il fait  
 Il a le sourire facile, même pour les imbéciles  

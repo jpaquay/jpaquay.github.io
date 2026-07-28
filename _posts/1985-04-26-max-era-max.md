@@ -13,7 +13,7 @@ readtime: true
 
 ![Max era Max](/assets/img/posts/1985-04-26-max-era-max.webp)
 
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/68r4ENiIIMpJde4qZh3I4N?utm_source=generator&autoplay=1" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/68r4ENiIIMpJde4qZh3I4N?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 Max era Max  
 Più tranquillo che mai  
