@@ -4,7 +4,7 @@ title: Saint Of Souvenirs
 subtitle: Marion Brown, Poem
 cover-img: /assets/img/posts/1964-12-23-saint-of-souvenirs.jpg
 thumbnail-img: /assets/img/posts/1964-12-23-saint-of-souvenirs.jpg
-tags: [poems, mbs]
+tags: [marion-brown, poetry, 1960s, global]
 readtime: true
 ---
 

@@ -7,7 +7,7 @@ thumbnail-img: /assets/img/posts/2024-12-15-dora-devsecops.jpg
 share-img: /assets/img/posts/2024-12-15-dora-devsecops.jpg
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
-tags: [dora, nis2, devsecops, cloud, compliance, europe]
+tags: [jerome-paquay, tech-governance, 2020s, europe]
 readtime: true
 ---
 

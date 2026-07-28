@@ -7,7 +7,7 @@ thumbnail-img: /assets/img/posts/1981-05-09-il-est-libre-max.webp
 share-img: /assets/img/posts/1981-05-09-il-est-libre-max.webp
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
-tags: [music, max, herve-cristiani, 1981, poetry, youtube-music]
+tags: [herve-cristiani, music, 1980s, france]
 readtime: true
 ---
 

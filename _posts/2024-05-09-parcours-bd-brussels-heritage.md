@@ -7,7 +7,7 @@ thumbnail-img: /assets/img/posts/2024-05-09-parcours-bd-brussels-heritage.webp
 share-img: /assets/img/posts/2024-05-09-parcours-bd-brussels-heritage.webp
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
-tags: [brussels, bd, parcours-bd, urban-art, heritage, street-art, google-maps]
+tags: [jerome-paquay, urban-art, 2020s, brussels]
 readtime: true
 ---
 

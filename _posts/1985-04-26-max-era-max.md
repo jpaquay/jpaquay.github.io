@@ -7,7 +7,7 @@ thumbnail-img: /assets/img/posts/1985-04-26-max-era-max.webp
 share-img: /assets/img/posts/1985-04-26-max-era-max.webp
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
-tags: [music, max, paolo-conte, 1985, poetry, memory, youtube-music]
+tags: [paolo-conte, music, 1980s, italy]
 readtime: true
 ---
 

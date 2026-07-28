@@ -4,7 +4,7 @@ title: And why is the World
 subtitle: Marion Brown, Poem
 cover-img: /assets/img/posts/1982-12-23-why-is-the-world.jpg
 thumbnail-img: /assets/img/posts/1982-12-23-why-is-the-world.jpg
-tags: [poems, mbs]
+tags: [marion-brown, poetry, 1980s, global]
 readtime: true
 ---
 

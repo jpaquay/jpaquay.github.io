@@ -5,7 +5,7 @@ subtitle: in what order did you learn your languages?
 cover-img: /assets/img/posts/fosdem-network-2009.jpg
 thumbnail-img: /assets/img/posts/fosdem-2009.jpg
 share-img: /assets/img/posts/fosdem-network-2009.jpg
-tags: [random, tech, story, timeline]
+tags: [jerome-paquay, software-engineering, 2020s, belgium]
 readtime: true
 ---
 

@@ -7,7 +7,7 @@ thumbnail-img: /assets/img/posts/2026-03-30-agentic-sre.jpg
 share-img: /assets/img/posts/2026-03-30-agentic-sre.jpg
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
-tags: [sre, cloud-ops, observability, agentic-engineering, self-healing]
+tags: [jerome-paquay, sre, 2020s, global]
 readtime: true
 ---
 

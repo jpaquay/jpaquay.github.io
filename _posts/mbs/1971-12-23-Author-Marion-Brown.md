@@ -5,7 +5,7 @@ subtitle: Marion Brown
 cover-img: /assets/img/posts/1971-12-23-author-statement.jpg
 thumbnail-img: /assets/img/posts/1971-12-23-author-statement.jpg
 share-img: /assets/img/posts/1971-12-23-author-statement.jpg
-tags: [books, mbs]
+tags: [marion-brown, poetry, 1970s, new-york]
 comments: true
 readtime: true
 ---

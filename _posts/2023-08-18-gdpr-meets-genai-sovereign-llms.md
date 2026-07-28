@@ -7,7 +7,7 @@ thumbnail-img: /assets/img/posts/2023-08-15-gdpr-genai.jpg
 share-img: /assets/img/posts/2023-08-15-gdpr-genai.jpg
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
-tags: [ai, gdpr, cloud, europe, privacy]
+tags: [jerome-paquay, tech-governance, 2020s, europe]
 readtime: true
 ---
 

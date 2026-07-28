@@ -7,7 +7,7 @@ thumbnail-img: /assets/img/posts/2023-12-15-eu-ai-act.jpg
 share-img: /assets/img/posts/2023-12-15-eu-ai-act.jpg
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
-tags: [ai, ai-act, governance, cloud, europe]
+tags: [jerome-paquay, tech-governance, 2020s, brussels]
 readtime: true
 ---
 

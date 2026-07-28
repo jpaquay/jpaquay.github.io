@@ -7,7 +7,7 @@ thumbnail-img: /assets/img/posts/2024-08-15-cloud-outage.jpg
 share-img: /assets/img/posts/2024-08-15-cloud-outage.jpg
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
-tags: [cloud, resilience, devops, infrastructure, europe]
+tags: [jerome-paquay, sre, 2020s, europe]
 readtime: true
 ---
 

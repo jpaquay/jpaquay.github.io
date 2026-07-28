@@ -7,7 +7,7 @@ thumbnail-img: /assets/img/posts/logo.jpg
 share-img: /assets/img/posts/logo.jpg
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
-tags: [random, story]
+tags: [jerome-paquay, software-engineering, 2020s, global]
 readtime: true
 ---
 

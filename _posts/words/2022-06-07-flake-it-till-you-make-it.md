@@ -5,7 +5,7 @@ subtitle: Excerpt from Soulshaping by Jeff Brown
 cover-img: /assets/img/posts/sail.jpg
 thumbnail-img: /assets/img/posts/sail.jpg
 share-img: /assets/img/posts/sail.jpg
-tags: [books, create, story]
+tags: [jeff-brown, philosophy, 2020s, global]
 readtime: true
 ---
 

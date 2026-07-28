@@ -7,7 +7,7 @@ thumbnail-img: /assets/img/posts/2026-01-25-slsa-agentic.jpg
 share-img: /assets/img/posts/2026-01-25-slsa-agentic.jpg
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
-tags: [slsa, sdlc, cybersecurity, agentic-engineering, devops]
+tags: [jerome-paquay, cybersecurity, 2020s, global]
 readtime: true
 ---
 

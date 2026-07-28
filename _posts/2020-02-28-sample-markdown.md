@@ -5,7 +5,7 @@ subtitle: "Belgian Coffee, Frites, Gaufres & Systems Invariants"
 cover-img: /assets/img/posts/coffee-banner.jpg
 thumbnail-img: /assets/img/posts/coffee-banner.jpg
 share-img: /assets/img/posts/coffee-banner.jpg
-tags: [belgium, coffee, architecture, continuous-learning]
+tags: [jerome-paquay, software-engineering, 2020s, brussels]
 comments: true
 author: Jerome Paquay
 date: 2020-02-28

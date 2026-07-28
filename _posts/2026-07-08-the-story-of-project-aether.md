@@ -7,7 +7,7 @@ thumbnail-img: /assets/img/posts/2026-07-08-aether-genesis-banner.webp
 share-img: /assets/img/posts/2026-07-08-aether-genesis-banner.webp
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
-tags: [cloud-identity, aether, cloud-gaia, software-architecture, google3, reliability]
+tags: [jerome-paquay, cloud-computing, 2020s, global]
 readtime: true
 ---
 

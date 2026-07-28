@@ -7,7 +7,7 @@ thumbnail-img: /assets/img/posts/2024-04-15-belgian-cyber-shield.jpg
 share-img: /assets/img/posts/2024-04-15-belgian-cyber-shield.jpg
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
-tags: [cybersecurity, belgium, eu-presidency, cloud, soc]
+tags: [jerome-paquay, cybersecurity, 2020s, belgium]
 readtime: true
 ---
 

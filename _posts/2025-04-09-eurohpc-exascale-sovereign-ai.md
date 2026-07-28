@@ -7,7 +7,7 @@ thumbnail-img: /assets/img/posts/2025-04-15-eurohpc.jpg
 share-img: /assets/img/posts/2025-04-15-eurohpc.jpg
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
-tags: [eurohpc, ai, supercomputing, cloud, green-tech, europe]
+tags: [jerome-paquay, cloud-computing, 2020s, europe]
 readtime: true
 ---
 

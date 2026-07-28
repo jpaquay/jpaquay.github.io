@@ -7,7 +7,7 @@ thumbnail-img: /assets/img/posts/2026-07-17-pqc-cybersecurity-banner.webp
 share-img: /assets/img/posts/2026-07-17-pqc-cybersecurity-banner.webp
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
-tags: [cybersecurity, pqc, quantum-computing, zero-trust, gvisor, slsa-3, cloud-security]
+tags: [jerome-paquay, cybersecurity, 2020s, global]
 readtime: true
 ---
 

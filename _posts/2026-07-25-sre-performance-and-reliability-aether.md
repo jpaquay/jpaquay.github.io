@@ -7,7 +7,7 @@ thumbnail-img: /assets/img/posts/2026-07-25-sre-performance-banner.webp
 share-img: /assets/img/posts/2026-07-25-sre-performance-banner.webp
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
-tags: [sre, performance, opentelemetry, prometheus, kaniko, gvisor, aether, platform-engineering]
+tags: [jerome-paquay, sre, 2020s, global]
 readtime: true
 ---
 

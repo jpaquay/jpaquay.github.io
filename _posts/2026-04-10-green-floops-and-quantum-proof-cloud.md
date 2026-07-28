@@ -7,7 +7,7 @@ thumbnail-img: /assets/img/posts/2026-04-15-green-quantum-cloud.jpg
 share-img: /assets/img/posts/2026-04-15-green-quantum-cloud.jpg
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
-tags: [cloud, post-quantum, green-tech, zero-trust, europe, belgium]
+tags: [jerome-paquay, cloud-computing, 2020s, belgium]
 readtime: true
 ---
 

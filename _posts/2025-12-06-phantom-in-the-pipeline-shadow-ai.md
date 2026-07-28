@@ -7,7 +7,7 @@ thumbnail-img: /assets/img/posts/2025-12-15-shadow-ai.jpg
 share-img: /assets/img/posts/2025-12-15-shadow-ai.jpg
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
-tags: [cybersecurity, shadow-ai, prompt-injection, cloud, ai-security]
+tags: [jerome-paquay, cybersecurity, 2020s, europe]
 readtime: true
 ---
 

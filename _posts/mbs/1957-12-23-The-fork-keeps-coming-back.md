@@ -4,7 +4,7 @@ title: The fork keeps coming back
 subtitle: Marion Brown, Poem
 cover-img: /assets/img/posts/1957-12-23-fork-coming-back.jpg
 thumbnail-img: /assets/img/posts/1957-12-23-fork-coming-back.jpg
-tags: [story, mbs]
+tags: [marion-brown, poetry, 1950s, brussels]
 comments: false
 readtime: true
 ---

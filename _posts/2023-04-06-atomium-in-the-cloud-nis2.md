@@ -7,7 +7,7 @@ thumbnail-img: /assets/img/posts/2023-04-15-atomium-nis2.jpg
 share-img: /assets/img/posts/2023-04-15-atomium-nis2.jpg
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
-tags: [cybersecurity, cloud, nis2, belgium, europe]
+tags: [jerome-paquay, cybersecurity, 2020s, belgium]
 readtime: true
 ---
 

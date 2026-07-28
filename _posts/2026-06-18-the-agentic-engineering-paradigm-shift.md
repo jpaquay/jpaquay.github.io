@@ -7,7 +7,7 @@ thumbnail-img: /assets/img/posts/2026-06-15-agentic-paradigm.jpg
 share-img: /assets/img/posts/2026-06-15-agentic-paradigm.jpg
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
-tags: [agentic-engineering, sdlc, cloud, software-architecture, future-tech]
+tags: [jerome-paquay, cloud-computing, 2020s, global]
 readtime: true
 ---
 

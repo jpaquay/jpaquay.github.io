@@ -4,7 +4,7 @@ title: l’obsolescence de l’homme
 subtitle: Günther Anders
 cover-img: /assets/img/posts/sun.jpg
 thumbnail-img: /assets/img/posts/sun.jpg
-tags: [books, health, story]
+tags: [gunther-anders, philosophy, 1950s, germany]
 readtime: true
 ---
 

@@ -5,7 +5,7 @@ subtitle: Excerpt from Soulshaping by Jeff Brown
 cover-img: /assets/img/posts/path.jpg
 thumbnail-img: /assets/img/posts/thumb.png
 share-img: /assets/img/posts/path.jpg
-tags: [books, test]
+tags: [jeff-brown, philosophy, 2020s, global]
 author: Sharon Smith and Barry Simpson
 ---
 

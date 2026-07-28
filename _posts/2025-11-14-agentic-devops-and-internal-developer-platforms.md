@@ -7,7 +7,7 @@ thumbnail-img: /assets/img/posts/2025-11-20-agentic-idp.jpg
 share-img: /assets/img/posts/2025-11-20-agentic-idp.jpg
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
-tags: [devops, idp, agentic-engineering, cloud, platform-engineering]
+tags: [jerome-paquay, sre, 2020s, europe]
 readtime: true
 ---
 

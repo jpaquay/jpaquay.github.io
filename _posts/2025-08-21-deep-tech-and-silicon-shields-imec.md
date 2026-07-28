@@ -7,7 +7,7 @@ thumbnail-img: /assets/img/posts/2025-08-15-imec-silicon.jpg
 share-img: /assets/img/posts/2025-08-15-imec-silicon.jpg
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
-tags: [hardware, imec, belgium, confidential-computing, ai, cloud]
+tags: [jerome-paquay, cybersecurity, 2020s, belgium]
 readtime: true
 ---
 
