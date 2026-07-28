@@ -26,3 +26,7 @@ Non semplifica, Max
 Max, non si spiega  
 Fammi scendere, Max  
 Vedo un segreto avvicinarsi qui, Max  
+
+---
+
+![Deux frères](/assets/img/posts/1985-04-26-max-era-max-brothers.webp)
