@@ -7,13 +7,19 @@ thumbnail-img: /assets/img/posts/1981-05-09-il-est-libre-max.webp
 share-img: /assets/img/posts/1981-05-09-il-est-libre-max.webp
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
-tags: [music, max, herve-cristiani, 1981, poetry]
+tags: [music, max, herve-cristiani, 1981, poetry, musicbrainz]
 readtime: true
 ---
 
 ![Il est libre Max](/assets/img/posts/1981-05-09-il-est-libre-max.webp)
 
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2DaAogJhLRyVqvpazcVXj7?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<div style="background: rgba(0,0,0,0.03); border: 1px solid rgba(0,0,0,0.1); border-radius: 12px; padding: 16px; margin: 20px 0;">
+  <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+    <span>🎵 <strong>Hervé Cristiani — Il est libre Max (1981)</strong></span>
+    <small><a href="https://musicbrainz.org/release-group/8c7a8b41-3e4b-4b20-9118-e87f34f71a02" target="_blank" rel="noopener">Open Database: MusicBrainz ↗</a></small>
+  </div>
+  <iframe width="100%" height="180" src="https://www.youtube-nocookie.com/embed/5rM8pG3k_3E?controls=1" title="Hervé Cristiani - Il est libre Max" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 8px;"></iframe>
+</div>
 
 Il met de la magie, mine de rien, dans tout ce qu'il fait  
 Il a le sourire facile, même pour les imbéciles  
