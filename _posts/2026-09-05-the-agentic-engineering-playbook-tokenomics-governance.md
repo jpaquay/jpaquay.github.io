@@ -71,18 +71,9 @@ The raw token invoice you receive from cloud providers represents roughly **one-
 * Human-in-the-loop review overhead.
 * Upkeep against prompt drift and upstream model API changes.
 
-```
-                     ▲  Visible Token Spend (~1/3)
-                    / \  (Raw API invoices: prompt & completion tokens)
-                   /   \
-  ─────────────────┴───┴─────────────────────── [ WATERLINE ]
-                 /       \
-                /         \  Hidden Infrastructure & Governance (~2/3)
-               /           \  • Tool schemas & MCP Server maintenance
-              /             \ • OpenTelemetry tracing & logging infrastructure
-             /               \• Human-in-the-Loop triage & eval pipelines
-            /─────────────────\• SAIF security hardening & drift remediation
-```
+![The AI Cost Iceberg: Understanding the New Tokenomics](/assets/img/posts/2026-09-05-ai-cost-iceberg-tokenomics.webp)
+
+Understanding this ratio is vital for avoiding the "Maintenance Trap." While starting an agent project is cheap, the manual maintenance required to handle prompt drift and edge cases follows a punishing 100x difficulty curve. Smart strategists separate the "daily spend" of running agents from an "optimization budget" for autonomous self-evolution.
 
 ### 5. The 3 Stages of AI Cost Maturity
 
@@ -212,6 +203,241 @@ In Brussels, whether you are debating cybersecurity mandates at the Berlaymont o
 Treating your AI token invoice as a roadmap strips away the panic of variable billing and unlocks surgical unit economics. Embedding AI Governance by Design gives your autonomous "Gourmet Chefs" the guardrails and observability they need to earn production trust.
 
 The future of software engineering does not belong to whoever burns the most tokens or writes the longest system prompts. It belongs to the architects who build **transparent, cost-effective, and resilient kitchens that can stand the heat of real-world accountability**.
+
+---
+
+## 📸 Architectural Compendium & Storyboard Carousel
+
+Browse all three high-resolution architectural plates from this playbook:
+
+<div class="agentic-carousel-container">
+  <div class="agentic-carousel-viewer" id="agentic-viewer">
+    <div class="agentic-slide active" data-slide="0">
+      <img src="/assets/img/posts/2026-09-05-ai-tokenomics-framework.webp" alt="The AI Tokenomics Framework: Efficiency, Security, and Value" loading="eager" />
+      <div class="agentic-slide-caption">
+        <strong>Plate 1 / 3 — The AI Tokenomics Framework</strong>: 11 principles of token-efficient engineering, Elephant & Goldfish context strategies, and the economics of outcome.
+      </div>
+    </div>
+    <div class="agentic-slide" data-slide="1">
+      <img src="/assets/img/posts/2026-09-05-ai-cost-iceberg-tokenomics.webp" alt="The AI Cost Iceberg: Understanding the New Tokenomics" loading="lazy" />
+      <div class="agentic-slide-caption">
+        <strong>Plate 2 / 3 — The AI Cost Iceberg</strong>: Visualizing the visible 1/3 token tip versus the hidden 2/3 governance, integration, and upkeep base.
+      </div>
+    </div>
+    <div class="agentic-slide" data-slide="2">
+      <img src="/assets/img/posts/2026-09-05-agentic-trust-governance-storyboard.webp" alt="The Journey to Agentic Trust: AI Governance by Design Storyboard" loading="lazy" />
+      <div class="agentic-slide-caption">
+        <strong>Plate 3 / 3 — The Journey to Agentic Trust</strong>: The 7-panel blueprint for AI Governance by Design, Model Context Protocol (MCP), and the Quality Flywheel.
+      </div>
+    </div>
+  </div>
+
+  <!-- Carousel Controls -->
+  <div class="agentic-carousel-controls">
+    <button type="button" class="agentic-nav-btn" id="prev-agentic-slide" aria-label="Plate précédente">❮ Previous Plate</button>
+    <div class="agentic-carousel-dots" id="agentic-carousel-dots">
+      <!-- Generated dynamically -->
+    </div>
+    <button type="button" class="agentic-nav-btn" id="next-agentic-slide" aria-label="Plate suivante">Next Plate ❯</button>
+  </div>
+</div>
+
+<style>
+.agentic-carousel-container {
+  margin: 2rem 0;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.agentic-carousel-viewer {
+  position: relative;
+  width: 100%;
+  min-height: 440px;
+  background: #0f172a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.agentic-slide {
+  display: none;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeInAgentic 0.4s ease-in-out;
+}
+
+.agentic-slide.active {
+  display: flex;
+}
+
+.agentic-slide img {
+  max-height: 520px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  background: #090d16;
+}
+
+.agentic-slide-caption {
+  width: 100%;
+  padding: 12px 20px;
+  background: rgba(15, 23, 42, 0.95);
+  color: #f8fafc;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.agentic-slide-caption strong {
+  color: #38bdf8;
+}
+
+.agentic-carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: #ffffff;
+  border-top: 1px solid #e2e8f0;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.agentic-nav-btn {
+  background: #10b981;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, background-color 0.2s ease;
+}
+
+.agentic-nav-btn:hover {
+  background: #059669;
+  transform: scale(1.03);
+}
+
+.agentic-carousel-dots {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.agentic-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #94a3b8;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.agentic-dot.active {
+  background: #10b981;
+  transform: scale(1.35);
+  box-shadow: 0 0 8px rgba(16, 185, 129, 0.5);
+}
+
+@keyframes fadeInAgentic {
+  from { opacity: 0.3; transform: scale(0.99); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@media (max-width: 640px) {
+  .agentic-carousel-viewer {
+    min-height: 280px;
+  }
+  .agentic-slide img {
+    max-height: 320px;
+  }
+  .agentic-carousel-controls {
+    justify-content: center;
+  }
+}
+</style>
+
+<script>
+(function() {
+  function initAgenticCarousel() {
+    var slides = document.querySelectorAll('.agentic-slide');
+    var dotsContainer = document.getElementById('agentic-carousel-dots');
+    var prevBtn = document.getElementById('prev-agentic-slide');
+    var nextBtn = document.getElementById('next-agentic-slide');
+    var currentIndex = 0;
+
+    if (!slides.length || !dotsContainer) return;
+
+    dotsContainer.innerHTML = '';
+    slides.forEach(function(_, idx) {
+      var dot = document.createElement('span');
+      dot.className = 'agentic-dot' + (idx === 0 ? ' active' : '');
+      dot.setAttribute('aria-label', 'Go to plate ' + (idx + 1));
+      dot.addEventListener('click', function() {
+        showSlide(idx);
+      });
+      dotsContainer.appendChild(dot);
+    });
+
+    function showSlide(index) {
+      if (index < 0) index = slides.length - 1;
+      if (index >= slides.length) index = 0;
+      currentIndex = index;
+
+      slides.forEach(function(slide, idx) {
+        if (idx === currentIndex) {
+          slide.classList.add('active');
+        } else {
+          slide.classList.remove('active');
+        }
+      });
+
+      var dots = dotsContainer.querySelectorAll('.agentic-dot');
+      dots.forEach(function(dot, idx) {
+        if (idx === currentIndex) {
+          dot.classList.add('active');
+        } else {
+          dot.classList.remove('active');
+        }
+      });
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', function() {
+        showSlide(currentIndex - 1);
+      });
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', function() {
+        showSlide(currentIndex + 1);
+      });
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'ArrowLeft') showSlide(currentIndex - 1);
+      if (e.key === 'ArrowRight') showSlide(currentIndex + 1);
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAgenticCarousel);
+  } else {
+    initAgenticCarousel();
+  }
+})();
+</script>
 
 **Deep-Dive Companion Reads:**
 • [Why Your AI Bill is a Roadmap (Not a Budget Leak) on DEV.to](https://dev.to/jpaquay/why-your-ai-bill-is-a-roadmap-not-a-budget-leak-5-surprising-lessons-from-the-frontlines-of-4bgg)
