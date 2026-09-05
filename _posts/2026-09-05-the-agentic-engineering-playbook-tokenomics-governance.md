@@ -2,9 +2,9 @@
 layout: post
 title: "The Agentic Engineering Playbook: Why Your AI Bill is a Roadmap and Your Agent Needs an Architectural Mind"
 subtitle: "From tokenomics and the Elephant & Goldfish strategy to AI Governance by Design: 10x battle-tested lessons from the frontlines of agentic systems."
-cover-img: /assets/img/posts/2026-09-05-agentic-trust-governance-storyboard.webp
-thumbnail-img: /assets/img/posts/2026-09-05-agentic-trust-governance-storyboard.webp
-share-img: /assets/img/posts/2026-09-05-ai-tokenomics-framework.webp
+cover-img: /assets/img/posts/2026-09-05-ai-cost-iceberg-tokenomics.webp
+thumbnail-img: /assets/img/posts/2026-09-05-ai-cost-iceberg-tokenomics.webp
+share-img: /assets/img/posts/2026-09-05-ai-cost-iceberg-tokenomics.webp
 gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [jerome-paquay, tech-governance, 2020s, brussels]
@@ -12,7 +12,7 @@ date: 2026-09-05 18:00:00 +0200
 readtime: true
 ---
 
-![The Journey to Agentic Trust: AI Governance by Design Storyboard](/assets/img/posts/2026-09-05-agentic-trust-governance-storyboard.webp)
+![The AI Cost Iceberg: Understanding the New Tokenomics](/assets/img/posts/2026-09-05-ai-cost-iceberg-tokenomics.webp)
 
 If you have spent two decades walking between the glass offices of European institutions and the bustling cafés around Brussels' Grand Place, you learn that enduring systems are never built on raw speed alone. They are forged on **taste, fiscal discipline, and structural accountability**. 
 
@@ -71,8 +71,6 @@ The raw token invoice you receive from cloud providers represents roughly **one-
 * Human-in-the-loop review overhead.
 * Upkeep against prompt drift and upstream model API changes.
 
-![The AI Cost Iceberg: Understanding the New Tokenomics](/assets/img/posts/2026-09-05-ai-cost-iceberg-tokenomics.webp)
-
 Understanding this ratio is vital for avoiding the "Maintenance Trap." While starting an agent project is cheap, the manual maintenance required to handle prompt drift and edge cases follows a punishing 100x difficulty curve. Smart strategists separate the "daily spend" of running agents from an "optimization budget" for autonomous self-evolution.
 
 ### 5. The 3 Stages of AI Cost Maturity
@@ -86,6 +84,8 @@ Understanding this ratio is vital for avoiding the "Maintenance Trap." While sta
 ---
 
 # Part II: AI Governance by Design (AIGD) — The Gourmet Chef & Architectural Trust
+
+![The Journey to Agentic Trust: AI Governance by Design Storyboard](/assets/img/posts/2026-09-05-agentic-trust-governance-storyboard.webp)
 
 If Tokenomics represents the engine's fuel efficiency, **AI Governance by Design (AIGD)** is the chassis, brakes, and navigational intelligence that keep the vehicle on the road.
 
