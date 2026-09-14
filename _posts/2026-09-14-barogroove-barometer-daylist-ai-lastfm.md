@@ -14,6 +14,9 @@ Some weekends simply hit every single note.
 
 On Saturday, I stood pitchside at **Royal White Star HC** cheering on my son's field hockey team as they battled through the wet turf to a **4-2 victory**. On Sunday, it was my turn to lace up the shoes away at **Mechelen HC**—where my own team ground out a tight **1-2 win**. Two matches, two victories, sore calves, muddy shinguards, and that unbeatable post-game clubhouse buzz.
 
+![Manon and Jerome in the pre-game dugout supporting pitchside with love](/assets/img/posts/2026-09-14-barogroove-hockey-dugout-manon.webp)
+*Pre-game dugout moments with Manon—supporting pitchside with love before the whistle blew.*
+
 And in the quiet windows between Saturday's final whistle, Sunday's warm-up, and a bottomless moka pot of dark roast coffee? I finally sat down and shipped a fun weekend tinkering experiment: **Barogroove** (<a href="https://bg.netdev.be" target="_blank" rel="noopener">bg.netdev.be</a>) — a barometer-induced AI Daylist maker seeded by years of Last.fm scrobbles. The Python source code is up on GitHub at <a href="https://github.com/jpaquay/myshippedpy" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 5px; font-weight: 600;"><svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor" style="vertical-align: text-bottom;"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>jpaquay/myshippedpy</a>.
 
 ---
@@ -66,8 +69,9 @@ Look at that opening 5-track sequence on the **In-App Soundtrack Deck**:
 
 From Duster's lo-fi slowcore to Talk Talk's post-rock, Sunn O))) drone metal cathedral chords, Tinariwen desert blues, and Slowdive shoegaze—all locked to a 125 BPM storm-front pulse.
 
-**Weekend Engineering Lesson — Graceful Degradation & Transparency:** Notice two details in the screenshot above. First, when Spotify's Web API throws a classic `HTTP 429 (Too Many Requests)` rate-limit, Barogroove automatically writes an **annotated M3U playlist file (18 tracks, 1h40m45s)** with track-by-track AI reasoning embedded inside the file comments, alongside instant one-click links to play on **Spotify** or **YouTube Music**. Second, if a requested theme parameter degrades or falls back to live sky telemetry (`Theme degraded: unknown theme 'clear_high'; sky picked instead`), the UI surfaces it transparently.
-{: .box-note}
+<div class="box-note">
+<strong>Weekend Engineering Lesson — Graceful Degradation & Transparency:</strong> Notice two details in the screenshot above. First, when Spotify's Web API throws a classic <code>HTTP 429 (Too Many Requests)</code> rate-limit, Barogroove automatically writes an <strong>annotated M3U playlist file (18 tracks, 1h40m45s)</strong> with track-by-track AI reasoning embedded inside the file comments, alongside instant one-click links to play on <strong>Spotify</strong> or <strong>YouTube Music</strong>. Second, if a requested theme parameter degrades or falls back to live sky telemetry (<code>Theme degraded: unknown theme 'clear_high'; sky picked instead</code>), the UI surfaces it transparently.
+</div>
 
 ---
 
@@ -207,31 +211,37 @@ Browse the artwork and full-resolution UI screenshots from the weekend build bel
   <div class="bg-carousel-slide active">
     <img src="/assets/img/posts/2026-09-14-barogroove-hero.webp" alt="Barogroove Sonic Barometer and Vinyl Turntable in Brussels Studio" loading="lazy" />
     <div class="bg-carousel-caption">
-      <strong>1 / 5 — The Barogroove Concept</strong>: Merging analog barometric pressure, espresso-fueled weekend coding, and vinyl audiophile curation.
+      <strong>1 / 6 — The Barogroove Concept</strong>: Merging analog barometric pressure, espresso-fueled weekend coding, and vinyl audiophile curation.
+    </div>
+  </div>
+  <div class="bg-carousel-slide">
+    <img src="/assets/img/posts/2026-09-14-barogroove-hockey-dugout-manon.webp" alt="Manon and Jerome in the pre-game dugout supporting with love" loading="lazy" />
+    <div class="bg-carousel-caption">
+      <strong>2 / 6 — Pre-Game Dugout Support with Manon</strong>: Supporting pitchside with love between Saturday's 4-2 win at Royal White Star HC and Sunday's 1-2 win at Mechelen HC.
     </div>
   </div>
   <div class="bg-carousel-slide">
     <img src="/assets/img/posts/2026-09-14-barogroove-01-sonic-forge.webp" alt="Barogroove Atmospheric Sonic Forge UI" loading="lazy" />
     <div class="bg-carousel-caption">
-      <strong>2 / 5 — Atmospheric Sonic Forge</strong>: Teleporting across global street-art geo-caches (Parcours BD Brussels, East Side Gallery Berlin) with 8 Weather Themes and 8 Genre Corridor sliders.
+      <strong>3 / 6 — Atmospheric Sonic Forge</strong>: Teleporting across global street-art geo-caches (Parcours BD Brussels, East Side Gallery Berlin) with 8 Weather Themes and 8 Genre Corridor sliders.
     </div>
   </div>
   <div class="bg-carousel-slide">
     <img src="/assets/img/posts/2026-09-14-barogroove-02-daylist-set.webp" alt="Barogroove Barometric Daylist Set for Parcours BD Brussels" loading="lazy" />
     <div class="bg-carousel-caption">
-      <strong>3 / 5 — Storm Front Daylist Set (125 BPM)</strong>: Slowcore & lo-fi afternoon set for Parcours BD Brussels featuring Duster, Talk Talk, Sunn O))), Tinariwen, and Slowdive + annotated M3U export.
+      <strong>4 / 6 — Storm Front Daylist Set (125 BPM)</strong>: Slowcore & lo-fi afternoon set for Parcours BD Brussels featuring Duster, Talk Talk, Sunn O))), Tinariwen, and Slowdive + annotated M3U export.
     </div>
   </div>
   <div class="bg-carousel-slide">
     <img src="/assets/img/posts/2026-09-14-barogroove-03-dataviz-almanac.webp" alt="Barogroove Data Viz and BigQuery Almanac Analysis" loading="lazy" />
     <div class="bg-carousel-caption">
-      <strong>4 / 5 — 160,717 Scrobbles in BigQuery</strong>: Plain-language BigQuery agent analyzing 14 years of Last.fm history across weather regimes (Georges Brassens, Tryo, and Chinese Man leading the pack).
+      <strong>5 / 6 — 160,717 Scrobbles in BigQuery</strong>: Plain-language BigQuery agent analyzing 14 years of Last.fm history across weather regimes (Georges Brassens, Tryo, and Chinese Man leading the pack).
     </div>
   </div>
   <div class="bg-carousel-slide">
     <img src="/assets/img/posts/2026-09-14-barogroove-04-ai-telemetry-inspector.webp" alt="Barogroove 24-Hour Chronology and Conversational AI Assistant" loading="lazy" />
     <div class="bg-carousel-caption">
-      <strong>5 / 5 — 24-Hour Chronology & Voice/Chat Assistant</strong>: Daily scrobble activity peaking at 19:00 UTC alongside the interactive AI assistant drawer.
+      <strong>6 / 6 — 24-Hour Chronology & Voice/Chat Assistant</strong>: Daily scrobble activity peaking at 19:00 UTC alongside the interactive AI assistant drawer.
     </div>
   </div>
 
@@ -244,6 +254,7 @@ Browse the artwork and full-resolution UI screenshots from the weekend build bel
     <span class="bg-carousel-dot" onclick="setBgSlide(2)"></span>
     <span class="bg-carousel-dot" onclick="setBgSlide(3)"></span>
     <span class="bg-carousel-dot" onclick="setBgSlide(4)"></span>
+    <span class="bg-carousel-dot" onclick="setBgSlide(5)"></span>
   </div>
 </div>
 
