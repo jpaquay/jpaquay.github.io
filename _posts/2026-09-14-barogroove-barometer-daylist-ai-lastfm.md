@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Barogroove (bg.netdev.be): Barometric Pressure, 160,000 Last.fm Scrobbles, and a 2-0 Field Hockey Weekend"
-subtitle: "Weekend tinkering between two victorious hockey pitches and a bottomless espresso pot: building an atmospheric AI Daylist forge with Vertex AI Gemini 2.5 Flash, BigQuery, and street-art geo-caches."
+title: "Barogroove: When Barometric Pressure Meets 160,000 Last.fm Scrobbles"
+subtitle: "Weekend tinkering between espresso pots and rainy Brussels skies: building an atmospheric AI Daylist forge with Vertex AI Gemini 2.5 Flash, BigQuery, and street-art geo-caches."
 date: 2026-09-14
 cover-img: /assets/img/posts/2026-09-14-barogroove-hero.webp
 thumbnail-img: /assets/img/posts/2026-09-14-barogroove-hero.webp
@@ -12,20 +12,9 @@ readtime: true
 
 Some weekends simply hit every single note.
 
-On Saturday, I stood pitchside cheering on my son's field hockey team as they battled through the wet turf and brought home a well-deserved **victory**. On Sunday, it was my turn to lace up the shoes with my own field hockey team—and we ground out **another win**. Two matches, two victories, sore calves, muddy shinguards, and that unbeatable post-game clubhouse buzz.
+On Saturday, I stood pitchside at **Royal White Star HC** cheering on my son's field hockey team as they battled through the wet turf to a **4-2 victory**. On Sunday, it was my turn to lace up the shoes away at **Mechelen HC**—where my own team ground out a tight **1-2 win**. Two matches, two victories, sore calves, muddy shinguards, and that unbeatable post-game clubhouse buzz.
 
-And in the quiet windows between Saturday's final whistle, Sunday's warm-up, and a bottomless moka pot of dark roast coffee? I finally sat down and shipped the musical side-project that has been rattling around my head for months: **[Barogroove (bg.netdev.be)](https://bg.netdev.be)** — an atmospheric, barometer-induced AI Daylist maker anchored in twenty years of **Last.fm scrobbles**.
-
-<div style="display: flex; flex-wrap: wrap; gap: 14px; align-items: center; justify-content: center; margin: 2rem 0; padding: 1.25rem; background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); border-radius: 12px; border: 1px solid rgba(56, 189, 248, 0.25); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);">
-  <a href="https://bg.netdev.be" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 10px; padding: 10px 20px; background: #0284c7; color: #ffffff; font-weight: 600; border-radius: 8px; text-decoration: none; transition: all 0.2s ease; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.4);">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
-    <span>Launch Live App: <strong>bg.netdev.be</strong></span>
-  </a>
-  <a href="https://github.com/jpaquay/myshippedpy" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 10px; padding: 10px 20px; background: #24292f; color: #ffffff; font-weight: 600; border-radius: 8px; text-decoration: none; border: 1px solid rgba(255, 255, 255, 0.18); transition: all 0.2s ease;">
-    <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
-    <span>Source Code: <strong>github.com/jpaquay/myshippedpy</strong></span>
-  </a>
-</div>
+And in the quiet windows between Saturday's final whistle, Sunday's warm-up, and a bottomless moka pot of dark roast coffee? I finally sat down and shipped a fun weekend tinkering experiment: **Barogroove** (<a href="https://bg.netdev.be" target="_blank" rel="noopener">bg.netdev.be</a>) — a barometer-induced AI Daylist maker seeded by twenty years of Last.fm scrobbles. The Python source code is up on GitHub at <a href="https://github.com/jpaquay/myshippedpy" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 5px; font-weight: 600;"><svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor" style="vertical-align: text-bottom;"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>jpaquay/myshippedpy</a>.
 
 ---
 
@@ -43,7 +32,7 @@ More importantly, generic AI music tools suffer from **amnesia**: they hallucina
 
 ![Barogroove Atmospheric Sonic Forge UI showing street-art geo-caches, barometric readings, and Paolo Conte scrobble seed](/assets/img/posts/2026-09-14-barogroove-01-sonic-forge.webp)
 
-When you open **[Barogroove](https://bg.netdev.be)**, you don't pick a generic genre. You step into the **Atmospheric Sonic Forge**:
+When you open the app, you don't pick a generic genre. You step into the **Atmospheric Sonic Forge**:
 
 1. **World Street-Art Geo-Caches (Tap to Teleport)**: Instead of sterile city codes, Barogroove anchors its live weather telemetry (`Google Weather API`) to iconic global street-art corridors. With one click, you can teleport your barometer between:
    - 🎨 **Parcours BD Comic Strip Trail (Brussels)** — *Home turf*
@@ -116,7 +105,7 @@ Clicking the top-left status badge opens Barogroove's built-in **AI Telemetry, T
 - **Dual-Path Execution**: Full **Vertex AI Gemini 2.5 Flash** reasoning calls (like `POST /api/advisor/live` — *"Take me somewhere it is raining"*, orchestrating `teleport_geocache`, `select_sonic_parameters`, and `seed_from_almanac`) run alongside ultra-fast **A2UI deterministic fallbacks** that resolve UI state transitions in **1.5 ms** (`35 tokens`).
 - **Semantic Almanac DNA**: Persistent vector memories store personal listening nuances across sessions so the forge remembers that your idea of "Nordic Fog" leans acoustic rather than synth-wave.
 
-Not bad for forty-eight hours fueled by espresso and two field hockey victories. Feel free to take **[bg.netdev.be](https://bg.netdev.be)** for a spin, teleport to your favorite street-art wall, or dive into the Python source code over on GitHub at **[jpaquay/myshippedpy](https://github.com/jpaquay/myshippedpy)**!
+Not bad for forty-eight hours fueled by espresso and two field hockey wins. Feel free to teleport your own barometer to a favorite street-art wall or check out the Python code on GitHub!
 
 ---
 
