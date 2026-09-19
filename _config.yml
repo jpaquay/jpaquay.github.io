@@ -26,7 +26,7 @@ navbar-links:
     - go Hugo: "https://gohugo.io"
     - firebase : "https://netdev.be/v2"
     - about: "aboutme"
-    - web3: "https://blog.netdev.be/web3/web3-portal.html"
+    - web3: "https://web3.netdev.be/"
     - Blog v2: "https://web3.netdev.be/"
 
   

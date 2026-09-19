@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "netdev-firebase"
+  },
+  "targets": {
+    "netdev-firebase": {
+      "hosting": {
+        "netdev-firebase": [
+          "netdev-firebase"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
