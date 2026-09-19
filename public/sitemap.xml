@@ -49,6 +49,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://web3.netdev.be/blog/2026-09-18-google-ai-cafe-brussels-connected-cup-adk-ghacks-schaerbeek-run/</loc>
+    <lastmod>2026-09-18T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://web3.netdev.be/blog/2026-09-14-barogroove-barometer-daylist-ai-lastfm/</loc>
     <lastmod>2026-09-14T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
@@ -415,6 +421,48 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://web3.netdev.be/tags/ai/</loc>
+    <lastmod>2026-09-18T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://web3.netdev.be/tags/agents/</loc>
+    <lastmod>2026-09-18T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://web3.netdev.be/tags/adk/</loc>
+    <lastmod>2026-09-18T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://web3.netdev.be/tags/brussels/</loc>
+    <lastmod>2026-09-18T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://web3.netdev.be/tags/schaerbeek/</loc>
+    <lastmod>2026-09-18T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://web3.netdev.be/tags/running/</loc>
+    <lastmod>2026-09-18T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://web3.netdev.be/tags/community/</loc>
+    <lastmod>2026-09-18T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://web3.netdev.be/tags/jerome-paquay/</loc>
     <lastmod>2026-09-14T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -446,12 +494,6 @@
   </url>
   <url>
     <loc>https://web3.netdev.be/tags/cybersecurity/</loc>
-    <lastmod>2026-09-12T16:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://web3.netdev.be/tags/brussels/</loc>
     <lastmod>2026-09-12T16:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
