@@ -15,3 +15,14 @@ beautiful-jekyll-theme-*.gem
 node_modules/
 package-lock.json
 .firebase/
+
+# Security & Secret Protection
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+.agents/gcloud.env
+*.pem
+*.key
+*service-account*.json
