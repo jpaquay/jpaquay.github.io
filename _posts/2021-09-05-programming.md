@@ -7,6 +7,7 @@ thumbnail-img: /assets/img/posts/fosdem-2009.jpg
 share-img: /assets/img/posts/fosdem-network-2009.jpg
 tags: [jerome-paquay, software-engineering, 2020s, belgium]
 readtime: true
+author: Jerome CG Paquay
 ---
 
 {: .box-warning} 

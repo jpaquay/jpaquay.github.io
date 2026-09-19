@@ -10,6 +10,7 @@ gh-badge: [star, fork, follow]
 tags: [jerome-paquay, cloud-computing, cybersecurity, 2020s, brussels]
 date: 2026-09-12 18:00:00 +0200
 readtime: true
+author: Jerome CG Paquay
 ---
 
 ![Enterprise Google Cloud Landing Zone & Crystalline Foundation](/assets/img/posts/2026-09-12-gcp-foundation-hero.webp)

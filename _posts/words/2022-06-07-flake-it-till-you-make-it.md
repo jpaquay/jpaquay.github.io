@@ -7,6 +7,7 @@ thumbnail-img: /assets/img/posts/sail.jpg
 share-img: /assets/img/posts/sail.jpg
 tags: [jeff-brown, philosophy, 2020s, global]
 readtime: true
+author: Jeff Brown
 ---
 
 

@@ -10,6 +10,7 @@ gh-badge: [star, fork, follow]
 tags: [jerome-paquay, philosophy, 2020s, belgium]
 date: 2026-08-30 18:00:00 +0200
 readtime: true
+author: Jerome CG Paquay
 ---
 
 ![Jérôme Paquay et la statue d'Albert Einstein au Coq-sur-Mer](/assets/img/posts/2026-08-30-einstein-05-accord-parfait.webp)

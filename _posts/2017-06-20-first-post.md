@@ -10,6 +10,7 @@ gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [jerome-paquay, software-engineering, 2010s, global]
 readtime: true
+author: Jerome CG Paquay
 ---
 
 

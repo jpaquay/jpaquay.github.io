@@ -8,6 +8,7 @@ thumbnail-img: /assets/img/posts/2026-06-06-zero-trust-pqc-hero.webp
 share-img: /assets/img/posts/2026-06-06-zero-trust-architecture-blueprint.webp
 tags: [jerome-paquay, cybersecurity, cloud-computing, sre, software-engineering, 2020s]
 readtime: true
+author: Jerome CG Paquay
 ---
 
 Look at the calendar: **June 6, 2026 (`06/06/26` — or for those who appreciate a good numerological omen, `202666`)**. If there is ever an "evil moment in the year" to audit what stands between your production data and the abyss, today is the day.

@@ -9,6 +9,7 @@ gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [jerome-paquay, urban-art, 2020s, brussels]
 readtime: true
+author: Jerome CG Paquay
 ---
 
 ![Parcours BD Bruxelles Ligne Claire Art](/assets/img/posts/2024-05-09-parcours-bd-brussels-heritage.webp)

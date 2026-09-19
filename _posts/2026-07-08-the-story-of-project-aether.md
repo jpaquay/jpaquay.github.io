@@ -9,6 +9,7 @@ gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [jerome-paquay, cloud-computing, 2020s, global]
 readtime: true
+author: Jerome CG Paquay
 ---
 
 ![Aether Platform Hero Banner](/assets/img/posts/2026-07-08-aether-genesis-banner.webp)

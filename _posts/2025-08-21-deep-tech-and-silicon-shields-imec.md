@@ -9,6 +9,7 @@ gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [jerome-paquay, cybersecurity, 2020s, belgium]
 readtime: true
+author: Jerome CG Paquay
 ---
 
 Nestled in Leuven, Belgium, **IMEC** (Interuniversity Microelectronics Centre) stands as the world’s premier research hub for advanced semiconductor chip design. As AI models scale into trillions of parameters, cloud security has migrated down from software containers to **hardware roots of trust** and sub-2nm silicon enclaves.

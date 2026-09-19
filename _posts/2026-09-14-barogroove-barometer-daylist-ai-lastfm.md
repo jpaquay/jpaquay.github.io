@@ -8,6 +8,7 @@ thumbnail-img: /assets/img/posts/2026-09-14-barogroove-hero.webp
 share-img: /assets/img/posts/2026-09-14-barogroove-01-sonic-forge.webp
 tags: [jerome-paquay, music, 2020s, software-engineering]
 readtime: true
+author: Jerome CG Paquay
 ---
 
 Some weekends simply hit every single note.

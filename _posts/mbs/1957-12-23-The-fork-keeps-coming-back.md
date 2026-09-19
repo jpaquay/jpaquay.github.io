@@ -7,6 +7,7 @@ thumbnail-img: /assets/img/posts/1957-12-23-fork-coming-back.jpg
 tags: [marion-brown, poetry, 1950s, brussels]
 comments: false
 readtime: true
+author: Marion Brown
 ---
 
 ### The fork keeps coming back 

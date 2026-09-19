@@ -9,6 +9,7 @@ gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [jerome-paquay, sre, 2020s, global]
 readtime: true
+author: Jerome CG Paquay
 ---
 
 Spring 2026 transformed Site Reliability Engineering (SRE). Instead of waking up human engineers for midnight PagerDuty incidents, cloud platforms now utilize **autonomous SRE agent swarms** that observe live eBPF kernel metrics, diagnose root causes, and execute self-healing remediation plans in real time.

@@ -9,6 +9,7 @@ gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [herve-cristiani, music, 1980s, france]
 readtime: true
+author: Hervé Cristiani
 ---
 
 ![Il est libre Max](/assets/img/posts/1981-05-09-il-est-libre-max.webp)

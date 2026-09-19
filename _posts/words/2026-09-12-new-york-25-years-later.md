@@ -8,6 +8,7 @@ thumbnail-img: /assets/img/posts/2026-09-12-new-york-25-years-tribute-light.webp
 share-img: /assets/img/posts/2026-09-12-new-york-25-years-tribute-light.webp
 tags: [jerome-paquay, poetry, 2020s, new-york]
 readtime: true
+author: Jerome CG Paquay
 ---
 
 Twenty-five years ago today—on **September 12, 2001**, when the air over Lower Manhattan was still thick with gray dust and the world felt suspended in an impossible silence—I published a poem titled simply **[New York](/2001-09-12-New-York/)**.

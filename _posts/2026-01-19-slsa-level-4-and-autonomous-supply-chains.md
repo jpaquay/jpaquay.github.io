@@ -9,6 +9,7 @@ gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [jerome-paquay, cybersecurity, 2020s, global]
 readtime: true
+author: Jerome CG Paquay
 ---
 
 As autonomous AI agents began authoring a significant fraction of enterprise pull requests in early 2026, securing the Software Development Life Cycle (SDLC) required updating **Supply-chain Levels for Software Artifacts (SLSA)** standards for non-human contributors.

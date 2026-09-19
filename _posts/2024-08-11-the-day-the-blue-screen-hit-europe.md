@@ -9,6 +9,7 @@ gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [jerome-paquay, sre, 2020s, europe]
 readtime: true
+author: Jerome CG Paquay
 ---
 
 Mid-2024 witnessed one of the largest IT disruptions in history when a single faulty channel file update pushed to a widely used endpoint security driver triggered bootloops across millions of hosts globally—grounding flights at Brussels Airport, disrupting Belgian healthcare systems, and bringing financial operations to a standstill.

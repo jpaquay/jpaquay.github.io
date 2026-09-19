@@ -6,6 +6,7 @@ cover-img: /assets/img/posts/sun.jpg
 thumbnail-img: /assets/img/posts/sun.jpg
 tags: [gunther-anders, philosophy, 1950s, germany]
 readtime: true
+author: Günther Anders
 ---
 
 {: .box-error}

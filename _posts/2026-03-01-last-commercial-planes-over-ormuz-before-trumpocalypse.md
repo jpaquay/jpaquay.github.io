@@ -8,6 +8,7 @@ thumbnail-img: /assets/img/posts/2026-03-01-ormuz-04-dxb-gate-selfie-ek181.webp
 share-img: /assets/img/posts/2026-03-01-ormuz-10-cnn-live-us-fleet-hormuz.webp
 tags: [jerome-paquay, travel, 2020s, global]
 readtime: true
+author: Jerome CG Paquay
 ---
 
 There is a very specific brand of dark, existential comedy that only modern aviation can deliver: sitting in Economy Saver at 36,000 feet, buttering a warm dinner roll with a plastic knife, while the live television screen bolted to the seat in front of you cheerfully diagrams why the exact patch of sky you are currently occupying is about to become the epicenter of World War III.

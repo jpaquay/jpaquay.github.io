@@ -8,6 +8,7 @@ share-img: /assets/img/posts/1971-12-23-author-statement.jpg
 tags: [marion-brown, poetry, 1970s, new-york]
 comments: true
 readtime: true
+author: Marion Brown
 ---
 
 # Marion Brown

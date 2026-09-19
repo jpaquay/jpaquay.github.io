@@ -10,6 +10,7 @@ gh-badge: [star, fork, follow]
 tags: [jerome-paquay, tech-governance, 2020s, brussels]
 date: 2026-09-05 18:00:00 +0200
 readtime: true
+author: Jerome CG Paquay
 ---
 
 ![The AI Cost Iceberg: Understanding the New Tokenomics](/assets/img/posts/2026-09-05-ai-cost-iceberg-tokenomics.webp)

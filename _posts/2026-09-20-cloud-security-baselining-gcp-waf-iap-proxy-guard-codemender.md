@@ -3,7 +3,7 @@ layout: post
 title: "Cloud Security Baselining on Google Cloud: Architecture Framework Alignment, Open-Source IAP Proxy Guard, CodeMender, and the Conductor Blueprint"
 subtitle: "A practical engineering field guide to hardening multi-tenant GCP organizations, closing unverified local and serverless ports with Identity-Aware Proxy, pruning 97% of scanner noise for AI remediation, and orchestrating sovereign agentic systems across 5 canonical Conductor tracks."
 date: 2026-09-20
-author: Julien Paquay
+author: Jerome CG Paquay
 cover-img: /assets/img/posts/2026-09-20-gcp-security-baselining-waf-iap-codemender-hero.webp
 thumbnail-img: /assets/img/posts/2026-09-20-gcp-security-baselining-waf-iap-codemender-hero.webp
 share-img: /assets/img/posts/2026-09-20-conductor-5-canonical-tracks-blueprint.webp

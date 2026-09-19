@@ -9,6 +9,7 @@ gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [jerome-paquay, sre, 2020s, europe]
 readtime: true
+author: Jerome CG Paquay
 ---
 
 By late 2025, Internal Developer Platforms (IDPs) evolved beyond static self-service web portals into **Agentic Platform Mesh Orchestrators**. Rather than forcing developers to manually construct YAML manifests or navigate complex cloud portals, autonomous AI agents now act as interactive copilots for platform engineering teams across Europe.
