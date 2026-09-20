@@ -27,7 +27,7 @@ The barriers drop across all 19 communes of the Brussels-Capital Region—162 sq
 
 Welcome to **[Car-Free Sunday (*Dimanche sans voiture / Autoloze Zondag*)](https://www.visit.brussels/en/visitors/agenda/event-detail.Car-Free-Sunday.5700025480)**—the single best day of the year to be a *Brusseleir*.
 
-![Dimanche sans voiture in Schaerbeek, Brussels — Franco-Belgian ligne claire illustration with Schaerbeek Town Hall, Royal White Star HC hockey stick on a bicycle, Union Saint-Gilloise scarves, a crusty round pistolet américain, and a cone of Belgian frites with mayonnaise](/assets/img/posts/2026-09-20-dimanche-sans-voiture-schaerbeek-pistolet-frites-hero.webp)
+![Dimanche sans voiture in Brussels — Franco-Belgian ligne claire illustration of cyclists, cargo bikes, and rollerbladers gliding under luminous stained-glass arches toward the Cinquantenaire triumphal arch](/assets/img/posts/2026-09-20-dimanche-sans-voiture-schaerbeek-pistolet-frites-hero.webp)
 
 ---
 
@@ -49,6 +49,8 @@ Twice a year. One in the crisp golden light of September, and one right when the
 ## The Sunday Trajectory: Schaerbeek, White Star & Union Fever
 
 Every Brussels family has its own sacred *Dimanche sans voiture* itinerary, and ours always starts on the wide, tree-lined avenues of **Schaerbeek**.
+
+![Schaerbeek on Car-Free Sunday — Hôtel Communal de Schaerbeek, Royal White Star HC hockey stick on a bicycle, Union Saint-Gilloise scarves, a crusty round pistolet américain, and a cone of Belgian frites](/assets/img/posts/2026-09-20-dimanche-sans-voiture-schaerbeek-terrace-frites.webp)
 
 Rolling out past the Flemish Neo-Renaissance spires of the *Hôtel Communal* on Place Colignon and skirting the green canopy of *Parc Josaphat*, you immediately see the entire sociology of Brussels on wheels:
 - **The Hockey Peloton**: Kids and parents with field hockey sticks strapped diagonally across their backpacks or poking proudly out of wooden cargo bikes, pedaling toward **Royal White Star HC** (*l'Étoile Blanche*). On Car-Free Sunday, arriving at the pitch without having touched a car steering wheel feels like starting the match 1–0 up.
@@ -81,10 +83,17 @@ The live photo album from today's ride across **Schaerbeek, Royal White Star HC,
   <div class="cf-carousel-viewport">
     <div class="cf-carousel-track" id="carFreeTrack">
       <div class="cf-carousel-slide active">
-        <img src="/assets/img/posts/2026-09-20-dimanche-sans-voiture-schaerbeek-pistolet-frites-hero.webp" alt="Dimanche sans voiture in Schaerbeek — Hôtel Communal, Royal White Star HC hockey pennant, Union Saint-Gilloise scarves, pistolet américain, and Belgian frites" loading="lazy" />
+        <img src="/assets/img/posts/2026-09-20-dimanche-sans-voiture-schaerbeek-pistolet-frites-hero.webp" alt="Dimanche sans voiture in Brussels — Cyclists, cargo bikes, and rollerbladers gliding under luminous stained-glass arches toward the Cinquantenaire arch" loading="lazy" />
         <div class="cf-carousel-caption">
-          <span class="cf-badge">Slide 1 · Live Album Dropping Tonight</span>
-          <strong>Schaerbeek, White Star, Union & Sunday Comforts</strong> — A round crusty <em>pistolet américain</em>, a cone of double-fried Belgian <em>frites</em>, hockey sticks on the rack, and 19 communes without a single car horn.
+          <span class="cf-badge">Slide 1 · Luminous Arches over Cinquantenaire</span>
+          <strong>Dimanche sans voiture across 19 Communes</strong> — Cyclists, cargo bikes, and rollerbladers owning the cobblestones of Brussels under luminous stained-glass arches.
+        </div>
+      </div>
+      <div class="cf-carousel-slide">
+        <img src="/assets/img/posts/2026-09-20-dimanche-sans-voiture-schaerbeek-terrace-frites.webp" alt="Schaerbeek on Car-Free Sunday — Hôtel Communal, Royal White Star HC hockey pennant, Union Saint-Gilloise scarves, pistolet américain, and Belgian frites" loading="lazy" />
+        <div class="cf-carousel-caption">
+          <span class="cf-badge">Slide 2 · Schaerbeek, White Star, Union & Sunday Comforts</span>
+          <strong>From Place Colignon to the Fritkot</strong> — A round crusty <em>pistolet américain</em>, a cone of double-fried Belgian <em>frites</em>, hockey sticks on the rack, and yellow-and-blue Union scarves.
         </div>
       </div>
     </div>
