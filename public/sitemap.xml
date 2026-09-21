@@ -43,6 +43,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://web3.netdev.be/blog/2026-09-20-dimanche-sans-voiture-car-free-brussels-schaerbeek-pistolet-frites/</loc>
+    <lastmod>2026-09-20T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://web3.netdev.be/blog/2026-09-20-cloud-security-baselining-gcp-waf-iap-proxy-guard-codemender/</loc>
     <lastmod>2026-09-20T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
@@ -355,6 +361,54 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://web3.netdev.be/tags/brussels/</loc>
+    <lastmod>2026-09-20T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://web3.netdev.be/tags/schaerbeek/</loc>
+    <lastmod>2026-09-20T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://web3.netdev.be/tags/belgium/</loc>
+    <lastmod>2026-09-20T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://web3.netdev.be/tags/culture/</loc>
+    <lastmod>2026-09-20T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://web3.netdev.be/tags/cycling/</loc>
+    <lastmod>2026-09-20T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://web3.netdev.be/tags/hockey/</loc>
+    <lastmod>2026-09-20T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://web3.netdev.be/tags/union saint-gilloise/</loc>
+    <lastmod>2026-09-20T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://web3.netdev.be/tags/gastronomy/</loc>
+    <lastmod>2026-09-20T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://web3.netdev.be/tags/google cloud/</loc>
     <lastmod>2026-09-20T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -439,18 +493,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://web3.netdev.be/tags/brussels/</loc>
-    <lastmod>2026-09-18T00:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://web3.netdev.be/tags/schaerbeek/</loc>
-    <lastmod>2026-09-18T00:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://web3.netdev.be/tags/running/</loc>
     <lastmod>2026-09-18T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -518,12 +560,6 @@
   </url>
   <url>
     <loc>https://web3.netdev.be/tags/philosophy/</loc>
-    <lastmod>2026-08-30T16:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://web3.netdev.be/tags/belgium/</loc>
     <lastmod>2026-08-30T16:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Dimanche sans voiture in Brussels: From Schaerbeek to White Star, Union Scarves, a Pistolet Américain, and Frites Évidemment"
-subtitle: "When 19 communes pull the handbrake on combustion engines, Brussels turns into the biggest village terrace in Europe—and starting in May 2027, we get to do it twice a year."
+subtitle: "Dispatched at 23:42 on Sunday night after 19 communes (and 20+ Walloon towns) traded car horns for bicycle bells, 50 years of Brussels Metro nostalgia, a proper pistolet américain, and a cone of double-fried frites."
 date: 2026-09-20
 author: Jerome CG Paquay
 cover-img: /assets/img/posts/2026-09-20-dimanche-sans-voiture-schaerbeek-pistolet-frites-hero.webp
@@ -19,225 +19,66 @@ tags:
 comments: true
 ---
 
-At 09:29 on a mid-September Sunday, Brussels sounds like any other European capital: a low, continuous hum of tires on wet cobblestones, delivery vans rushing down the *Petite Ceinture*, and commuters negotiating the Montgomery roundabout.
+**Sunday, September 20, 2026 · 23:42 CEST · Schaerbeek, Brussels.**
 
-At 09:30 sharp, someone flips the switch.
+It is 11:42 PM. The city outside the window has quietly returned to its usual Sunday-night murmur, the last folding tables from the neighborhood *brocantes* have been stacked away, and my legs have that unmistakable, pleasant heaviness that only comes from spending an entire September day treating 162 square kilometers of Brussels asphalt like a giant village square.
 
-The barriers drop across all 19 communes of the Brussels-Capital Region—162 square kilometers, the largest car-free urban perimeter in Europe—and the city exhales. Within five minutes, the roar of internal combustion engines is replaced by the whir of bicycle freehubs, the click-clack of rollerblades on asphalt, and the unmistakable sound of neighbors actually hearing each other talk across the street.
-
-Welcome to **[Car-Free Sunday (*Dimanche sans voiture / Autoloze Zondag*)](https://www.visit.brussels/en/visitors/agenda/event-detail.Car-Free-Sunday.5700025480)**—the single best day of the year to be a *Brusseleir*.
+Every year at 09:30 sharp on **[Car-Free Sunday (*Dimanche sans voiture / Autoloze Zondag*)](https://www.visit.brussels/en/visitors/agenda/event-detail.Car-Free-Sunday.5700025480)**, someone turns the volume knob of the capital down by twenty decibels—and turns the civic warmth up by fifty.
 
 ![Dimanche sans voiture in Brussels — Franco-Belgian ligne claire illustration of cyclists, cargo bikes, and rollerbladers gliding under luminous stained-glass arches toward the Cinquantenaire triumphal arch](/assets/img/posts/2026-09-20-dimanche-sans-voiture-schaerbeek-pistolet-frites-hero.webp)
 
----
-
-## Big News for the Calendar: One Car-Free Sunday Was Never Enough
-
-If you have ever coasted down the middle of the Reyers or Cinquantenaire tunnels on a bicycle at 35 km/h with zero exhaust fumes and a grin from ear to ear, you have inevitably asked the same question every *Brusseleir* asks at 18:55 when the cars start lining up at the city limits again:
-
-*"Why on earth do we only do this once a year?"*
-
-Good news: Brussels finally listened. The city's beloved annual ritual is officially doubling down into a **biannual tradition**:
-
-- **Autumn Edition (Traditional)**: Continues its iconic mid-September slot anchoring **European Mobility Week**—celebrated today, **Sunday, September 20, 2026**, and already penciled in for **Sunday, September 19, 2027**.
-- **Spring Edition (New Addition!)**: Officially debuting on **Sunday, May 2, 2027**, and in future years permanently aligning with the **Iris Festival weekend in early May** ([announcement reel](https://www.instagram.com/reel/DbVKsFVJ7ae/)).
-
-Twice a year. One in the crisp golden light of September, and one right when the chestnut trees and wisteria explode across Brussels in early May. That is not a transport policy; that is a public health and happiness dividend.
+You don't even have to be anti-car to love it; in fact, some of the biggest smiles you see in the middle of the Reyers and Cinquantenaire tunnels belong to everyday commuters who spend the other 364 days of the year staring at brake lights in those exact same underground tubes. For one glorious Sunday between 09:30 and 19:00, nobody is stuck behind a bumper. Everybody is just *outside*.
 
 ---
 
-## The Sunday Trajectory: Schaerbeek, White Star & Union Fever
+## What Made the 2026 Edition Special Across Brussels & Wallonia
 
-Every Brussels family has its own sacred *Dimanche sans voiture* itinerary, and ours always starts on the wide, tree-lined avenues of **Schaerbeek**.
+As highlighted in [Sudinfo's mobility roundup (*Journée sans voiture : les activités mobilité à ne pas manquer !*)](https://www.sudinfo.be/id1195896/article/2026-09-20/journee-sans-voiture-les-activites-mobilite-ne-pas-manquer), this year's edition—anchoring **European Mobility Week (September 16–22, 2026)**—brought together the best of Belgian street life:
+
+- **All 19 Brussels Communes Wide Open**: Free STIB public transport across the region, pop-up bike repair workshops (*ateliers de réparation vélo*), guided cycling and heritage walks, street parties (*fêtes de quartier* and *brocantes* from Schaerbeek to Rue de Liverpool in Anderlecht), and a special nod to **50 years of the Brussels Metro (*les 50 ans du métro bruxellois*)**.
+- **A Historic First South of the Language Border**: For the very first time in 2026, **Wallonia joined the movement at a regional scale**, with more than **twenty Walloon municipalities**—including Spa, Ath, Hannut, Wavre, and Bertrix—closing their town centers to motorized traffic so families, pedestrians, and cyclists could reclaim their main squares.
+- **Doubling Down for 2027 (Spring + Autumn!)**: Because one Sunday a year has clearly become too short for Brussels' appetite, the capital is officially turning *Dimanche sans voiture* into a **biannual tradition**:
+  - **Spring Edition (New Addition!)**: Debuting on **Sunday, May 2, 2027**, and in future years permanently aligning with the **Iris Festival weekend in early May** ([official announcement reel](https://www.instagram.com/reel/DbVKsFVJ7ae/)).
+  - **Autumn Edition (Traditional)**: Continuing its classic mid-September placement during **European Mobility Week** (already penciled in for **Sunday, September 19, 2027**).
+
+Twice a year—once when the May chestnut blossoms open, and once in the golden September light. Hard to argue with that kind of urban upgrade.
+
+---
+
+## Our Sunday Loop: Schaerbeek, White Star & Union Colors
+
+Every *Brusseleir* household has its own unwritten Sunday compass, and ours always starts on the wide avenues of **Schaerbeek**.
 
 ![Schaerbeek on Car-Free Sunday — Hôtel Communal de Schaerbeek, Royal White Star HC hockey stick on a bicycle, Union Saint-Gilloise scarves, a crusty round pistolet américain, and a cone of Belgian frites](/assets/img/posts/2026-09-20-dimanche-sans-voiture-schaerbeek-terrace-frites.webp)
 
-Rolling out past the Flemish Neo-Renaissance spires of the *Hôtel Communal* on Place Colignon and skirting the green canopy of *Parc Josaphat*, you immediately see the entire sociology of Brussels on wheels:
-- **The Hockey Peloton**: Kids and parents with field hockey sticks strapped diagonally across their backpacks or poking proudly out of wooden cargo bikes, pedaling toward **Royal White Star HC** (*l'Étoile Blanche*). On Car-Free Sunday, arriving at the pitch without having touched a car steering wheel feels like starting the match 1–0 up.
-- **The Yellow-and-Blue Tide**: Across town and on every cross-boulevard toward Saint-Gilles and Forest, you spot the unmistakable yellow-and-royal-blue scarves of **Union Saint-Gilloise (RUSG)**. Whether you are heading to the Stade Joseph Marien or just debating xG and pressing traps on a sunny terrace at Parvis de Saint-Gilles, *Allez l'Union* is practically the unofficial second anthem of the day.
-- **The Tunnel Tourists**: Toddlers on balance bikes conquering the Louise tunnel ramp like it is the Col du Tourmalet, while octogenarians on vintage steel Eddy Merckx road bikes glide past with effortless *panache*.
+Rolling past the Flemish Neo-Renaissance gables of the *Hôtel Communal* on Place Colignon and skirting the green slopes of *Parc Josaphat*, you get the full, affectionate panorama of Brussels on two wheels:
+- **The Hockey Convoy**: Kids, teens, and parents pedaling toward **Royal White Star HC** (*l'Étoile Blanche*) with field hockey sticks strapped across backpacks or poking out of wooden cargo bikes like jousting lances. There is something deeply civilized about rolling up to the pitch for a Sunday match without having hunted for a single parking spot.
+- **The Yellow-and-Blue Scarf Brigade**: Drift across town toward Saint-Gilles and Forest and you immediately run into the cheerful yellow-and-royal-blue tide of **Royale Union Saint-Gilloise (RUSG)**. Between matchday songs, terrace debates, and kids kicking a foam ball down the middle of the chaussée, *Union* brings its own unmistakable neighborhood soul to the day.
+- **The Tunnel Peloton**: Balance bikes, tandems, rollerblades, cargo bikes with sleepy dogs wearing goggles, and grandparents cruising side by side down boulevards that normally demand eyes in the back of your helmet.
 
 ---
 
-## The Culinary Non-Negotiables: A Pistolet Américain & Des Frites, Évidemment
+## The Two Non-Negotiable Checkpoints: Pistolet Américain & Des Frites, Évidemment
 
-Let's be honest: pedaling 25 kilometers across Brussels hills is merely a socially acceptable pretext for the two culinary pillars that hold Belgian civilization together on a Sunday.
+Let's be honest: all those kilometers logged across Brussels hills are really just an elaborate, guilt-free justification for the two culinary monuments of a proper Belgian Sunday.
 
-### 1. The Morning Ritual: Le Pistolet Américain
-Before noon, follow the queue spilling out of any proper neighborhood *boulangerie* in Schaerbeek. You are not there for a croissant. You are there for a **pistolet**—that uniquely Belgian round, golden, airy roll with the signature crease across the top and a crust engineered by food physicists to shatter into a thousand flaky shards the second your teeth touch it.
+### 1. Mid-Morning: Un Pistolet Américain
+Before noon, follow the line outside any real neighborhood *boulangerie* in Schaerbeek. You are there for a **pistolet**—that round, golden, airy Belgian roll with its signature cleft down the middle and a crust engineered to shatter into crisp flakes the instant you bite into it.
 
-Split it open and order it the only way that matters on a Sunday: **un pistolet américain**. Freshly seasoned *filet américain préparé* (never shy on the Worcester sauce, capers, and shallots), tangy sliced cornichons, and a peppery handful of *cressonnette* (watercress). Eaten on a sunny park bench while watching a brass band roll past on a flatbed cargo bike, it is Michelin-three-star street food.
+Order it the classic way: **un pistolet américain**. Generously spread with freshly seasoned *filet américain préparé* (Worcester sauce, capers, finely chopped shallots, zero shortcuts), crunchy cornichons, and a handful of peppery *cressonnette* (watercress). Eaten on a sunlit bench while watching an entire brass band pedal past on cargo bikes, it beats any white-tablecloth brunch on earth.
 
-### 2. The Afternoon Reward: Des Frites, Évidemment
-By 17:00, after cheering on the sidelines at White Star, weaving through the Cinquantenaire esplanade, and climbing back up toward Schaerbeek, there is only one lawful conclusion to the day: a stop at the neighborhood *fritkot*.
+### 2. Late Afternoon: Des Frites, Évidemment
+And by early evening, on the ride back home toward 1030 Schaerbeek with tired legs and happy faces, there is only one lawful way to close the loop: a stop at the neighborhood *fritkot*.
 
-Double-fried in beef tallow (*blanc de bœuf*)—first at 130–140 °C to cook the Bintje potato through to a fluffy interior, then rested, then plunged at 175 °C for that glass-crisp golden exterior—served in a paper cone (*un cornet*) with salt shaken from arm's height and a generous crown of mayonnaise or *sauce andalouse*. **Des frites, évidemment.** Because some traditions don't need a Mobility Week committee to achieve perfection.
+Double-fried in beef tallow (*blanc de bœuf*)—first at 135 °C to turn the inside of the Bintje potato into a cloud, then rested, then plunged at 175 °C for that golden crunch—served hot in a paper cone (*un cornet*) with salt from above and a generous swirl of mayonnaise or *andalouse*. **Des frites, évidemment.**
 
----
-
-## Sunday Photo Album: On the Road Across Car-Free Brussels
-
-The live photo album from today's ride across **Schaerbeek, Royal White Star HC, and the car-free boulevards of Brussels** drops right into this gallery this evening—check back tonight for the full carousel!
-
-<div class="cf-carousel-container" id="carFreeCarousel">
-  <div class="cf-carousel-viewport">
-    <div class="cf-carousel-track" id="carFreeTrack">
-      <div class="cf-carousel-slide active">
-        <img src="/assets/img/posts/2026-09-20-dimanche-sans-voiture-schaerbeek-pistolet-frites-hero.webp" alt="Dimanche sans voiture in Brussels — Cyclists, cargo bikes, and rollerbladers gliding under luminous stained-glass arches toward the Cinquantenaire arch" loading="lazy" />
-        <div class="cf-carousel-caption">
-          <span class="cf-badge">Slide 1 · Luminous Arches over Cinquantenaire</span>
-          <strong>Dimanche sans voiture across 19 Communes</strong> — Cyclists, cargo bikes, and rollerbladers owning the cobblestones of Brussels under luminous stained-glass arches.
-        </div>
-      </div>
-      <div class="cf-carousel-slide">
-        <img src="/assets/img/posts/2026-09-20-dimanche-sans-voiture-schaerbeek-terrace-frites.webp" alt="Schaerbeek on Car-Free Sunday — Hôtel Communal, Royal White Star HC hockey pennant, Union Saint-Gilloise scarves, pistolet américain, and Belgian frites" loading="lazy" />
-        <div class="cf-carousel-caption">
-          <span class="cf-badge">Slide 2 · Schaerbeek, White Star, Union & Sunday Comforts</span>
-          <strong>From Place Colignon to the Fritkot</strong> — A round crusty <em>pistolet américain</em>, a cone of double-fried Belgian <em>frites</em>, hockey sticks on the rack, and yellow-and-blue Union scarves.
-        </div>
-      </div>
-    </div>
-    <button class="cf-carousel-btn prev" id="carFreePrev" aria-label="Previous slide">&#10094;</button>
-    <button class="cf-carousel-btn next" id="carFreeNext" aria-label="Next slide">&#10095;</button>
-  </div>
-  <div class="cf-carousel-dots" id="carFreeDots"></div>
-</div>
-
-<style>
-  .cf-carousel-container {
-    margin: 2.2rem 0;
-    border-radius: 16px;
-    overflow: hidden;
-    background: #1e293b;
-    border: 1px solid rgba(251, 191, 36, 0.35);
-    box-shadow: 0 20px 45px rgba(15, 23, 42, 0.35);
-  }
-  .cf-carousel-viewport {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-  }
-  .cf-carousel-track {
-    display: flex;
-    transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
-  }
-  .cf-carousel-slide {
-    min-width: 100%;
-    box-sizing: border-box;
-    position: relative;
-  }
-  .cf-carousel-slide img {
-    width: 100%;
-    max-height: 540px;
-    object-fit: cover;
-    display: block;
-    margin: 0;
-  }
-  .cf-carousel-caption {
-    padding: 1rem 1.35rem 1.15rem;
-    background: linear-gradient(180deg, rgba(30, 41, 59, 0.95), #0f172a);
-    color: #f1f5f9;
-    font-size: 0.95rem;
-    line-height: 1.55;
-  }
-  .cf-badge {
-    display: inline-block;
-    font-size: 0.72rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: #fbbf24;
-    background: rgba(251, 191, 36, 0.14);
-    border: 1px solid rgba(251, 191, 36, 0.4);
-    padding: 0.18rem 0.55rem;
-    border-radius: 999px;
-    margin-bottom: 0.4rem;
-    display: table;
-  }
-  .cf-carousel-btn {
-    position: absolute;
-    top: 44%;
-    transform: translateY(-50%);
-    background: rgba(15, 23, 42, 0.78);
-    color: #f8fafc;
-    border: 1px solid rgba(251, 191, 36, 0.4);
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 1.1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.2s ease;
-    z-index: 4;
-  }
-  .cf-carousel-btn:hover {
-    background: #d97706;
-    border-color: #fbbf24;
-    transform: translateY(-50%) scale(1.08);
-  }
-  .cf-carousel-btn.prev { left: 14px; }
-  .cf-carousel-btn.next { right: 14px; }
-  .cf-carousel-dots {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    padding: 0.75rem 1rem 1rem;
-    background: #0f172a;
-  }
-  .cf-dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 999px;
-    background: rgba(148, 163, 184, 0.35);
-    border: none;
-    cursor: pointer;
-    transition: all 0.25s ease;
-    padding: 0;
-  }
-  .cf-dot.active {
-    width: 26px;
-    background: #fbbf24;
-  }
-</style>
-
-<script>
-  (function () {
-    const track = document.getElementById('carFreeTrack');
-    const prevBtn = document.getElementById('carFreePrev');
-    const nextBtn = document.getElementById('carFreeNext');
-    const dotsWrap = document.getElementById('carFreeDots');
-    if (!track || !prevBtn || !nextBtn || !dotsWrap) return;
-
-    const slides = Array.from(track.children);
-    let idx = 0;
-
-    slides.forEach((_, i) => {
-      const dot = document.createElement('button');
-      dot.className = 'cf-dot' + (i === 0 ? ' active' : '');
-      dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
-      dot.addEventListener('click', () => goTo(i));
-      dotsWrap.appendChild(dot);
-    });
-
-    const dots = Array.from(dotsWrap.children);
-
-    function goTo(n) {
-      idx = (n + slides.length) % slides.length;
-      track.style.transform = 'translateX(-' + idx * 100 + '%)';
-      dots.forEach((d, i) => d.classList.toggle('active', i === idx));
-    }
-
-    prevBtn.addEventListener('click', () => goTo(idx - 1));
-    nextBtn.addEventListener('click', () => goTo(idx + 1));
-  })();
-</script>
+See you on the boulevards again on **May 2, 2027**!
 
 ---
 
 ### References & Further Reading
 
+- **Sudinfo Mobility Highlights (Sept 20, 2026)**: [Journée sans voiture : les activités mobilité à ne pas manquer !](https://www.sudinfo.be/id1195896/article/2026-09-20/journee-sans-voiture-les-activites-mobilite-ne-pas-manquer)
 - **Visit Brussels Official Event Guide**: [Car-Free Sunday (*Dimanche sans voiture / Autoloze Zondag*)](https://www.visit.brussels/en/visitors/agenda/event-detail.Car-Free-Sunday.5700025480)
-- **Biannual Calendar Announcement**: [Spring Car-Free Sunday debuting May 2, 2027 (Iris Festival Weekend) + Traditional Mid-September Edition](https://www.instagram.com/reel/DbVKsFVJ7ae/)
-- **Weekend Tinkering Companion Post**: [Barogroove: When Barometric Pressure Meets Years of Scrobbles](/blog/2026-09-14-barogroove-barometer-daylist-ai-lastfm/)
+- **Biannual Calendar Expansion (May 2, 2027 + Sept 19, 2027)**: [Official Announcement Reel](https://www.instagram.com/reel/DbVKsFVJ7ae/)
+- **Friday Night Run Companion Post**: [Google AI Café Brussels Connected Cup: Four Weeks of Espresso and Agents After the 10,30 km de Schaerbeek Night Run](/blog/2026-09-18-google-ai-cafe-brussels-connected-cup-adk-ghacks-schaerbeek-run/)
