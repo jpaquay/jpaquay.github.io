@@ -1,12 +1,18 @@
 ---
 layout: post
 title: "From Individual Agent Dreams to Institutional Memory: Why OKF, Brain Visualizer v0.6, and WikiSkill Are Redefining Verifiable Knowledge"
+subtitle: "Dispatched from Week 1 of the Google AI Café (Connected Cup) in Brussels: how the Open Knowledge Format (OKF) bridges Dream-RSI and Guillaume Laforge's Antigravity Brain Visualizer v0.6 with institutional memory compilation (WikiSkill, arXiv:2608.27454) and evolving skills.md contracts—plus where to hack with us this Friday Sept 25th."
 date: 2026-09-22
 author: Jerome CG Paquay
+cover-img: /assets/img/posts/2026-09-22-google-ai-cafe-brussels-okf-hero-banner.webp
+thumbnail-img: /assets/img/posts/2026-09-22-google-ai-cafe-brussels-okf-hero-banner.webp
+share-img: /assets/img/posts/2026-09-22-google-ai-cafe-brussels-okf-hero-banner.webp
+heroImage: /assets/img/posts/2026-09-22-google-ai-cafe-brussels-okf-hero-banner.webp
+image: /assets/img/posts/2026-09-22-google-ai-cafe-brussels-okf-hero-banner.webp
 categories: ["AI Agents", "Knowledge Engineering", "Cloud Architecture", "Brussels"]
-tags: ["OKF", "Open Knowledge Format", "Dream-RSI", "Antigravity Brain Visualizer", "WikiSkill", "skills.md", "ADK", "Connected Cup", "Google AI Cafe"]
-image: /assets/img/posts/2026-09-22-okf-brain-visualizer-wikiskill-ai-cafe-hero.webp
+tags: ["OKF", "Open Knowledge Format", "Dream-RSI", "Antigravity Brain Visualizer", "WikiSkill", "skills.md", "ADK", "Connected Cup", "Google AI Cafe", "Brussels"]
 description: "How the Open Knowledge Format (OKF) bridges individual agent introspection (Dream-RSI and Guillaume Laforge's Antigravity Brain Visualizer v0.6) with institutional memory compilation (WikiSkill, arXiv:2608.27454) and evolving skills.md contracts—plus where to grab a coffee and hack on it with us in Brussels this Friday."
+comments: true
 ---
 
 <img src="/assets/img/posts/2026-09-22-connected-cup-logo-icon.webp" alt="Connected Cup — Google AI Café Brussels Official Mug Emblem" style="float: left; width: 140px; max-width: 32%; margin: 0.25rem 1.4rem 0.9rem 0; border-radius: 16px; box-shadow: 0 8px 22px rgba(15, 23, 42, 0.12); border: 1px solid rgba(226, 232, 240, 0.9);" />
@@ -16,6 +22,8 @@ There is a classic tragedy unfolding every single afternoon across thousands of 
 Poof. Amnesia. Tomorrow morning at 09:00, your colleague's agent on the very next desk will cheerfully walk into the exact same three API traps like a golden retriever chasing a frisbee into a glass door.
 
 As we kicked off week one of the **[Google AI Café (Connected Cup)](https://rsvp.withgoogle.com/events/connected-cup/programme)** here in Brussels yesterday, between two flat whites and a spirited debate on European digital sovereignty, one architectural question kept coming back to the counter: **How do we turn ephemeral individual agent breakthroughs into durable, verifiable institutional memory?**
+
+![Google AI Café Brussels (Connected Cup) — Popsy Franco-Belgian illustration of developers and policy builders at the Brussels espresso bar beneath the glowing holographic bridge of Brain Visualizer v0.6, Dream-RSI, Open Knowledge Format (OKF), WikiSkill, and skills.md](/assets/img/posts/2026-09-22-google-ai-cafe-brussels-okf-hero-banner.webp)
 
 The answer isn't "dump ten gigabytes of raw JSONL chat logs into a vector database and pray for cosine similarity miracles." Instead, a remarkably clean three-layer stack has crystallized over the past few months—uniting **[Dream-RSI](https://dream-rsi.com/)**, Guillaume Laforge's **[Antigravity Brain Visualizer (now at v0.6)](https://github.com/glaforge/antigravity-brain-visualizer/releases)**, the **[WikiSkill](https://arxiv.org/abs/2608.27454)** institutional compiler paradigm, the **[Open Knowledge Format (OKF)](https://github.com/GoogleCloudPlatform/knowledge-catalog/tree/main/okf)**, and the rapidly evolving **[skills.md](https://skills.md/)** ecosystem.
 
@@ -28,6 +36,9 @@ Let's unpack how these pieces fit together—and why portable, Git-backed knowle
 ## 1. Driving Individual Knowledge: When Agents Dream (`Dream-RSI`) and Developers Peer Inside (`Brain Visualizer v0.6`)
 
 Before an organization can curate collective wisdom, an **individual agent** (and its human pair-programmer) needs a way to make sense of its own execution history. Two breakthroughs attack this problem from complementary angles: autonomous offline introspection and interactive human-in-the-loop debugging.
+
+![Individual Brain to Institutional Knowledge Constellation at the Connected Cup Brussels](/assets/img/posts/2026-09-22-okf-brain-visualizer-wikiskill-ai-cafe-hero.webp)
+*From a single espresso at the Brussels Connected Cup to a luminous knowledge graph: bridging Dream-RSI & Brain Visualizer v0.6 with Open Knowledge Format (OKF), WikiSkill, and skills.md.*
 
 ### A. `Dream-RSI`: History Is the World the Agent Dreams In
 
