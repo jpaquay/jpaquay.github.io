@@ -9,8 +9,10 @@
     <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
     {% if js contains 'jquery' %}
       <script>
-        if (typeof jQuery == 'undefined') {
-          document.write('<script src="{{ js | relative_url }}"></scr' + 'ipt>');
+        if (typeof jQuery === 'undefined') {
+          var jqScript = document.createElement('script');
+          jqScript.src = '{{ js | relative_url }}';
+          document.head.appendChild(jqScript);
         }
       </script>
     {% else %}
