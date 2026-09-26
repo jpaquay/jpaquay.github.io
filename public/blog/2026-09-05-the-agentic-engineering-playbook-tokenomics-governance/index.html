@@ -1,0 +1,419 @@
+<!DOCTYPE html><html lang="en" data-astro-cid-tldeq5d5><head><!-- Global Metadata --><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><!-- Google tag (gtag.js) with Consent Mode v2 --><script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('consent', 'default', {
+		'analytics_storage': 'denied',
+		'ad_storage': 'denied',
+		'ad_user_data': 'denied',
+		'ad_personalization': 'denied',
+		'wait_for_update': 500
+	});
+	gtag('js', new Date());
+	gtag('config', 'G-2D66L4N90C');
+</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-2D66L4N90C"></script><script>
+	(function () {
+		const savedTheme = localStorage.getItem('vp-theme') ||
+			(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+		document.documentElement.setAttribute('data-theme', savedTheme);
+	})();
+</script><link rel="icon" type="image/webp" href="/favicon.webp"><link rel="icon" href="/favicon.ico"><link rel="sitemap" href="/sitemap-index.xml"><link rel="alternate" type="application/rss+xml" title="/net/dev" href="https://web3.netdev.be/rss.xml"><meta name="generator" content="Astro v7.0.6"><style>@font-face{font-family:Atkinson-c7f4c4e8b285552f;src:url("/_astro/fonts/1dc18b357959d5b2.woff") format("woff");font-display:swap;font-weight:400;font-style:normal;}@font-face{font-family:Atkinson-c7f4c4e8b285552f;src:url("/_astro/fonts/f2d4ce7ba96c950b.woff") format("woff");font-display:swap;font-weight:700;font-style:normal;}@font-face{font-family:"Atkinson-c7f4c4e8b285552f fallback: Arial";src:local("Arial");font-display:swap;font-weight:400;font-style:normal;size-adjust:99.3717%;ascent-override:80.1033%;descent-override:25.2587%;line-gap-override:0%;}@font-face{font-family:"Atkinson-c7f4c4e8b285552f fallback: Arial Bold";src:local("Arial Bold");font-display:swap;font-weight:700;font-style:normal;size-adjust:92.2954%;ascent-override:86.2448%;descent-override:27.1953%;line-gap-override:0%;}:root{--font-atkinson:Atkinson-c7f4c4e8b285552f,"Atkinson-c7f4c4e8b285552f fallback: Arial","Atkinson-c7f4c4e8b285552f fallback: Arial Bold",sans-serif;}</style><link rel="preload" href="/_astro/fonts/1dc18b357959d5b2.woff" as="font" type="font/woff" crossorigin><link rel="preload" href="/_astro/fonts/f2d4ce7ba96c950b.woff" as="font" type="font/woff" crossorigin><!-- Canonical URL --><link rel="canonical" href="https://web3.netdev.be/blog/2026-09-05-the-agentic-engineering-playbook-tokenomics-governance/"><!-- Primary Meta Tags --><title>The Agentic Engineering Playbook: Why Your AI Bill is a Roadmap and Your Agent Needs an Architectural Mind</title><meta name="description" content="From tokenomics and the Elephant &amp; Goldfish strategy to AI Governance by Design: 10x battle-tested lessons from the frontlines of agentic systems."><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:url" content="https://web3.netdev.be/blog/2026-09-05-the-agentic-engineering-playbook-tokenomics-governance/"><meta property="og:title" content="The Agentic Engineering Playbook: Why Your AI Bill is a Roadmap and Your Agent Needs an Architectural Mind"><meta property="og:description" content="From tokenomics and the Elephant &amp; Goldfish strategy to AI Governance by Design: 10x battle-tested lessons from the frontlines of agentic systems."><meta property="og:image" content="https://web3.netdev.be/_astro/blog-placeholder-1.Bx0Zcyzv.jpg"><!-- Twitter --><meta name="twitter:card" content="summary_large_image"><link rel="preload" as="image" href="/assets/img/posts/2026-09-05-ai-cost-iceberg-tokenomics.webp" fetchpriority="high"><link rel="stylesheet" href="/_astro/Header.C3OBt6NU.css"><style>main[data-astro-cid-tldeq5d5]{width:calc(100% - 2em);max-width:100%;margin:0}.hero-image[data-astro-cid-tldeq5d5]{width:100%;max-width:960px;margin:0 auto 1.5rem}.hero-image[data-astro-cid-tldeq5d5] img[data-astro-cid-tldeq5d5]{object-fit:cover;width:100%;max-height:400px;box-shadow:var(--box-shadow);border-radius:12px;margin:0 auto;display:block}.prose[data-astro-cid-tldeq5d5]{width:720px;max-width:calc(100% - 2em);color:rgb(var(--gray-dark));margin:auto;padding:1em;transition:color .3s}[data-theme=dark] .prose[data-astro-cid-tldeq5d5]{color:#e2e8f0}.title[data-astro-cid-tldeq5d5]{text-align:center;margin-bottom:1em;padding:1em 0;line-height:1.2}.title[data-astro-cid-tldeq5d5] h1[data-astro-cid-tldeq5d5]{color:rgb(var(--black));margin:0 0 .5em;transition:color .3s}[data-theme=dark] .title[data-astro-cid-tldeq5d5] h1[data-astro-cid-tldeq5d5]{color:#f8fafc}.subtitle[data-astro-cid-tldeq5d5]{color:rgb(var(--gray));margin-bottom:1rem;font-size:1.25rem;font-style:italic;transition:color .3s}[data-theme=dark] .subtitle[data-astro-cid-tldeq5d5]{color:#94a3b8}.date[data-astro-cid-tldeq5d5]{color:rgb(var(--gray));margin-bottom:.5em;transition:color .3s}[data-theme=dark] .date[data-astro-cid-tldeq5d5]{color:#94a3b8}.last-updated-on[data-astro-cid-tldeq5d5]{font-style:italic}[data-theme=dark] .prose[data-astro-cid-tldeq5d5] h1,[data-theme=dark] .prose[data-astro-cid-tldeq5d5] h2,[data-theme=dark] .prose[data-astro-cid-tldeq5d5] h3,[data-theme=dark] .prose[data-astro-cid-tldeq5d5] h4{color:#f8fafc}[data-theme=dark] .prose[data-astro-cid-tldeq5d5] strong{color:#fff}
+</style></head><body data-astro-cid-tldeq5d5><header data-astro-cid-nen7h5rs><a href="#main" class="skip-to-content" data-astro-cid-nen7h5rs>Skip to content</a><nav data-astro-cid-nen7h5rs><div class="brand" data-astro-cid-nen7h5rs><a href="/" class="brand-link" data-astro-cid-nen7h5rs><img src="/_astro/logo-sq.hLhpjO43_3IQmk.webp" alt="Logo" loading="eager" decoding="sync" data-astro-cid-nen7h5rs="true" width="32" height="32" class="brand-logo"><h2 data-astro-cid-nen7h5rs>/net/dev</h2></a></div><div class="internal-links" data-astro-cid-nen7h5rs><a href="/aboutme/#main" data-astro-cid-nen7h5rs="true" data-astro-cid-evkijfd6>About</a><a href="/blog" class="active" aria-current="page" data-astro-cid-nen7h5rs="true" data-astro-cid-evkijfd6>Blog</a><a href="/garage" data-astro-cid-nen7h5rs="true" data-astro-cid-evkijfd6>Garage</a><div class="dropdown" data-astro-cid-nen7h5rs><button class="dropbtn" aria-haspopup="menu" aria-expanded="false" data-astro-cid-nen7h5rs>Resources <span class="arrow" aria-hidden="true" data-astro-cid-nen7h5rs>▾</span></button><div class="dropdown-content" data-astro-cid-nen7h5rs><a href="https://health.google/" target="_blank" rel="noopener noreferrer" data-astro-cid-nen7h5rs><span class="nav-icon" data-astro-cid-nen7h5rs>❤️</span> be healthier ↗</a><a href="https://www.markdowntutorial.com/" target="_blank" rel="noopener noreferrer" data-astro-cid-nen7h5rs><span class="nav-icon" data-astro-cid-nen7h5rs>📝</span> markdown ↗</a><a href="https://gohugo.io" target="_blank" rel="noopener noreferrer" data-astro-cid-nen7h5rs><span class="nav-icon" data-astro-cid-nen7h5rs>🚀</span> go Hugo ↗</a><a href="https://firebase.google.com/" target="_blank" rel="noopener noreferrer" data-astro-cid-nen7h5rs><span class="nav-icon" data-astro-cid-nen7h5rs>🔥</span> firebase ↗</a><a href="https://perf.reviews/profile-guide" target="_blank" rel="noopener noreferrer" data-astro-cid-nen7h5rs><span class="nav-icon" data-astro-cid-nen7h5rs>⚡</span> DevTools Profile Guide ↗</a><a href="https://a2ui.org/" target="_blank" rel="noopener noreferrer" data-astro-cid-nen7h5rs><span class="nav-icon" data-astro-cid-nen7h5rs>🤖</span> Agent-to-UI (A2UI) ↗</a><a href="https://blog.netdev.be/" target="_self" data-astro-cid-nen7h5rs><span class="nav-icon" data-astro-cid-nen7h5rs>✍️</span> Jekyll blog</a><a href="/aboutme/#main" target="_self" data-astro-cid-nen7h5rs><span class="nav-icon" data-astro-cid-nen7h5rs>👤</span> About</a></div></div></div><div class="header-right" data-astro-cid-nen7h5rs><div class="search-widget" id="header-search-widget" data-astro-cid-nen7h5rs><button class="search-toggle-btn icon-btn-hover" id="search-toggle-btn" title="Rechercher" aria-label="Rechercher" data-astro-cid-nen7h5rs><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-nen7h5rs><circle cx="11" cy="11" r="8" data-astro-cid-nen7h5rs></circle><line x1="21" y1="21" x2="16.65" y2="16.65" data-astro-cid-nen7h5rs></line></svg></button><form action="/search" method="GET" class="search-expand-form" id="search-expand-form" data-astro-cid-nen7h5rs><input type="text" name="q" id="search-expand-input" class="search-expand-input" placeholder="Rechercher..." autocomplete="off" data-astro-cid-nen7h5rs><button type="button" class="search-close-btn" id="search-close-btn" title="Fermer" aria-label="Fermer la recherche" data-astro-cid-nen7h5rs>✕</button></form></div><div class="social-links" data-astro-cid-nen7h5rs><a href="https://github.com/jpaquay" target="_blank" rel="noopener noreferrer" title="GitHub" class="icon-btn-hover" data-astro-cid-nen7h5rs><span class="sr-only" data-astro-cid-nen7h5rs>GitHub</span><svg viewBox="0 0 24 24" aria-hidden="true" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-nen7h5rs><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" data-astro-cid-nen7h5rs></path><path d="M9 18c-4.51 2-5-2-7-2" data-astro-cid-nen7h5rs></path></svg></a><a href="https://twitter.com/jpaquay" target="_blank" rel="noopener noreferrer" title="Twitter / X" class="icon-btn-hover" data-astro-cid-nen7h5rs><span class="sr-only" data-astro-cid-nen7h5rs>Twitter</span><svg viewBox="0 0 24 24" aria-hidden="true" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-nen7h5rs><path d="M4 4l11.733 16H20L8.267 4z" data-astro-cid-nen7h5rs></path><path d="M4 20l6.768-6.768m2.46-2.46L20 4" data-astro-cid-nen7h5rs></path></svg></a><a href="https://linkedin.com/in/jeromepaquay" target="_blank" rel="noopener noreferrer" title="LinkedIn" class="icon-btn-hover" data-astro-cid-nen7h5rs><span class="sr-only" data-astro-cid-nen7h5rs>LinkedIn</span><svg viewBox="0 0 24 24" aria-hidden="true" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-nen7h5rs><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" data-astro-cid-nen7h5rs></path><rect x="2" y="9" width="4" height="12" data-astro-cid-nen7h5rs></rect><circle cx="4" cy="4" r="2" data-astro-cid-nen7h5rs></circle></svg></a><a href="https://dev.to/jpaquay" target="_blank" rel="noopener noreferrer" title="DEV.to" class="icon-btn-hover" data-astro-cid-nen7h5rs><span class="sr-only" data-astro-cid-nen7h5rs>DEV.to</span><svg viewBox="0 0 24 24" aria-hidden="true" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-nen7h5rs><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" data-astro-cid-nen7h5rs></path><path d="M7 8v8h2.5c2 0 3.5-1 3.5-4s-1.5-4-3.5-4H7z" data-astro-cid-nen7h5rs></path><path d="M17 8l-2.5 8h-1L11 8" data-astro-cid-nen7h5rs></path></svg></a></div><button class="theme-toggle-btn icon-btn-hover" id="global-theme-toggle" title="Toggle Light/Dark Theme" aria-label="Toggle Theme" data-astro-cid-nen7h5rs><svg class="sun-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-nen7h5rs><circle cx="12" cy="12" r="5" data-astro-cid-nen7h5rs></circle><line x1="12" y1="1" x2="12" y2="3" data-astro-cid-nen7h5rs></line><line x1="12" y1="21" x2="12" y2="23" data-astro-cid-nen7h5rs></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64" data-astro-cid-nen7h5rs></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78" data-astro-cid-nen7h5rs></line><line x1="1" y1="12" x2="3" y2="12" data-astro-cid-nen7h5rs></line><line x1="21" y1="12" x2="23" y2="12" data-astro-cid-nen7h5rs></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36" data-astro-cid-nen7h5rs></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22" data-astro-cid-nen7h5rs></line></svg><svg class="moon-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-nen7h5rs><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" data-astro-cid-nen7h5rs></path></svg></button></div></nav></header><script type="module">var e=()=>{let e=document.getElementById(`global-theme-toggle`),t=()=>localStorage.getItem(`vp-theme`)||(window.matchMedia(`(prefers-color-scheme: dark)`).matches?`dark`:`light`),n=e=>{document.documentElement.setAttribute(`data-theme`,e),localStorage.setItem(`vp-theme`,e)};n(t()),e&&e.addEventListener(`click`,()=>{let e=(document.documentElement.getAttribute(`data-theme`)||`light`)===`dark`?`light`:`dark`;n(e)});let r=document.getElementById(`header-search-widget`),i=document.getElementById(`search-toggle-btn`),a=document.getElementById(`search-close-btn`),o=document.getElementById(`search-expand-input`);if(r&&i&&a&&o){let e=()=>{r.classList.add(`open`),o.focus()},t=()=>{r.classList.remove(`open`),o.value=``};i.addEventListener(`click`,t=>{t.stopPropagation(),e()}),a.addEventListener(`click`,e=>{e.stopPropagation(),t()}),document.addEventListener(`click`,e=>{r.contains(e.target)||t()}),document.addEventListener(`keydown`,e=>{e.key===`Escape`&&t()})}};e(),document.addEventListener(`astro:after-swap`,e);var t=document.querySelector(`.dropdown`),n=document.querySelector(`.dropbtn`);if(t&&n){let e=e=>{n.setAttribute(`aria-expanded`,String(e))};t.addEventListener(`mouseenter`,()=>e(!0)),t.addEventListener(`mouseleave`,()=>e(!1)),t.addEventListener(`focusin`,()=>e(!0)),t.addEventListener(`focusout`,n=>{t.contains(n.relatedTarget)||e(!1)}),e(!1)}</script><main id="main" data-astro-cid-tldeq5d5><article data-astro-cid-tldeq5d5><div class="hero-image" data-astro-cid-tldeq5d5><img src="/assets/img/posts/2026-09-05-ai-cost-iceberg-tokenomics.webp" alt="" fetchpriority="high" loading="eager" decoding="async" data-astro-cid-tldeq5d5></div><div class="prose" data-astro-cid-tldeq5d5><div class="title" data-astro-cid-tldeq5d5><div class="date" data-astro-cid-tldeq5d5><time datetime="2026-09-05T16:00:00.000Z">Sep 5, 2026</time></div><h1 data-astro-cid-tldeq5d5>The Agentic Engineering Playbook: Why Your AI Bill is a Roadmap and Your Agent Needs an Architectural Mind</h1><p class="subtitle" data-astro-cid-tldeq5d5>From tokenomics and the Elephant &amp; Goldfish strategy to AI Governance by Design: 10x battle-tested lessons from the frontlines of agentic systems.</p><hr data-astro-cid-tldeq5d5></div><p><img src="/assets/img/posts/2026-09-05-ai-cost-iceberg-tokenomics.webp" alt="The AI Cost Iceberg: Understanding the New Tokenomics"></p>
+<p>If you have spent two decades walking between the glass offices of European institutions and the bustling cafés around Brussels’ Grand Place, you learn that enduring systems are never built on raw speed alone. They are forged on <strong>taste, fiscal discipline, and structural accountability</strong>.</p>
+<p>In the software industry, we are currently experiencing a seismic transition: the shift from classical deterministic algorithms to <strong>autonomous, non-deterministic agentic AI</strong>.</p>
+<p>Yet, as engineering organizations race to deploy agents into production, they are colliding head-on with two harsh realities:</p>
+<ol>
+<li><strong>The Financial Shock of Tokenomics</strong>: Static software licenses are dead. Every turn of thought, tool invocation, and context re-read is a live kilowatt-hour on the corporate utility bill. CFOs are left staring at invoices that look like autopsies rather than investments.</li>
+<li><strong>The Architectural Shock of Non-Determinism</strong>: An agent is not a “Line Cook” following a deterministic checklist; it is an autonomous “Gourmet Chef” interpreting high-level intent. An agent can pass every unit test with flying colors and still fail catastrophically in production due to a subtle flaw in its judgment.</li>
+</ol>
+<div class="box-note">
+<strong>The 10x Brusseleir Synthesis:</strong><br>
+True agentic engineering marries <strong>Tokenomics</strong> (treating your AI invoice as a strategic roadmap, not a budget leak) with <strong>AI Governance by Design</strong> (baking observability, MCP tooling, and the Quality Flywheel into the system's cognitive skeleton). 
+</div>
+<p>Below is the definitive playbook synthesizing battle-tested lessons from the frontlines.</p>
+<hr>
+<h1 id="part-i-tokenomics--turning-your-ai-invoice-into-a-strategic-roadmap">Part I: Tokenomics — Turning Your AI Invoice into a Strategic Roadmap</h1>
+<p>For decades, technology leadership operated in a world of predictable, seat-based SaaS subscriptions. You paid $50 per seat per month, and FinOps rarely had to launch forensic investigations into rogue developers.</p>
+<p>Agentic AI has replaced that world with variable, consumption-based <strong>tokenomics</strong>. But the teams truly winning with AI are not “tokenmaxxing”—obsessively cutting prompt sizes to save pennies while degrading intelligence. Instead, they treat their AI bill as a live blueprint indicating where value is created.</p>
+<p><img src="/assets/img/posts/2026-09-05-ai-tokenomics-framework.webp" alt="The AI Tokenomics Framework: Efficiency, Security, and Value"></p>
+<h3 id="1-the-elephant-and-goldfish-strategy-for-context-management">1. The “Elephant and Goldfish” Strategy for Context Management</h3>
+<p>Models have no persistent memory between conversational turns; every time an agent takes an action, it must re-read the entire accumulated trajectory. This “context bloat” causes latency to explode, invites hallucinations, and exponentially drains budgets.</p>
+<p>To conquer context bloat, high-performing teams apply the <strong>Elephant and Goldfish</strong> architecture:</p>
+<ul>
+<li><strong>The Elephant (High-Reasoning Session)</strong>: Allocate a high-capacity model session with deep reasoning capabilities to analyze requirements, map codebases, and generate an explicit, step-by-step execution plan.</li>
+<li><strong>The Goldfish (Clean Execution Session)</strong>: Pass that isolated execution plan to clean, lightweight, low-token sessions that execute tasks with fresh, unpolluted context windows.</li>
+</ul>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>┌─────────────────────────────────────────────────────────────────────────────┐</span></span>
+<span class="line"><span>│                    THE ELEPHANT &#x26; GOLDFISH CONTEXT LOOP                     │</span></span>
+<span class="line"><span>│                                                                             │</span></span>
+<span class="line"><span>│  [ High-Reasoning Session ] ──► [ Detailed Execution Plan ] ──► [ Clean Goldfish Worker ] │</span></span>
+<span class="line"><span>│      ("The Elephant")               (Structured Artifact)           (Zero Context Bloat)  │</span></span>
+<span class="line"><span>│   • Reads broad context             • Explicit file paths           • Executes surgically │</span></span>
+<span class="line"><span>│   • Reasons deeply                  • Step-by-step actions          • Terminates cleanly  │</span></span>
+<span class="line"><span>└─────────────────────────────────────────────────────────────────────────────┘</span></span></code></pre>
+<h3 id="2-automate-knowledge-with-skillmd-and-cli-tools">2. Automate Knowledge with <code>SKILL.md</code> and CLI Tools</h3>
+<p>Never force an agent to burn thousands of tokens searching documentation or discovering APIs from scratch. Package institutional procedures, tool usage rules, and domain standards into modular <code>SKILL.md</code> files. When an agent requires specialized capabilities, it dynamically reads the concise skill definition rather than executing open-ended web searches.</p>
+<h3 id="3-the-undo-rule-dont-poison-the-well">3. The “Undo” Rule: Don’t Poison the Well</h3>
+<p>When an agent deviates from its goal, our natural human instinct is to type a corrective prompt: <em>“No, that wasn’t right, try fixing line 40…”</em></p>
+<p>In agentic systems, this is catastrophic. Adding corrective arguments to a failing trajectory bloats the context and compounds confusion. <strong>Always hit Undo or revert the file.</strong> Reverting clears the toxic turns from history, preserving a pristine trajectory and saving thousands of wasted tokens.</p>
+<h3 id="4-the-13-rule--the-hidden-cost-iceberg">4. The 1/3 Rule &amp; The Hidden Cost Iceberg</h3>
+<p>The raw token invoice you receive from cloud providers represents roughly <strong>one-third</strong> of the true cost of an enterprise AI initiative. The submerged two-thirds consist of:</p>
+<ul>
+<li>Tool integration and custom glue code.</li>
+<li>Security frameworks and compliance verification.</li>
+<li>Human-in-the-loop review overhead.</li>
+<li>Upkeep against prompt drift and upstream model API changes.</li>
+</ul>
+<p>Understanding this ratio is vital for avoiding the “Maintenance Trap.” While starting an agent project is cheap, the manual maintenance required to handle prompt drift and edge cases follows a punishing 100x difficulty curve. Smart strategists separate the “daily spend” of running agents from an “optimization budget” for autonomous self-evolution.</p>
+<h3 id="5-the-3-stages-of-ai-cost-maturity">5. The 3 Stages of AI Cost Maturity</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left">Stage</th>
+<th style="text-align: left">Core Objective</th>
+<th style="text-align: left">Actionable Milestone</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left"><strong>1. Visibility</strong></td>
+<td style="text-align: left">Know where every dollar goes</td>
+<td style="text-align: left">Eliminates “autopsy-style” end-of-month budget meetings through real-time attribution.</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>2. Unit Economics</strong></td>
+<td style="text-align: left">Know the cost per discrete outcome</td>
+<td style="text-align: left">Tracks cost per pull request merged, bug triaged, or support ticket resolved.</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>3. Business Value</strong></td>
+<td style="text-align: left">Connect spend to revenue &amp; velocity</td>
+<td style="text-align: left">Justifies spend shifts: e.g., a <strong>+20% increase in token spend</strong> is a huge win if it yields a <strong>-40% drop in incident MTTR</strong>.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h1 id="part-ii-ai-governance-by-design-aigd--the-gourmet-chef--architectural-trust">Part II: AI Governance by Design (AIGD) — The Gourmet Chef &amp; Architectural Trust</h1>
+<p><img src="/assets/img/posts/2026-09-05-agentic-trust-governance-storyboard.webp" alt="The Journey to Agentic Trust: AI Governance by Design Storyboard"></p>
+<p>If Tokenomics represents the engine’s fuel efficiency, <strong>AI Governance by Design (AIGD)</strong> is the chassis, brakes, and navigational intelligence that keep the vehicle on the road.</p>
+<p>Traditional software engineering operated like a <strong>Line Cook</strong>: rigid recipes, deterministic inputs, and unit tests verifying predictable outputs. Agentic AI operates like a <strong>Gourmet Chef</strong>: given an open pantry and high-level goal, it orchestrates novel ingredient pairings, adapts when tools fail, and reasons non-linearly.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>┌─────────────────────────────────┬───────────────────────────────────────────┐</span></span>
+<span class="line"><span>│     THE LINE COOK PARADIGM      │          THE GOURMET CHEF PARADIGM        │</span></span>
+<span class="line"><span>│    (Traditional Deterministic)   │             (Agentic Autonomous)          │</span></span>
+<span class="line"><span>├─────────────────────────────────┼───────────────────────────────────────────┤</span></span>
+<span class="line"><span>│ • Strict static recipe           │ • Goal-oriented intent interpretation     │</span></span>
+<span class="line"><span>│ • Deterministic test suites      │ • Non-deterministic reasoning trajectories│</span></span>
+<span class="line"><span>│ • "Did the function return 200?" │ • "Was the architectural judgment sound?" │</span></span>
+<span class="line"><span>│ • Reactive debugging post-crash  │ • Proactive AI Governance by Design (AIGD)│</span></span>
+<span class="line"><span>└─────────────────────────────────┴───────────────────────────────────────────┘</span></span></code></pre>
+<p>Because an agent can pass every unit test while harboring flawed logical judgment, <strong>reactive governance fails</strong>. Governance must be embedded into the agent’s architectural skeleton.</p>
+<hr>
+<h2 id="the-four-pillars-of-quality">The Four Pillars of Quality</h2>
+<ol>
+<li><strong>Effectiveness</strong>: Does the agent consistently achieve the intended business objective without hallucinated shortcuts?</li>
+<li><strong>Efficiency</strong>: Does the agent accomplish the mission with the leanest possible trajectory, avoiding repetitive loops and tool bloat?</li>
+<li><strong>Robustness</strong>: How gracefully does the system adapt when a tool returns a 500 error, an API schema mutates, or an unexpected edge case arises?</li>
+<li><strong>Safety &amp; Compliance</strong>: Does the agent adhere strictly to data privacy boundaries, avoid Confused Deputy privilege escalation, and respect corporate policy?</li>
+</ol>
+<hr>
+<h2 id="solving-the-n-times-m-tool-problem-with-model-context-protocol-mcp">Solving the $N \times M$ Tool Problem with Model Context Protocol (MCP)</h2>
+<p>In early agent deployments, connecting $N$ models to $M$ external tools required custom point-to-point wrappers—an unsustainable $O(N \times M)$ integration nightmare.</p>
+<p>The open <strong>Model Context Protocol (MCP)</strong> solves this by establishing a universal client-host-server standard. However, naive implementations introduce a new problem: <strong>Counter Clutter</strong>. If you expose 50 MCP tools to an agent simultaneously, loading their full JSON schemas into every prompt consumes massive context and confuses the agent’s decision matrix.</p>
+<p><strong>The Architectural Remedy: Dynamic Tool Retrieval.</strong> Instead of pre-loading all tool schemas, use semantic search (a RAG-like retrieval layer) to load only the specific tools relevant to the current step in the trajectory.</p>
+<hr>
+<h2 id="security-the-agentic-paradox--the-confused-deputy">Security: The Agentic Paradox &amp; The Confused Deputy</h2>
+<p>To perform meaningful work, agents require deep access to source repositories, cloud infrastructure, and databases. But that same insider access drastically widens the threat surface:</p>
+<ul>
+<li><strong>Tool Poisoning</strong>: Malicious payloads injected into external databases or pull requests that subvert the agent’s reasoning.</li>
+<li><strong>Indirect Prompt Injection</strong>: Webpages or documents containing hidden instructions that commandeer the agent’s high-level tool permissions.</li>
+<li><strong>The Confused Deputy</strong>: The agent is duped into executing destructive actions (e.g., dropping a database table or deleting a cloud project) using its own valid credentials.</li>
+</ul>
+<p>To neutralize these threats, organizations must enforce <strong>Tiered Human Oversight (HITL)</strong> with automated circuit breakers: read-only discovery operations run autonomously, while destructive mutations require cryptographic, interactive human approval.</p>
+<hr>
+<h2 id="evaluation-the-trajectory-is-the-truth">Evaluation: The Trajectory is the Truth</h2>
+<p>In traditional software, we test the outcome. In agentic AI, <strong>the trajectory is the truth</strong>.</p>
+<p>A correct final answer often hides a disastrous execution path: an agent may have hallucinated a step, brute-forced an insecure workaround, or ignored critical warnings. To evaluate agents rigorously, we employ an <strong>Outside-In Glass Box hierarchy</strong>:</p>
+<ol>
+<li><strong>The Black Box</strong>: Did the user receive the correct deliverable?</li>
+<li><strong>The Glass Box</strong>: Inspect the full chain-of-thought, tool calls, and observations. Was the reasoning logically sound? Were tools utilized safely and efficiently?</li>
+</ol>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>┌─────────────────────────────────────────────────────────────────────────────┐</span></span>
+<span class="line"><span>│                       THE THREE PILLARS OF OBSERVABILITY                    │</span></span>
+<span class="line"><span>│                                                                             │</span></span>
+<span class="line"><span>│  1. LOGGING (The Agent's Diary)   ──► Structured JSON capturing thoughts,  │</span></span>
+<span class="line"><span>│                                        tool calls, and environmental states. │</span></span>
+<span class="line"><span>│  2. TRACING (The Recipe Thread)   ──► OpenTelemetry spans showing the exact │</span></span>
+<span class="line"><span>│                                        causal chain from query to outcome.   │</span></span>
+<span class="line"><span>│  3. METRICS (The Health Vitals)   ──► Real-time P99 latency, token costs,   │</span></span>
+<span class="line"><span>│                                        trajectory length, and eval scores.  │</span></span>
+<span class="line"><span>└─────────────────────────────────────────────────────────────────────────────┘</span></span></code></pre>
+<hr>
+<h2 id="the-agent-quality-flywheel">The Agent Quality Flywheel</h2>
+<p>Reliable agent systems are not built in a single sprint; they are forged through a continuous, virtuous cycle:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>                  ┌───────────────────────────────┐</span></span>
+<span class="line"><span>                  │      1. DEFINE TARGETS        │</span></span>
+<span class="line"><span>                  │  (Effectiveness, Robustness,  │</span></span>
+<span class="line"><span>                  │   Efficiency, Safety)         │</span></span>
+<span class="line"><span>                  └──────────────┬────────────────┘</span></span>
+<span class="line"><span>                                 │</span></span>
+<span class="line"><span>                                 ▼</span></span>
+<span class="line"><span>                  ┌───────────────────────────────┐</span></span>
+<span class="line"><span>                  │   2. INSTRUMENT OBSERVABILITY │</span></span>
+<span class="line"><span>                  │  (Logs, Tracing, Metrics,     │</span></span>
+<span class="line"><span>                  │   Glass Box Telemetry)        │</span></span>
+<span class="line"><span>                  └──────────────┬────────────────┘</span></span>
+<span class="line"><span>                                 │</span></span>
+<span class="line"><span>                                 ▼</span></span>
+<span class="line"><span>                  ┌───────────────────────────────┐</span></span>
+<span class="line"><span>                  │      3. EVALUATE TRAJECTORY   │</span></span>
+<span class="line"><span>                  │  (LLM-as-a-Judge for scale,   │</span></span>
+<span class="line"><span>                  │   Human Expert Goldens)       │</span></span>
+<span class="line"><span>                  └──────────────┬────────────────┘</span></span>
+<span class="line"><span>                                 │</span></span>
+<span class="line"><span>                                 ▼</span></span>
+<span class="line"><span>                  ┌───────────────────────────────┐</span></span>
+<span class="line"><span>                  │    4. ARCHITECT THE FEEDBACK  │</span></span>
+<span class="line"><span>                  │  (Production trajectory bugs  │</span></span>
+<span class="line"><span>                  │   become permanent test sets) │</span></span>
+<span class="line"><span>                  └──────────────┬────────────────┘</span></span>
+<span class="line"><span>                                 │</span></span>
+<span class="line"><span>                                 └──────────► (Repeat Cycle)</span></span></code></pre>
+<p>Every production anomaly or hallucinated turn is annotated, packaged into your <strong>Golden Evaluation Dataset</strong>, and run as a non-negotiable regression test against every future model or prompt modification.</p>
+<hr>
+<h1 id="the-brusseleirs-10x-epilogue">The Brusseleir’s 10x Epilogue</h1>
+<p>In Brussels, whether you are debating cybersecurity mandates at the Berlaymont or enjoying a slow-simmered carbonnade flamande near Sainte-Catherine, you appreciate that <strong>quality cannot be faked with shortcuts</strong>.</p>
+<p>Treating your AI token invoice as a roadmap strips away the panic of variable billing and unlocks surgical unit economics. Embedding AI Governance by Design gives your autonomous “Gourmet Chefs” the guardrails and observability they need to earn production trust.</p>
+<p>The future of software engineering does not belong to whoever burns the most tokens or writes the longest system prompts. It belongs to the architects who build <strong>transparent, cost-effective, and resilient kitchens that can stand the heat of real-world accountability</strong>.</p>
+<hr>
+<h2 id="-architectural-compendium--storyboard-carousel">📸 Architectural Compendium &amp; Storyboard Carousel</h2>
+<p>Browse all three high-resolution architectural plates from this playbook:</p>
+<div class="agentic-carousel-container">
+  <div class="agentic-carousel-viewer" id="agentic-viewer">
+    <div class="agentic-slide active" data-slide="0">
+      <img src="/assets/img/posts/2026-09-05-ai-tokenomics-framework.webp" alt="The AI Tokenomics Framework: Efficiency, Security, and Value" loading="eager" />
+      <div class="agentic-slide-caption">
+        <strong>Plate 1 / 3 — The AI Tokenomics Framework</strong>: 11 principles of token-efficient engineering, Elephant & Goldfish context strategies, and the economics of outcome.
+      </div>
+    </div>
+    <div class="agentic-slide" data-slide="1">
+      <img src="/assets/img/posts/2026-09-05-ai-cost-iceberg-tokenomics.webp" alt="The AI Cost Iceberg: Understanding the New Tokenomics" loading="lazy" />
+      <div class="agentic-slide-caption">
+        <strong>Plate 2 / 3 — The AI Cost Iceberg</strong>: Visualizing the visible 1/3 token tip versus the hidden 2/3 governance, integration, and upkeep base.
+      </div>
+    </div>
+    <div class="agentic-slide" data-slide="2">
+      <img src="/assets/img/posts/2026-09-05-agentic-trust-governance-storyboard.webp" alt="The Journey to Agentic Trust: AI Governance by Design Storyboard" loading="lazy" />
+      <div class="agentic-slide-caption">
+        <strong>Plate 3 / 3 — The Journey to Agentic Trust</strong>: The 7-panel blueprint for AI Governance by Design, Model Context Protocol (MCP), and the Quality Flywheel.
+      </div>
+    </div>
+  </div>
+  <!-- Carousel Controls -->
+  <div class="agentic-carousel-controls">
+    <button type="button" class="agentic-nav-btn" id="prev-agentic-slide" aria-label="Plate précédente">❮ Previous Plate</button>
+    <div class="agentic-carousel-dots" id="agentic-carousel-dots">
+      <!-- Generated dynamically -->
+    </div>
+    <button type="button" class="agentic-nav-btn" id="next-agentic-slide" aria-label="Plate suivante">Next Plate ❯</button>
+  </div>
+</div>
+<style>
+.agentic-carousel-container {
+  margin: 2rem 0;
+  background: var(--bg-card, #ffffff);
+  border: 1px solid var(--border-color, #e2e8f0);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--box-shadow, 0 10px 30px rgba(0,0,0,0.08));
+}
+
+.agentic-carousel-viewer {
+  position: relative;
+  width: 100%;
+  min-height: 440px;
+  background: #0f172a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.agentic-slide {
+  display: none;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeInAgentic 0.4s ease-in-out;
+}
+
+.agentic-slide.active {
+  display: flex;
+}
+
+.agentic-slide img {
+  max-height: 520px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  background: #090d16;
+}
+
+.agentic-slide-caption {
+  width: 100%;
+  padding: 12px 20px;
+  background: rgba(15, 23, 42, 0.95);
+  color: #f8fafc;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.agentic-slide-caption strong {
+  color: #38bdf8;
+}
+
+.agentic-carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: var(--bg-card, #ffffff);
+  border-top: 1px solid var(--border-color, #e2e8f0);
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.agentic-nav-btn {
+  background: var(--accent, #10b981);
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, background-color 0.2s ease;
+}
+
+.agentic-nav-btn:hover {
+  background: var(--accent-dark, #059669);
+  transform: scale(1.03);
+}
+
+.agentic-carousel-dots {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.agentic-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #94a3b8;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.agentic-dot.active {
+  background: var(--accent, #10b981);
+  transform: scale(1.35);
+  box-shadow: 0 0 8px rgba(16, 185, 129, 0.5);
+}
+
+@keyframes fadeInAgentic {
+  from { opacity: 0.3; transform: scale(0.99); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@media (max-width: 640px) {
+  .agentic-carousel-viewer {
+    min-height: 280px;
+  }
+  .agentic-slide img {
+    max-height: 320px;
+  }
+  .agentic-carousel-controls {
+    justify-content: center;
+  }
+}
+</style>
+<script is:inline>
+(function() {
+  function initAgenticCarousel() {
+    var slides = document.querySelectorAll('.agentic-slide');
+    var dotsContainer = document.getElementById('agentic-carousel-dots');
+    var prevBtn = document.getElementById('prev-agentic-slide');
+    var nextBtn = document.getElementById('next-agentic-slide');
+    var currentIndex = 0;
+
+    if (!slides.length || !dotsContainer) return;
+
+    dotsContainer.innerHTML = '';
+    slides.forEach(function(_, idx) {
+      var dot = document.createElement('span');
+      dot.className = 'agentic-dot' + (idx === 0 ? ' active' : '');
+      dot.setAttribute('aria-label', 'Go to plate ' + (idx + 1));
+      dot.addEventListener('click', function() {
+        showSlide(idx);
+      });
+      dotsContainer.appendChild(dot);
+    });
+
+    function showSlide(index) {
+      if (index < 0) index = slides.length - 1;
+      if (index >= slides.length) index = 0;
+      currentIndex = index;
+
+      slides.forEach(function(slide, idx) {
+        if (idx === currentIndex) {
+          slide.classList.add('active');
+        } else {
+          slide.classList.remove('active');
+        }
+      });
+
+      var dots = dotsContainer.querySelectorAll('.agentic-dot');
+      dots.forEach(function(dot, idx) {
+        if (idx === currentIndex) {
+          dot.classList.add('active');
+        } else {
+          dot.classList.remove('active');
+        }
+      });
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', function() {
+        showSlide(currentIndex - 1);
+      });
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', function() {
+        showSlide(currentIndex + 1);
+      });
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'ArrowLeft') showSlide(currentIndex - 1);
+      if (e.key === 'ArrowRight') showSlide(currentIndex + 1);
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAgenticCarousel);
+  } else {
+    initAgenticCarousel();
+  }
+})();
+</script>
+<div class="box-note">
+<strong>Deep-Dive Companion Reads:</strong><br>
+• <a href="https://dev.to/jpaquay/why-your-ai-bill-is-a-roadmap-not-a-budget-leak-5-surprising-lessons-from-the-frontlines-of-4bgg" target="_blank" rel="noopener noreferrer">Why Your AI Bill is a Roadmap (Not a Budget Leak) on DEV.to</a><br>
+• <a href="https://dev.to/jpaquay/from-line-cook-to-gourmet-chef-why-your-ai-agent-needs-an-architectural-mind-not-just-a-script-n08" target="_blank" rel="noopener noreferrer">From Line Cook to Gourmet Chef: Why Your AI Agent Needs an Architectural Mind on DEV.to</a>
+</div>
+</div></article></main><footer data-astro-cid-jo6i4kqk><div class="footer-credits" data-astro-cid-jo6i4kqk>/net/dev 2026</div><div class="cc-license" data-astro-cid-jo6i4kqk><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer" title="Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)" class="cc-license-link" data-astro-cid-jo6i4kqk><span class="cc-icons" aria-hidden="true" data-astro-cid-jo6i4kqk><!-- CC --><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-jo6i4kqk><circle cx="12" cy="12" r="10" data-astro-cid-jo6i4kqk></circle><path d="M10.5 9a2.5 2.5 0 1 0 0 6" data-astro-cid-jo6i4kqk></path><path d="M16.5 9a2.5 2.5 0 1 0 0 6" data-astro-cid-jo6i4kqk></path></svg><!-- BY (Person) --><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-jo6i4kqk><circle cx="12" cy="7" r="3" data-astro-cid-jo6i4kqk></circle><path d="M17 21v-2a4 4 0 0 0-4-4h-2a4 4 0 0 0-4 4v2" data-astro-cid-jo6i4kqk></path></svg><!-- NC (NonCommercial) --><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-jo6i4kqk><circle cx="12" cy="12" r="10" data-astro-cid-jo6i4kqk></circle><path d="M12 6v12" data-astro-cid-jo6i4kqk></path><path d="M15 9.5a2.5 2.5 0 0 0-5 0c0 3 5 1.5 5 4.5a2.5 2.5 0 0 1-5 0" data-astro-cid-jo6i4kqk></path><line x1="4.93" y1="4.93" x2="19.07" y2="19.07" data-astro-cid-jo6i4kqk></line></svg><!-- SA (ShareAlike) --><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-jo6i4kqk><circle cx="12" cy="12" r="10" data-astro-cid-jo6i4kqk></circle><path d="M8 12a4 4 0 1 0 4-4H7" data-astro-cid-jo6i4kqk></path><polyline points="10 5 7 8 10 11" data-astro-cid-jo6i4kqk></polyline></svg></span><span class="cc-text" data-astro-cid-jo6i4kqk>CC BY-NC-SA 4.0 License</span></a></div><div class="social-links" data-astro-cid-jo6i4kqk><a href="https://github.com/jpaquay" target="_blank" rel="noopener noreferrer" title="GitHub" class="icon-btn-hover" data-astro-cid-jo6i4kqk><span class="sr-only" data-astro-cid-jo6i4kqk>GitHub</span><svg viewBox="0 0 24 24" aria-hidden="true" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-jo6i4kqk><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" data-astro-cid-jo6i4kqk></path><path d="M9 18c-4.51 2-5-2-7-2" data-astro-cid-jo6i4kqk></path></svg></a><a href="https://twitter.com/jpaquay" target="_blank" rel="noopener noreferrer" title="Twitter / X" class="icon-btn-hover" data-astro-cid-jo6i4kqk><span class="sr-only" data-astro-cid-jo6i4kqk>Twitter</span><svg viewBox="0 0 24 24" aria-hidden="true" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-jo6i4kqk><path d="M4 4l11.733 16H20L8.267 4z" data-astro-cid-jo6i4kqk></path><path d="M4 20l6.768-6.768m2.46-2.46L20 4" data-astro-cid-jo6i4kqk></path></svg></a><a href="https://linkedin.com/in/jeromepaquay" target="_blank" rel="noopener noreferrer" title="LinkedIn" class="icon-btn-hover" data-astro-cid-jo6i4kqk><span class="sr-only" data-astro-cid-jo6i4kqk>LinkedIn</span><svg viewBox="0 0 24 24" aria-hidden="true" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-jo6i4kqk><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" data-astro-cid-jo6i4kqk></path><rect x="2" y="9" width="4" height="12" data-astro-cid-jo6i4kqk></rect><circle cx="4" cy="4" r="2" data-astro-cid-jo6i4kqk></circle></svg></a><a href="https://dev.to/jpaquay" target="_blank" rel="noopener noreferrer" title="DEV.to" class="icon-btn-hover" data-astro-cid-jo6i4kqk><span class="sr-only" data-astro-cid-jo6i4kqk>DEV.to</span><svg viewBox="0 0 24 24" aria-hidden="true" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-jo6i4kqk><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" data-astro-cid-jo6i4kqk></path><path d="M7 8v8h2.5c2 0 3.5-1 3.5-4s-1.5-4-3.5-4H7z" data-astro-cid-jo6i4kqk></path><path d="M17 8l-2.5 8h-1L11 8" data-astro-cid-jo6i4kqk></path></svg></a><a href="https://instagram.com/jpaquay" target="_blank" rel="noopener noreferrer" title="Instagram" class="icon-btn-hover" data-astro-cid-jo6i4kqk><span class="sr-only" data-astro-cid-jo6i4kqk>Instagram</span><svg viewBox="0 0 24 24" aria-hidden="true" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-jo6i4kqk><rect x="2" y="2" width="20" height="20" rx="5" ry="5" data-astro-cid-jo6i4kqk></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" data-astro-cid-jo6i4kqk></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" data-astro-cid-jo6i4kqk></line></svg></a><a href="/sitemap.xml" target="_blank" rel="noopener noreferrer" title="Sitemap 🗺️" class="icon-btn-hover" data-astro-cid-jo6i4kqk><span class="sr-only" data-astro-cid-jo6i4kqk>Sitemap</span><svg viewBox="0 0 24 24" aria-hidden="true" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-jo6i4kqk><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6" data-astro-cid-jo6i4kqk></polygon><line x1="8" y1="2" x2="8" y2="18" data-astro-cid-jo6i4kqk></line><line x1="16" y1="6" x2="16" y2="22" data-astro-cid-jo6i4kqk></line></svg></a><a href="/blog/rss.xml" target="_blank" rel="noopener noreferrer" title="RSS Feed 📡" class="icon-btn-hover" data-astro-cid-jo6i4kqk><span class="sr-only" data-astro-cid-jo6i4kqk>RSS Feed</span><svg viewBox="0 0 24 24" aria-hidden="true" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-jo6i4kqk><path d="M4 11a9 9 0 0 1 9 9" data-astro-cid-jo6i4kqk></path><path d="M4 4a16 16 0 0 1 16 16" data-astro-cid-jo6i4kqk></path><circle cx="5" cy="19" r="1" data-astro-cid-jo6i4kqk></circle></svg></a></div></footer></body></html>
