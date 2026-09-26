@@ -574,4 +574,276 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
+
+  // --- 12. Garage Mechanics Interactive Picture Carousel Overlay Modal ---
+  const sitesDataEl = document.getElementById('garage-sites-data');
+  let garageSitesList = [];
+  const garageSitesMap = new Map();
+
+  if (sitesDataEl && sitesDataEl.textContent) {
+    try {
+      const parsed = JSON.parse(sitesDataEl.textContent);
+      if (Array.isArray(parsed)) {
+        garageSitesList = parsed;
+        parsed.forEach(site => {
+          if (site && site.id) {
+            garageSitesMap.set(site.id, site);
+          }
+        });
+      }
+    } catch (err) {
+      console.error('Failed to parse garage-sites-data JSON:', err);
+    }
+  }
+
+  const lightboxModal = document.getElementById('garage-lightbox-modal');
+  const lightboxImg = document.getElementById('garage-lightbox-img');
+  const lightboxTitle = document.getElementById('garage-lightbox-title');
+  const lightboxTag = document.getElementById('garage-lightbox-tag');
+  const lightboxCaption = document.getElementById('garage-lightbox-caption');
+  const lightboxSiteDesc = document.getElementById('garage-lightbox-site-desc');
+  const lightboxCounter = document.getElementById('garage-lightbox-counter');
+  const lightboxVisit = document.getElementById('garage-lightbox-visit');
+  const lightboxPrev = document.getElementById('garage-lightbox-prev');
+  const lightboxNext = document.getElementById('garage-lightbox-next');
+  const lightboxClose = document.getElementById('garage-lightbox-close');
+  const lightboxThumbs = document.getElementById('garage-lightbox-thumbs');
+  const siteTabBtns = document.querySelectorAll('[data-lightbox-site-tab]');
+
+  let activeLightboxSiteId = null;
+  let activeLightboxSlideIndex = 0;
+
+  function renderOverlayThumbs(site, activeIdx) {
+    if (!lightboxThumbs || !site || !Array.isArray(site.slides)) return;
+    const frag = document.createDocumentFragment();
+
+    site.slides.forEach((slide, idx) => {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = idx === activeIdx ? 'vp-carousel-thumb active' : 'vp-carousel-thumb';
+      btn.setAttribute('role', 'tab');
+      btn.setAttribute('aria-selected', idx === activeIdx ? 'true' : 'false');
+      btn.setAttribute('title', `${idx + 1}. ${slide.title}`);
+
+      const img = document.createElement('img');
+      img.setAttribute('src', slide.src);
+      img.setAttribute('alt', slide.title);
+      img.setAttribute('loading', 'lazy');
+      img.setAttribute('decoding', 'async');
+
+      const badge = document.createElement('span');
+      badge.className = 'vp-thumb-index';
+      badge.textContent = `#${idx + 1}`;
+
+      btn.appendChild(img);
+      btn.appendChild(badge);
+
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        setOverlayView(site.id, idx);
+      });
+
+      frag.appendChild(btn);
+    });
+
+    lightboxThumbs.replaceChildren(frag);
+  }
+
+  function setOverlayView(siteId, targetSlideIndex) {
+    const site = garageSitesMap.get(siteId);
+    if (!site || !Array.isArray(site.slides) || site.slides.length === 0) return;
+
+    const siteChanged = activeLightboxSiteId !== siteId;
+    activeLightboxSiteId = siteId;
+
+    const count = site.slides.length;
+    const normalizedIndex = ((targetSlideIndex % count) + count) % count;
+    activeLightboxSlideIndex = normalizedIndex;
+
+    const slide = site.slides[normalizedIndex];
+
+    // Sync top 8-site switcher tabs
+    siteTabBtns.forEach(tabBtn => {
+      const tabSiteId = tabBtn.getAttribute('data-lightbox-site-tab');
+      const isMatch = tabSiteId === siteId;
+      if (isMatch) {
+        tabBtn.classList.add('active');
+        tabBtn.setAttribute('aria-selected', 'true');
+      } else {
+        tabBtn.classList.remove('active');
+        tabBtn.setAttribute('aria-selected', 'false');
+      }
+    });
+
+    if (lightboxImg) {
+      lightboxImg.setAttribute('src', slide.src);
+      lightboxImg.setAttribute('alt', `${site.name} (${site.domain}) — ${slide.title}`);
+    }
+
+    if (lightboxTitle) {
+      lightboxTitle.textContent = `${site.icon} ${site.name} — ${slide.title}`;
+    }
+
+    if (lightboxTag) {
+      lightboxTag.textContent = site.tag;
+      lightboxTag.setAttribute('style', site.tagStyle || '');
+    }
+
+    if (lightboxCounter) {
+      lightboxCounter.textContent = `${normalizedIndex + 1} / ${count}`;
+    }
+
+    if (lightboxCaption) {
+      lightboxCaption.textContent = slide.caption;
+    }
+
+    if (lightboxSiteDesc) {
+      lightboxSiteDesc.textContent = site.description;
+    }
+
+    if (lightboxVisit) {
+      lightboxVisit.setAttribute('href', site.url);
+      lightboxVisit.textContent = `🌐 Visit ${site.domain} ➔`;
+    }
+
+    if (lightboxPrev) {
+      lightboxPrev.style.display = count > 1 ? 'inline-flex' : 'none';
+    }
+    if (lightboxNext) {
+      lightboxNext.style.display = count > 1 ? 'inline-flex' : 'none';
+    }
+
+    if (siteChanged || !lightboxThumbs || lightboxThumbs.children.length !== count) {
+      renderOverlayThumbs(site, normalizedIndex);
+    } else {
+      Array.from(lightboxThumbs.children).forEach((thumbEl, idx) => {
+        if (idx === normalizedIndex) {
+          thumbEl.classList.add('active');
+          thumbEl.setAttribute('aria-selected', 'true');
+        } else {
+          thumbEl.classList.remove('active');
+          thumbEl.setAttribute('aria-selected', 'false');
+        }
+      });
+    }
+  }
+
+  function openGarageOverlay(siteId, slideIndex) {
+    if (!lightboxModal || !garageSitesMap.has(siteId)) return;
+    const idx = typeof slideIndex === 'number' && !Number.isNaN(slideIndex) ? slideIndex : 0;
+    lightboxModal.classList.add('active');
+    lightboxModal.setAttribute('aria-hidden', 'false');
+    setOverlayView(siteId, idx);
+  }
+
+  function closeGarageOverlay() {
+    if (!lightboxModal) return;
+    lightboxModal.classList.remove('active');
+    lightboxModal.setAttribute('aria-hidden', 'true');
+    activeLightboxSiteId = null;
+  }
+
+  function stepOverlaySite(delta) {
+    if (!activeLightboxSiteId || garageSitesList.length === 0) return;
+    const curIdx = garageSitesList.findIndex(s => s.id === activeLightboxSiteId);
+    if (curIdx === -1) return;
+    const nextIdx = ((curIdx + delta) % garageSitesList.length + garageSitesList.length) % garageSitesList.length;
+    setOverlayView(garageSitesList[nextIdx].id, 0);
+  }
+
+  // Bind all [data-garage-open] triggers (cards, buttons, mini dots, header tour button)
+  document.querySelectorAll('[data-garage-open]').forEach(triggerEl => {
+    triggerEl.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const siteId = triggerEl.getAttribute('data-garage-open');
+      const slideAttr = triggerEl.getAttribute('data-garage-slide');
+      const slideIdx = slideAttr !== null ? parseInt(slideAttr, 10) : 0;
+      if (siteId) openGarageOverlay(siteId, slideIdx);
+    });
+
+    if (triggerEl.getAttribute('role') === 'button') {
+      triggerEl.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          const siteId = triggerEl.getAttribute('data-garage-open');
+          const slideAttr = triggerEl.getAttribute('data-garage-slide');
+          const slideIdx = slideAttr !== null ? parseInt(slideAttr, 10) : 0;
+          if (siteId) openGarageOverlay(siteId, slideIdx);
+        }
+      });
+    }
+  });
+
+  // Hovering mini dots on a card cover previews that screenshot directly on the card cover
+  document.querySelectorAll('.vp-garage-mini-dot[data-garage-open]').forEach(dotEl => {
+    dotEl.addEventListener('mouseenter', () => {
+      const siteId = dotEl.getAttribute('data-garage-open');
+      const slideIdx = parseInt(dotEl.getAttribute('data-garage-slide') || '0', 10);
+      const site = siteId ? garageSitesMap.get(siteId) : null;
+      const card = siteId ? document.querySelector(`.vp-garage-card[data-garage-card="${siteId}"]`) : null;
+      if (!site || !card || !site.slides[slideIdx]) return;
+      const coverImg = card.querySelector('.vp-garage-cover-img');
+      if (coverImg) {
+        coverImg.setAttribute('src', site.slides[slideIdx].src);
+      }
+      card.querySelectorAll('.vp-garage-mini-dot').forEach((d, idx) => {
+        if (idx === slideIdx) d.classList.add('active');
+        else d.classList.remove('active');
+      });
+    });
+  });
+
+  // Bind top 8-site switcher tabs inside the overlay
+  siteTabBtns.forEach(tabBtn => {
+    tabBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const siteId = tabBtn.getAttribute('data-lightbox-site-tab');
+      if (siteId) setOverlayView(siteId, 0);
+    });
+  });
+
+  if (lightboxClose) {
+    lightboxClose.addEventListener('click', closeGarageOverlay);
+  }
+
+  if (lightboxModal) {
+    lightboxModal.addEventListener('click', (e) => {
+      if (e.target === lightboxModal) closeGarageOverlay();
+    });
+  }
+
+  if (lightboxPrev) {
+    lightboxPrev.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (!activeLightboxSiteId) return;
+      setOverlayView(activeLightboxSiteId, activeLightboxSlideIndex - 1);
+    });
+  }
+
+  if (lightboxNext) {
+    lightboxNext.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (!activeLightboxSiteId) return;
+      setOverlayView(activeLightboxSiteId, activeLightboxSlideIndex + 1);
+    });
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (!activeLightboxSiteId || !lightboxModal || !lightboxModal.classList.contains('active')) return;
+    if (e.key === 'Escape') {
+      closeGarageOverlay();
+    } else if (e.key === 'ArrowLeft') {
+      e.preventDefault();
+      setOverlayView(activeLightboxSiteId, activeLightboxSlideIndex - 1);
+    } else if (e.key === 'ArrowRight') {
+      e.preventDefault();
+      setOverlayView(activeLightboxSiteId, activeLightboxSlideIndex + 1);
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      stepOverlaySite(-1);
+    } else if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      stepOverlaySite(1);
+    }
+  });
 });

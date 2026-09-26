@@ -164,17 +164,19 @@ footer-hover-col: "#0085A1"
 # --- Web Analytics Section --- #
 #################################
 
+url: "https://blog.netdev.be"
+
 # Fill in your Google Analytics gtag.js ID to track your website using gtag
-gtag: "G-ENNFYHFXG0"
+gtag: "G-4XW5WFHVZT"
 
 # Fill in your Google Analytics ID to track your website using Google Analytics
-google_analytics: "UA-5386301-3"
+#google_analytics: ""
 
 # Fill in your Cloudflare Analytics beacon token to track your website using Cloudflare Analytics
 #cloudflare_analytics: ""
 
 # Google Tag Manager ID
-gtm: "GTM-5SG5N6T"
+#gtm: ""
 
 # Matomo (aka Piwik) Web statistics
 # Uncomment the following section to enable Matomo. The opt-out parameter controls
