@@ -9,6 +9,7 @@ gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [jerome-paquay, sre, 2020s, global]
 readtime: true
+author: Jerome CG Paquay
 ---
 
 ![SRE Performance Banner](/assets/img/posts/2026-07-25-sre-performance-banner.webp)

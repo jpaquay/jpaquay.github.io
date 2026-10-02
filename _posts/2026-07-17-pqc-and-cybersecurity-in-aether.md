@@ -9,6 +9,7 @@ gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [jerome-paquay, cybersecurity, 2020s, global]
 readtime: true
+author: Jerome CG Paquay
 ---
 
 ![PQC Cybersecurity Banner](/assets/img/posts/2026-07-17-pqc-cybersecurity-banner.webp)

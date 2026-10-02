@@ -9,6 +9,7 @@ gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [jerome-paquay, cybersecurity, 2020s, belgium]
 readtime: true
+author: Jerome CG Paquay
 ---
 
 As the European Union finalised the **NIS2 Directive** (Network and Information Security Directive), organisations across Belgium—from Antwerp’s bustling port logistics to energy grids and healthcare networks—faced a pivotal shift in cybersecurity obligations.

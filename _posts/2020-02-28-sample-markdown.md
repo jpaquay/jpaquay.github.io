@@ -7,7 +7,7 @@ thumbnail-img: /assets/img/posts/coffee-banner.jpg
 share-img: /assets/img/posts/coffee-banner.jpg
 tags: [jerome-paquay, software-engineering, 2020s, brussels]
 comments: true
-author: Jerome Paquay
+author: Jerome CG Paquay
 date: 2020-02-28
 ---
 

@@ -10,6 +10,7 @@ gh-badge: [star, fork, follow]
 tags: [jerome-paquay, kids, 2020s, france]
 date: 2026-08-12 23:59:00 +0200
 readtime: true
+author: Jerome CG Paquay
 ---
 
 ![Dîner en famille dans le cockpit du voilier à la Marina du Bloscon pendant l'éclipse](/assets/img/posts/2026-08-12-eclipse-07-family-cockpit-dinner-marina.webp)

@@ -9,6 +9,7 @@ gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [jerome-paquay, tech-governance, 2020s, europe]
 readtime: true
+author: Jerome CG Paquay
 ---
 
 With **DORA (Digital Operational Resilience Act)** coming into force in January 2025 across European banking, insurance, and investment firms, alongside national NIS2 deadlines, compliance teams and engineering organizations faced a stark choice: **drown in manual spreadsheets or automate compliance as code.**

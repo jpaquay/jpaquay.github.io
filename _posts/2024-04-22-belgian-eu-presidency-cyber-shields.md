@@ -9,6 +9,7 @@ gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [jerome-paquay, cybersecurity, 2020s, belgium]
 readtime: true
+author: Jerome CG Paquay
 ---
 
 During the first half of 2024, Belgium held the **Presidency of the Council of the European Union**. Central to the Belgian presidency agenda was strengthening European cyber resilience ahead of national and European Parliament elections.

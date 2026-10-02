@@ -6,6 +6,7 @@ cover-img: /assets/img/posts/1982-12-23-why-is-the-world.jpg
 thumbnail-img: /assets/img/posts/1982-12-23-why-is-the-world.jpg
 tags: [marion-brown, poetry, 1980s, global]
 readtime: true
+author: Marion Brown
 ---
 
 ## And why is the World

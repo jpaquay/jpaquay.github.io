@@ -9,6 +9,7 @@ gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [paolo-conte, music, 1980s, italy]
 readtime: true
+author: Paolo Conte
 ---
 
 ![Max era Max](/assets/img/posts/1985-04-26-max-era-max.webp)

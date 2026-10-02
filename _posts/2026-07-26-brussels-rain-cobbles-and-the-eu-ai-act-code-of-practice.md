@@ -9,6 +9,7 @@ gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [jerome-paquay, tech-governance, 2020s, brussels]
 readtime: true
+author: Jerome CG Paquay
 ---
 
 ![Ghibli Terrace View Google Engineer Laptop](/assets/img/posts/2026-07-26-ai-act-transparency-provenance-map.webp)

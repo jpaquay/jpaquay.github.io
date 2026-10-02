@@ -6,6 +6,7 @@ cover-img: /assets/img/posts/1964-12-23-saint-of-souvenirs.jpg
 thumbnail-img: /assets/img/posts/1964-12-23-saint-of-souvenirs.jpg
 tags: [marion-brown, poetry, 1960s, global]
 readtime: true
+author: Marion Brown
 ---
 
 ### Saint Of Souvenirs

@@ -16,9 +16,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>/net/dev • Base Portal</title>
-  <meta name="description" content="Official migration portal landing page connecting Jerome Paquay's GitHub Pages blog to the new Hugo-Astro Web3 platform.">
+  <meta name="description" content="Groovin' vibes, technical notes & Web3 vault — official portal landing page connecting netdev.be to web3.netdev.be.">
   <meta name="theme-color" content="#060908">
-  <link rel="preconnect" href="https://platform.twitter.com">
+  <link rel="preconnect" href="https://platform.x.com">
+  <link rel="preconnect" href="https://syndication.twitter.com">
   <link rel="preconnect" href="https://web3.netdev.be">
   <style>
     :root {
@@ -499,7 +500,7 @@
       <button class="cyber-btn-sm" id="btn-audio" title="Toggle Web Audio CRT Degauss & Hum">🔊 SFX: OFF</button>
       <button class="cyber-btn-sm" id="btn-scanlines" title="Toggle Scanline Flicker">📺 CRT FX</button>
       <button class="cyber-btn-sm cyber-btn-panic" id="btn-panic" title="Trigger System Chromatic Aberration">⚡ SYS_OVERLOAD</button>
-      <a href="https://netdev.be/netdev.html" class="cyber-btn-sm" title="Jerome Paquay Bio & Interactive CV">🌮 BIO</a>
+      <a href="https://netdev.be/netdev.html" class="cyber-btn-sm" title="/net/dev Bio & Interactive CV">🌮 BIO</a>
       <button class="vp-theme-toggle" id="theme-toggle-btn" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
         <svg class="sun-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <circle cx="12" cy="12" r="5"></circle>
@@ -526,7 +527,7 @@
     <header class="portal-header">
       <div>
         <span class="portal-tag">🏳️‍🌈 ARCHITECTURE MIGRATION GATE • v3.0</span>
-        <h1 class="portal-title">Jerome Paquay / Technical Mind & Web3 Vault</h1>
+        <h1 class="portal-title">Groovin' vibes, technical notes & Web3 vault</h1>
         <p class="portal-subtitle">
           Long-form Jekyll blog posts are migrating to our high-frequency <strong>Hugo + Astro Web3 Engine</strong> at <code>web3.netdev.be</code>.
         </p>
@@ -562,7 +563,7 @@
           <iframe
             id="web3-iframe"
             src="https://v3.netdev.be/"
-            title="Jerome Paquay Hugo-Astro Web3 Blog"
+            title="Hugo-Astro Web3 Blog"
             loading="lazy"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"
             sandbox="allow-scripts allow-same-origin allow-popups allow-forms">
@@ -580,7 +581,7 @@
         </div>
       </section>
 
-      <!-- RIGHT DECK: LIVE X/TWITTER DISPATCH FEED (17 POSTS) -->
+      <!-- RIGHT DECK: LIVE X/TWITTER DISPATCH FEED -->
       <section class="console-box" aria-label="X Twitter Live Stream">
         <div class="console-header">
           <div class="console-title-group">
@@ -589,24 +590,18 @@
               <span class="dot yellow"></span>
               <span class="dot green"></span>
             </div>
-            <span class="console-label">X / TWITTER TELEMETRY STREAM (@jpaquay • 17 DISPATCHES)</span>
+            <span class="console-label">X / TWITTER TELEMETRY STREAM (@jpaquay)</span>
           </div>
           <div class="console-toolbar">
-            <a href="https://twitter.com/jpaquay" target="_blank" rel="noopener">Follow @jpaquay ↗</a>
+            <a href="https://x.com/jpaquay" target="_blank" rel="noopener">Follow @jpaquay ↗</a>
           </div>
         </div>
 
         <div class="twitter-scroll-area">
-          <!-- Official Twitter Timeline Embed displaying 17 tweets -->
-          <a class="twitter-timeline"
-             data-theme="dark"
-             data-chrome="noheader nofooter transparent noscrollbar"
-             data-tweet-limit="17"
-             href="https://twitter.com/jpaquay?ref_src=twsrc%5Etfw">
-            Loading Live X Dispatches (@jpaquay)...
-          </a>
+          <!-- Official publish.x.com Timeline Embed -->
+          <a class="twitter-timeline" href="https://x.com/jpaquay?ref_src=twsrc%5Etfw">Posts by jpaquay</a> <script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
 
-          <!-- Static Non-Blocking Fallback Cards (renders immediately while Twitter widget loads) -->
+          <!-- Static Non-Blocking Fallback Cards (auto-hidden as soon as live X widget renders) -->
           <div id="x-fallback-stream" style="margin-top: 10px;">
             <article class="x-dispatch-card">
               <div class="x-meta">
@@ -636,6 +631,7 @@
               <p class="x-content">
                 Zero Trust / BeyondCorp security verification patterns running smoothly. Security + Performance are non-negotiable foundations of continuous modernization.
               </p>
+            </article>
           </div>
 
           <!-- YOUTUBE MEDIA PLAYER UNDER TWITTER DISPATCHES -->
@@ -675,13 +671,26 @@
     </div>
   </div>
 
-  <!-- Twitter Platform Script (Loaded Async & Non-Blocking) -->
-  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
   <!-- Erratic Lean Web Audio & Telemetry Engine -->
   <script>
     (function () {
       'use strict';
+
+      // Auto-hide static fallback cards as soon as publish.x.com widget renders
+      window.twttr = (function(d, s, id) {
+        var t = window.twttr || {};
+        t._e = t._e || [];
+        t.ready = t.ready || function(f) { t._e.push(f); };
+        return t;
+      }(document, "script", "twitter-wjs"));
+      window.twttr.ready(function (twttr) {
+        if (twttr && twttr.events && twttr.events.bind) {
+          twttr.events.bind('rendered', function () {
+            var fb = document.getElementById('x-fallback-stream');
+            if (fb) fb.style.display = 'none';
+          });
+        }
+      });
 
       // 0. Dark / Light Theme Engine
       const themeToggleBtn = document.getElementById('theme-toggle-btn');
@@ -692,12 +701,6 @@
       const applyTheme = (theme) => {
         document.documentElement.setAttribute('data-theme', theme);
         localStorage.setItem('vp-theme', theme);
-
-        // Update Twitter Timeline attribute
-        const twitterEl = document.querySelector('.twitter-timeline');
-        if (twitterEl) {
-          twitterEl.setAttribute('data-theme', theme);
-        }
 
         // Propagate theme to v3.netdev.be iframe
         const iframe = document.getElementById('web3-iframe');

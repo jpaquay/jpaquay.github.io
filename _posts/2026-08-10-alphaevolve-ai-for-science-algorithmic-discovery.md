@@ -9,6 +9,7 @@ gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [jerome-paquay, software-engineering, 2020s, global]
 readtime: true
+author: Jerome CG Paquay
 ---
 
 ![AlphaEvolve AI for Science Gemini Agent](/assets/img/posts/2026-08-10-alphaevolve-ai-for-science.webp)

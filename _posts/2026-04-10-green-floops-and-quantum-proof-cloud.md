@@ -9,6 +9,7 @@ gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [jerome-paquay, cloud-computing, 2020s, belgium]
 readtime: true
+author: Jerome CG Paquay
 ---
 
 As we cross into 2026, the European cloud landscape stands at the intersection of two massive imperatives: **sustainability mandates** under the EU Green Deal and **Post-Quantum Cryptography (PQC)** deployment across critical cloud infrastructure.

@@ -9,6 +9,7 @@ gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [jerome-paquay, tech-governance, 2020s, europe]
 readtime: true
+author: Jerome CG Paquay
 ---
 
 Summer 2023 marked a watershed moment for Generative AI adoption in Europe. As companies rushed to integrate Large Language Models (LLMs) into customer portals and internal enterprise workflows, European data protection authorities (led by the EDPB ChatGPT Taskforce and national DPAs like Belgium's APD/GBA) issued stern reminders: **GDPR compliance is non-negotiable.**

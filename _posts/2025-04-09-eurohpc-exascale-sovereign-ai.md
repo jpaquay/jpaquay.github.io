@@ -9,6 +9,7 @@ gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [jerome-paquay, cloud-computing, 2020s, europe]
 readtime: true
+author: Jerome CG Paquay
 ---
 
 Spring 2025 marked the full operationalization of the **EuroHPC Joint Undertaking's exascale supercomputing network**—including JUPITER, Lumi, MeluXina (Luxembourg), and associated AI Factories across Belgium and the Benelux region.

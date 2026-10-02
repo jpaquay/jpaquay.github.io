@@ -7,6 +7,7 @@ thumbnail-img: /assets/img/posts/2008-12-23-brooklyn-march.jpg
 share-img: /assets/img/posts/2008-12-23-brooklyn-march.jpg
 tags: [marion-brown, poetry, 2000s, new-york]
 readtime: true
+author: Marion Brown
 ---
 
 ### Brooklyn March

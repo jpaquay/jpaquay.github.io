@@ -9,6 +9,7 @@ gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [jerome-paquay, cloud-computing, 2020s, global]
 readtime: true
+author: Jerome CG Paquay
 ---
 
 Mid-2026 marks a historic milestone in software engineering: the transition from human-centric manual coding to **Spec-Driven Agentic Swarm Orchestration**. Engineers no longer spend days writing boilerplate CRUD endpoints or manual integration tests; instead, they act as high-level system architects guiding specialized subagent teams.

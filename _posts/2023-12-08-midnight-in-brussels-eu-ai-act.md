@@ -9,6 +9,7 @@ gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [jerome-paquay, tech-governance, 2020s, brussels]
 readtime: true
+author: Jerome CG Paquay
 ---
 
 On **December 8, 2023**, after an intense 36-hour negotiation session in Brussels, European Union policymakers reached a landmark agreement on the **EU AI Act**—the world’s first comprehensive horizontal legal framework for Artificial Intelligence.

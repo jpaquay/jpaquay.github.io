@@ -9,6 +9,7 @@ gh-repo: jpaquay/jpaquay.github.io/
 gh-badge: [star, fork, follow]
 tags: [jerome-paquay, cybersecurity, 2020s, europe]
 readtime: true
+author: Jerome CG Paquay
 ---
 
 By late 2025, ENISA’s annual Threat Landscape report underscored a troubling evolution: cybercriminals and state-sponsored actors began deploying autonomous AI agents to discover zero-day vulnerabilities in cloud software supply chains and launch hyper-personalized deepfake social engineering attacks.
