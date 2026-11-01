@@ -2,45 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://web3.netdev.be/</loc>
-    <lastmod>2026-09-28T00:00:00.000Z</lastmod>
+    <lastmod>2026-11-01T08:30:00.000Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://web3.netdev.be/blog/</loc>
-    <lastmod>2026-09-28T00:00:00.000Z</lastmod>
+    <lastmod>2026-11-01T08:30:00.000Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://web3.netdev.be/about/</loc>
-    <lastmod>2026-09-28T00:00:00.000Z</lastmod>
+    <lastmod>2026-11-01T08:30:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://web3.netdev.be/aboutme/</loc>
-    <lastmod>2026-09-28T00:00:00.000Z</lastmod>
+    <lastmod>2026-11-01T08:30:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://web3.netdev.be/garage/</loc>
-    <lastmod>2026-09-28T00:00:00.000Z</lastmod>
+    <lastmod>2026-11-01T08:30:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://web3.netdev.be/search/</loc>
-    <lastmod>2026-09-28T00:00:00.000Z</lastmod>
+    <lastmod>2026-11-01T08:30:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://web3.netdev.be/tags/</loc>
-    <lastmod>2026-09-28T00:00:00.000Z</lastmod>
+    <lastmod>2026-11-01T08:30:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://web3.netdev.be/blog/2026-11-01-hacking-for-good-bspho-wintercircus-ghent-clinical-ai/</loc>
+    <lastmod>2026-11-01T08:30:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://web3.netdev.be/blog/2026-09-28-scale-to-zero-gke-netdev-edge-agentic-mission-control/</loc>
@@ -379,6 +385,84 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://web3.netdev.be/tags/bspho/</loc>
+    <lastmod>2026-11-01T08:30:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://web3.netdev.be/tags/hacking-for-good/</loc>
+    <lastmod>2026-11-01T08:30:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://web3.netdev.be/tags/wintercircus-ghent/</loc>
+    <lastmod>2026-11-01T08:30:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://web3.netdev.be/tags/pediatric-oncology/</loc>
+    <lastmod>2026-11-01T08:30:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://web3.netdev.be/tags/gemini-3-8/</loc>
+    <lastmod>2026-11-01T08:30:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://web3.netdev.be/tags/vertex-ai/</loc>
+    <lastmod>2026-11-01T08:30:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://web3.netdev.be/tags/cloud-run/</loc>
+    <lastmod>2026-11-01T08:30:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://web3.netdev.be/tags/fhir-r4/</loc>
+    <lastmod>2026-11-01T08:30:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://web3.netdev.be/tags/uhmep/</loc>
+    <lastmod>2026-11-01T08:30:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://web3.netdev.be/tags/recip-e/</loc>
+    <lastmod>2026-11-01T08:30:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://web3.netdev.be/tags/deterministic-ai/</loc>
+    <lastmod>2026-11-01T08:30:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://web3.netdev.be/tags/belgium/</loc>
+    <lastmod>2026-11-01T08:30:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://web3.netdev.be/tags/ligne-claire/</loc>
+    <lastmod>2026-11-01T08:30:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://web3.netdev.be/tags/gke/</loc>
     <lastmod>2026-09-28T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -512,12 +596,6 @@
   </url>
   <url>
     <loc>https://web3.netdev.be/tags/schaerbeek/</loc>
-    <lastmod>2026-09-20T00:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://web3.netdev.be/tags/belgium/</loc>
     <lastmod>2026-09-20T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
