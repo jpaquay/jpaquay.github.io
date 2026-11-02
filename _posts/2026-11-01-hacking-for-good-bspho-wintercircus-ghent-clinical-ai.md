@@ -10,11 +10,10 @@ subtitle: "When 200 builders, 8 Google Cloud coaches, and 7 Belgian hospitals ha
 description: "A technical retrospective on Solve with Google: Hacking for Good × BSPHO 2026 at Wintercircus Ghent. How quiet Qwiklabs plumbing, 200+ builders, 8 Google Cloud coaches, and all 7 Belgian pediatric hemato-oncology centers built 41 open-source clinical decision support prototypes under the 'Rules Decide, Gemini Explains, Two Clinicians Sign' paradigm."
 ---
 
-**Quick Answer:** When building clinical AI for high-stakes domains like **pediatric hemato-oncology**, pure end-to-end generative prompting is a patient-safety anti-pattern. Across **41 open-source solutions**, **2,100+ Git commits**, and **2,200+ automated tests** built in a single 6-hour arena sprint during **Solve with Google: Hacking for Good × BSPHO 2026** at **Wintercircus Ghent** ([`BelgianSPHO`](https://github.com/BelgianSPHO)), every winning team independently converged on the same three-layer neuro-symbolic architecture: **"Rules Decide, Gemini Explains, Two Clinicians Sign."** First, a **100% deterministic TypeScript/Python medical & statutory core** computes Mosteller Body Surface Area ($\text{BSA} = \sqrt{(H \times W)/3600}$; [*NEJM* 1987, `PMID 3657876`](https://pubmed.ncbi.nlm.nih.gov/3657876/)), enforces hard ceiling clamps—such as the `2.0 mg` absolute Vincristine neurotoxicity cap ([StatPearls `NBK537122`](https://www.ncbi.nlm.nih.gov/books/NBK537122/), [ISMP Best Practice 1](https://www.ismp.org/guidelines/best-practices-hospitals)) and the 50% `CYP3A4`-mediated dexamethasone dose reduction with aprepitant ([*Clin Pharmacol Ther* 2003, `PMID 12816748`](https://pubmed.ncbi.nlm.nih.gov/12816748/))—and verifies **SHA-256 cryptographic locks** on mandatory Article 29 paragraphs under the Belgian Law of 7 May 2004 ([Justel `2004050732`](https://www.ejustice.just.fgov.be/cgi_loi/change_lg.pl?language=nl&la=N&cn=2004050732&table_name=wet)). Second, [Vertex AI](https://cloud.google.com/vertex-ai/docs) (`Gemini` + [Google ADK](https://google.github.io/adk-docs/)) in `europe-west1` (Belgium) parses unstructured Dutch/French ward notes (*"Toernota"*), grounds every citation to exact PyMuPDF [`Page.search_for()`](https://pymupdf.readthedocs.io/en/latest/page.html#Page.search_for) `[x0, y0, x1, y1]` page coordinates (*"Cite or Refuse"*), and translates care plans into **NL/FR/EN parent handouts** and **8-year-old visual storyboards**. Third, Belgian [UHMEP v1.4](https://www.ehealth.fgov.be/standards/fhir/medication/) and [Recip-e](https://recip-e.be/over-recip-e/) over HL7 FHIR R4 [`MedicationRequest`](https://hl7.org/fhir/R4/medicationrequest.html) and [`Task`](https://hl7.org/fhir/R4/task.html) workflows enforce dual-clinician co-signing (`Prescriber` $\rightarrow$ `Supervisor` / `Pharmacist`) before a single milligram reaches the ward.
-
-![Under the Elephant Dome at Wintercircus Ghent: Jerome in his Hacking4Good sweater with his folding bike at the foreground oak table, 40 circular arena tables, and the four clinical zones of Solve with Google: Hacking for Good × BSPHO 2026](/assets/img/posts/2026-11-01-hacking-for-good-bspho-wintercircus-ghent-hero.webp)
-
----
+<!--
+Quick Answer / Executive Summary (hidden from top of page for visual clarity):
+Across 41 open-source solutions, 2,100+ Git commits, and 2,200+ automated tests built in a single 6-hour arena sprint during Solve with Google: Hacking for Good x BSPHO 2026 at Wintercircus Ghent (github.com/BelgianSPHO), every winning team independently converged on the same three-layer neuro-symbolic architecture: "Rules Decide, Gemini Explains, Two Clinicians Sign."
+-->
 
 ## 1. From Rond-Point Schuman to the Elephant Dome: A Folding Bike, *Gentse Pleui*, and Zero Theatre
 
@@ -23,6 +22,9 @@ It is Sunday morning in Belgium, the first of November, and my second *espresso 
 If you spend your working weeks commuting between the **Brussels EU Quarter** and **Ghent**, you learn that the fifty-five kilometers of railway between *Brussel-Schuman* and *Gent-Sint-Pieters* actually separate two distinct laws of thermodynamics. In the Schuman bubble, an Interinstitutional Working Group can spend fourteen months, three Comitology annexes, and forty-two *cappuccinos* at *Place Jourdan* debating whether a semicolon in Recital 47 constitutes a "proportionate risk-based governance framework."
 
 Then you step off the IC train at *Gent-Sint-Pieters*, snap open the hinge latches of your **folding bike** on the station forecourt, rattle across the tram tracks and damp cobblestones along the *Leie* and the *Korenlei*, coast past the weathered brick-and-steel decks of *De Krook*, and roll straight up to the old elephant ramp of **Wintercircus Ghent**. By the time you fold the frame back up under your arm at the arena entrance, you have crossed into what locals call the ***Gentse pleui***: that unmistakable, slightly irreverent Ghentian fold of character born from five centuries of *Stroppendragers* (the noose-bearers who famously looked Emperor Charles V in the eye in 1540 and refused to bow). Ghent has a congenital allergy to *dikke nekken* (swollen heads), vapourware, and self-important keynote theatre. If your idea does not survive a spoonful of *Tierenteyn* mustard and a `pytest` suite before five o'clock, the *Drie Torens* do not care how many slides you brought from Brussels.
+
+![Under the Elephant Dome at Wintercircus Ghent: Jerome in his Hacking4Good sweater with his folding bike at the foreground oak table, 40 circular arena tables, and the four clinical zones of Solve with Google: Hacking for Good × BSPHO 2026](/assets/img/posts/2026-11-01-hacking-for-good-bspho-wintercircus-ghent-hero.webp)
+*Under the soaring glass-and-steel Elephant Dome of Wintercircus Ghent: folding bike parked beside the foreground table, a purple Ghentian neuzeke (cuberdon) on the napkin, 40 circular 6-seat arena tables, and 8 Google Cloud coaches working alongside bedside clinicians from all 7 Belgian pediatric oncology reference hospitals.*
 
 Wintercircus itself is the architectural embodiment of that *Gentse pleui*. Built in 1894 as a stone-and-cast-iron hippodrome complete with indoor stables and underground elephant ramps, it burned down in 1920, was rebuilt in 1923, spent forty years after World War II as Mahy's grease-stained vintage car garage, and now stands resurrected under a soaring glass-and-steel canopy.
 
@@ -88,7 +90,7 @@ flowchart TB
         direction TB
         L1["1. DETERMINISTIC MEDICAL & STATUTORY CORE (TypeScript / Python / Zod)<br/>• Mosteller BSA = sqrt((H*W)/3600) & Calvert Carboplatin GFR AUC<br/>• Hard Ceiling Clamps (Vincristine <= 2.0 mg | 10x Oral Syringe Gate)<br/>• UZA v2 + POGO CINV Engine (ALL/CNS Dex Ban | 50% CYP3A4 Aprepitant Cut)<br/>• Cryptographic SHA-256 Lock on #7030A0 Belgian Law of 7 May 2004 Art. 29"]
         L2["2. GROUNDED GEMINI + ADK ORCHESTRATION (Vertex AI europe-west1)<br/>• PyMuPDF [x0, y0, x1, y1] Bounding-Box Quote Verifier ('Cite or Refuse')<br/>• 'Toernota' Unstructured Dutch/French Ward-Note Structurer<br/>• Belgian PII / NISS Redactor + Flesch-Douma >= 75.0 Readability Gate"]
-        L3["3. DUAL CLINICIAN SIGN-OFF & BEDSIDE ARTIFACTS<br/>• Belgian UHMEP v1.4 / Recip-e HL7 FHIR R4 Hub (Prescriber -> Supervisor Co-Sign)<br/>• 2/2 Oncologist + Pharmacist Lock & Native ECMA-376 Word <w:ins>/<w:del> Redlines<br/>• Trilingual Parent Handouts (NL/FR/EN) + Child Nausea Passport & 'Marble Surprise'"]
+        L3["3. DUAL CLINICIAN SIGN-OFF & BEDSIDE ARTIFACTS<br/>• Belgian UHMEP v1.4 / Recip-e HL7 FHIR R4 Hub (Prescriber -> Supervisor Co-Sign)<br/>• 2/2 Oncologist + Pharmacist Lock & Native ECMA-376 Word w:ins / w:del Redlines<br/>• Trilingual Parent Handouts (NL/FR/EN) + Child Nausea Passport & 'Marble Surprise'"]
         L1 --> L2 --> L3
     end
 
@@ -247,7 +249,7 @@ sequenceDiagram
     alt Verification Fails (Missing Quote or Altered Statutory Text)
         Verifier-->>MD: BLOCK ("Cite or Refuse" / Statutory Lock Violation)
     else Verification Passes (100% Grounded)
-        Verifier-->>Sup: Draft FHIR R4 MedicationRequest + Word <w:ins>/<w:del> Redlines
+        Verifier-->>Sup: Draft FHIR R4 MedicationRequest + Word w:ins / w:del Redlines
         Sup->>Sup: Execute FHIR R4 Task/$approve (2/2 Clinician Co-Sign)
         Sup-->>MD: Release Signed Clinical Order & Family Handout / Passport
     end

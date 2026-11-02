@@ -38,3 +38,42 @@
     <script src="{{ js | relative_url }}"></script>
   {% endfor %}
 {% endif %}
+
+<script>
+  (function () {
+    var codeBlocks = document.querySelectorAll('pre > code.language-mermaid, div.language-mermaid pre');
+    if (!codeBlocks.length) return;
+    var diagrams = [];
+    codeBlocks.forEach(function (node) {
+      var container = node.closest('div.language-mermaid') || node.parentElement;
+      if (!container || container.dataset.mermaidProcessed) return;
+      container.dataset.mermaidProcessed = 'true';
+      var raw = (node.textContent || '').trim();
+      if (!raw) return;
+      var wrapper = document.createElement('div');
+      wrapper.className = 'mermaid-diagram';
+      wrapper.dataset.mermaidSrc = raw;
+      container.parentNode.replaceChild(wrapper, container);
+      diagrams.push(wrapper);
+    });
+    if (!diagrams.length) return;
+    var s = document.createElement('script');
+    s.src = 'https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.min.js';
+    s.defer = true;
+    s.onload = function () {
+      window.mermaid.initialize({
+        startOnLoad: false,
+        theme: 'neutral',
+        securityLevel: 'strict',
+        flowchart: { useMaxWidth: true, htmlLabels: true, curve: 'basis' },
+        sequence: { useMaxWidth: true }
+      });
+      diagrams.forEach(function (el, idx) {
+        window.mermaid.render('mermaid-gh-' + idx + '-' + Date.now(), el.dataset.mermaidSrc).then(function (res) {
+          el.innerHTML = res.svg;
+        });
+      });
+    };
+    document.head.appendChild(s);
+  })();
+</script>

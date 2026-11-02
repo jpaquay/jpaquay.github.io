@@ -1107,3 +1107,33 @@ pre {
     display: inline-block;
   }
 }
+
+/* --- Wide Display Expansion & Mermaid Styling --- */
+@media (min-width: 1200px) {
+  .container-md {
+    max-width: 1240px;
+  }
+}
+@media (min-width: 1500px) {
+  .container-md {
+    max-width: 1380px;
+  }
+}
+p {
+  margin: 1.25rem 0;
+}
+.mermaid-diagram {
+  margin: 1.75rem 0;
+  padding: 1.25rem 1rem;
+  border-radius: 12px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+  overflow-x: auto;
+  text-align: center;
+}
+.mermaid-diagram svg {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
