@@ -15,7 +15,7 @@ Quick Answer / Executive Summary (hidden from top of page for visual clarity):
 Across 41 open-source solutions, 2,100+ Git commits, and 2,200+ automated tests built in a single 6-hour arena sprint during Solve with Google: Hacking for Good x BSPHO 2026 at Wintercircus Ghent (github.com/BelgianSPHO), every winning team independently converged on the same three-layer neuro-symbolic architecture: "Rules Decide, Gemini Explains, Two Clinicians Sign."
 -->
 
-## 1. From Rond-Point Schuman to the Elephant Dome: A Folding Bike, *Gentse Pleui*, and Zero Theatre
+## From Rond-Point Schuman to the Elephant Dome: A Folding Bike, *Gentse Pleui*, and Zero Theatre
 
 It is Sunday morning in Belgium, the first of November, and my second *espresso doppio* is finally catching up with a week of clinical plumbing.
 
@@ -48,7 +48,7 @@ On **Thursday, 29 October 2026**, nobody pitched a wrapper. And there was no app
 
 ---
 
-## 2. The Days Before the Doors Opened: Ironing Out Qwiklabs Sandboxes and User Guides at Midnight
+## The Days Before the Doors Opened: Ironing Out Qwiklabs Sandboxes and User Guides at Midnight
 
 Before a single clinician or builder ever sat down under the Wintercircus dome, the real work happened in the quiet, unglamorous trenches during the days leading up to 29 October.
 
@@ -67,7 +67,7 @@ That means bedside clinicians in Belgium operate at the collision point between 
 
 ---
 
-## 3. "The 6th Chair" Arena Pattern: What Happens When a Pediatric Pharmacist Audits Your Prompt
+## "The 6th Chair" Arena Pattern: What Happens When a Pediatric Pharmacist Audits Your Prompt
 
 When **Dr. Uri Ilan** (Pediatric Oncologist at the Princess Máxima Center and Clinical Scientist at Google Research) and the **BSPHO** clinical leads opened the arena floor on Thursday morning, we enforced a physical systems-engineering constraint across all 40 circular tables that we call **"The 6th Chair" Pattern**:
 
@@ -88,9 +88,9 @@ flowchart TB
 
     subgraph Core["The Winning 3-Layer Neuro-Symbolic Pattern ('Rules Decide, AI Explains, 2 Clinicians Sign')"]
         direction TB
-        L1["1. DETERMINISTIC MEDICAL & STATUTORY CORE (TypeScript / Python / Zod)<br/>• Mosteller BSA = sqrt((H*W)/3600) & Calvert Carboplatin GFR AUC<br/>• Hard Ceiling Clamps (Vincristine <= 2.0 mg | 10x Oral Syringe Gate)<br/>• UZA v2 + POGO CINV Engine (ALL/CNS Dex Ban | 50% CYP3A4 Aprepitant Cut)<br/>• Cryptographic SHA-256 Lock on #7030A0 Belgian Law of 7 May 2004 Art. 29"]
-        L2["2. GROUNDED GEMINI + ADK ORCHESTRATION (Vertex AI europe-west1)<br/>• PyMuPDF [x0, y0, x1, y1] Bounding-Box Quote Verifier ('Cite or Refuse')<br/>• 'Toernota' Unstructured Dutch/French Ward-Note Structurer<br/>• Belgian PII / NISS Redactor + Flesch-Douma >= 75.0 Readability Gate"]
-        L3["3. DUAL CLINICIAN SIGN-OFF & BEDSIDE ARTIFACTS<br/>• Belgian UHMEP v1.4 / Recip-e HL7 FHIR R4 Hub (Prescriber -> Supervisor Co-Sign)<br/>• 2/2 Oncologist + Pharmacist Lock & Native ECMA-376 Word w:ins / w:del Redlines<br/>• Trilingual Parent Handouts (NL/FR/EN) + Child Nausea Passport & 'Marble Surprise'"]
+        L1["DETERMINISTIC MEDICAL & STATUTORY CORE (TypeScript / Python / Zod)<br/>• Mosteller BSA = sqrt((H*W)/3600) & Calvert Carboplatin GFR AUC<br/>• Hard Ceiling Clamps (Vincristine <= 2.0 mg | 10x Oral Syringe Gate)<br/>• UZA v2 + POGO CINV Engine (ALL/CNS Dex Ban | 50% CYP3A4 Aprepitant Cut)<br/>• Cryptographic SHA-256 Lock on #7030A0 Belgian Law of 7 May 2004 Art. 29"]
+        L2["GROUNDED GEMINI + ADK ORCHESTRATION (Vertex AI europe-west1)<br/>• PyMuPDF [x0, y0, x1, y1] Bounding-Box Quote Verifier ('Cite or Refuse')<br/>• 'Toernota' Unstructured Dutch/French Ward-Note Structurer<br/>• Belgian PII / NISS Redactor + Flesch-Douma >= 75.0 Readability Gate"]
+        L3["DUAL CLINICIAN SIGN-OFF & BEDSIDE ARTIFACTS<br/>• Belgian UHMEP v1.4 / Recip-e HL7 FHIR R4 Hub (Prescriber -> Supervisor Co-Sign)<br/>• 2/2 Oncologist + Pharmacist Lock & Native ECMA-376 Word w:ins / w:del Redlines<br/>• Trilingual Parent Handouts (NL/FR/EN) + Child Nausea Passport & 'Marble Surprise'"]
         L1 --> L2 --> L3
     end
 
@@ -103,7 +103,7 @@ The arena was divided into **Four Color-Coded Bedside Zones (`UC1`–`UC4`)**, t
 
 ---
 
-## 4. Red Zone · UC1 (`OncoProtocol-Assist`): Navigating 4,142 Pages Without Hallucinating a Footnote
+## Red Zone · UC1 (`OncoProtocol-Assist`): Navigating 4,142 Pages Without Hallucinating a Footnote
 
 - **Clinical Leads:** **Dr. Ruben Van Paemel** (UZ Gent) & **Dr. Gabriel Levy** (Cliniques universitaires Saint-Luc, Brussels) · **Google Cloud CE Lead:** **Marina Bosso Bosso** (with Coach **Murat Eken**)
 - **The Clinical Corpus:** **32 master and sub-protocol documents totaling 4,142 PDF pages**—anchored by `ALLTogether1` ([`NCT04307576`](https://clinicaltrials.gov/study/NCT04307576), Master Protocol + 7 specialized sub-protocols including Down Syndrome, Infant ALL, and `Ruxo-ALL`), `HR-NBL2` ([`NCT04221035`](https://clinicaltrials.gov/study/NCT04221035), SIOPEN High-Risk Neuroblastoma), `CHIP-AML22` ([`NCT05992675`](https://clinicaltrials.gov/study/NCT05992675)), and `FaR-RMS` ([`NCT04625907`](https://clinicaltrials.gov/study/NCT04625907))—paired with a hospital-by-hospital participation matrix across `UZA`, `UZG`, `UZL`, `HUDERF`, `UCL`, and `CHU`.
@@ -119,16 +119,16 @@ If a resident asks a standard chunk-and-embed RAG system, *"What is the consolid
 
 ---
 
-## 5. Green Zone · UC2 (`PediDose`): Why Numbers Must Never Come From a Language Model
+## Green Zone · UC2 (`PediDose`): Why Numbers Must Never Come From a Language Model
 
 - **Clinical Leads:** **Prof. Dr. Bram De Wilde** & **Sofie Moreels** (Pediatric Clinical Pharmacist, UZ Gent) · **Google Cloud CE Lead:** **Jerome CG Paquay (`@jpaquay`)** (with Coaches **Matthijs van den Berg** & **Michiel Vanthoor**)
 - **The Clinical Mission:** Safely prescribing, compounding, reimbursing, and administering adult-formulated commercial drugs to children ranging from a **4 kg neonate** to an **18-year-old adolescent**, grounded in Belgium's `SAM-12504` XML extract ([SAMv2](https://www.ehealth.fgov.be/ehealthplatform/nl/service-samv2-authentic-source-of-medications)), [BCFI](https://www.bcfi.be/nl/start), [Kinderformularium.nl](https://www.kinderformularium.nl/), and [UHMEP v1.4](https://www.ehealth.fgov.be/standards/fhir/medication/) / [Recip-e](https://recip-e.be/over-recip-e/) over [HL7 FHIR R4](https://hl7.org/fhir/R4/).
 
 In the **Green Zone (`UC2`)**, our job was to turn the most dangerous arithmetic traps in pediatric hospital pharmacy into deterministic code gates:
 
-1. **The Vincristine `2.0 mg` Hard Neurotoxicity Ceiling ([`NBK537122`](https://www.ncbi.nlm.nih.gov/books/NBK537122/), [WHO Safety Alert](https://www.who.int/publications/i/item/WHO-PSM-QSM-2007.4)):** Vincristine is dosed by Mosteller Body Surface Area ($\text{BSA} = \sqrt{(H_{\text{cm}} \times W_{\text{kg}})/3600}$; [`PMID 3657876`](https://pubmed.ncbi.nlm.nih.gov/3657876/)) at $1.5\text{ mg/m}^2$, but is **strictly capped at `2.0 mg` absolute maximum single dose** for any patient with $\text{BSA} > 1.33\text{ m}^2$. An un-clamped calculation for a teenager ($\text{BSA } 1.65\text{ m}^2 \times 1.5 = 2.48\text{ mg}$) causes severe peripheral and cranial neurotoxicity.
-2. **The `10x` Oral Syringe Volume Trap:** When prescribing liquid oral corticosteroids (prednisolone `10 mg/mL` commercial concentrate vs. `1 mg/mL` compounded dilution), a unit mismatch causes a **10-fold volume overdose (`3.0 mL` instead of `0.3 mL`)** unless the engine cross-checks the **SAMv2 `CNK` concentration** against safe single-syringe volume thresholds.
-3. **Posaconazole (`Noxafil`) Non-Bioequivalence ([EMA EPAR `Noxafil`](https://www.ema.europa.eu/en/medicines/human/EPAR/noxafil), [FAGG Warning](https://www.fagg-afmps.be/nl/news/noxafil_posaconazol_tabletten_en_orale_suspensie_zijn_niet_onderling_verwisselbaar)) & `HEM-iSmart` ([`NCT05203523`](https://clinicaltrials.gov/study/NCT05203523)) Trial Locks:** Posaconazole oral suspension (`40 mg/mL`) and gastro-resistant tablets (`100 mg`) are **not milligram-for-milligram interchangeable** due to gastric pH and food dependencies, and their Belgian [RIZIV Chapter IV](https://www.riziv.fgov.be/nl/thema-s/verzorging-kosten-en-terugbetaling/wat-het-ziekenfonds-terugbetaalt/geneesmiddelen/terugbetaling-van-een-geneesmiddel) reimbursement criteria differ by age—while targeted agents (`ruxolitinib`, `venetoclax`) inside the `HEM-iSmart` ([`NCT05203523`](https://clinicaltrials.gov/study/NCT05203523)) trial must trigger a **`0.00 EUR` hospital pharmacy trial billing lock**.
+- **The Vincristine `2.0 mg` Hard Neurotoxicity Ceiling ([`NBK537122`](https://www.ncbi.nlm.nih.gov/books/NBK537122/), [WHO Safety Alert](https://www.who.int/publications/i/item/WHO-PSM-QSM-2007.4)):** Vincristine is dosed by Mosteller Body Surface Area ($\text{BSA} = \sqrt{(H_{\text{cm}} \times W_{\text{kg}})/3600}$; [`PMID 3657876`](https://pubmed.ncbi.nlm.nih.gov/3657876/)) at $1.5\text{ mg/m}^2$, but is **strictly capped at `2.0 mg` absolute maximum single dose** for any patient with $\text{BSA} > 1.33\text{ m}^2$. An un-clamped calculation for a teenager ($\text{BSA } 1.65\text{ m}^2 \times 1.5 = 2.48\text{ mg}$) causes severe peripheral and cranial neurotoxicity.
+- **The `10x` Oral Syringe Volume Trap:** When prescribing liquid oral corticosteroids (prednisolone `10 mg/mL` commercial concentrate vs. `1 mg/mL` compounded dilution), a unit mismatch causes a **10-fold volume overdose (`3.0 mL` instead of `0.3 mL`)** unless the engine cross-checks the **SAMv2 `CNK` concentration** against safe single-syringe volume thresholds.
+- **Posaconazole (`Noxafil`) Non-Bioequivalence ([EMA EPAR `Noxafil`](https://www.ema.europa.eu/en/medicines/human/EPAR/noxafil), [FAGG Warning](https://www.fagg-afmps.be/nl/news/noxafil_posaconazol_tabletten_en_orale_suspensie_zijn_niet_onderling_verwisselbaar)) & `HEM-iSmart` ([`NCT05203523`](https://clinicaltrials.gov/study/NCT05203523)) Trial Locks:** Posaconazole oral suspension (`40 mg/mL`) and gastro-resistant tablets (`100 mg`) are **not milligram-for-milligram interchangeable** due to gastric pH and food dependencies, and their Belgian [RIZIV Chapter IV](https://www.riziv.fgov.be/nl/thema-s/verzorging-kosten-en-terugbetaling/wat-het-ziekenfonds-terugbetaalt/geneesmiddelen/terugbetaling-van-een-geneesmiddel) reimbursement criteria differ by age—while targeted agents (`ruxolitinib`, `venetoclax`) inside the `HEM-iSmart` ([`NCT05203523`](https://clinicaltrials.gov/study/NCT05203523)) trial must trigger a **`0.00 EUR` hospital pharmacy trial billing lock**.
 
 ### Architectural Highlights from the Green Zone
 
@@ -182,17 +182,17 @@ export function calculateSafePediatricDose(params: {
 
 ---
 
-## 6. Black Zone · UC3 (`AImesis`): Pharmacokinetic CINV Control With Cell-Level Provenance
+## Black Zone · UC3 (`AImesis`): Pharmacokinetic CINV Control With Cell-Level Provenance
 
 - **Clinical Leads:** **Katleen Balliauw** & **Anthe De Pauw** (Pediatric Oncology Clinical Pharmacists, UZA Antwerp) · **Google Cloud CE Lead:** **Payam Ebrahimi** (with Coach **Juan Xia**)
 - **The Clinical Mission:** Automating multi-day **Chemotherapy-Induced Nausea and Vomiting (CINV)** prophylaxis and rescue therapy using the **UZA July 2026 v2 Pediatric Antiemetic Policy** cross-checked against international Pediatric Oncology Group of Ontario guidelines ([POGO CINV Guidelines](https://www.pogo.ca/healthcare/guidelines/cinv/), [Dupuis et al., *Pediatr Blood Cancer* `PMID 23097223`](https://pubmed.ncbi.nlm.nih.gov/23097223/)), while generating a trilingual **Patient Antiemetic Passport**.
 
 Uncontrolled CINV in children undergoing multi-day chemotherapy—such as Rapid COJEC in high-risk neuroblastoma ([Ladenstein et al., *Lancet Oncol* 2010, `PMID 20159811`](https://pubmed.ncbi.nlm.nih.gov/20159811/))—triggers dehydration, electrolyte derangement, and treatment delays. Yet prescribing antiemetics across a 5-day cycle is a **pharmacokinetic minefield** governed by four strict clinical rules:
 
-1. **Multi-Day Emetogenic Risk Scoring (`HEC` / `MEC` / `LEC` / `Minimal`):** Each treatment day must be classified by the highest-risk agent or synergistic combination under the POGO Acute CINV Classification ([Patel et al., *Pediatr Blood Cancer* 2019, `PMID 31206996`](https://pubmed.ncbi.nlm.nih.gov/31206996/)).
-2. **The Absolute `ALL` & `CNS` Tumor Dexamethasone Contraindication:** While dexamethasone is a potent antiemetic for solid tumors, it is **strictly banned as an antiemetic** in **Acute Lymphoblastic Leukemia (`ALL`)** (where corticosteroids are already part of the antileukemic backbone) and in **Central Nervous System (`CNS`) tumors**—where dexamethasone reduces blood-brain barrier permeability and impairs chemotherapy penetration into brain tumor tissue ([Pitter et al., *Neuro-Oncology* 2016, `PMC6123882`](https://pmc.ncbi.nlm.nih.gov/articles/PMC6123882/)).
-3. **The `50%` `CYP3A4` Aprepitant $\leftrightarrow$ Dexamethasone Dose Reduction:** Aprepitant (an $\text{NK}_1$ receptor antagonist used in `HEC`) is a moderate inhibitor of hepatic **cytochrome P450 3A4 (`CYP3A4`)**, the enzyme that clears dexamethasone. Co-administering aprepitant more than doubles systemic steroid exposure (`2.2x` AUC increase; [McCrea et al., *Clin Pharmacol Ther* 2003, `PMID 12816748`](https://pubmed.ncbi.nlm.nih.gov/12816748/)) unless **the dexamethasone antiemetic dose is deterministically halved (`-50%`)**.
-4. **Vincristine + Azole Neurotoxicity & CredibleMeds $\text{QTc}$ Prolongation:** Triazole antifungals (`itraconazole`, `voriconazole`, `posaconazole`) inhibit `CYP3A4`/`P-gp` clearance of vincristine, causing paralytic ileus and severe autonomic/cranial neuropathy ([Moriyama et al., *Pharmacotherapy* 2012, `PMID 21226646`](https://pubmed.ncbi.nlm.nih.gov/21226646/)), while $5\text{-HT}_3$ antagonists (`ondansetron`, `granisetron`, `palonosetron`) combined with rescue antiemetics (`domperidone`, `olanzapine`) must be checked against [CredibleMeds](https://crediblemeds.org/) for cumulative $\text{QTc}$ prolongation.
+- **Multi-Day Emetogenic Risk Scoring (`HEC` / `MEC` / `LEC` / `Minimal`):** Each treatment day must be classified by the highest-risk agent or synergistic combination under the POGO Acute CINV Classification ([Patel et al., *Pediatr Blood Cancer* 2019, `PMID 31206996`](https://pubmed.ncbi.nlm.nih.gov/31206996/)).
+- **The Absolute `ALL` & `CNS` Tumor Dexamethasone Contraindication:** While dexamethasone is a potent antiemetic for solid tumors, it is **strictly banned as an antiemetic** in **Acute Lymphoblastic Leukemia (`ALL`)** (where corticosteroids are already part of the antileukemic backbone) and in **Central Nervous System (`CNS`) tumors**—where dexamethasone reduces blood-brain barrier permeability and impairs chemotherapy penetration into brain tumor tissue ([Pitter et al., *Neuro-Oncology* 2016, `PMC6123882`](https://pmc.ncbi.nlm.nih.gov/articles/PMC6123882/)).
+- **The `50%` `CYP3A4` Aprepitant $\leftrightarrow$ Dexamethasone Dose Reduction:** Aprepitant (an $\text{NK}_1$ receptor antagonist used in `HEC`) is a moderate inhibitor of hepatic **cytochrome P450 3A4 (`CYP3A4`)**, the enzyme that clears dexamethasone. Co-administering aprepitant more than doubles systemic steroid exposure (`2.2x` AUC increase; [McCrea et al., *Clin Pharmacol Ther* 2003, `PMID 12816748`](https://pubmed.ncbi.nlm.nih.gov/12816748/)) unless **the dexamethasone antiemetic dose is deterministically halved (`-50%`)**.
+- **Vincristine + Azole Neurotoxicity & CredibleMeds $\text{QTc}$ Prolongation:** Triazole antifungals (`itraconazole`, `voriconazole`, `posaconazole`) inhibit `CYP3A4`/`P-gp` clearance of vincristine, causing paralytic ileus and severe autonomic/cranial neuropathy ([Moriyama et al., *Pharmacotherapy* 2012, `PMID 21226646`](https://pubmed.ncbi.nlm.nih.gov/21226646/)), while $5\text{-HT}_3$ antagonists (`ondansetron`, `granisetron`, `palonosetron`) combined with rescue antiemetics (`domperidone`, `olanzapine`) must be checked against [CredibleMeds](https://crediblemeds.org/) for cumulative $\text{QTc}$ prolongation.
 
 ### Architectural Highlights from the Black Zone
 
@@ -201,7 +201,7 @@ Uncontrolled CINV in children undergoing multi-day chemotherapy—such as Rapid 
 
 ---
 
-## 7. Blue Zone · UC4 (`AutoICF-Belux`): 1 Protocol to 12 Voices and the `#7030A0` *Cuberdon*-Purple Statutory Lock
+## Blue Zone · UC4 (`AutoICF-Belux`): 1 Protocol to 12 Voices and the `#7030A0` *Cuberdon*-Purple Statutory Lock
 
 - **Clinical Leads:** **Laurence Baire** (BSPHO Clinical Trial Coordinator) & **Leen Geets** (UZ Gent / Health Innovation and Research Institute [`HIRUZ`](https://www.uzgent.be/wetenschap/hiruz)) · **Google Cloud CE Lead:** **Kelly Vehent** (with Coaches **Manasa Kandula** & **Thomas Scherer**)
 - **The Clinical Mission:** Transforming a single international trial protocol (`HEM-iSmart`, `Biomede 2.0`, `FORUM`) and the official **Belgian Feb 2025 Harmonized ICF Master Template** into **12 synchronized Informed Consent & Assent documents** ($4\text{ cohorts: Adult 18+, Parent, Teen 12–17 HIRUZ, Child 8–11 Visual Storyboard} \times 3\text{ languages: NL, FR, EN}$).
@@ -221,7 +221,7 @@ Anyone from Ghent who opened the official Belgian Informed Consent Master Templa
 
 ---
 
-## 8. The Master Blueprint & Sovereign Google Cloud Architecture
+## The Master Blueprint & Sovereign Google Cloud Architecture
 
 When we stepped back after the 16:00 code freeze and looked across all 41 open-source repositories in [`BelgianSPHO`](https://github.com/BelgianSPHO), the most important takeaway was **architectural convergence**. Across every bedside mission, the winning teams separated **deterministic clinical/statutory rules** from **grounded generative explanation** and **dual-clinician sign-off**:
 
@@ -231,7 +231,6 @@ When we stepped back after the 16:00 code freeze and looked across all 41 open-s
 
 ```mermaid
 sequenceDiagram
-    autonumber
     actor MD as Prescriber / Resident
     participant Redact as PII & NISS Redactor<br/>(Deterministic Gate)
     participant Det as Deterministic Medical & Legal Core<br/>(TypeScript / Python / Zod)
@@ -302,7 +301,7 @@ flowchart LR
 
 ---
 
-## 9. 19:00 Upstairs at Club Wintercircus: When the Arena Dust Settled Into the AI Circle Dinner
+## Upstairs at Club Wintercircus: When the Arena Dust Settled Into the AI Circle Dinner
 
 At **17:30**, after the jury finished deliberating and the top teams were recognized in the center ring, we didn't unfold our bikes to ride back to *Gent-Sint-Pieters* just yet. We walked straight upstairs to **Club Wintercircus** for the **19:00 AI Circle Executive Dinner**, where **135 HCLS executives, hospital CEOs, medical directors, and clinical leads** gathered to see what had just happened on the arena floor below them.
 
