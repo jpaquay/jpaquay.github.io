@@ -49,6 +49,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://web3.netdev.be/blog/2026-10-31-dgem-diffusion-gemma-system-one-routing-brussels/</loc>
+    <lastmod>2026-10-31T07:30:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://web3.netdev.be/blog/2026-09-28-scale-to-zero-gke-netdev-edge-agentic-mission-control/</loc>
     <lastmod>2026-09-28T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
@@ -463,6 +469,60 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://web3.netdev.be/tags/dgem/</loc>
+    <lastmod>2026-10-31T07:30:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://web3.netdev.be/tags/diffusiongemma/</loc>
+    <lastmod>2026-10-31T07:30:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://web3.netdev.be/tags/decisiongemma/</loc>
+    <lastmod>2026-10-31T07:30:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://web3.netdev.be/tags/gemma/</loc>
+    <lastmod>2026-10-31T07:30:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://web3.netdev.be/tags/gemini/</loc>
+    <lastmod>2026-10-31T07:30:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://web3.netdev.be/tags/sre/</loc>
+    <lastmod>2026-10-31T07:30:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://web3.netdev.be/tags/diarization/</loc>
+    <lastmod>2026-10-31T07:30:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://web3.netdev.be/tags/keycloak/</loc>
+    <lastmod>2026-10-31T07:30:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://web3.netdev.be/tags/brussels/</loc>
+    <lastmod>2026-10-31T07:30:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://web3.netdev.be/tags/gke/</loc>
     <lastmod>2026-09-28T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -512,12 +572,6 @@
   </url>
   <url>
     <loc>https://web3.netdev.be/tags/ligne claire/</loc>
-    <lastmod>2026-09-28T00:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://web3.netdev.be/tags/brussels/</loc>
     <lastmod>2026-09-28T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -789,12 +843,6 @@
   <url>
     <loc>https://web3.netdev.be/tags/global/</loc>
     <lastmod>2026-08-10T00:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://web3.netdev.be/tags/sre/</loc>
-    <lastmod>2026-07-25T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
