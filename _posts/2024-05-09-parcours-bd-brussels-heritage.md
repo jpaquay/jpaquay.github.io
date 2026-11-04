@@ -75,7 +75,17 @@ Explorez les fresques emblématiques du centre-ville bruxellois grâce à notre 
     });
   }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDb0OwKJ3A4AnSfuMQkvnzZTHusuxjsous&callback=initParcoursMap" async defer></script>
+<script>
+  (function() {
+    const mapsKey = window.PUBLIC_MAPS_API_KEY || "{{ site.google_maps_api_key }}";
+    if (!mapsKey || mapsKey.startsWith("{")) return;
+    const s = document.createElement("script");
+    s.src = "https://maps.googleapis.com/maps/api/js?key=" + encodeURIComponent(mapsKey) + "&callback=initParcoursMap";
+    s.async = true;
+    s.defer = true;
+    document.head.appendChild(s);
+  })();
+</script>
 
 ---
 

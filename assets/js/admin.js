@@ -14,7 +14,7 @@ const REPO_NAME = 'jpaquay.github.io';
 const POSTS_DIR = '_posts';
 
 let currentUser = null;
-let githubToken = localStorage.getItem('admin_gh_token') || '';
+let githubToken = sessionStorage.getItem('admin_gh_token') || '';
 let easyMDE = null;
 let currentEditingPost = null; // null for new post, path string for existing post
 
@@ -147,7 +147,7 @@ function initEventListeners() {
     const token = document.getElementById('gh-token-input').value.trim();
     if (token) {
       githubToken = token;
-      localStorage.setItem('admin_gh_token', token);
+      sessionStorage.setItem('admin_gh_token', token);
       showToast('GitHub Token saved!');
       loadPostsList();
     }
@@ -173,21 +173,10 @@ function initEventListeners() {
 }
 
 window.handleDemoLogin = function() {
-  const emailInput = prompt('Enter your admin email address to sign in:');
-  if (!emailInput) return;
-
-  const email = emailInput.trim().toLowerCase();
-  if (ALLOWED_ADMINS.includes(email)) {
-    const user = {
-      name: email.split('@')[0],
-      email: email,
-      picture: `https://github.com/identicons/${email.split('@')[0]}.png`
-    };
-    localStorage.setItem('admin_user', JSON.stringify(user));
-    setAuthenticatedUser(user);
-    showToast(`Signed in as ${user.email}`);
+  if (window.google && google.accounts && google.accounts.id) {
+    google.accounts.id.prompt();
   } else {
-    showToast(`Access Denied: ${email} is not in the list of authorized admin emails.`, true);
+    showToast('Google Identity Services is required to sign in.', true);
   }
 };
 
