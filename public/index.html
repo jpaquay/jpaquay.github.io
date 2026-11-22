@@ -324,6 +324,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 10px;
     }
 
     .console-title-group {
@@ -368,6 +369,7 @@
       padding: 2px 8px;
       border: 1px solid var(--border-dim);
       transition: all 0.15s;
+      white-space: nowrap;
     }
 
     .console-toolbar a:hover {
@@ -482,6 +484,323 @@
       font-size: 2.4rem;
       margin-bottom: 12px;
     }
+
+    /* Live Blog RSS Feed Console (web3.netdev.be/rss.xml) */
+    .console-box.rss-console {
+      margin-top: 16px;
+      height: auto;
+      min-height: 220px;
+      overflow: visible;
+    }
+
+    .rss-console [hidden] {
+      display: none !important;
+    }
+
+    .console-toolbar button.toolbar-btn {
+      background: transparent;
+      color: var(--text-muted);
+      font-family: inherit;
+      font-size: 11px;
+      padding: 2px 8px;
+      border: 1px solid var(--border-dim);
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .console-toolbar button.toolbar-btn:hover:not(:disabled) {
+      color: var(--border-neon);
+      border-color: var(--border-neon);
+    }
+
+    .console-toolbar button.toolbar-btn:disabled {
+      opacity: 0.55;
+      cursor: wait;
+    }
+
+    .rss-status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 10px;
+      padding: 2px 7px;
+      border: 1px solid var(--border-dim);
+      color: var(--border-neon);
+      background: rgba(0, 255, 102, 0.08);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      white-space: nowrap;
+    }
+
+    [data-theme="light"] .rss-status-badge {
+      background: rgba(5, 150, 105, 0.08);
+    }
+
+    .rss-status-badge.is-fallback {
+      color: var(--amber-alert);
+      border-color: var(--amber-alert);
+      background: rgba(255, 183, 3, 0.09);
+    }
+
+    .rss-status-badge.is-error {
+      color: var(--pink-glitch);
+      border-color: var(--pink-glitch);
+      background: rgba(255, 0, 85, 0.09);
+    }
+
+    .rss-count-pill {
+      font-size: 10px;
+      color: var(--text-muted);
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+    }
+
+    .rss-feed-body {
+      padding: 14px;
+      background: var(--bg-card);
+    }
+
+    .rss-feed-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .rss-entry-card {
+      display: grid;
+      grid-template-columns: 126px minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 14px;
+      background: var(--bg-base);
+      border: 1px solid var(--border-dim);
+      border-left: 3px solid var(--cyan-cyber);
+      padding: 12px 14px;
+      transition: border-color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+    }
+
+    .rss-entry-card.is-latest {
+      border-left-color: var(--border-neon);
+    }
+
+    .rss-entry-card:hover {
+      border-color: var(--border-neon);
+      transform: translateX(2px);
+      box-shadow: 0 0 12px rgba(0, 255, 102, 0.12);
+    }
+
+    [data-theme="light"] .rss-entry-card:hover {
+      box-shadow: 0 2px 10px rgba(5, 150, 105, 0.12);
+    }
+
+    .rss-entry-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      font-size: 11px;
+      color: var(--text-muted);
+      border-right: 1px solid var(--border-dim);
+      padding-right: 12px;
+    }
+
+    .rss-entry-idx {
+      font-size: 10px;
+      color: var(--cyan-cyber);
+      letter-spacing: 0.06em;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .rss-latest-tag {
+      font-size: 9px;
+      font-weight: 700;
+      padding: 1px 5px;
+      background: var(--border-neon);
+      color: #000;
+      letter-spacing: 0.05em;
+    }
+
+    [data-theme="light"] .rss-latest-tag {
+      color: #fff;
+    }
+
+    .rss-entry-date {
+      color: var(--text-main);
+      font-weight: 600;
+      font-size: 11px;
+    }
+
+    .rss-entry-age {
+      font-size: 10px;
+      color: var(--text-muted);
+    }
+
+    .rss-entry-main {
+      min-width: 0;
+    }
+
+    .rss-entry-title {
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1.35;
+      margin-bottom: 4px;
+    }
+
+    .rss-entry-title a {
+      color: var(--text-main);
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    .rss-entry-title a:hover {
+      color: var(--border-neon);
+      text-decoration: underline;
+    }
+
+    .rss-entry-desc {
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.45;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin-bottom: 6px;
+    }
+
+    .rss-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+
+    .rss-tag {
+      font-size: 10px;
+      color: var(--border-neon);
+      border: 1px solid var(--border-dim);
+      background: rgba(0, 255, 102, 0.06);
+      padding: 1px 6px;
+      letter-spacing: 0.02em;
+    }
+
+    [data-theme="light"] .rss-tag {
+      background: rgba(5, 150, 105, 0.07);
+    }
+
+    .rss-tag-more {
+      color: var(--text-muted);
+      background: transparent;
+    }
+
+    .rss-entry-cta {
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .rss-footer {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px solid var(--border-dim);
+    }
+
+    .rss-footer-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .rss-load-btn {
+      background: linear-gradient(135deg, rgba(0, 255, 102, 0.14), rgba(0, 229, 255, 0.14));
+      border: 1px solid var(--border-neon);
+      color: var(--border-neon);
+      font-family: inherit;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 7px 14px;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      transition: all 0.15s ease;
+    }
+
+    .rss-load-btn:hover:not(:disabled) {
+      background: var(--border-neon);
+      color: #000;
+      box-shadow: 0 0 14px rgba(0, 255, 102, 0.45);
+    }
+
+    [data-theme="light"] .rss-load-btn:hover:not(:disabled) {
+      color: #fff;
+    }
+
+    .rss-load-btn:disabled {
+      opacity: 0.5;
+      cursor: default;
+    }
+
+    .rss-status-line {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    .rss-skeleton {
+      height: 68px;
+      background: var(--bg-base);
+      border: 1px solid var(--border-dim);
+      border-left: 3px solid var(--border-dim);
+      opacity: 0.55;
+      animation: rssPulse 1.4s ease-in-out infinite;
+    }
+
+    @keyframes rssPulse {
+      0%, 100% { opacity: 0.35; }
+      50% { opacity: 0.7; }
+    }
+
+    .rss-error-box {
+      padding: 18px;
+      background: var(--bg-base);
+      border: 1px solid var(--pink-glitch);
+      color: var(--text-main);
+      font-size: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    @media (max-width: 760px) {
+      .rss-console .console-header {
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .rss-entry-card {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+
+      .rss-entry-meta {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        border-right: none;
+        border-bottom: 1px solid var(--border-dim);
+        padding-right: 0;
+        padding-bottom: 6px;
+      }
+
+      .rss-entry-cta {
+        justify-self: start;
+      }
+    }
   </style>
 </head>
 <body>
@@ -593,6 +912,7 @@
             <span class="console-label">X / TWITTER TELEMETRY STREAM (@jpaquay)</span>
           </div>
           <div class="console-toolbar">
+            <a href="#web3-rss-section" title="Jump to live web3.netdev.be blog RSS feed">RSS ↓</a>
             <a href="https://x.com/jpaquay" target="_blank" rel="noopener">Follow @jpaquay ↗</a>
           </div>
         </div>
@@ -655,6 +975,45 @@
       </section>
 
     </div>
+
+    <!-- BOTTOM DECK: LIVE WEB3 BLOG RSS FEED (5 entries + Load More) -->
+    <section class="console-box rss-console" id="web3-rss-section" aria-label="Live Web3 Blog RSS Feed">
+      <div class="console-header">
+        <div class="console-title-group">
+          <div class="console-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <span class="console-label">LIVE BLOG RSS // web3.netdev.be/rss.xml</span>
+          <span class="rss-status-badge" id="rss-status-badge">FETCHING...</span>
+          <span class="rss-count-pill" id="rss-count-pill"></span>
+        </div>
+        <div class="console-toolbar">
+          <button type="button" class="toolbar-btn" id="rss-refresh-btn" title="Reload live RSS feed from web3.netdev.be">⟳ Refresh</button>
+          <a href="https://web3.netdev.be/rss.xml" target="_self" title="Raw XML RSS Feed">rss.xml ↗</a>
+          <a href="https://web3.netdev.be/blog/" target="_self" title="Browse full Astro blog index">All Posts ↗</a>
+        </div>
+      </div>
+
+      <div class="rss-feed-body">
+        <div class="rss-feed-list" id="rss-feed-list" role="feed" aria-live="polite" aria-busy="true">
+          <div class="rss-skeleton" aria-hidden="true"></div>
+          <div class="rss-skeleton" aria-hidden="true"></div>
+          <div class="rss-skeleton" aria-hidden="true"></div>
+          <div class="rss-skeleton" aria-hidden="true"></div>
+          <div class="rss-skeleton" aria-hidden="true"></div>
+        </div>
+
+        <div class="rss-footer" id="rss-footer" hidden>
+          <span class="rss-status-line" id="rss-status-line"></span>
+          <div class="rss-footer-actions">
+            <button type="button" class="rss-load-btn" id="rss-load-more">LOAD MORE (+5)</button>
+            <button type="button" class="cyber-btn-sm" id="rss-collapse-btn" hidden>COLLAPSE (5)</button>
+          </div>
+        </div>
+      </div>
+    </section>
 
   </div>
 
@@ -802,6 +1161,387 @@
       document.getElementById('close-secret').addEventListener('click', function () {
         modalEl.classList.remove('active');
       });
+
+      // 6. Live Web3 Blog RSS Feed (5 entries + Load More)
+      (function initWeb3RssFeed() {
+        const PAGE_SIZE = 5;
+        const MAX_TAGS = 4;
+        const FETCH_TIMEOUT_MS = 8000;
+        const ALLOWED_HOSTS = new Set(['web3.netdev.be', 'blog.netdev.be', 'netdev.be']);
+        const FEED_SOURCES = [
+          { url: 'https://web3.netdev.be/rss.xml', label: 'LIVE • WEB3', mode: 'cors', credentials: 'omit', fallback: false },
+          { url: '/rss.xml', label: 'MIRROR • LOCAL', mode: 'same-origin', credentials: 'same-origin', fallback: true }
+        ];
+
+        const sectionEl = document.getElementById('web3-rss-section');
+        const listEl = document.getElementById('rss-feed-list');
+        const badgeEl = document.getElementById('rss-status-badge');
+        const countPillEl = document.getElementById('rss-count-pill');
+        const footerEl = document.getElementById('rss-footer');
+        const statusLineEl = document.getElementById('rss-status-line');
+        const loadMoreBtn = document.getElementById('rss-load-more');
+        const collapseBtn = document.getElementById('rss-collapse-btn');
+        const refreshBtn = document.getElementById('rss-refresh-btn');
+
+        if (!listEl || !badgeEl || !footerEl || !loadMoreBtn || !collapseBtn) return;
+
+        let allItems = [];
+        let visibleCount = 0;
+        let activeSourceLabel = '';
+        let feedLastBuild = '';
+        let loadSeq = 0;
+
+        function sanitizeFeedUrl(rawUrl) {
+          if (!rawUrl || typeof rawUrl !== 'string') return null;
+          try {
+            const parsed = new URL(rawUrl.trim());
+            if (parsed.protocol !== 'https:') return null;
+            if (!ALLOWED_HOSTS.has(parsed.hostname.toLowerCase())) return null;
+            return parsed.href;
+          } catch (e) {
+            return null;
+          }
+        }
+
+        function cleanText(raw, maxLen) {
+          const text = String(raw || '').replace(/\s+/g, ' ').trim();
+          if (!maxLen || text.length <= maxLen) return text;
+          return text.slice(0, maxLen - 1).trimEnd() + '…';
+        }
+
+        function formatIsoDate(dateObj) {
+          if (!dateObj || Number.isNaN(dateObj.getTime())) return '—';
+          return dateObj.toISOString().slice(0, 10);
+        }
+
+        function formatRelativeAge(dateObj) {
+          if (!dateObj || Number.isNaN(dateObj.getTime())) return '';
+          const diffMs = Date.now() - dateObj.getTime();
+          if (diffMs < 0) return 'upcoming';
+          const days = Math.floor(diffMs / 86400000);
+          if (days === 0) {
+            const hours = Math.floor(diffMs / 3600000);
+            return hours < 1 ? 'just now' : hours + 'h ago';
+          }
+          if (days === 1) return '1d ago';
+          if (days < 14) return days + 'd ago';
+          if (days < 60) return Math.floor(days / 7) + 'w ago';
+          if (days < 365) return Math.floor(days / 30) + 'mo ago';
+          return Math.floor(days / 365) + 'y ago';
+        }
+
+        function directChildText(parent, tagName) {
+          const el = parent.getElementsByTagName(tagName)[0];
+          return el ? el.textContent || '' : '';
+        }
+
+        function parseRssXml(xmlText) {
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(xmlText, 'application/xml');
+          if (doc.getElementsByTagName('parsererror').length > 0) {
+            throw new Error('Malformed XML payload');
+          }
+          const channelEl = doc.getElementsByTagName('channel')[0];
+          const rawBuildDate = channelEl ? directChildText(channelEl, 'lastBuildDate') : '';
+          const parsedBuild = rawBuildDate ? new Date(rawBuildDate) : null;
+          const buildLabel = parsedBuild && !Number.isNaN(parsedBuild.getTime())
+            ? parsedBuild.toISOString().slice(0, 16).replace('T', ' ') + ' UTC'
+            : '';
+
+          const itemNodes = Array.from(doc.getElementsByTagName('item'));
+          const parsedItems = [];
+          for (const node of itemNodes) {
+            const title = cleanText(directChildText(node, 'title'), 180);
+            const rawLink = directChildText(node, 'link');
+            const safeLink = sanitizeFeedUrl(rawLink);
+            if (!title || !safeLink) continue;
+
+            const description = cleanText(directChildText(node, 'description'), 280);
+            const rawDate = cleanText(directChildText(node, 'pubDate'));
+            const dateObj = rawDate ? new Date(rawDate) : null;
+            const catNodes = Array.from(node.getElementsByTagName('category'));
+            const categories = [];
+            const seenCats = new Set();
+            for (const catNode of catNodes) {
+              const label = cleanText(catNode.textContent, 40);
+              const key = label.toLowerCase();
+              if (label && !seenCats.has(key)) {
+                seenCats.add(key);
+                categories.push(label);
+              }
+            }
+
+            parsedItems.push({
+              title: title,
+              link: safeLink,
+              description: description,
+              dateObj: dateObj,
+              categories: categories
+            });
+          }
+
+          if (parsedItems.length === 0) {
+            throw new Error('Empty RSS channel');
+          }
+          return { items: parsedItems, buildLabel: buildLabel };
+        }
+
+        async function fetchWithTimeout(source, forceReload) {
+          const controller = typeof AbortController !== 'undefined' ? new AbortController() : null;
+          const timerId = controller ? setTimeout(function () { controller.abort(); }, FETCH_TIMEOUT_MS) : null;
+          try {
+            const options = {
+              method: 'GET',
+              mode: source.mode,
+              credentials: source.credentials,
+              headers: { 'Accept': 'application/rss+xml, application/xml, text/xml;q=0.9' }
+            };
+            if (forceReload) options.cache = 'reload';
+            if (controller) options.signal = controller.signal;
+            const resp = await fetch(source.url, options);
+            if (!resp.ok) {
+              throw new Error('HTTP ' + resp.status);
+            }
+            return await resp.text();
+          } finally {
+            if (timerId !== null) clearTimeout(timerId);
+          }
+        }
+
+        function setBadge(text, stateClass) {
+          badgeEl.textContent = text;
+          badgeEl.classList.remove('is-fallback', 'is-error');
+          if (stateClass) badgeEl.classList.add(stateClass);
+        }
+
+        function createEntryCard(entry, index, total) {
+          const article = document.createElement('article');
+          article.className = index === 0 ? 'rss-entry-card is-latest' : 'rss-entry-card';
+          article.setAttribute('role', 'article');
+          article.setAttribute('aria-posinset', String(index + 1));
+          article.setAttribute('aria-setsize', String(total));
+
+          // Left gutter: index + date + age
+          const meta = document.createElement('div');
+          meta.className = 'rss-entry-meta';
+
+          const idxRow = document.createElement('div');
+          idxRow.className = 'rss-entry-idx';
+          const idxNum = document.createElement('span');
+          idxNum.textContent = '#' + String(index + 1).padStart(2, '0');
+          idxRow.appendChild(idxNum);
+          if (index === 0) {
+            const latestPill = document.createElement('span');
+            latestPill.className = 'rss-latest-tag';
+            latestPill.textContent = 'LATEST';
+            idxRow.appendChild(latestPill);
+          }
+          meta.appendChild(idxRow);
+
+          const timeEl = document.createElement('time');
+          timeEl.className = 'rss-entry-date';
+          timeEl.textContent = formatIsoDate(entry.dateObj);
+          if (entry.dateObj && !Number.isNaN(entry.dateObj.getTime())) {
+            timeEl.setAttribute('datetime', entry.dateObj.toISOString());
+          }
+          meta.appendChild(timeEl);
+
+          const ageText = formatRelativeAge(entry.dateObj);
+          if (ageText) {
+            const ageEl = document.createElement('span');
+            ageEl.className = 'rss-entry-age';
+            ageEl.textContent = ageText;
+            meta.appendChild(ageEl);
+          }
+          article.appendChild(meta);
+
+          // Center body: title + description + categories
+          const main = document.createElement('div');
+          main.className = 'rss-entry-main';
+
+          const heading = document.createElement('h3');
+          heading.className = 'rss-entry-title';
+          const titleLink = document.createElement('a');
+          titleLink.href = entry.link;
+          titleLink.target = '_self';
+          titleLink.textContent = entry.title;
+          heading.appendChild(titleLink);
+          main.appendChild(heading);
+
+          if (entry.description) {
+            const desc = document.createElement('p');
+            desc.className = 'rss-entry-desc';
+            desc.textContent = entry.description;
+            main.appendChild(desc);
+          }
+
+          if (entry.categories.length > 0) {
+            const tagsWrap = document.createElement('div');
+            tagsWrap.className = 'rss-tags';
+            const shownCats = entry.categories.slice(0, MAX_TAGS);
+            for (const cat of shownCats) {
+              const tagEl = document.createElement('span');
+              tagEl.className = 'rss-tag';
+              tagEl.textContent = '#' + cat;
+              tagsWrap.appendChild(tagEl);
+            }
+            const extraCount = entry.categories.length - shownCats.length;
+            if (extraCount > 0) {
+              const moreEl = document.createElement('span');
+              moreEl.className = 'rss-tag rss-tag-more';
+              moreEl.textContent = '+' + extraCount;
+              tagsWrap.appendChild(moreEl);
+            }
+            main.appendChild(tagsWrap);
+          }
+          article.appendChild(main);
+
+          // Right action button
+          const cta = document.createElement('a');
+          cta.className = 'cyber-btn-sm rss-entry-cta';
+          cta.href = entry.link;
+          cta.target = '_self';
+          cta.setAttribute('aria-label', 'Read ' + entry.title);
+          cta.textContent = 'READ →';
+          article.appendChild(cta);
+
+          return article;
+        }
+
+        function updateControls() {
+          const total = allItems.length;
+          const remaining = Math.max(0, total - visibleCount);
+          if (countPillEl) {
+            countPillEl.textContent = visibleCount + ' / ' + total;
+          }
+
+          const buildSuffix = feedLastBuild ? ' • feed built ' + feedLastBuild : '';
+          statusLineEl.textContent = 'Showing ' + visibleCount + ' of ' + total + ' posts (' + activeSourceLabel + ')' + buildSuffix;
+
+          if (remaining > 0) {
+            const nextBatch = Math.min(PAGE_SIZE, remaining);
+            loadMoreBtn.hidden = false;
+            loadMoreBtn.disabled = false;
+            loadMoreBtn.textContent = 'LOAD MORE (+' + nextBatch + ') · ' + remaining + ' LEFT';
+          } else {
+            loadMoreBtn.hidden = true;
+          }
+
+          collapseBtn.hidden = visibleCount <= PAGE_SIZE;
+          footerEl.hidden = false;
+        }
+
+        function renderSlice(fromIdx, toIdx, replace) {
+          const frag = document.createDocumentFragment();
+          for (let i = fromIdx; i < toIdx; i++) {
+            frag.appendChild(createEntryCard(allItems[i], i, allItems.length));
+          }
+          if (replace) {
+            listEl.replaceChildren(frag);
+          } else {
+            listEl.appendChild(frag);
+          }
+          visibleCount = toIdx;
+          updateControls();
+        }
+
+        function renderSkeleton() {
+          const frag = document.createDocumentFragment();
+          for (let i = 0; i < PAGE_SIZE; i++) {
+            const sk = document.createElement('div');
+            sk.className = 'rss-skeleton';
+            sk.setAttribute('aria-hidden', 'true');
+            frag.appendChild(sk);
+          }
+          listEl.replaceChildren(frag);
+          listEl.setAttribute('aria-busy', 'true');
+        }
+
+        function renderErrorState() {
+          const box = document.createElement('div');
+          box.className = 'rss-error-box';
+
+          const msg = document.createElement('span');
+          msg.textContent = 'Unable to load the live RSS stream from web3.netdev.be right now.';
+          box.appendChild(msg);
+
+          const actions = document.createElement('div');
+          actions.className = 'rss-footer-actions';
+
+          const retryBtn = document.createElement('button');
+          retryBtn.type = 'button';
+          retryBtn.className = 'cyber-btn-sm';
+          retryBtn.textContent = '⟳ RETRY';
+          retryBtn.addEventListener('click', function () { loadFeed(true); });
+          actions.appendChild(retryBtn);
+
+          const directLink = document.createElement('a');
+          directLink.className = 'cyber-btn-sm';
+          directLink.href = 'https://web3.netdev.be/blog/';
+          directLink.target = '_self';
+          directLink.textContent = 'OPEN BLOG ↗';
+          actions.appendChild(directLink);
+
+          box.appendChild(actions);
+          listEl.replaceChildren(box);
+          listEl.setAttribute('aria-busy', 'false');
+          footerEl.hidden = true;
+          if (countPillEl) countPillEl.textContent = '';
+          setBadge('OFFLINE', 'is-error');
+        }
+
+        async function loadFeed(forceReload) {
+          const seq = ++loadSeq;
+          if (refreshBtn) refreshBtn.disabled = true;
+          setBadge(forceReload ? 'SYNCING...' : 'FETCHING...', '');
+          if (forceReload || allItems.length === 0) renderSkeleton();
+
+          for (const source of FEED_SOURCES) {
+            try {
+              const xmlText = await fetchWithTimeout(source, forceReload);
+              const parsed = parseRssXml(xmlText);
+              if (seq !== loadSeq) return;
+              allItems = parsed.items;
+              feedLastBuild = parsed.buildLabel;
+              activeSourceLabel = source.label;
+              setBadge(source.label, source.fallback ? 'is-fallback' : '');
+              listEl.setAttribute('aria-busy', 'false');
+              const initialCount = Math.min(PAGE_SIZE, allItems.length);
+              renderSlice(0, initialCount, true);
+              if (refreshBtn) refreshBtn.disabled = false;
+              return;
+            } catch (err) {
+              console.warn('RSS feed attempt failed for', source.url, err && err.message ? err.message : err);
+            }
+          }
+
+          if (seq !== loadSeq) return;
+          renderErrorState();
+          if (refreshBtn) refreshBtn.disabled = false;
+        }
+
+        loadMoreBtn.addEventListener('click', function () {
+          if (visibleCount >= allItems.length) return;
+          const nextCount = Math.min(visibleCount + PAGE_SIZE, allItems.length);
+          renderSlice(visibleCount, nextCount, false);
+        });
+
+        collapseBtn.addEventListener('click', function () {
+          const resetCount = Math.min(PAGE_SIZE, allItems.length);
+          renderSlice(0, resetCount, true);
+          if (sectionEl && typeof sectionEl.scrollIntoView === 'function') {
+            sectionEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          }
+        });
+
+        if (refreshBtn) {
+          refreshBtn.addEventListener('click', function () {
+            loadFeed(true);
+          });
+        }
+
+        loadFeed(false);
+      })();
     })();
   </script>
 </body>
